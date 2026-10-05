@@ -1,5 +1,5 @@
 // Japon 2026 — service worker : l'app et ses données restent disponibles hors ligne.
-const VERSION = "2026-10-05-1406";
+const VERSION = "2026-10-05-2102";
 const CORE = "japon-core-" + VERSION;
 const EXT = "japon-ext"; // photos et fiches Wikipédia : gardées d'une version à l'autre
 const FILES = ["./", "./index.html", "./data.json", "./allergie.jpg", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
@@ -37,7 +37,7 @@ self.addEventListener("fetch", e => {
     if (url.pathname.endsWith("/data.json")) return e.respondWith(networkFirst(req, "./data.json"));
     return e.respondWith(caches.match(req).then(c => c || fetch(req)));
   }
-  if (/(^|\.)wikipedia\.org$/.test(url.hostname) || url.hostname === "upload.wikimedia.org") {
+  if (/(^|\.)(wikipedia|wikimedia)\.org$/.test(url.hostname)) {
     return e.respondWith(cacheFirst(req));
   }
   // Open-Meteo : géré par l'app (mémoire locale), on laisse passer
