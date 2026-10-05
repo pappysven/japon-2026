@@ -958,6 +958,7 @@ async function wikiLoad(p, force){
   try{
     const t = p.wikiEn || p.wiki, lang = p.wikiEn? "en" : "fr";
     const r = await wfetch(`https://${lang}.wikipedia.org/api/rest_v1/page/media-list/${encodeURIComponent(t.replace(/ /g,"_"))}`);
+    if(r && !r.ok && r.status===404){ w = w || {}; w.gal = []; w.galTried = true; }
     if(r && r.ok){ const j = await r.json();
       const imgs = (j.items||[]).filter(it=>it.type==="image" && it.srcset?.length && !/\.svg/i.test(it.title||"") && !/(logo|map|carte|icon|flag)/i.test(it.title||""))
         .map(it=>{ const src = it.srcset[0].src; return thumb(src.startsWith("//")? "https:"+src : src, 500); }).slice(0,6);
@@ -1266,7 +1267,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-05-2159";
+  window.VERSION = "2026-10-05-2207";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
