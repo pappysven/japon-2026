@@ -1,0 +1,2992 @@
+{
+ "trip": {
+  "title": "Japon 2026",
+  "start": "2026-10-17",
+  "end": "2026-11-01",
+  "rate": 172
+ },
+ "stages": {
+  "vol": {
+   "name": "Vol",
+   "jp": "空港",
+   "color": "#5B6670",
+   "wx": {
+    "ll": [
+     34.66,
+     135.5
+    ],
+    "label": "Osaka",
+    "normal": [
+     21,
+     14
+    ]
+   }
+  },
+  "tokyo": {
+   "name": "Tokyo",
+   "jp": "東京",
+   "color": "#D9427F",
+   "wx": {
+    "ll": [
+     35.68,
+     139.76
+    ],
+    "label": "Tokyo",
+    "normal": [
+     19,
+     12
+    ]
+   }
+  },
+  "nikko": {
+   "name": "Nikko",
+   "jp": "日光",
+   "color": "#7354A6",
+   "wx": {
+    "ll": [
+     36.75,
+     139.6
+    ],
+    "label": "Nikko",
+    "normal": [
+     16,
+     6
+    ]
+   }
+  },
+  "hakone": {
+   "name": "Hakone",
+   "jp": "箱根",
+   "color": "#21895B",
+   "wx": {
+    "ll": [
+     35.25,
+     139.05
+    ],
+    "label": "Gora, Hakone",
+    "normal": [
+     16,
+     9
+    ]
+   }
+  },
+  "kyoto": {
+   "name": "Kyoto",
+   "jp": "京都",
+   "color": "#C77C02",
+   "wx": {
+    "ll": [
+     35.0,
+     135.77
+    ],
+    "label": "Kyoto",
+    "normal": [
+     21,
+     11
+    ]
+   }
+  },
+  "nara": {
+   "name": "Nara",
+   "jp": "奈良",
+   "color": "#A88A12",
+   "wx": {
+    "ll": [
+     34.68,
+     135.83
+    ],
+    "label": "Nara",
+    "normal": [
+     21,
+     10
+    ]
+   }
+  },
+  "osaka": {
+   "name": "Osaka",
+   "jp": "大阪",
+   "color": "#C8283F",
+   "wx": {
+    "ll": [
+     34.67,
+     135.5
+    ],
+    "label": "Osaka",
+    "normal": [
+     21,
+     14
+    ]
+   }
+  }
+ },
+ "hotels": [
+  {
+   "id": "coco",
+   "name": "Coco Shuku Akasaka Premium",
+   "stage": "tokyo",
+   "from": "2026-10-17",
+   "to": "2026-10-20",
+   "addr": "3-6-20 Akasaka, Minato-ku, Tokyo",
+   "addrJp": "東京都港区赤坂3-6-20",
+   "checkin": "15h–22h",
+   "checkout": "10h",
+   "secret": "coco",
+   "link": "https://secure.booking.com/myreservations.html",
+   "linkLabel": "Booking",
+   "note": "Arrivée prévue 21h30–22h30 le 17 : check-in jusqu'à 22h, prévenir l'hôtel."
+  },
+  {
+   "id": "manyotei",
+   "name": "Hotel Manyotei",
+   "stage": "nikko",
+   "from": "2026-10-20",
+   "to": "2026-10-21",
+   "addr": "Kinugawa Onsen Ohara 390-3, Nikko",
+   "addrJp": "栃木県日光市鬼怒川温泉大原390-3",
+   "checkin": "15h–22h",
+   "checkout": "7h–10h",
+   "note": "À Kinugawa Onsen, pas dans le centre de Nikko. Onsen sur place.",
+   "link": "https://secure.booking.com/myreservations.html",
+   "linkLabel": "Booking"
+  },
+  {
+   "id": "vintage",
+   "name": "Hotel Vintage Tokyo Kagurazaka",
+   "stage": "tokyo",
+   "from": "2026-10-21",
+   "to": "2026-10-24",
+   "addr": "Nakazatocho 30, Shinjuku-ku, Tokyo",
+   "addrJp": "東京都新宿区中里町30",
+   "checkin": "15h–23h30",
+   "checkout": "10h",
+   "note": "Arrivée ~21h15 le 21 oct (retour de Nikko).",
+   "link": "https://secure.booking.com/myreservations.html",
+   "linkLabel": "Booking"
+  },
+  {
+   "id": "wpu",
+   "name": "WPÜ Hotel Hakone",
+   "stage": "hakone",
+   "from": "2026-10-24",
+   "to": "2026-10-25",
+   "addr": "Gora 1320-179, Hakone",
+   "addrJp": "神奈川県足柄下郡箱根町強羅1320-179",
+   "checkin": "~16h",
+   "checkout": "7h–10h",
+   "note": "1 min de la gare de Gora. Demander à garder les valises jusqu'à ~12h30 le 25.",
+   "link": "https://secure.booking.com/myreservations.html",
+   "linkLabel": "Booking"
+  },
+  {
+   "id": "compass",
+   "name": "Guesthouse Kyoto Compass",
+   "stage": "kyoto",
+   "from": "2026-10-25",
+   "to": "2026-10-28",
+   "addr": "Nishi Shichijo Ichibe-cho 115, Shimogyo-ku, Kyoto",
+   "addrJp": "京都府京都市下京区西七条市部町115",
+   "checkin": "15h–21h",
+   "checkout": "",
+   "phone": "+81 75-204-3250",
+   "email": "guesthouse.compass@gmail.com",
+   "note": "Arrivée prévue ~16h45 le 25 (Hikari 645). Taxi depuis Kyoto Station ~10 min (~1 000 ¥). 4 personnes + valises : jumbo taxi, sortie Hachijō.",
+   "link": "https://secure.booking.com/myreservations.html",
+   "linkLabel": "Booking"
+  },
+  {
+   "id": "nono",
+   "name": "Onyado Nono Nara Natural Hot Spring",
+   "stage": "nara",
+   "from": "2026-10-28",
+   "to": "2026-10-29",
+   "addr": "Omiyacho 1-1-6, Nara",
+   "addrJp": "奈良県奈良市大宮町1-1-6",
+   "checkin": "15h",
+   "checkout": "11h",
+   "note": "Face à la gare JR Nara. Onsen naturel, tatamis.",
+   "link": "https://secure.booking.com/myreservations.html",
+   "linkLabel": "Booking"
+  },
+  {
+   "id": "eslead",
+   "name": "ESLEAD HOTEL Namba Kuromon",
+   "stage": "osaka",
+   "from": "2026-10-29",
+   "to": "2026-11-01",
+   "addr": "Namba Kuromon, Nipponbashi, Osaka",
+   "addrJp": "",
+   "checkin": "15h",
+   "checkout": "10h",
+   "note": "Adresse japonaise à recopier depuis Booking. 5 min de Kuromon et Den Den Town, 8 min de Nankai Namba.",
+   "link": "https://secure.booking.com/myreservations.html",
+   "linkLabel": "Booking"
+  }
+ ],
+ "transports": [
+  {
+   "id": "vol-aller",
+   "date": "2026-10-17",
+   "dep": "",
+   "arr": "18:05",
+   "from": "Kuala Lumpur",
+   "to": "Narita (NRT)",
+   "name": "Vol CDG → KUL → NRT",
+   "kind": "vol",
+   "status": "reserve",
+   "note": "Départ CDG le 16 oct.",
+   "fromJp": "",
+   "toJp": "成田空港"
+  },
+  {
+   "id": "suica",
+   "date": "2026-10-17",
+   "dep": "",
+   "arr": "",
+   "from": "",
+   "to": "",
+   "name": "Suica (une carte par personne)",
+   "kind": "pass",
+   "status": "acheter",
+   "note": "Métro, bus, trains locaux, konbini. Les adultes peuvent l'ajouter dans Cartes (Apple Wallet) ; carte physique pour l'enfant.",
+   "buy": {
+    "summary": "Suica dans Cartes sur iPhone avant le départ ; carte enfant au guichet JR East de Narita.",
+    "online": {
+     "url": "https://www.jreast.co.jp/multi/en/pass/suica.html",
+     "label": "Suica (site JR East)",
+     "steps": [
+      "Sur iPhone : app Cartes → + → Carte de transport → Suica, recharger par Apple Pay.",
+      "À faire pour chaque adulte avant le départ, ou dans l'avion."
+     ]
+    },
+    "inperson": {
+     "where": "JR East Travel Service Center, gare JR de Narita (Terminal 1 ou 2), au sous-sol.",
+     "hours": "Peut fermer avant l'arrivée du vol (18h05) : sinon, en acheter une le lendemain dans une grande gare JR (Tokyo, Shinjuku).",
+     "steps": [
+      "Présenter le passeport de l'enfant (tarif enfant de 6 à 11 ans).",
+      "Charger 2 000 à 3 000 ¥ pour commencer, puis recharger aux bornes."
+     ]
+    },
+    "phrase": {
+     "jp": "子ども用のSuicaを1枚作りたいです。\n子どもは9歳です。パスポートはこちらです。",
+     "fr": "Je voudrais une carte Suica enfant. L'enfant a 9 ans, voici son passeport."
+    }
+   }
+  },
+  {
+   "id": "skyliner",
+   "date": "2026-10-17",
+   "dep": "~19:00",
+   "arr": "~19:45",
+   "from": "Narita T1/T2",
+   "to": "Nippori → Akasaka",
+   "name": "Keisei Skyliner + ligne Chiyoda",
+   "kind": "train",
+   "status": "acheter",
+   "price": "2 310 ¥ adulte · 1 150 ¥ enfant (e-ticket)",
+   "note": "E-ticket Keisei à acheter avant le départ, à échanger contre les places au comptoir Skyliner de Narita. Puis Nippori → Nishi-Nippori (1 arrêt JR ou 7 min à pied) et ligne Chiyoda → Akasaka (~30 min). Arrivée hôtel 21h30–22h30.",
+   "link": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/en/",
+   "linkLabel": "Keisei e-ticket",
+   "buy": {
+    "summary": "En ligne avant le départ (moins cher), puis échange contre les places au comptoir de Narita.",
+    "online": {
+     "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/e-ticket/en/",
+     "label": "Acheter l'e-ticket Keisei",
+     "steps": [
+      "Choisir « Skyliner one-way », Narita Airport → Nippori, 3 adultes + 1 enfant.",
+      "Payer par carte : on reçoit un numéro d'échange et un QR code (capture d'écran conseillée).",
+      "À Narita, présenter le QR au comptoir Skyliner pour obtenir les places du prochain train."
+     ]
+    },
+    "inperson": {
+     "where": "Comptoir Skyliner (Skyliner Ticket Counter) ou Skyliner & Keisei Information Center, au niveau des quais Keisei sous le terminal d'arrivée (Terminal 1 ou 2 selon le vol).",
+     "hours": "Ouvert le soir à l'arrivée du vol ; sans e-ticket, achat possible sur place au tarif guichet (2 580 ¥).",
+     "steps": [
+      "Suivre les panneaux « Railways » / « Keisei » depuis le hall d'arrivée.",
+      "Montrer le QR de l'e-ticket (ou acheter directement) et la phrase ci-dessous."
+     ]
+    },
+    "phrase": {
+     "jp": "インターネットで購入したスカイライナーのeチケットです。\n日暮里まで、次のスカイライナーの座席をお願いします。\n大人3名、子ども1名です。",
+     "fr": "Voici notre e-ticket Skyliner acheté en ligne. Des places dans le prochain Skyliner jusqu'à Nippori, s'il vous plaît. 3 adultes et 1 enfant.",
+     "jp2": "日暮里までのスカイライナーを、大人3枚、子ども1枚お願いします。次の電車でお願いします。",
+     "fr2": "Sans e-ticket : 3 billets adulte et 1 enfant pour Nippori, dans le prochain train, s'il vous plaît."
+    }
+   },
+   "fromJp": "成田空港",
+   "toJp": "日暮里",
+   "tags": [
+    "Skyliner : e-ticket à acheter",
+    "Métro : Suica"
+   ],
+   "maps": [
+    "成田空港駅",
+    "赤坂駅"
+   ],
+   "steps": [
+    {
+     "k": "train",
+     "t": "Skyliner, Narita → Nippori",
+     "jp": "成田空港 → 日暮里",
+     "sub": "Places attribuées au comptoir. ~41 min, descendre au premier arrêt : Nippori (le terminus est Ueno)."
+    },
+    {
+     "k": "walk",
+     "t": "Nippori → Nishi-Nippori",
+     "jp": "日暮里 → 西日暮里",
+     "sub": "Sortir des portiques Keisei. ~7 min à pied, ou JR Yamanote 1 arrêt (Suica). Suivre « 千代田線 Chiyoda Line »."
+    },
+    {
+     "k": "train",
+     "t": "Ligne Chiyoda (verte), direction Yoyogi-Uehara",
+     "jp": "千代田線 · 代々木上原 方面",
+     "sub": "Descendre à Akasaka (赤坂), ~20 min, sans changement."
+    },
+    {
+     "k": "walk",
+     "t": "Akasaka → Coco Shuku",
+     "jp": "赤坂",
+     "sub": "Quelques minutes à pied (Y aller depuis la fiche hôtel)."
+    }
+   ]
+  },
+  {
+   "id": "revaty-aller",
+   "date": "2026-10-20",
+   "dep": "09:30",
+   "arr": "11:22",
+   "from": "Asakusa (Tobu)",
+   "to": "Tobu-Nikko",
+   "name": "Revaty Kegon 013",
+   "kind": "train",
+   "status": "reserve",
+   "pax": "3 adultes + 1 enfant",
+   "app": "Tobu (billet en ligne)",
+   "link": "https://www.tobu.co.jp/en/service/",
+   "linkLabel": "Tobu",
+   "ll": [
+    35.7119,
+    139.7983
+   ],
+   "secret": "revaty-aller",
+   "fromJp": "浅草",
+   "toJp": "東武日光"
+  },
+  {
+   "id": "pass-nikko",
+   "date": "2026-10-20",
+   "dep": "",
+   "arr": "",
+   "from": "",
+   "to": "",
+   "name": "Nikko World Heritage Area Pass (2 jours)",
+   "kind": "pass",
+   "status": "reserve",
+   "pax": "3 adultes + 1 enfant",
+   "price": "3 000 ¥ / 1 500 ¥",
+   "note": "Couvre les trains Tobu jusqu'à Kinugawa Onsen et les bus du centre. Bus de montagne (Chūzenji) à la Suica.",
+   "link": "https://www.tobu.co.jp/en/service/",
+   "linkLabel": "Tobu",
+   "secret": "pass-nikko"
+  },
+  {
+   "id": "taqbin-tokyo",
+   "date": "2026-10-20",
+   "dep": "",
+   "arr": "",
+   "from": "Coco Shuku Akasaka",
+   "to": "Hotel Vintage Kagurazaka",
+   "name": "Ta-Q-Bin valises → Kagurazaka",
+   "kind": "bagage",
+   "status": "faire",
+   "note": "Pour partir à Nikko avec un simple sac. Livraison le 21 à l'Hotel Vintage.",
+   "buy": {
+    "summary": "À la réception de Coco Shuku, la veille au soir (19 oct.) ou le matin du 20.",
+    "inperson": {
+     "where": "Réception de Coco Shuku Akasaka Premium.",
+     "hours": "Demander d'abord si l'hôtel gère l'envoi ; sinon konbini du quartier (Yamato).",
+     "steps": [
+      "Montrer la phrase et l'adresse de l'Hotel Vintage ci-dessous.",
+      "Garder le reçu ; prévenir l'Hotel Vintage de l'arrivée des valises."
+     ]
+    },
+    "phrase": {
+     "jp": "このスーツケースを宅急便で送りたいです。\n届け先：ホテル・ヴィンテージ東京神楽坂\n東京都新宿区中里町30\n10月21日に届くようにお願いします。",
+     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'Hotel Vintage Tokyo Kagurazaka, Nakazatocho 30, pour une livraison le 21 octobre."
+    }
+   }
+  },
+  {
+   "id": "kinugawa-soir",
+   "date": "2026-10-20",
+   "dep": "~16:30",
+   "arr": "~17:10",
+   "from": "Tobu-Nikko",
+   "to": "Kinugawa-Onsen",
+   "name": "Train local Tobu, changement à Shimo-Imaichi",
+   "kind": "train",
+   "status": "pass",
+   "note": "Non réservé, inclus dans le World Heritage Pass. Heures indicatives : vérifier le prochain départ avec « Horaires en direct ».",
+   "fromJp": "東武日光",
+   "toJp": "鬼怒川温泉",
+   "tags": [
+    "Inclus dans le pass",
+    "Sans réservation"
+   ],
+   "maps": [
+    "東武日光駅",
+    "鬼怒川温泉駅"
+   ],
+   "steps": [
+    {
+     "k": "train",
+     "t": "Train local depuis Tobu-Nikko",
+     "jp": "東武日光 → 下今市",
+     "sub": "Tobu-Nikko est un terminus : tous les trains passent par Shimo-Imaichi, 2 arrêts, ~8 min. Prendre un local (普通), pas un Limited Express (特急, supplément)."
+    },
+    {
+     "k": "change",
+     "t": "Changement à Shimo-Imaichi",
+     "jp": "下今市",
+     "sub": "Petite gare : descendre et rester dans la zone des quais. Chercher la ligne Kinugawa (鬼怒川線). Attente 5 à 20 min selon l'horaire."
+    },
+    {
+     "k": "train",
+     "t": "Ligne Tobu Kinugawa vers Kinugawa-Onsen",
+     "jp": "下今市 → 鬼怒川温泉",
+     "sub": "Tout train affichant 鬼怒川温泉, 新藤原 ou 会津田島 convient. ~15 à 20 min, descendre à Kinugawa-Onsen."
+    },
+    {
+     "k": "taxi",
+     "t": "Gare → Hotel Manyotei",
+     "jp": "鬼怒川温泉駅",
+     "sub": "Taxi à la sortie de la gare, montrer l'adresse (bouton Taxi de la fiche hôtel)."
+    }
+   ]
+  },
+  {
+   "id": "bus-chuzenji",
+   "date": "2026-10-21",
+   "dep": "08:00",
+   "arr": "~08:50",
+   "from": "Tobu-Nikko (arrêt bus)",
+   "to": "Chūzenji Onsen",
+   "name": "Bus Tobu — Irohazaka",
+   "kind": "bus",
+   "status": "suica",
+   "note": "Partir tôt : bouchons d'Irohazaka en saison des feuilles rouges. Redescente vers 14h30–15h30.",
+   "ll": [
+    36.748,
+    139.6188
+   ],
+   "fromJp": "東武日光駅",
+   "toJp": "中禅寺温泉"
+  },
+  {
+   "id": "kegon-retour",
+   "date": "2026-10-21",
+   "dep": "18:41",
+   "arr": "20:35",
+   "from": "Tobu-Nikko",
+   "to": "Asakusa",
+   "name": "Kegon 052",
+   "kind": "train",
+   "status": "reserve",
+   "car": "1",
+   "seats": "03C 03D 04C 04D",
+   "pax": "3 adultes + 1 enfant",
+   "app": "Tobu (billet en ligne)",
+   "link": "https://www.tobu.co.jp/en/service/",
+   "linkLabel": "Tobu",
+   "ll": [
+    36.748,
+    139.6188
+   ],
+   "secret": "kegon-retour",
+   "note": "Puis métro Asakusa → Kagurazaka (~35–40 min, 1 correspondance), arrivée hôtel ~21h15.",
+   "fromJp": "東武日光",
+   "toJp": "浅草",
+   "tags": [
+    "Train réservé",
+    "Métro : Suica"
+   ],
+   "maps": [
+    "浅草駅",
+    "神楽坂駅"
+   ],
+   "steps": [
+    {
+     "k": "train",
+     "t": "Kegon 052, Tobu-Nikko → Asakusa",
+     "jp": "東武日光 → 浅草",
+     "sub": "Voiture 1, places 03C 03D 04C 04D. Terminus Asakusa."
+    },
+    {
+     "k": "train",
+     "t": "Ligne Ginza (orange), direction Shibuya",
+     "jp": "銀座線 · 渋谷 方面",
+     "sub": "De Asakusa à Nihombashi (日本橋), ~10 min."
+    },
+    {
+     "k": "change",
+     "t": "Changement à Nihombashi",
+     "jp": "日本橋",
+     "sub": "Suivre « 東西線 Tozai Line » (bleu ciel), quelques minutes de couloir."
+    },
+    {
+     "k": "train",
+     "t": "Ligne Tozai, direction Nakano",
+     "jp": "東西線 · 中野 方面",
+     "sub": "Descendre à Kagurazaka (神楽坂), ~10 min. Hôtel à quelques minutes."
+    }
+   ]
+  },
+  {
+   "id": "kinugawa-matin",
+   "date": "2026-10-21",
+   "dep": "~07:00",
+   "arr": "~07:40",
+   "from": "Kinugawa-Onsen",
+   "to": "Tobu-Nikko",
+   "name": "Train local Tobu (changement possible à Shimo-Imaichi)",
+   "kind": "train",
+   "status": "pass",
+   "note": "Inclus dans le pass. Bus de 8h pour Chūzenji ensuite.",
+   "fromJp": "鬼怒川温泉",
+   "toJp": "東武日光",
+   "tags": [
+    "Inclus dans le pass",
+    "Sans réservation"
+   ],
+   "maps": [
+    "鬼怒川温泉駅",
+    "東武日光駅"
+   ],
+   "steps": [
+    {
+     "k": "train",
+     "t": "Train local depuis Kinugawa-Onsen",
+     "jp": "鬼怒川温泉 → 下今市",
+     "sub": "Prendre un local (普通) vers 下今市 ou 東武日光. Éviter les Limited Express (特急) vers Asakusa : supplément."
+    },
+    {
+     "k": "change",
+     "t": "Changement à Shimo-Imaichi (si le train ne va pas jusqu'à Tobu-Nikko)",
+     "jp": "下今市",
+     "sub": "Prendre un train vers 東武日光 (Tobu-Nikko), 2 arrêts."
+    },
+    {
+     "k": "walk",
+     "t": "Tobu-Nikko → arrêt de bus",
+     "jp": "東武日光駅",
+     "sub": "Arrêts devant la gare. Bus de 8h vers 中禅寺温泉 (Chūzenji Onsen), payé à la Suica."
+    }
+   ]
+  },
+  {
+   "id": "romancecar",
+   "date": "2026-10-24",
+   "dep": "10:00",
+   "arr": "11:21",
+   "from": "Shinjuku (Odakyu)",
+   "to": "Hakone-Yumoto",
+   "name": "Romancecar Super Hakone 9 (GSE)",
+   "kind": "train",
+   "status": "reserve",
+   "car": "6",
+   "seats": "1C 1D 2C 2D",
+   "pax": "3 adultes + 1 enfant",
+   "price": "4 030 ¥ (supplément seul)",
+   "app": "EMot",
+   "link": "https://www.emot-tickets.jp/areas?&site=odakyuglobal&language=en",
+   "linkLabel": "EMot",
+   "ll": [
+    35.6909,
+    139.6995
+   ],
+   "secret": "romancecar",
+   "note": "Kagurazaka → Shinjuku ~10 min (JR depuis Iidabashi ou métro Oedo), plus 20–30 min pour traverser la gare avec les valises : gare Odakyu, sortie ouest. Être sur le quai vers 9h45. QR EMot + Free Pass ensemble aux portiques.",
+   "fromJp": "新宿",
+   "toJp": "箱根湯本",
+   "tags": [
+    "Supplément réservé",
+    "Free Pass à acheter"
+   ],
+   "maps": [
+    "神楽坂駅",
+    "新宿駅"
+   ],
+   "steps": [
+    {
+     "k": "taxi",
+     "t": "Le plus simple avec les valises : taxi jusqu'à Shinjuku, sortie ouest",
+     "jp": "新宿駅西口 小田急線",
+     "sub": "~15 à 20 min, environ 2 000 à 3 000 ¥ (estimation). Montrer « 新宿駅西口 小田急線 » au chauffeur."
+    },
+    {
+     "k": "train",
+     "t": "Ou en métro : Tozai jusqu'à Takadanobaba, puis JR Yamanote jusqu'à Shinjuku",
+     "jp": "神楽坂 → 高田馬場 → 新宿",
+     "sub": "~20 min avec un changement ; couloirs longs avec les valises."
+    },
+    {
+     "k": "walk",
+     "t": "Gare Odakyu (小田急線), sortie ouest",
+     "jp": "小田急線 西口",
+     "sub": "Odakyu Sightseeing Service Center pour le Free Pass, puis quais du Romancecar (特急ロマンスカー). Sur le quai vers 9h45."
+    },
+    {
+     "k": "train",
+     "t": "Romancecar Super Hakone 9, voiture 6",
+     "jp": "新宿 → 箱根湯本",
+     "sub": "Places 1C 1D 2C 2D. Terminus Hakone-Yumoto, 11h21."
+    }
+   ]
+  },
+  {
+   "id": "freepass",
+   "date": "2026-10-24",
+   "dep": "",
+   "arr": "",
+   "from": "",
+   "to": "",
+   "name": "Hakone Free Pass 2 jours depuis Shinjuku",
+   "kind": "pass",
+   "status": "acheter",
+   "pax": "3 adultes + 1 enfant",
+   "price": "22 900 ¥ (7 100 ¥ / 1 600 ¥)",
+   "note": "« Hako Ticket » classique, pas le Plus. Couvre le billet de base du Romancecar et tout Hakone jusqu'à Odawara le 25. Sur EMot ou à l'Odakyu Sightseeing Service Center de Shinjuku.",
+   "link": "https://www.emot-tickets.jp/areas?&site=odakyuglobal&language=en",
+   "linkLabel": "EMot",
+   "secret": "freepass",
+   "buy": {
+    "summary": "En ligne sur EMot (QR code sur le téléphone), ou au guichet Odakyu de Shinjuku le 24 au matin.",
+    "online": {
+     "url": "https://www.emot-tickets.jp/areas?&site=odakyuglobal&language=en",
+     "label": "Acheter sur EMot",
+     "steps": [
+      "Choisir « Hakone Freepass » au départ de Shinjuku, version classique (pas le « Plus »).",
+      "Date de début : 24 octobre ; 3 adultes + 1 enfant (22 900 ¥).",
+      "Le QR du Free Pass et celui du supplément Romancecar se présentent ensemble aux portiques."
+     ]
+    },
+    "inperson": {
+     "where": "Odakyu Sightseeing Service Center, gare de Shinjuku, sortie ouest, rez-de-chaussée des lignes Odakyu (près des portiques).",
+     "hours": "Ouvert dès 8h ; prévoir 15 min de file le samedi matin, avant le train de 10h00.",
+     "ll": [
+      35.6909,
+      139.6995
+     ],
+     "steps": [
+      "Y aller en arrivant à Shinjuku vers 9h15, avant de descendre sur le quai.",
+      "Montrer la phrase ci-dessous et le QR EMot du supplément Romancecar."
+     ]
+    },
+    "phrase": {
+     "jp": "新宿発の箱根フリーパス（2日間）を、大人3枚、子ども1枚お願いします。\n今日から使います。\nロマンスカーの特急券はEMotで購入済みです。",
+     "fr": "Hakone Free Pass 2 jours au départ de Shinjuku : 3 adultes et 1 enfant, à utiliser à partir d'aujourd'hui. Le supplément Romancecar est déjà acheté sur EMot."
+    }
+   }
+  },
+  {
+   "id": "hikari",
+   "date": "2026-10-25",
+   "dep": "14:07",
+   "arr": "16:12",
+   "from": "Odawara",
+   "to": "Kyoto",
+   "name": "Shinkansen Hikari 645",
+   "kind": "train",
+   "status": "reserve",
+   "car": "16",
+   "seats": "1D 1E 2D 2E",
+   "pax": "3 adultes + 1 enfant",
+   "price": "43 040 ¥",
+   "app": "SmartEX (QR code)",
+   "link": "https://smart-ex.jp/en/",
+   "linkLabel": "SmartEX",
+   "ll": [
+    35.2564,
+    139.1554
+   ],
+   "secret": "hikari",
+   "note": "Hikari, pas Nozomi (ne s'arrête pas à Odawara). Voiture 16 = 1er rang près de l'espace bagages. Valises ≤ 160 cm. Portiques marqués « QR » ; prendre le papier « Seat Information » et garder le QR pour la sortie à Kyoto.",
+   "fromJp": "小田原",
+   "toJp": "京都",
+   "tags": [
+    "Train réservé (QR)"
+   ],
+   "maps": [
+    "小田原駅",
+    "京都駅"
+   ],
+   "steps": [
+    {
+     "k": "train",
+     "t": "Hikari 645, Odawara → Kyoto",
+     "jp": "小田原 → 京都",
+     "sub": "Voiture 16, places 1D 1E 2D 2E. Vérifier « ひかり 645 » sur l'écran du quai, jamais un Nozomi."
+    },
+    {
+     "k": "taxi",
+     "t": "Kyoto : taxi sortie Hachijō (côté sud)",
+     "jp": "京都駅 八条口",
+     "sub": "~10 min, ~1 000 ¥ ; jumbo taxi ou deux taxis pour 4 avec les valises."
+    }
+   ]
+  },
+  {
+   "id": "gora-odawara",
+   "date": "2026-10-25",
+   "dep": "~12:30",
+   "arr": "~13:40",
+   "from": "Gora",
+   "to": "Odawara",
+   "name": "Tozan (Gora → Yumoto) puis train → Odawara",
+   "kind": "train",
+   "status": "pass",
+   "note": "Tozan souvent bondé : garder 15–20 min de marge. Inclus Free Pass.",
+   "ll": [
+    35.2503,
+    139.0464
+   ],
+   "fromJp": "強羅",
+   "toJp": "小田原",
+   "tags": [
+    "Inclus dans le Free Pass",
+    "Sans réservation"
+   ],
+   "maps": [
+    "強羅駅",
+    "小田原駅"
+   ],
+   "steps": [
+    {
+     "k": "train",
+     "t": "Train Tozan, Gora → Hakone-Yumoto",
+     "jp": "強羅 → 箱根湯本",
+     "sub": "Petit train de montagne à rebroussements, ~35 min, souvent bondé : être sur le quai 15 min avant. Terminus Hakone-Yumoto."
+    },
+    {
+     "k": "change",
+     "t": "Changement à Hakone-Yumoto",
+     "jp": "箱根湯本",
+     "sub": "Prendre un train pour Odawara (小田原). Éviter le Romancecar (supplément)."
+    },
+    {
+     "k": "train",
+     "t": "Hakone-Yumoto → Odawara",
+     "jp": "箱根湯本 → 小田原",
+     "sub": "~15 min, un train toutes les 10 à 15 min."
+    },
+    {
+     "k": "walk",
+     "t": "À Odawara : vers le Shinkansen",
+     "jp": "新幹線 のりかえ",
+     "sub": "Sortir par les portiques avec le Free Pass, puis suivre 新幹線 (Shinkansen) jusqu'aux portiques marqués QR. Hikari 645 à 14h07, voiture 16."
+    }
+   ]
+  },
+  {
+   "id": "kintetsu-nara",
+   "date": "2026-10-28",
+   "dep": "",
+   "arr": "",
+   "from": "Kyoto (JR)",
+   "to": "JR Nara",
+   "name": "JR Nara Line (Miyakoji Rapid)",
+   "kind": "train",
+   "status": "suica",
+   "price": "720 ¥ adulte",
+   "note": "~45 min, un train toutes les ~30 min, sans réservation. L'Onyado Nono est en face de la gare JR Nara : dépôt des valises direct. (Alternative : Kintetsu Express 760 ¥, ou Limited Express 1 280 ¥ avec siège réservé.)",
+   "ll": [
+    34.9851,
+    135.758
+   ],
+   "fromJp": "京都",
+   "toJp": "奈良",
+   "tags": [
+    "Suica",
+    "Sans réservation"
+   ],
+   "maps": [
+    "京都駅",
+    "奈良駅"
+   ],
+   "steps": [
+    {
+     "k": "train",
+     "t": "JR Nara Line, Miyakoji Rapid (みやこ路快速) vers Nara",
+     "jp": "京都 → 奈良",
+     "sub": "Quais JR de la gare de Kyoto (pas les quais Kintetsu). Direct, ~45 min, terminus JR Nara."
+    },
+    {
+     "k": "walk",
+     "t": "JR Nara → Onyado Nono",
+     "jp": "奈良駅",
+     "sub": "L'hôtel est juste en face de la gare."
+    }
+   ]
+  },
+  {
+   "id": "kintetsu-osaka",
+   "date": "2026-10-29",
+   "dep": "",
+   "arr": "",
+   "from": "Kintetsu-Nara",
+   "to": "Osaka-Namba",
+   "name": "Kintetsu Rapid Express",
+   "kind": "train",
+   "status": "suica",
+   "price": "~680 ¥ adulte",
+   "note": "~40 min, un train toutes les 10–20 min, à la Suica. Kintetsu Nara est à 15–20 min à pied de l'hôtel. Déposer les valises à l'ESLEAD avant Den Den Town.",
+   "ll": [
+    34.6843,
+    135.8279
+   ],
+   "fromJp": "近鉄奈良",
+   "toJp": "大阪難波",
+   "tags": [
+    "Suica",
+    "Sans réservation"
+   ],
+   "maps": [
+    "近鉄奈良駅",
+    "大阪難波駅"
+   ],
+   "steps": [
+    {
+     "k": "walk",
+     "t": "Hôtel → Kintetsu Nara",
+     "jp": "近鉄奈良駅",
+     "sub": "15 à 20 min à pied (ou taxi court avec les valises)."
+    },
+    {
+     "k": "train",
+     "t": "Kintetsu, Rapid Express (快速急行) vers Osaka-Namba",
+     "jp": "近鉄奈良 → 大阪難波",
+     "sub": "Direct, ~40 min, terminus Osaka-Namba. Sans supplément."
+    },
+    {
+     "k": "walk",
+     "t": "Namba → ESLEAD Namba Kuromon",
+     "jp": "なんば",
+     "sub": "5 à 10 min à pied."
+    }
+   ]
+  },
+  {
+   "id": "taqbin",
+   "date": "2026-10-30",
+   "dep": "",
+   "arr": "",
+   "from": "ESLEAD Namba",
+   "to": "Comptoir Yamato KIX T1",
+   "name": "Ta-Q-Bin valises → aéroport",
+   "kind": "bagage",
+   "status": "faire",
+   "note": "Dernier délai : déposer à la réception avant 12h et confirmer le jour de livraison et le comptoir de retrait à KIX. Garder un sac pour les deux dernières nuits.",
+   "link": "https://www.global-yamato.com/en/hands-free-travel/",
+   "linkLabel": "Yamato",
+   "buy": {
+    "summary": "À la réception de l'hôtel, la veille ou le matin avant 12h.",
+    "inperson": {
+     "where": "Réception de l'ESLEAD HOTEL Namba Kuromon (ou un konbini avec le logo chat noir Yamato).",
+     "hours": "Avant 12h le 30 oct. au plus tard.",
+     "steps": [
+      "Demander le formulaire Ta-Q-Bin aéroport ; remplir le n° de vol et l'heure de départ (9h00, 1er nov.).",
+      "Payer à la réception (~2 000 ¥ par valise selon la taille) et garder le reçu : il sert au retrait.",
+      "Retrait au comptoir Yamato du hall des départs, Terminal 1 de KIX."
+     ]
+    },
+    "phrase": {
+     "jp": "このスーツケースを宅急便で関西空港に送りたいです。\n11月1日の朝、第1ターミナルで受け取ります。\nフライトは9時発です。",
+     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'aéroport du Kansai. Nous les récupérerons le 1er novembre au matin au Terminal 1. Notre vol part à 9h."
+    }
+   }
+  },
+  {
+   "id": "vol-retour",
+   "date": "2026-11-01",
+   "dep": "09:00",
+   "arr": "",
+   "from": "Kansai (KIX)",
+   "to": "Paris CDG",
+   "name": "Vol KIX → CDG",
+   "kind": "vol",
+   "status": "reserve",
+   "note": "Être à l'aéroport à 6h30. Passeport + sac détaxe scellé à la douane.",
+   "fromJp": "関西空港",
+   "toJp": ""
+  },
+  {
+   "id": "nankai",
+   "date": "2026-11-01",
+   "dep": "~05:15",
+   "arr": "~06:00",
+   "from": "Nankai Namba",
+   "to": "Kansai Airport T1",
+   "name": "Nankai Airport Express",
+   "kind": "train",
+   "status": "suica",
+   "note": "Sans réservation, à la Suica : garder assez de solde. Le 1er Rapi:t (~6h) arrive trop tard. Vérifier la veille l'horaire du premier train du dimanche sur le site Nankai.",
+   "link": "https://www.nankai.co.jp/",
+   "linkLabel": "Nankai",
+   "ll": [
+    34.6627,
+    135.5016
+   ],
+   "price": "~970 ¥ adulte (demi-tarif enfant)",
+   "fromJp": "なんば",
+   "toJp": "関西空港",
+   "tags": [
+    "Suica",
+    "Sans réservation"
+   ],
+   "maps": [
+    "なんば駅",
+    "関西空港駅"
+   ],
+   "steps": [
+    {
+     "k": "walk",
+     "t": "Hôtel → gare Nankai Namba",
+     "jp": "南海なんば駅",
+     "sub": "~8 min à pied. La gare est en étage, dans le bâtiment Namba City : suivre 南海線."
+    },
+    {
+     "k": "train",
+     "t": "Airport Express (空港急行) vers Kansai-Airport",
+     "jp": "なんば → 関西空港",
+     "sub": "Direct, ~45 min, terminus aéroport. Pas le Rapi:t (réservé, et trop tard)."
+    },
+    {
+     "k": "walk",
+     "t": "Kansai Airport : Terminal 1",
+     "jp": "関西空港 第1ターミナル",
+     "sub": "Comptoir Yamato (Ta-Q-Bin) dans le hall des départs."
+    }
+   ]
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-10-17",
+   "stage": "tokyo",
+   "title": "Arrivée",
+   "hotel": "coco",
+   "blocks": [
+    {
+     "t": "18:05",
+     "txt": "Atterrissage à Narita : immigration, bagages, douane (1h à 1h30)"
+    },
+    {
+     "t": "~19:30",
+     "txt": "Skyliner → Nippori, puis Nishi-Nippori et ligne Chiyoda → Akasaka",
+     "transport": "skyliner"
+    },
+    {
+     "t": "~22:00",
+     "txt": "Arrivée Coco Shuku Akasaka (check-in jusqu'à 22h), konbini du quartier"
+    }
+   ],
+   "tips": [
+    "Charger les Suica à l'aéroport ; carte enfant au guichet JR East avec les passeports (vérifier ses horaires)",
+    "Visit Japan Web rempli avant le départ pour accélérer l'immigration",
+    "Check-in jusqu'à 22h : hôtel prévenu de l'arrivée tardive"
+   ]
+  },
+  {
+   "date": "2026-10-18",
+   "stage": "tokyo",
+   "title": "Meiji, Harajuku, Shibuya",
+   "hotel": "coco",
+   "blocks": [
+    {
+     "t": "matin",
+     "txt": "Sanctuaire Meiji Jingu, tôt et au calme",
+     "place": "meiji"
+    },
+    {
+     "txt": "Takeshita-dori (streetwear, crêpes)",
+     "place": "takeshita"
+    },
+    {
+     "txt": "Omotesando, l'avenue « Champs-Élysées »",
+     "place": "omotesando"
+    },
+    {
+     "t": "fin d'aprèm",
+     "txt": "Hands Shibuya + Loft Shibuya, à 2 min l'un de l'autre",
+     "place": "hands-shibuya"
+    },
+    {
+     "t": "soir",
+     "txt": "Scramble de Shibuya + Shibuya 109",
+     "place": "scramble"
+    }
+   ],
+   "tips": [
+    "Ligne Chiyoda → Meiji-Jingumae (10–15 min), départ vers 8h",
+    "Harajuku → Cat Street → Shibuya à pied (15–20 min)",
+    "Retour : ligne Ginza Shibuya → Akasaka-mitsuke",
+    "Hands Shibuya ferme définitivement le 15 nov : foule le dimanche",
+    "Détaxe : regrouper les achats (5 000 ¥ min par catégorie et par magasin)"
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "stage": "tokyo",
+   "title": "Akihabara, Odaiba",
+   "hotel": "coco",
+   "blocks": [
+    {
+     "t": "9:30",
+     "txt": "Yodobashi Akiba à l'ouverture : iPad, prix Mac mini, rayon Gunpla (6e)",
+     "place": "yodobashi-akiba"
+    },
+    {
+     "t": "11:00",
+     "txt": "Occasion : Radio Kaikan, Mandarake Complex, Surugaya",
+     "place": "mandarake-akiba"
+    },
+    {
+     "txt": "Animate, Jump Shop, figurines"
+    },
+    {
+     "t": "aprèm",
+     "txt": "Odaiba : Gundam Base Tokyo, Unicorn géant et DiverCity",
+     "place": "gundam-base"
+    }
+   ],
+   "tips": [
+    "Akasaka → Akihabara ~25 min, départ vers 8h15",
+    "Akihabara → Odaiba : Shimbashi puis Yurikamome (places à l'avant pour la vue sur le Rainbow Bridge)",
+    "Rentrer déposer les grosses boîtes avant Odaiba si besoin",
+    "iPad : clavier japonais JIS, acheter le clavier en France"
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "stage": "nikko",
+   "title": "Nikko, centre historique",
+   "hotel": "manyotei",
+   "blocks": [
+    {
+     "t": "9:30",
+     "txt": "Revaty Kegon 013 depuis Asakusa",
+     "transport": "revaty-aller"
+    },
+    {
+     "t": "11:22",
+     "txt": "Arrivée Tobu-Nikko"
+    },
+    {
+     "txt": "Pont Shinkyō",
+     "place": "shinkyo"
+    },
+    {
+     "txt": "Tōshō-gū",
+     "place": "toshogu"
+    },
+    {
+     "txt": "Futarasan et Taiyūin",
+     "place": "futarasan"
+    },
+    {
+     "t": "~16:30",
+     "txt": "Train Tobu → Kinugawa-Onsen, onsen à l'hôtel",
+     "transport": "kinugawa-soir"
+    }
+   ],
+   "tips": [
+    "Akasaka → Asakusa : ligne Ginza, ~25 min",
+    "Valises : Ta-Q-Bin Coco Shuku → Kagurazaka (livraison le 21), à demander à la réception ; sinon consignes d'Asakusa",
+    "Prévoir un sac pour la nuit à Kinugawa"
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "stage": "nikko",
+   "title": "Kegon, Chūzenji, Ryūzu",
+   "hotel": "vintage",
+   "blocks": [
+    {
+     "t": "7:00",
+     "txt": "Train Kinugawa → Tobu-Nikko",
+     "transport": "kinugawa-matin"
+    },
+    {
+     "t": "8:00",
+     "txt": "Bus pour Chūzenji par Irohazaka",
+     "transport": "bus-chuzenji"
+    },
+    {
+     "txt": "Chutes de Kegon",
+     "place": "kegon"
+    },
+    {
+     "txt": "Lac Chūzenji",
+     "place": "chuzenji"
+    },
+    {
+     "txt": "Chutes de Ryūzu",
+     "place": "ryuzu"
+    },
+    {
+     "t": "14:30",
+     "txt": "Redescente à Nikko, temps libre"
+    },
+    {
+     "t": "18:41",
+     "txt": "Kegon 052 → Asakusa 20:35",
+     "transport": "kegon-retour"
+    },
+    {
+     "t": "~21:15",
+     "txt": "Arrivée Hotel Vintage Kagurazaka"
+    }
+   ],
+   "tips": [
+    "Pic des momiji fin octobre : une seule montée, tôt",
+    "Bus de montagne payés à la Suica"
+   ],
+   "wx": {
+    "ll": [
+     36.74,
+     139.49
+    ],
+    "label": "Lac Chūzenji, 1 270 m",
+    "normal": [
+     12,
+     3
+    ]
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "stage": "tokyo",
+   "title": "Palais, Toei, Ikebukuro, Nakano",
+   "hotel": "vintage",
+   "blocks": [
+    {
+     "t": "9:00",
+     "txt": "Jardins Est du Palais impérial (pas Kitanomaru)",
+     "place": "east-gardens"
+    },
+    {
+     "t": "10:30",
+     "txt": "Musée Toei Animation (Dragon Ball, One Piece)",
+     "place": "toei"
+    },
+    {
+     "t": "midi",
+     "txt": "Ikebukuro : Sunshine City, Pokémon Center, Sunshine 60, Animate",
+     "place": "sunshine"
+    },
+    {
+     "t": "16:30",
+     "txt": "Nakano Broadway, Mandarake",
+     "place": "nakano"
+    },
+    {
+     "t": "soir",
+     "txt": "Mairie de Shinjuku au coucher du soleil → Omoide Yokocho → ramen Menya Musashi",
+     "place": "menya-musashi"
+    }
+   ],
+   "tips": [
+    "Kagurazaka → Otemachi : ligne Tozai directe, ~8 min",
+    "Ōizumi-Gakuen → Ikebukuro : ligne Seibu, 15–20 min ; Ikebukuro → Nakano : JR Saikyo puis Chuo",
+    "Retour Nakano → Kagurazaka : ligne Tozai directe, ~15 min",
+    "Toei : fermetures irrégulières, vérifier le calendrier"
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "stage": "tokyo",
+   "title": "Asakusa, Ginza",
+   "hotel": "vintage",
+   "blocks": [
+    {
+     "t": "avant 8:00",
+     "txt": "Sensō-ji avant la foule",
+     "place": "sensoji"
+    },
+    {
+     "txt": "Centre d'info touristique d'Asakusa : vue gratuite au dernier étage",
+     "place": "asakusa-info"
+    },
+    {
+     "t": "midi",
+     "txt": "Sukiyaki chez Asakusa Imahan",
+     "place": "imahan"
+    },
+    {
+     "t": "aprèm",
+     "txt": "Apple Ginza, Peak Design Tokyo, balade Chuo-dori",
+     "place": "apple-ginza"
+    },
+    {
+     "t": "option",
+     "txt": "Vintage Jimbocho (affiches de cinéma)",
+     "place": "vintage-jimbocho"
+    }
+   ],
+   "tips": [
+    "Asakusa → Ginza : ligne Ginza directe, ~17 min",
+    "Peak Design : comparer avec Yodobashi avant d'acheter",
+    "Jimbocho : boutiques qui ferment tôt"
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "stage": "hakone",
+   "title": "Hakone, la boucle",
+   "hotel": "wpu",
+   "blocks": [
+    {
+     "t": "9:00",
+     "txt": "Départ de l'hôtel avec les valises"
+    },
+    {
+     "t": "9:45",
+     "txt": "Sur le quai Odakyu (sous-sol de Shinjuku)"
+    },
+    {
+     "t": "10:00",
+     "txt": "Romancecar → Hakone-Yumoto 11:21",
+     "transport": "romancecar"
+    },
+    {
+     "t": "11:25",
+     "txt": "Valises au service bagages de Yumoto (avant 12h) → livrées au WPÜ après 15h",
+     "place": "yumoto"
+    },
+    {
+     "t": "11:45",
+     "txt": "Bus → Moto-Hakone"
+    },
+    {
+     "t": "12:30",
+     "txt": "Hakone Jinja et le torii sur le lac, déjeuner",
+     "place": "hakone-jinja"
+    },
+    {
+     "t": "14:00",
+     "txt": "Bateau pirate → Tōgendai"
+    },
+    {
+     "t": "14:45",
+     "txt": "Téléphérique → Owakudani (œufs noirs) → Sōunzan → funiculaire",
+     "place": "owakudani"
+    },
+    {
+     "t": "~16:00",
+     "txt": "WPÜ Hotel, onsen"
+    }
+   ],
+   "tips": [
+    "Plan B si comptoir bagages plein : Tozan → Gora avec les valises, boucle dans le sens normal",
+    "Derniers bateaux et téléphériques vers 16h–16h30",
+    "Téléphérique sensible au vent et au gaz : vérifier la veille"
+   ],
+   "wx": {
+    "ll": [
+     35.24,
+     139.02
+    ],
+    "label": "Owakudani, 1 000 m",
+    "normal": [
+     14,
+     7
+    ]
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "stage": "kyoto",
+   "title": "Hakone → Kyoto",
+   "hotel": "compass",
+   "blocks": [
+    {
+     "t": "matin",
+     "txt": "Parc de Gora ou Open-Air Museum",
+     "place": "open-air"
+    },
+    {
+     "t": "~12:30",
+     "txt": "Tozan Gora → Yumoto → Odawara avec les valises",
+     "transport": "gora-odawara"
+    },
+    {
+     "t": "14:07",
+     "txt": "Hikari 645 → Kyoto 16:12",
+     "transport": "hikari"
+    },
+    {
+     "t": "~16:45",
+     "txt": "Taxi → Guesthouse Kyoto Compass"
+    }
+   ],
+   "tips": [
+    "Prévenir Kyoto Compass de l'arrivée ~16h45",
+    "Nozomi ne s'arrête pas à Odawara"
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "stage": "kyoto",
+   "title": "Fushimi Inari, Nishiki, Gion",
+   "hotel": "compass",
+   "blocks": [
+    {
+     "t": "avant 7:00",
+     "txt": "Fushimi Inari sans la foule (JR Nara Line jusqu'à Inari, 5 min)",
+     "place": "fushimi"
+    },
+    {
+     "txt": "Marché Nishiki",
+     "place": "nishiki"
+    },
+    {
+     "txt": "Galeries manga de Teramachi",
+     "place": "teramachi"
+    },
+    {
+     "t": "option",
+     "txt": "Kinkaku-ji",
+     "place": "kinkakuji"
+    },
+    {
+     "t": "soir",
+     "txt": "Gion, Hanamikoji",
+     "place": "gion"
+    }
+   ],
+   "tips": [
+    "Départ vers 6h ; Fushimi Inari → Gion : train Keihan jusqu'à Gion-Shijo (~15 min)",
+    "Pas de pass bus à 700 ¥ : Suica (bus 230 ¥, on paie en descendant) ou Subway & Bus 1-Day Pass 1 100 ¥ / 550 ¥",
+    "En saison des feuillages, le train est plus fiable que le bus",
+    "Glace matcha à la feuille d'or"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "stage": "kyoto",
+   "title": "Arashiyama",
+   "hotel": "compass",
+   "blocks": [
+    {
+     "t": "avant 8:00",
+     "txt": "Bambouseraie, la lumière du matin",
+     "place": "bambous"
+    },
+    {
+     "txt": "Tenryū-ji",
+     "place": "tenryuji"
+    },
+    {
+     "txt": "Bord de la rivière Ōi, Monkey Park Iwatayama",
+     "place": "monkey"
+    },
+    {
+     "t": "option",
+     "txt": "Cérémonie du thé"
+    },
+    {
+     "t": "soir",
+     "txt": "Yodobashi Kyoto : repérage des prix Gunpla",
+     "place": "yodobashi-kyoto"
+    }
+   ],
+   "tips": [
+    "JR Sagano Line → Saga-Arashiyama, 25 min, départ vers 7h",
+    "Retour : même train, ou Hankyu Arashiyama → Katsura → Kawaramachi",
+    "Achats Gunpla en volume plutôt à Osaka"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "stage": "nara",
+   "title": "Nara",
+   "hotel": "nono",
+   "blocks": [
+    {
+     "t": "matin",
+     "txt": "JR Kyoto → Nara (Miyakoji Rapid), 45 min",
+     "transport": "kintetsu-nara"
+    },
+    {
+     "txt": "Parc aux cerfs (senbei 200 ¥)",
+     "place": "nara-park"
+    },
+    {
+     "txt": "Tōdai-ji, le Grand Bouddha",
+     "place": "todaiji"
+    },
+    {
+     "txt": "Kasuga Taisha et ses lanternes",
+     "place": "kasuga"
+    },
+    {
+     "t": "soir",
+     "txt": "Onsen à l'hôtel"
+    }
+   ],
+   "tips": [
+    "L'hôtel est face à la gare JR Nara : déposer les valises en arrivant",
+    "Le parc aux cerfs est à ~20 min à pied, ou bus depuis la gare"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "stage": "osaka",
+   "title": "Nara → Osaka, Den Den Town",
+   "hotel": "eslead",
+   "blocks": [
+    {
+     "t": "tôt",
+     "txt": "Les cerfs au lever du soleil"
+    },
+    {
+     "txt": "Kintetsu → Osaka-Namba",
+     "transport": "kintetsu-osaka"
+    },
+    {
+     "t": "aprèm",
+     "txt": "Antoine : Joshin Super Kids Land, Surugaya, Jungle",
+     "place": "joshin"
+    },
+    {
+     "t": "aprèm",
+     "txt": "Alexia : marché Kuromon",
+     "place": "kuromon"
+    },
+    {
+     "t": "19:00",
+     "txt": "RDV Dotonbori, takoyaki",
+     "place": "dotonbori"
+    }
+   ],
+   "tips": [
+    "Passeport physique obligatoire pour la détaxe"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "stage": "osaka",
+   "title": "Château, Shinsekai",
+   "hotel": "eslead",
+   "blocks": [
+    {
+     "t": "matin",
+     "txt": "Envoyer les valises en Ta-Q-Bin depuis l'hôtel (dernier délai)",
+     "transport": "taqbin"
+    },
+    {
+     "txt": "Château d'Osaka",
+     "place": "osaka-castle"
+    },
+    {
+     "txt": "Shinsekai, Tsutenkaku, kushikatsu",
+     "place": "shinsekai"
+    },
+    {
+     "t": "aprèm",
+     "txt": "Shinsaibashi, Amerika-mura",
+     "place": "amemura"
+    },
+    {
+     "t": "soir",
+     "txt": "Dotonbori"
+    }
+   ],
+   "tips": [
+    "Ta-Q-Bin : à la réception avant 12h",
+    "Kushikatsu : on ne trempe qu'une fois dans la sauce",
+    "Garder un sac pour 2 nuits"
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "stage": "osaka",
+   "title": "Dernier shopping",
+   "hotel": "eslead",
+   "blocks": [
+    {
+     "t": "matin",
+     "txt": "Yodobashi Umeda : Mac mini (détaxe)",
+     "place": "yodobashi-umeda"
+    },
+    {
+     "txt": "Umeda, grands magasins"
+    },
+    {
+     "t": "soir",
+     "txt": "Dernier Dotonbori"
+    }
+   ],
+   "tips": [
+    "Mac mini en cabine ; câble secteur C7 français",
+    "À déclarer en douane en France (TVA 20 %, au-delà de 430 €)",
+    "Samedi de Halloween : Dotonbori et Amerika-mura bondés le soir, rentrer tôt",
+    "Préparer le sac : passeports, sac détaxe scellé, reçu Ta-Q-Bin ; Suica rechargées",
+    "Vérifier l'horaire du premier Nankai Airport Express de dimanche"
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "stage": "vol",
+   "title": "Départ",
+   "hotel": "",
+   "blocks": [
+    {
+     "t": "4:45",
+     "txt": "Réveil, hôtel → Nankai Namba (8 min à pied)"
+    },
+    {
+     "t": "~5:15",
+     "txt": "Nankai Airport Express Namba → KIX",
+     "transport": "nankai"
+    },
+    {
+     "t": "6:30",
+     "txt": "KIX : récupérer les valises au comptoir Yamato"
+    },
+    {
+     "txt": "Douane détaxe : passeport + sac scellé"
+    },
+    {
+     "t": "9:00",
+     "txt": "Vol → Paris",
+     "transport": "vol-retour"
+    }
+   ],
+   "tips": [
+    "Ne pas ouvrir le sac détaxe scellé avant l'aéroport"
+   ]
+  }
+ ],
+ "places": [
+  {
+   "id": "meiji",
+   "name": "Meiji Jingu",
+   "jp": "明治神宮",
+   "city": "tokyo",
+   "cat": "temple",
+   "ll": [
+    35.6764,
+    139.6993
+   ],
+   "desc": "Grand sanctuaire shintō dédié à l'empereur Meiji, au cœur d'une forêt de 70 hectares plantée par des volontaires venus de tout le Japon. Le torii géant en cyprès et les allées de gravier offrent un vrai calme, à deux pas de l'agitation de Harajuku.",
+   "wiki": "Meiji-jingū",
+   "wikiEn": "Meiji Shrine",
+   "hist": "Inauguré en 1920 pour honorer l'empereur Meiji, qui a ouvert le Japon à l'Occident, et l'impératrice Shōken. Détruit par les bombardements de 1945, il est reconstruit en 1958. Sa forêt de 100 000 arbres a été plantée avec des essences offertes par tout le pays.",
+   "voir": [
+    "L'Ōtorii, l'un des plus grands torii en bois du Japon (12 m), en cyprès millénaire de Taïwan",
+    "Le mur de tonneaux de saké offerts au sanctuaire, face à des barriques de vin de Bourgogne",
+    "Les ema, plaquettes de vœux accrochées autour de l'arbre sacré",
+    "Avec un peu de chance, un mariage shintō traversant la cour le week-end"
+   ],
+   "astuce": "Entrer côté Harajuku tôt le matin : la forêt est silencieuse et la lumière superbe.",
+   "infos": "Gratuit · ouvert du lever au coucher du soleil · compter 1 h",
+   "savez": "C'est le sanctuaire le plus fréquenté du Japon : plus de 3 millions de personnes y viennent pour les vœux du Nouvel An."
+  },
+  {
+   "id": "takeshita",
+   "name": "Takeshita-dori",
+   "jp": "竹下通り",
+   "city": "tokyo",
+   "cat": "balade",
+   "ll": [
+    35.6716,
+    139.7031
+   ],
+   "desc": "Ruelle piétonne de Harajuku, temple de la mode kawaii et du streetwear : boutiques décalées, crêpes roulées, bonbons géants. Bondée le week-end, plus respirable le matin.",
+   "wiki": "Takeshita-dōri",
+   "wikiEn": "Takeshita Street",
+   "hist": "Depuis les années 1970, Harajuku est le laboratoire de la mode de rue japonaise : rockabillies, lolitas, décora… Takeshita-dōri en est la vitrine grand public.",
+   "voir": [
+    "Les crêpes roulées garnies de fruits et de chantilly (Marion Crêpes, depuis 1976)",
+    "Les boutiques de déguisements et d'accessoires kawaii",
+    "Les barbes à papa géantes multicolores"
+   ],
+   "astuce": "Prendre la rue depuis la gare JR Harajuku et ressortir vers Omotesando, en descente.",
+   "infos": "Accès libre · boutiques de ~10h à 20h · compter 45 min",
+   "savez": "Les « takenoko-zoku », bandes de jeunes qui dansaient en costumes colorés dans le parc voisin dans les années 1980, ont fait la réputation de Harajuku."
+  },
+  {
+   "id": "omotesando",
+   "name": "Omotesando",
+   "jp": "表参道",
+   "city": "tokyo",
+   "cat": "balade",
+   "ll": [
+    35.6655,
+    139.7093
+   ],
+   "desc": "Avenue bordée de zelkovas, surnommée les Champs-Élysées de Tokyo, avec une architecture contemporaine signée Tadao Ando, Toyo Ito ou SANAA. Les ruelles autour cachent des boutiques de créateurs.",
+   "wiki": "Omotesandō",
+   "wikiEn": "Omotesandō",
+   "hist": "Tracée en 1920 comme allée d'accès (sandō) au sanctuaire Meiji, l'avenue est devenue la vitrine de l'architecture contemporaine japonaise.",
+   "voir": [
+    "Omotesando Hills de Tadao Ando, avec sa rampe intérieure en spirale",
+    "La façade en verre alvéolé de Prada (Herzog & de Meuron)",
+    "L'immeuble Tod's de Toyo Ito, dont la façade imite des branches d'arbres",
+    "Cat Street, la rue parallèle des boutiques de créateurs"
+   ],
+   "astuce": "Les ruelles d'Ura-Harajuku derrière l'avenue sont plus vivantes et moins chères.",
+   "infos": "Accès libre · compter 1 h en flânant",
+   "savez": "L'avenue suit exactement l'allée d'accès au sanctuaire Meiji : son nom signifie « l'allée principale du sanctuaire »."
+  },
+  {
+   "id": "hands-shibuya",
+   "name": "Hands Shibuya",
+   "city": "tokyo",
+   "cat": "shopping",
+   "ll": [
+    35.6618,
+    139.6985
+   ],
+   "note": "12-18 Udagawacho. 10h–21h. Ferme le 15 nov 2026.",
+   "desc": "Le grand magasin de tout ce qui est malin : papeterie, outils, rangement, gadgets, cosmétiques. Idéal pour les cadeaux, et dernière occasion avant sa fermeture définitive.",
+   "wikiEn": "Tokyu Hands"
+  },
+  {
+   "id": "loft-shibuya",
+   "name": "Loft Shibuya",
+   "city": "tokyo",
+   "cat": "shopping",
+   "ll": [
+    35.6614,
+    139.699
+   ],
+   "note": "21-1 Udagawacho.",
+   "desc": "Le concurrent de Hands, plus orienté papeterie, déco et cosmétiques, sur plusieurs étages de petits objets bien pensés.",
+   "wikiEn": "Loft (Japanese store)"
+  },
+  {
+   "id": "scramble",
+   "name": "Scramble de Shibuya",
+   "jp": "渋谷スクランブル交差点",
+   "city": "tokyo",
+   "cat": "balade",
+   "ll": [
+    35.6595,
+    139.7005
+   ],
+   "note": "Mieux le soir.",
+   "desc": "Le carrefour le plus fréquenté du monde : jusqu'à 3 000 piétons traversent en même temps au feu vert. Spectaculaire de nuit sous les écrans géants, et vu d'en haut depuis Shibuya Sky.",
+   "wiki": "Carrefour de Shibuya",
+   "wikiEn": "Shibuya Crossing",
+   "hist": "Le carrefour se trouve à la sortie de la gare de Shibuya, où le chien Hachikō attendit chaque soir son maître, mort en 1925, pendant près de dix ans. Sa statue est devenue le point de rendez-vous de Tokyo.",
+   "voir": [
+    "La statue de Hachikō, sortie Hachikō de la gare",
+    "La traversée elle-même, au milieu de la foule",
+    "La vue plongeante depuis Shibuya Sky (229 m, billet à réserver) ou le Starbucks du Tsutaya",
+    "Les écrans géants qui s'allument à la nuit tombée"
+   ],
+   "astuce": "Traverser une fois en diagonale, puis regarder la vague suivante d'en haut.",
+   "infos": "Accès libre · Shibuya Sky : ~2 500 ¥, à réserver en ligne · compter 30 min",
+   "savez": "À chaque feu vert, jusqu'à 3 000 personnes traversent en même temps. L'histoire de Hachikō a inspiré le film « Hachi » avec Richard Gere."
+  },
+  {
+   "id": "yodobashi-akiba",
+   "name": "Yodobashi Akiba",
+   "jp": "ヨドバシAkiba",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "ll": [
+    35.6987,
+    139.7745
+   ],
+   "note": "Ouvre 9h30. Gunpla au 6e, guichet détaxe au 6e.",
+   "desc": "Immense magasin d'électronique de neuf étages face à la gare d'Akihabara. Gros rayon Apple, et un étage entier de maquettes Gunpla, avec comptoir détaxe.",
+   "wikiEn": "Yodobashi Camera"
+  },
+  {
+   "id": "radio-kaikan",
+   "name": "Akihabara Radio Kaikan (AmiAmi 4e)",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "ll": [
+    35.6982,
+    139.7714
+   ],
+   "desc": "Immeuble emblématique d'Akihabara, reconstruit en 2014, qui empile boutiques de figurines, cartes et maquettes, dont AmiAmi au 4e étage.",
+   "wikiEn": "Akihabara Radio Kaikan"
+  },
+  {
+   "id": "mandarake-akiba",
+   "name": "Mandarake Complex",
+   "jp": "まんだらけコンプレックス",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "ll": [
+    35.7003,
+    139.7712
+   ],
+   "note": "8 étages, étage mechas avec PG sous vitrine.",
+   "desc": "Le grand bâtiment noir de Mandarake : huit étages d'occasion, des mangas anciens aux jouets vintage. L'étage mechas regorge de kits rares sous vitrine.",
+   "wikiEn": "Mandarake"
+  },
+  {
+   "id": "surugaya-akiba",
+   "name": "Surugaya Plastic Model Kan",
+   "jp": "駿河屋 秋葉原プラモデル館",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "q": "駿河屋 秋葉原プラモデル館",
+   "desc": "Un Surugaya entièrement consacré aux maquettes : boîtes neuves de collectionneurs vendues à la cote. Bon endroit pour un kit épuisé ailleurs.",
+   "wikiEn": "Suruga-ya"
+  },
+  {
+   "id": "gundam-base",
+   "name": "The Gundam Base Tokyo",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "ll": [
+    35.6251,
+    139.7756
+   ],
+   "note": "DiverCity 7e étage. Ticket numéroté possible le week-end.",
+   "desc": "La boutique officielle de Bandai pour les Gunpla, au 7e étage de DiverCity, au-dessus du Gundam Unicorn grandeur nature (19,7 m) qui se transforme plusieurs fois par jour.",
+   "wikiEn": "The Gundam Base",
+   "hist": "Le Gundam grandeur nature trône à Odaiba depuis 2009. Depuis 2017, c'est un RX-0 Unicorn de 19,7 m, et la boutique officielle Bandai s'est installée juste au-dessus.",
+   "voir": [
+    "La transformation du Unicorn, plusieurs fois par jour, avec projections vidéo le soir",
+    "Les kits Limited vendus uniquement ici",
+    "Les vitrines de modèles montés par les meilleurs maquettistes"
+   ],
+   "astuce": "Consulter les horaires des transformations sur place et caler la visite autour.",
+   "infos": "Entrée libre · statue visible à toute heure, transformations à heures fixes · compter 1 à 2 h",
+   "savez": "Le premier Gundam grandeur nature, un RX-78-2, a été installé à Odaiba en 2009 pour les 30 ans de la série."
+  },
+  {
+   "id": "east-gardens",
+   "name": "Jardins Est du Palais impérial",
+   "jp": "皇居東御苑",
+   "city": "tokyo",
+   "cat": "temple",
+   "ll": [
+    35.6852,
+    139.7604
+   ],
+   "note": "Entrée Ōtemon. Fermés lundi et vendredi.",
+   "desc": "Les anciens jardins du château d'Edo : douves, murailles monumentales, base du donjon et jardin japonais à étang. Entrée gratuite par la porte Ōtemon.",
+   "wiki": "Jardins est du palais impérial",
+   "wikiEn": "East Gardens of the Imperial Palace",
+   "hist": "C'était le cœur du château d'Edo, siège des shoguns Tokugawa de 1603 à 1868. Le donjon, le plus haut jamais construit au Japon, brûla en 1657 et ne fut jamais rebâti. Le château devint ensuite le palais impérial, et ces jardins sont ouverts au public depuis 1968.",
+   "voir": [
+    "La porte Ōtemon et ses murs de pierres colossales",
+    "Le Hyakunin-bansho, poste de garde de cent samouraïs",
+    "La base du donjon (Tenshudai), avec sa vue sur les jardins",
+    "Le jardin de Ninomaru, avec étang, carpes et pont à zigzag"
+   ],
+   "astuce": "Un jeton est remis à l'entrée et rendu à la sortie : le garder sur soi.",
+   "infos": "Gratuit · 9h–16h30 en octobre · fermé lundi et vendredi · compter 1 h 30",
+   "savez": "Au XVIIIe siècle, Edo, la ville qui entourait ce château, comptait déjà un million d'habitants, plus que Paris ou Londres à la même époque."
+  },
+  {
+   "id": "toei",
+   "name": "Musée Toei Animation",
+   "jp": "東映アニメーションミュージアム",
+   "city": "tokyo",
+   "cat": "musee",
+   "q": "Toei Animation Museum",
+   "note": "Ōizumi-Gakuen. Fermé le mercredi + fermetures irrégulières.",
+   "link": "https://museum.toei-anim.co.jp/",
+   "desc": "Le musée du studio de Dragon Ball, One Piece et Sailor Moon : expositions interactives sur la fabrication de l'animation, dans le quartier où le studio est installé.",
+   "wiki": "Toei Animation",
+   "wikiEn": "Toei Animation",
+   "hist": "Toei Animation est né en 1956 dans le quartier de Nerima, berceau de l'animation japonaise. Le studio a produit Dragon Ball, One Piece, Sailor Moon ou Saint Seiya, et a ouvert ce musée en 2023 dans ses propres locaux.",
+   "voir": [
+    "La frise historique des séries du studio depuis les années 1950",
+    "Les ateliers interactifs : animer un personnage, faire un doublage",
+    "Les expositions temporaires consacrées aux séries du moment",
+    "Autour de la gare d'Ōizumi-Gakuen, les statues de personnages d'anime classiques"
+   ],
+   "astuce": "Le musée est petit : compter une heure, puis repartir vers Ikebukuro par la ligne Seibu.",
+   "infos": "Vérifier conditions d'entrée et fermetures sur le site du musée · compter 1 h",
+   "savez": "Nerima, le quartier du musée, compte plus d'une centaine de studios d'animation : c'est la plus forte concentration du Japon."
+  },
+  {
+   "id": "sunshine",
+   "name": "Sunshine City / Pokémon Center Mega Tokyo",
+   "city": "tokyo",
+   "cat": "shopping",
+   "ll": [
+    35.729,
+    139.7194
+   ],
+   "note": "Observatoire Sunshine 60 (payant), aquarium.",
+   "desc": "Complexe d'Ikebukuro avec aquarium sur le toit, planétarium et le plus grand Pokémon Center de Tokyo. L'observatoire du 60e étage domine toute la ville.",
+   "wikiEn": "Sunshine City (Tokyo)",
+   "hist": "Inaugurée en 1978, la tour Sunshine 60 (240 m) fut le plus haut gratte-ciel d'Asie pendant plusieurs années. Le complexe au pied de la tour est devenu un lieu de sortie familial.",
+   "voir": [
+    "L'observatoire Tenbō Park au 60e étage, avec pelouse artificielle",
+    "L'aquarium sur le toit, où les otaries semblent voler au-dessus des têtes",
+    "Le Pokémon Center Mega Tokyo, le plus grand de la ville",
+    "Les boutiques anime de Sunshine City"
+   ],
+   "astuce": "Acheter le billet de l'observatoire en ligne pour éviter la file du week-end.",
+   "infos": "Observatoire ~1 800 ¥ adulte (tarif variable, à vérifier) · aquarium payant à part · compter 2 à 3 h avec les enfants",
+   "savez": "L'aquarium sur le toit possède un bassin suspendu : on voit les otaries nager au-dessus de sa tête, sur fond de gratte-ciel."
+  },
+  {
+   "id": "animate-ikebukuro",
+   "name": "Animate Ikebukuro",
+   "city": "tokyo",
+   "cat": "shopping",
+   "ll": [
+    35.7309,
+    139.716
+   ],
+   "desc": "Le vaisseau amiral de la chaîne Animate : des étages entiers de mangas, goodies et produits dérivés d'anime.",
+   "wikiEn": "Animate"
+  },
+  {
+   "id": "nakano",
+   "name": "Nakano Broadway",
+   "jp": "中野ブロードウェイ",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "ll": [
+    35.7088,
+    139.6657
+   ],
+   "note": "Mandarake sur 4 étages. Les boutiques ouvrent vers midi.",
+   "desc": "Galerie marchande des années 60 devenue la caverne d'Ali Baba des collectionneurs : Mandarake y occupe une trentaine de boutiques sur quatre étages.",
+   "wiki": "Nakano Broadway",
+   "wikiEn": "Nakano Broadway",
+   "hist": "Ouvert en 1966 comme résidence de luxe avec galerie commerciale, Nakano Broadway a décliné avant d'être réinvesti à partir de 1980 par Mandarake, qui en a fait le temple des collectionneurs.",
+   "voir": [
+    "Les boutiques Mandarake, chacune spécialisée : figurines, cellulos, robots, cartes",
+    "Les montres de luxe d'occasion et les jouets de l'ère Shōwa",
+    "La glace à l'italienne à huit étages de Daily Chiko, au sous-sol",
+    "La rue couverte Sun Mall qui y mène depuis la gare"
+   ],
+   "astuce": "Les étages 2 à 4 concentrent le meilleur ; les boutiques ouvrent vers midi.",
+   "infos": "Accès libre · boutiques de ~12h à 20h · compter 2 h",
+   "savez": "La glace à l'italienne de Daily Chiko, au sous-sol, superpose huit parfums et dépasse les 20 cm : un défi pour les enfants."
+  },
+  {
+   "id": "tocho",
+   "name": "Mairie de Shinjuku (vue 45e)",
+   "jp": "東京都庁",
+   "city": "tokyo",
+   "cat": "vue",
+   "ll": [
+    35.6896,
+    139.6922
+   ],
+   "note": "Gratuit.",
+   "desc": "Les deux tours de la mairie de Tokyo, signées Kenzō Tange, ont un observatoire gratuit au 45e étage. Par temps clair, le mont Fuji se découpe au coucher du soleil.",
+   "wiki": "Bâtiment du gouvernement métropolitain de Tokyo",
+   "wikiEn": "Tokyo Metropolitan Government Building",
+   "hist": "Les tours jumelles de 243 m, achevées en 1991 par Kenzō Tange, s'inspirent des cathédrales gothiques. Elles abritent le gouvernement de la plus grande métropole du monde.",
+   "voir": [
+    "L'observatoire gratuit à 202 m de haut",
+    "Le mont Fuji à l'ouest par temps clair, au coucher du soleil",
+    "Le spectacle de projection lumineuse sur la façade, certains soirs"
+   ],
+   "astuce": "Monter une demi-heure avant le coucher du soleil (vers 17h), puis enchaîner sur Omoide Yokocho.",
+   "infos": "Gratuit · ~9h30–22h (contrôle de sécurité à l'entrée) · compter 45 min",
+   "savez": "Kenzō Tange se serait inspiré de Notre-Dame de Paris pour la silhouette des deux tours."
+  },
+  {
+   "id": "omoide",
+   "name": "Omoide Yokocho",
+   "jp": "思い出横丁",
+   "city": "tokyo",
+   "cat": "balade",
+   "ll": [
+    35.6929,
+    139.6995
+   ],
+   "note": "Pour l'ambiance, pas pour manger.",
+   "desc": "Ruelle d'après-guerre près de la gare de Shinjuku, avec ses minuscules comptoirs à yakitori enfumés. Plus pour l'ambiance et les photos que pour dîner à quatre.",
+   "wikiEn": "Omoide Yokochō",
+   "hist": "Né après-guerre d'un marché noir le long des voies de Shinjuku, ce dédale de 60 minuscules comptoirs a gardé son atmosphère des années 1950.",
+   "voir": [
+    "Les lanternes rouges et la fumée des grills à yakitori",
+    "Les comptoirs de six places, où l'on mange coude à coude",
+    "Le passage souterrain qui relie la ruelle au côté est de la gare"
+   ],
+   "astuce": "Y passer pour l'ambiance et les photos, puis dîner au calme à Menya Musashi.",
+   "infos": "Accès libre · animé à partir de 18h · compter 20 min",
+   "savez": "On l'a longtemps surnommée « la ruelle des pissotières », faute de toilettes dans les bars d'après-guerre."
+  },
+  {
+   "id": "menya-musashi",
+   "name": "Menya Musashi Shinjuku",
+   "jp": "麺屋武蔵 新宿総本店",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.695529,
+    139.698682
+   ],
+   "note": "Ramen. Nishi-Shinjuku 7-2-6.",
+   "desc": "Adresse culte de ramen à Shinjuku ouest, réputée pour son bouillon mêlant viande et poisson. On commande au distributeur de tickets à l'entrée, le service est rapide."
+  },
+  {
+   "id": "sensoji",
+   "name": "Sensō-ji",
+   "jp": "浅草寺",
+   "city": "tokyo",
+   "cat": "temple",
+   "ll": [
+    35.7148,
+    139.7967
+   ],
+   "note": "Arriver avant 8h.",
+   "desc": "Le plus ancien temple de Tokyo, fondé au VIIe siècle, précédé de la porte Kaminarimon et de sa lanterne rouge géante, puis de la rue commerçante Nakamise. Magique très tôt le matin.",
+   "wiki": "Sensō-ji",
+   "wikiEn": "Sensō-ji",
+   "hist": "Selon la légende, deux frères pêcheurs trouvèrent en 628 une statuette de Kannon dans la rivière Sumida. Le temple fondé pour l'abriter est le plus ancien de Tokyo. Détruit en 1945, il a été reconstruit à l'identique.",
+   "voir": [
+    "La porte Kaminarimon, ses dieux du vent et du tonnerre et sa lanterne de 700 kg",
+    "Nakamise-dōri, 250 m d'échoppes de snacks et de souvenirs",
+    "La porte Hōzōmon et ses sandales de paille géantes",
+    "Le brûle-encens devant le hall principal : on rabat la fumée sur soi pour la santé",
+    "Les omikuji, oracles à 100 ¥ : on attache les mauvais présages sur place"
+   ],
+   "astuce": "Avant 8h, le temple est presque vide et les échoppes encore fermées : idéal pour les photos.",
+   "infos": "Gratuit · temple principal 6h–17h, enceinte accessible jour et nuit · compter 1 h 30 avec Nakamise",
+   "savez": "La lanterne géante de Kaminarimon est offerte depuis 1960 par Panasonic, en reconnaissance de la guérison de son fondateur après une prière au temple."
+  },
+  {
+   "id": "asakusa-info",
+   "name": "Centre d'info touristique d'Asakusa",
+   "city": "tokyo",
+   "cat": "vue",
+   "ll": [
+    35.7106,
+    139.7972
+   ],
+   "note": "Terrasse au dernier étage, gratuite.",
+   "desc": "Bâtiment de Kengo Kuma en empilement de toits. Sa terrasse du 8e étage, gratuite, offre une vue plongeante sur Nakamise, le Sensō-ji et la Skytree.",
+   "wikiEn": "Asakusa Culture Tourist Information Center",
+   "hist": "Conçu par Kengo Kuma en 2012, l'architecte du stade olympique de Tokyo, le bâtiment empile huit maisons de bois et de verre.",
+   "voir": [
+    "La terrasse gratuite du 8e étage, face à Nakamise et au Sensō-ji",
+    "La Tokyo Skytree de l'autre côté de la Sumida",
+    "Le comptoir d'information en anglais au rez-de-chaussée"
+   ],
+   "astuce": "La terrasse ouvre de 9h à 22h : à faire aussi de nuit, quand le temple est illuminé.",
+   "infos": "Gratuit · terrasse ouverte jusqu'à 22h · compter 15 min",
+   "savez": "Kengo Kuma a dessiné ici huit « maisons » empilées, une façon de mettre un quartier traditionnel à la verticale."
+  },
+  {
+   "id": "imahan",
+   "name": "Asakusa Imahan",
+   "jp": "浅草今半",
+   "city": "tokyo",
+   "cat": "resto",
+   "q": "浅草今半 国際通り本店",
+   "note": "Sukiyaki, bien pour les enfants.",
+   "desc": "Maison de sukiyaki fondée en 1895 : bœuf wagyu cuit à table dans un bouillon sucré-salé, servi par le personnel. Une valeur sûre pour toute la famille."
+  },
+  {
+   "id": "kikko",
+   "name": "Kikko (Asakusa)",
+   "city": "tokyo",
+   "cat": "resto",
+   "q": "Kikko Asakusa",
+   "note": "Recommandé par Isa.",
+   "desc": "L'adresse recommandée par Isa dans le quartier d'Asakusa."
+  },
+  {
+   "id": "apple-ginza",
+   "name": "Apple Ginza",
+   "city": "tokyo",
+   "cat": "shopping",
+   "ll": [
+    35.6719,
+    139.765
+   ],
+   "desc": "L'Apple Store historique de Tokyo, au carrefour principal de Ginza. Pratique pour tester avant d'acheter ; détaxe possible avec le passeport."
+  },
+  {
+   "id": "peak-design",
+   "name": "Peak Design Tokyo",
+   "city": "tokyo",
+   "cat": "shopping",
+   "q": "Peak Design Tokyo Ginza",
+   "note": "Toshida Bldg 1F, 1-6-11 Ginza.",
+   "desc": "Boutique de la marque de sacs et accessoires photo. Comparer avec Yodobashi, souvent moins cher pour les mêmes produits."
+  },
+  {
+   "id": "vintage-jimbocho",
+   "name": "Vintage Jimbocho",
+   "jp": "ヴィンテージ",
+   "city": "tokyo",
+   "cat": "shopping",
+   "q": "ヴィンテージ 神保町 2-5",
+   "note": "Affiches et programmes de cinéma. 2-5 Kanda Jimbocho.",
+   "desc": "Petite boutique cachée parmi les bouquinistes de Jimbocho, remplie d'affiches, programmes et revues de cinéma de toutes les époques."
+  },
+  {
+   "id": "shinkyo",
+   "name": "Pont Shinkyō",
+   "jp": "神橋",
+   "city": "nikko",
+   "cat": "temple",
+   "ll": [
+    36.7536,
+    139.6033
+   ],
+   "desc": "Le pont sacré laqué de rouge qui marque l'entrée du site de Nikko, au-dessus des eaux turquoise de la rivière Daiya.",
+   "wiki": "Shinkyō",
+   "wikiEn": "Shinkyō",
+   "hist": "La légende raconte qu'au VIIIe siècle, le moine Shōdō Shōnin, bloqué par la rivière, fut aidé par un dieu qui fit apparaître deux serpents géants en guise de pont. L'ouvrage actuel, laqué de vermillon, a été reconstruit en 1904 après une crue.",
+   "voir": [
+    "Le pont lui-même, l'un des trois plus beaux ponts anciens du Japon",
+    "Les eaux turquoise de la Daiya en contrebas",
+    "La vue depuis la route principale, sans payer l'accès"
+   ],
+   "astuce": "La traversée est payante ; la plus belle photo se prend depuis le pont routier voisin.",
+   "infos": "Traversée ~300 ¥ · compter 15 min",
+   "savez": "Le pont appartient au sanctuaire Futarasan ; pendant des siècles, seuls l'empereur et les envoyés du shogun avaient le droit de le traverser."
+  },
+  {
+   "id": "toshogu",
+   "name": "Tōshō-gū",
+   "jp": "日光東照宮",
+   "city": "nikko",
+   "cat": "temple",
+   "ll": [
+    36.7581,
+    139.5988
+   ],
+   "desc": "Mausolée somptueux du shogun Tokugawa Ieyasu, couvert de dorures et de sculptures, dont les trois singes et le chat endormi. Classé à l'UNESCO.",
+   "wiki": "Nikkō Tōshō-gū",
+   "wikiEn": "Nikkō Tōshō-gū",
+   "hist": "Tokugawa Ieyasu, qui unifia le Japon en 1603, est vénéré ici comme une divinité. Son petit-fils Iemitsu fit reconstruire le sanctuaire en 1636 avec une débauche d'or et de sculptures, pour affirmer la puissance du shogunat. Le site est classé à l'UNESCO depuis 1999.",
+   "voir": [
+    "La porte Yōmeimon et ses 500 sculptures, dite porte du crépuscule : on pourrait la contempler jusqu'au soir",
+    "Les trois singes « ne rien voir, ne rien entendre, ne rien dire » sur l'écurie sacrée",
+    "Le chat endormi (Nemuri-neko), au-dessus du passage vers la tombe",
+    "Les 207 marches qui mènent au tombeau d'Ieyasu, dans les cèdres",
+    "Le dragon pleureur du Yakushidō, qui résonne quand on frappe dans ses mains"
+   ],
+   "astuce": "Compter 1h30. Les enfants adorent chercher les singes et le chat.",
+   "infos": "~1 300 ¥ adulte, ~450 ¥ enfant · 8h–17h · compter 1 h 30",
+   "savez": "L'un des piliers de la porte Yōmeimon est sculpté à l'envers, volontairement : une œuvre parfaite attirerait le malheur."
+  },
+  {
+   "id": "futarasan",
+   "name": "Futarasan-jinja et Taiyūin",
+   "jp": "二荒山神社",
+   "city": "nikko",
+   "cat": "temple",
+   "ll": [
+    36.7585,
+    139.596
+   ],
+   "desc": "Sanctuaire dédié aux trois montagnes sacrées de Nikko, plus sobre que le Tōshō-gū. Le Taiyūin voisin, mausolée du petit-fils d'Ieyasu, est plus intime et superbe.",
+   "wiki": "Futarasan-jinja",
+   "wikiEn": "Futarasan Shrine",
+   "hist": "Fondé en 782 par Shōdō Shōnin, le sanctuaire vénère les trois montagnes sacrées de Nikko : Nantai, Nyohō et Tarō. Juste à côté, le Taiyūin abrite le tombeau d'Iemitsu, volontairement moins fastueux que celui de son grand-père.",
+   "voir": [
+    "Le hall principal de 1619, le plus ancien bâtiment de Nikko",
+    "La lanterne fantôme en bronze, marquée de coups de sabre d'un samouraï",
+    "Au Taiyūin, la porte des quatre gardiens Yasha",
+    "Les allées de mousse et de lanternes du Taiyūin, plus intimes que le Tōshō-gū"
+   ],
+   "astuce": "Le Taiyūin est souvent presque désert : le garder pour la fin de journée.",
+   "infos": "Enceinte gratuite · Taiyūin ~550 ¥ · compter 1 h pour les deux",
+   "savez": "Le Taiyūin regarde vers le Tōshō-gū : Iemitsu voulait reposer en contemplant le tombeau de son grand-père, qu'il vénérait."
+  },
+  {
+   "id": "kegon",
+   "name": "Chutes de Kegon",
+   "jp": "華厳の滝",
+   "city": "nikko",
+   "cat": "nature",
+   "ll": [
+    36.7383,
+    139.5016
+   ],
+   "desc": "Chute de 97 m qui jaillit du lac Chūzenji, l'une des trois plus belles du Japon. Un ascenseur descend jusqu'à une plateforme face à la cascade.",
+   "wiki": "Chutes de Kegon",
+   "wikiEn": "Kegon Falls",
+   "hist": "Il y a 20 000 ans, une coulée de lave du mont Nantai a barré la vallée et créé le lac Chūzenji. Son unique exutoire se jette d'une falaise de 97 m : c'est la chute de Kegon, l'une des trois plus célèbres du Japon.",
+   "voir": [
+    "L'ascenseur creusé dans la roche qui descend de 100 m jusqu'à la plateforme",
+    "Les douze petites cascades qui suintent de la falaise de part et d'autre",
+    "Les érables flamboyants en fin octobre"
+   ],
+   "astuce": "L'ascenseur est payant mais indispensable : d'en haut, on voit à peine la chute.",
+   "infos": "Ascenseur ~570 ¥ adulte, ~340 ¥ enfant · ~8h–17h · compter 45 min",
+   "savez": "Le trajet en bus monte par l'Irohazaka : 48 virages en épingle, chacun portant une syllabe de l'ancien alphabet japonais."
+  },
+  {
+   "id": "chuzenji",
+   "name": "Lac Chūzenji",
+   "jp": "中禅寺湖",
+   "city": "nikko",
+   "cat": "nature",
+   "ll": [
+    36.7375,
+    139.4963
+   ],
+   "desc": "Lac de montagne à 1 270 m d'altitude, né d'une éruption du mont Nantai. Fin octobre, ses rives sont en plein momiji.",
+   "wiki": "Lac Chūzenji",
+   "wikiEn": "Lake Chūzenji",
+   "hist": "À 1 270 m, ce lac volcanique était à l'ère Meiji le lieu de villégiature des ambassades étrangères, qui y avaient leurs villas d'été.",
+   "voir": [
+    "La villa de l'ambassade d'Italie et le parc mémorial de l'ambassade britannique, sur la rive",
+    "Le temple Chūzen-ji et sa Kannon sculptée dans un arbre vivant",
+    "Les bateaux de promenade et les rives en couleurs d'automne"
+   ],
+   "astuce": "Il fait souvent 5 à 6° de moins qu'en ville : prendre une couche chaude.",
+   "infos": "Accès libre · compter 1 à 2 h",
+   "savez": "Le lac atteint 163 m de profondeur. Les diplomates étrangers de l'ère Meiji en avaient fait un « Petit Genève » pour l'été."
+  },
+  {
+   "id": "ryuzu",
+   "name": "Chutes de Ryūzu",
+   "jp": "竜頭の滝",
+   "city": "nikko",
+   "cat": "nature",
+   "q": "竜頭の滝 日光",
+   "desc": "La « tête de dragon » : cascade en escalier qui se sépare en deux autour d'un rocher, encadrée d'érables. L'un des plus beaux spots d'automne de Nikko.",
+   "wikiEn": "Ryūzu Falls",
+   "hist": "Le nom signifie « tête de dragon » : au bas d'une cascade de 210 m qui dévale une coulée de lave, un rocher sépare l'eau en deux, comme les moustaches d'un dragon.",
+   "voir": [
+    "La cascade vue depuis le salon de thé au pied",
+    "Le sentier qui longe la cascade vers le haut",
+    "Les érables, parmi les plus beaux de Nikko"
+   ],
+   "astuce": "Le salon de thé sert des dango et un thé chaud bienvenus après la montée.",
+   "infos": "Gratuit · arrêt de bus Ryūzu-no-taki · compter 30 min",
+   "savez": "La cascade est le point de départ des plus beaux sentiers de randonnée du plateau de Senjōgahara, juste au-dessus."
+  },
+  {
+   "id": "yumoto",
+   "name": "Gare de Hakone-Yumoto",
+   "jp": "箱根湯本駅",
+   "city": "hakone",
+   "cat": "gare",
+   "ll": [
+    35.2327,
+    139.1063
+   ],
+   "desc": "Porte d'entrée de Hakone et terminus du Romancecar. Le service bagages et le centre d'information Odakyu sont dans la gare.",
+   "wikiEn": "Hakone-Yumoto Station"
+  },
+  {
+   "id": "hakone-jinja",
+   "name": "Hakone Jinja (torii du lac)",
+   "jp": "箱根神社",
+   "city": "hakone",
+   "cat": "temple",
+   "ll": [
+    35.2047,
+    139.0254
+   ],
+   "desc": "Sanctuaire dans une forêt de cèdres au bord du lac Ashi, célèbre pour son torii rouge planté dans l'eau. Il y a souvent une file pour la photo.",
+   "wikiEn": "Hakone Shrine",
+   "hist": "Fondé en 757, le sanctuaire était vénéré par les samouraïs, dont Minamoto no Yoritomo, premier shogun. Le torii rouge planté dans le lac, le « torii de la paix », date de 1952.",
+   "voir": [
+    "Le torii de la paix, les pieds dans le lac Ashi",
+    "L'escalier de pierre bordé de cèdres centenaires",
+    "Le petit sanctuaire Kuzuryū, du dragon à neuf têtes"
+   ],
+   "astuce": "La file pour la photo sous le torii peut durer 30 minutes : la vue depuis le bateau est aussi belle.",
+   "infos": "Gratuit · accessible toute la journée · compter 45 min avec la file pour la photo",
+   "savez": "Le torii de la paix a été érigé en 1952 pour célébrer le traité de San Francisco et la fin de l'occupation du Japon."
+  },
+  {
+   "id": "owakudani",
+   "name": "Owakudani",
+   "jp": "大涌谷",
+   "city": "hakone",
+   "cat": "nature",
+   "ll": [
+    35.2441,
+    139.0193
+   ],
+   "desc": "Vallée volcanique fumante où l'on cuit des œufs dans les sources sulfureuses : leur coquille devient noire, et chacun ajouterait sept ans de vie. Vue sur le Fuji par temps clair.",
+   "wiki": "Ōwakudani",
+   "wikiEn": "Ōwakudani",
+   "hist": "La vallée est née d'une éruption il y a 3 000 ans. On l'appelait « le grand enfer » jusqu'à la visite de l'empereur Meiji en 1873, où elle fut rebaptisée « grande vallée bouillonnante ».",
+   "voir": [
+    "Les fumerolles soufrées, vues depuis le téléphérique",
+    "Les kuro-tamago, œufs cuits dans l'eau soufrée qui noircit leur coquille",
+    "Le mont Fuji, par temps clair, depuis la station"
+   ],
+   "astuce": "L'accès peut fermer en cas d'alerte volcanique : vérifier la veille.",
+   "infos": "Gratuit · œufs noirs : 5 pour ~500 ¥ · compter 45 min",
+   "savez": "Selon la tradition, chaque œuf noir ajoute sept ans de vie ; on dit qu'il ne faut pas en manger plus de deux et demi."
+  },
+  {
+   "id": "open-air",
+   "name": "Hakone Open-Air Museum",
+   "jp": "彫刻の森美術館",
+   "city": "hakone",
+   "cat": "musee",
+   "ll": [
+    35.2446,
+    139.051
+   ],
+   "desc": "Musée de sculptures en plein air : Henry Moore, Rodin, un pavillon Picasso, des œuvres où les enfants peuvent grimper et un bain de pieds chaud.",
+   "wikiEn": "Hakone Open-Air Museum",
+   "hist": "Ouvert en 1969, c'est le premier musée de sculptures en plein air du Japon, dans un parc de 7 hectares face aux montagnes.",
+   "voir": [
+    "Le pavillon Picasso, avec plus de 300 œuvres",
+    "La tour aux vitraux que l'on gravit de l'intérieur",
+    "Les Woods of Net, une structure tricotée où les enfants grimpent",
+    "Le bain de pieds alimenté par une source chaude"
+   ],
+   "astuce": "Compter 1h30 à 2h ; à 2 min à pied de la gare de Chōkoku-no-Mori.",
+   "infos": "~2 000 ¥ adulte (à vérifier) · 9h–17h · compter 2 h",
+   "savez": "Le pavillon Picasso réunit plus de 300 œuvres : céramiques, dessins et sculptures, l'une des plus grandes collections au monde."
+  },
+  {
+   "id": "gora-park",
+   "name": "Parc de Gora",
+   "jp": "強羅公園",
+   "city": "hakone",
+   "cat": "nature",
+   "ll": [
+    35.2491,
+    139.0482
+   ],
+   "desc": "Jardin en pente au-dessus de Gora, avec fontaine, roseraie et serres tropicales. Parfait pour une matinée tranquille avant de partir.",
+   "wikiEn": "Gora Park",
+   "hist": "Ouvert en 1914, c'est le premier jardin à la française du Japon, en terrasses au-dessus de Gora.",
+   "voir": [
+    "La grande fontaine et la roseraie",
+    "Les serres tropicales",
+    "Les ateliers d'artisanat (verre, poterie)"
+   ],
+   "astuce": "Petit et paisible, idéal pour une matinée avant le Tozan.",
+   "infos": "Entrée gratuite avec le Hakone Free Pass · 9h–17h · compter 45 min",
+   "savez": "C'est le premier jardin de style français ouvert au Japon, en 1914."
+  },
+  {
+   "id": "fushimi",
+   "name": "Fushimi Inari Taisha",
+   "jp": "伏見稲荷大社",
+   "city": "kyoto",
+   "cat": "temple",
+   "ll": [
+    34.9671,
+    135.7727
+   ],
+   "note": "Ouvert 24h, gratuit. Avant 7h.",
+   "desc": "Le sanctuaire aux milliers de torii orange qui grimpent le mont Inari. Le circuit complet prend 2 à 3 heures, mais 30 minutes de montée suffisent pour semer la foule.",
+   "wiki": "Fushimi Inari-taisha",
+   "wikiEn": "Fushimi Inari-taisha",
+   "hist": "Fondé en 711, c'est le sanctuaire principal des quelque 30 000 sanctuaires d'Inari, divinité du riz et de la prospérité. Chacun des milliers de torii a été offert par une entreprise ou un particulier, dont le nom est gravé au dos.",
+   "voir": [
+    "Les Senbon torii, deux tunnels parallèles de torii serrés",
+    "Les renards messagers d'Inari, une clé de grenier à riz dans la gueule",
+    "Le carrefour Yotsutsuji, à mi-pente, avec vue sur Kyoto",
+    "Les inari-zushi et kitsune udon des échoppes au pied du sanctuaire"
+   ],
+   "astuce": "Monter jusqu'à Yotsutsuji (45 min) : au-delà de la première demi-heure, la foule disparaît.",
+   "infos": "Gratuit · ouvert 24 h/24 · compter 1 h 30 jusqu'à Yotsutsuji",
+   "savez": "Un torii coûte de quelques centaines de milliers à plusieurs millions de yens selon sa taille : le nom du donateur est peint au dos."
+  },
+  {
+   "id": "nishiki",
+   "name": "Marché Nishiki",
+   "jp": "錦市場",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.005,
+    135.7649
+   ],
+   "desc": "La cuisine de Kyoto : 400 m de rue couverte et plus d'une centaine d'échoppes de pickles, tofu, poisson et snacks à goûter en marchant.",
+   "wiki": "Marché Nishiki",
+   "wikiEn": "Nishiki Market",
+   "hist": "Les poissonniers y ont obtenu une licence en 1615, et le marché fournit depuis les restaurants et les familles de Kyoto. Il compte aujourd'hui près de 130 boutiques.",
+   "voir": [
+    "Les tako-tamago, petits poulpes laqués farcis d'un œuf de caille",
+    "Les tsukemono, légumes marinés de Kyoto",
+    "Aritsugu, coutelier fondé en 1560",
+    "Les beignets au lait de soja et le tamagoyaki tout chaud"
+   ],
+   "astuce": "On ne mange pas en marchant : on consomme devant l'échoppe.",
+   "infos": "Accès libre · boutiques ~10h–17h, certaines fermées le mercredi · compter 1 h",
+   "savez": "Le couteau Aritsugu se grave à votre nom sur place : un beau souvenir, à mettre en soute."
+  },
+  {
+   "id": "teramachi",
+   "name": "Rue Teramachi (galeries manga)",
+   "jp": "寺町通",
+   "city": "kyoto",
+   "cat": "shopping",
+   "ll": [
+    35.0055,
+    135.7676
+   ],
+   "desc": "Galerie couverte parallèle à Nishiki, qui mêle temples, boutiques de manga d'occasion et magasins de jeux.",
+   "wikiEn": "Teramachi Street"
+  },
+  {
+   "id": "gion",
+   "name": "Gion, Hanamikoji",
+   "jp": "花見小路",
+   "city": "kyoto",
+   "cat": "balade",
+   "ll": [
+    35.0037,
+    135.7752
+   ],
+   "desc": "Le quartier des geishas : maisons de thé en bois, lanternes et ruelles pavées. Au crépuscule, on peut apercevoir une maiko ; on ne les photographie pas de près.",
+   "wiki": "Gion",
+   "wikiEn": "Gion",
+   "hist": "Le quartier s'est développé à l'époque d'Edo autour du sanctuaire Yasaka pour accueillir les pèlerins. On y forme toujours les geiko et maiko, apprenties geishas.",
+   "voir": [
+    "Hanamikoji, la rue des maisons de thé en bois",
+    "Le canal Shirakawa, bordé de saules",
+    "Le sanctuaire Yasaka et ses lanternes, illuminé le soir"
+   ],
+   "astuce": "Certaines ruelles privées sont interdites aux touristes, avec amende : respecter les panneaux.",
+   "infos": "Accès libre · le mieux entre 17h et 19h · compter 1 h",
+   "savez": "Chaque juillet, Gion accueille le Gion Matsuri, l'un des trois plus grands festivals du Japon, depuis plus de mille ans."
+  },
+  {
+   "id": "kinkakuji",
+   "name": "Kinkaku-ji",
+   "jp": "金閣寺",
+   "city": "kyoto",
+   "cat": "temple",
+   "ll": [
+    35.0394,
+    135.7292
+   ],
+   "desc": "Le Pavillon d'or, recouvert de feuilles d'or, se reflète dans son étang. Iconique et très fréquenté : à voir tôt.",
+   "wiki": "Kinkaku-ji",
+   "wikiEn": "Kinkaku-ji",
+   "hist": "Construit en 1397 comme villa de retraite du shogun Ashikaga Yoshimitsu, il devint un temple zen à sa mort. Un moine l'incendia en 1950, histoire qui inspira un roman à Mishima. Il fut reconstruit à l'identique en 1955.",
+   "voir": [
+    "Les deux étages supérieurs couverts de feuilles d'or",
+    "Le phénix doré au sommet du toit",
+    "Le reflet du pavillon dans l'étang"
+   ],
+   "astuce": "La meilleure photo est dès l'entrée, face à l'étang : y aller à l'ouverture.",
+   "infos": "~500 ¥ · 9h–17h · compter 45 min",
+   "savez": "Le pin en forme de bateau du jardin aurait été façonné à partir d'un bonsaï de Yoshimitsu lui-même, il y a 600 ans."
+  },
+  {
+   "id": "bambous",
+   "name": "Bambouseraie d'Arashiyama",
+   "jp": "竹林の小径",
+   "city": "kyoto",
+   "cat": "nature",
+   "ll": [
+    35.017,
+    135.6713
+   ],
+   "note": "Gratuit. Avant 8h.",
+   "desc": "Allée bordée de bambous géants qui filtrent la lumière. Avant 8h, le sentier est presque vide et l'ambiance est magique.",
+   "wikiEn": "Arashiyama Bamboo Grove",
+   "hist": "Le bruissement de cette bambouseraie fait partie des « 100 paysages sonores du Japon » sélectionnés par le gouvernement.",
+   "voir": [
+    "Le chemin de 400 m sous les bambous",
+    "Le petit sanctuaire Nonomiya, au torii de bois brut",
+    "La villa Ōkōchi Sansō au bout du chemin"
+   ],
+   "astuce": "Avant 8h, le sentier est presque vide. Rejoindre ensuite le Tenryū-ji par sa porte nord.",
+   "infos": "Gratuit · ouvert jour et nuit · compter 30 min",
+   "savez": "Certaines espèces de bambou poussent de près d'un mètre par jour au printemps."
+  },
+  {
+   "id": "tenryuji",
+   "name": "Tenryū-ji",
+   "jp": "天龍寺",
+   "city": "kyoto",
+   "cat": "temple",
+   "ll": [
+    35.0157,
+    135.6738
+   ],
+   "desc": "Grand temple zen du XIVe siècle classé à l'UNESCO, dont le jardin à étang fait face aux collines d'Arashiyama. Sortie directe vers la bambouseraie.",
+   "wiki": "Tenryū-ji",
+   "wikiEn": "Tenryū-ji",
+   "hist": "Fondé en 1339 par le shogun Ashikaga Takauji en mémoire de l'empereur Go-Daigo, c'est le premier des cinq grands temples zen de Kyoto, classé à l'UNESCO.",
+   "voir": [
+    "Le jardin Sōgenchi du moine Musō Soseki, avec ses collines en décor emprunté",
+    "Le dragon des nuages peint au plafond du Hattō (week-ends seulement)",
+    "La sortie nord qui mène directement à la bambouseraie"
+   ],
+   "astuce": "Le jardin seul suffit si le temps manque.",
+   "infos": "Jardin ~500 ¥ · 8h30–17h · compter 1 h",
+   "savez": "Le jardin Sōgenchi fut l'un des tout premiers sites désignés « lieu de beauté pittoresque spécial » par l'État japonais."
+  },
+  {
+   "id": "monkey",
+   "name": "Monkey Park Iwatayama",
+   "city": "kyoto",
+   "cat": "nature",
+   "ll": [
+    35.0094,
+    135.6774
+   ],
+   "desc": "Vingt minutes de montée pour rejoindre 120 macaques en liberté et une vue sur tout Kyoto. Ici, ce sont les humains qui nourrissent les singes depuis une cabane grillagée.",
+   "wikiEn": "Iwatayama Monkey Park",
+   "hist": "Environ 120 macaques japonais vivent en liberté au sommet du mont Iwata, à 160 m au-dessus de la rivière.",
+   "voir": [
+    "Les singes en liberté sur l'esplanade",
+    "La vue panoramique sur Kyoto",
+    "La cabane grillagée d'où l'on nourrit les singes"
+   ],
+   "astuce": "20 minutes de montée raide : bonnes chaussures et ne pas regarder les singes dans les yeux.",
+   "infos": "~800 ¥ adulte (à vérifier) · ~9h–16h · compter 1 h 30 avec la montée",
+   "savez": "Les macaques japonais sont les primates vivant le plus au nord du monde, en dehors de l'homme."
+  },
+  {
+   "id": "yodobashi-kyoto",
+   "name": "Yodobashi Kyoto",
+   "city": "kyoto",
+   "cat": "gunpla",
+   "ll": [
+    34.9871,
+    135.7592
+   ],
+   "note": "Face à la gare, sortie Karasuma.",
+   "desc": "Grand magasin d'électronique face à la gare de Kyoto, avec un rayon maquettes. Utile pour comparer les prix avant Osaka.",
+   "wikiEn": "Yodobashi Camera"
+  },
+  {
+   "id": "nara-park",
+   "name": "Parc de Nara (cerfs)",
+   "jp": "奈良公園",
+   "city": "nara",
+   "cat": "nature",
+   "ll": [
+    34.6851,
+    135.843
+   ],
+   "desc": "Plus de 1 000 cerfs en liberté, messagers des dieux selon la tradition. Ils saluent pour obtenir des galettes shika senbei, et peuvent être insistants.",
+   "wiki": "Parc de Nara",
+   "wikiEn": "Nara Park",
+   "hist": "Selon la légende, la divinité Takemikazuchi arriva à Nara sur un cerf blanc. Depuis, les cerfs sont considérés comme sacrés ; on en compte plus de 1 200, protégés comme monument naturel.",
+   "voir": [
+    "Les cerfs qui saluent pour recevoir des shika senbei",
+    "Les pelouses autour de l'étang Sagi-ike",
+    "Les érables qui rougissent fin octobre"
+   ],
+   "astuce": "Montrer ses mains vides quand on n'a plus de galettes, sinon ils insistent.",
+   "infos": "Accès libre · galettes ~200 ¥ · compter 1 h",
+   "savez": "Les cerfs ont appris à saluer : s'incliner devant eux déclenche souvent une révérence en retour, galette espérée."
+  },
+  {
+   "id": "todaiji",
+   "name": "Tōdai-ji",
+   "jp": "東大寺",
+   "city": "nara",
+   "cat": "temple",
+   "ll": [
+    34.689,
+    135.8398
+   ],
+   "desc": "Le plus grand bâtiment en bois historique au monde abrite un Bouddha de bronze de 15 m. Un pilier est percé d'un trou de la taille de sa narine : y passer porterait chance.",
+   "wiki": "Tōdai-ji",
+   "wikiEn": "Tōdai-ji",
+   "hist": "Fondé en 752 par l'empereur Shōmu quand Nara était la capitale. Le hall actuel, reconstruit en 1709, ne fait que les deux tiers de l'original, et reste l'un des plus grands bâtiments en bois du monde.",
+   "voir": [
+    "La grande porte Nandaimon et ses deux gardiens Niō de 8 m, sculptés en 1203",
+    "Le Grand Bouddha de bronze de 15 m",
+    "Le pilier percé d'un trou de la taille de sa narine : y passer porterait chance",
+    "Les statues des rois célestes autour du Bouddha"
+   ],
+   "astuce": "Les enfants passent facilement dans le pilier ; les adultes, c'est plus sportif.",
+   "infos": "Grand hall ~800 ¥ adulte, ~400 ¥ enfant · 7h30–17h30 · compter 1 h",
+   "savez": "La tête du Grand Bouddha est tombée plusieurs fois, lors d'un séisme puis d'incendies ; l'actuelle date de 1692."
+  },
+  {
+   "id": "kasuga",
+   "name": "Kasuga Taisha",
+   "jp": "春日大社",
+   "city": "nara",
+   "cat": "temple",
+   "ll": [
+    34.6813,
+    135.8484
+   ],
+   "desc": "Sanctuaire vermillon au fond d'une forêt primaire, célèbre pour ses 3 000 lanternes de pierre et de bronze.",
+   "wiki": "Kasuga-taisha",
+   "wikiEn": "Kasuga-taisha",
+   "hist": "Fondé en 768 par le clan Fujiwara, le plus puissant de l'époque. Ses 3 000 lanternes ont été offertes par des fidèles au fil des siècles. Il fait partie des monuments de Nara classés à l'UNESCO.",
+   "voir": [
+    "L'allée de lanternes de pierre couvertes de mousse",
+    "Les centaines de lanternes de bronze suspendues autour du sanctuaire",
+    "La salle obscure où les lanternes restent allumées toute l'année"
+   ],
+   "astuce": "Prendre le chemin à travers la forêt depuis le parc : 15 minutes de calme.",
+   "infos": "Enceinte gratuite · zone intérieure ~700 ¥ · compter 45 min",
+   "savez": "Deux fois par an, en février et en août, les 3 000 lanternes sont allumées ensemble pour la fête Mantōrō."
+  },
+  {
+   "id": "joshin",
+   "name": "Joshin Super Kids Land",
+   "jp": "ジョーシン スーパーキッズランド本店",
+   "city": "osaka",
+   "cat": "gunpla",
+   "ll": [
+    34.6612,
+    135.5063
+   ],
+   "note": "Étage entier Gunpla. Character Museum à côté.",
+   "desc": "Le grand magasin de jouets et maquettes de Den Den Town : un étage entier de Gunpla neufs au prix officiel, détaxe comprise.",
+   "wikiEn": "Joshin"
+  },
+  {
+   "id": "surugaya-osaka",
+   "name": "Surugaya Nipponbashi",
+   "jp": "駿河屋 大阪日本橋本館",
+   "city": "osaka",
+   "cat": "gunpla",
+   "q": "駿河屋 大阪日本橋本館",
+   "desc": "Le Surugaya principal de Nipponbashi : maquettes de collectionneurs non montées, vendues à la cote.",
+   "wikiEn": "Suruga-ya"
+  },
+  {
+   "id": "jungle-osaka",
+   "name": "Jungle Osaka (mecha)",
+   "city": "osaka",
+   "cat": "gunpla",
+   "q": "Jungle Osaka Nipponbashi",
+   "desc": "Spécialiste des robots et mechas vintage, avec des vitrines faciles à lire pour repérer les grosses boîtes."
+  },
+  {
+   "id": "volks-osaka",
+   "name": "Volks Osaka Showroom",
+   "jp": "ボークス大阪ショールーム",
+   "city": "osaka",
+   "cat": "gunpla",
+   "q": "ボークス大阪ショールーム",
+   "desc": "Le showroom de la marque Volks : kits, peintures, et un étage de vitrines de particuliers en dépôt-vente.",
+   "wikiEn": "Volks"
+  },
+  {
+   "id": "mandarake-osaka",
+   "name": "Mandarake Grand Chaos",
+   "jp": "まんだらけ グランドカオス",
+   "city": "osaka",
+   "cat": "gunpla",
+   "q": "まんだらけ グランドカオス",
+   "desc": "Mandarake version Osaka, dans le quartier jeune d'Amerika-mura, avec un rayon robots et modélisme.",
+   "wikiEn": "Mandarake"
+  },
+  {
+   "id": "kuromon",
+   "name": "Marché Kuromon",
+   "jp": "黒門市場",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6654,
+    135.5063
+   ],
+   "desc": "Marché couvert de 600 m surnommé la cuisine d'Osaka : oursins, wagyu grillé, fruits de luxe et poissons à manger sur place.",
+   "wikiEn": "Kuromon Market",
+   "hist": "Le marché existe depuis l'époque d'Edo. Son nom, « porte noire », vient de la porte d'un temple voisin aujourd'hui disparu.",
+   "voir": [
+    "Les brochettes de wagyu grillées à la commande",
+    "Les oursins et les noix de Saint-Jacques géantes",
+    "Les fruits de luxe, dont les fraises à l'unité"
+   ],
+   "astuce": "Y aller le matin : beaucoup d'échoppes ferment dès 17h.",
+   "infos": "Accès libre · ~9h–17h · compter 1 h",
+   "savez": "Le marché compte environ 150 échoppes ; beaucoup proposent de griller ou découper sur place ce que l'on achète."
+  },
+  {
+   "id": "dotonbori",
+   "name": "Dotonbori",
+   "jp": "道頓堀",
+   "city": "osaka",
+   "cat": "balade",
+   "ll": [
+    34.6687,
+    135.5013
+   ],
+   "desc": "Le canal le plus animé du Japon, illuminé d'enseignes géantes dont le coureur Glico. Le paradis de la street food : takoyaki, okonomiyaki, kushikatsu.",
+   "wiki": "Dōtonbori",
+   "wikiEn": "Dōtonbori",
+   "hist": "Le canal fut creusé à partir de 1612 par Yasui Dōton, qui lui donna son nom. Quartier des théâtres à l'époque d'Edo, il incarne aujourd'hui le « kuidaore » d'Osaka : manger jusqu'à tomber.",
+   "voir": [
+    "Le coureur Glico, enseigne emblématique depuis 1935",
+    "Le crabe géant animé de Kani Dōraku",
+    "Kuidaore Tarō, le clown batteur mascotte",
+    "Les takoyaki et okonomiyaki des stands"
+   ],
+   "astuce": "La vue sur les enseignes est la meilleure depuis le pont Ebisu-bashi.",
+   "infos": "Accès libre · le plus beau à la nuit tombée · compter 1 à 2 h",
+   "savez": "Le coureur Glico en est à sa sixième version ; l'actuelle, en LED, date de 2014."
+  },
+  {
+   "id": "osaka-castle",
+   "name": "Château d'Osaka",
+   "jp": "大阪城",
+   "city": "osaka",
+   "cat": "temple",
+   "ll": [
+    34.6873,
+    135.5262
+   ],
+   "desc": "Château reconstruit en 1931 au milieu d'un immense parc entouré de douves et de murailles cyclopéennes. Le musée intérieur retrace l'histoire de Hideyoshi.",
+   "wiki": "Château d'Osaka",
+   "wikiEn": "Osaka Castle",
+   "hist": "Construit en 1583 par Toyotomi Hideyoshi, qui unifia le Japon, il tomba en 1615 lors du siège des Tokugawa. Le donjon actuel, reconstruit en 1931 grâce aux dons des habitants, abrite un musée.",
+   "voir": [
+    "Les murailles cyclopéennes, dont un bloc de plus de 100 tonnes",
+    "Le musée sur la vie de Hideyoshi, et le paravent de la bataille",
+    "La vue depuis la terrasse du 8e étage",
+    "Le jardin Nishinomaru"
+   ],
+   "astuce": "Le parc est gratuit et magnifique ; le musée seul est payant.",
+   "infos": "Parc gratuit · donjon payant (tarif à vérifier) · 9h–17h · compter 1 h 30",
+   "savez": "Le donjon actuel en béton, avec ascenseur, est le troisième de l'histoire : le premier a brûlé en 1615, le second a été frappé par la foudre en 1665."
+  },
+  {
+   "id": "shinsekai",
+   "name": "Shinsekai, Tsutenkaku",
+   "jp": "新世界",
+   "city": "osaka",
+   "cat": "balade",
+   "ll": [
+    34.6525,
+    135.5063
+   ],
+   "desc": "Quartier rétro au pied de la tour Tsutenkaku, avec ses enseignes kitsch. Berceau du kushikatsu, des brochettes panées qu'on ne trempe qu'une fois dans la sauce.",
+   "wiki": "Shinsekai",
+   "wikiEn": "Shinsekai",
+   "hist": "Créé en 1912 sur le modèle de Paris pour la partie sud et de Coney Island pour le nord. La tour Tsutenkaku, inspirée de la tour Eiffel, a été reconstruite en 1956.",
+   "voir": [
+    "La tour Tsutenkaku et sa statue de Billiken, dieu du bonheur, dont on frotte les pieds",
+    "Les enseignes géantes : poisson-globe, poulpes, dragons",
+    "Les restaurants de kushikatsu au coude à coude"
+   ],
+   "astuce": "Règle d'or du kushikatsu : on ne trempe qu'une fois dans la sauce commune.",
+   "infos": "Accès libre · Tsutenkaku ~1 000 ¥ · compter 1 h 30",
+   "savez": "Billiken, la mascotte porte-bonheur de la tour, est un personnage américain de 1908, adopté par Osaka depuis plus d'un siècle."
+  },
+  {
+   "id": "amemura",
+   "name": "Shinsaibashi, Amerika-mura",
+   "jp": "アメリカ村",
+   "city": "osaka",
+   "cat": "shopping",
+   "ll": [
+    34.672,
+    135.4985
+   ],
+   "desc": "Le quartier jeune d'Osaka : friperies, streetwear et cafés. Shinsaibashi-suji, la rue couverte voisine, aligne les grandes enseignes sur 600 m.",
+   "wikiEn": "Amerikamura"
+  },
+  {
+   "id": "yodobashi-umeda",
+   "name": "Yodobashi Umeda",
+   "city": "osaka",
+   "cat": "gunpla",
+   "ll": [
+    34.7046,
+    135.4963
+   ],
+   "note": "Mac mini. Gunpla au 6e.",
+   "desc": "L'un des plus grands magasins d'électronique du Japon, accolé à la gare d'Osaka. Rayon Apple, Gunpla au 6e et détaxe sur place.",
+   "wikiEn": "Yodobashi Camera"
+  }
+ ],
+ "todo": [
+  {
+   "id": "coco-late",
+   "txt": "Prévenir Coco Shuku : arrivée 21h30–22h30 le 17 (check-in jusqu'à 22h)"
+  },
+  {
+   "id": "skyliner",
+   "txt": "Acheter l'e-ticket Skyliner (Keisei)"
+  },
+  {
+   "id": "vjw",
+   "txt": "Remplir Visit Japan Web (immigration et douane)"
+  },
+  {
+   "id": "suica",
+   "txt": "Suica : l'ajouter dans Cartes pour chaque adulte ; carte enfant au guichet JR East de Narita (passeport)"
+  },
+  {
+   "id": "taqbin-coco",
+   "txt": "Demander à Coco Shuku le Ta-Q-Bin vers Kagurazaka (envoi le 20)"
+  },
+  {
+   "id": "freepass",
+   "txt": "Acheter le Hakone Free Pass 2 jours (EMot)"
+  },
+  {
+   "id": "compass",
+   "txt": "Prévenir Kyoto Compass : arrivée ~16h45 le 25 oct"
+  },
+  {
+   "id": "wpu",
+   "txt": "WPÜ : livraison des valises depuis Yumoto + garde le 25 jusqu'à 12h30"
+  },
+  {
+   "id": "vintage",
+   "txt": "Hotel Vintage : réception et Ta-Q-Bin possibles ?"
+  },
+  {
+   "id": "typhon",
+   "txt": "Mi-octobre : état des routes de Nikko et Hakone (typhon Dujuan)"
+  },
+  {
+   "id": "toei",
+   "txt": "Calendrier du musée Toei pour le 22 oct"
+  },
+  {
+   "id": "allergie",
+   "txt": "Relire la carte d'allergie avec Alexia"
+  },
+  {
+   "id": "eslead",
+   "txt": "Recopier l'adresse japonaise de l'ESLEAD dans l'app"
+  },
+  {
+   "id": "qr",
+   "txt": "Captures des QR codes → dossier billets de l'app"
+  },
+  {
+   "id": "liens",
+   "txt": "Tester une fois chaque bouton « Mon billet »"
+  }
+ ],
+ "allergy": {
+  "img": "allergie.jpg",
+  "jp": "食物アレルギーのお願い\n私の子どもは、次のナッツ類に食物アレルギーがあります。\nピスタチオ・カシューナッツ・ヘーゼルナッツ\n少量でも食べられません（ソース、油、ペースト、お菓子・デザートを含む）。\n同じ調理器具や揚げ油からの混入にもご注意ください。\nこの料理に、これらのナッツは入っていますか？\n入っていない料理を教えていただけますか？\nご協力ありがとうございます。",
+  "fr": "Mon enfant est allergique à la pistache, la noix de cajou et la noisette, même en petite quantité (sauces, huiles, pâtes, desserts). Attention aux ustensiles et à l'huile de friture partagés. Ce plat en contient-il ? Pouvez-vous m'indiquer les plats sans ?"
+ },
+ "phrases": [
+  {
+   "fr": "Bonjour",
+   "jp": "こんにちは",
+   "ro": "konnichiwa"
+  },
+  {
+   "fr": "Merci beaucoup",
+   "jp": "ありがとうございます",
+   "ro": "arigatō gozaimasu"
+  },
+  {
+   "fr": "Excusez-moi",
+   "jp": "すみません",
+   "ro": "sumimasen"
+  },
+  {
+   "fr": "L'addition, s'il vous plaît",
+   "jp": "お会計お願いします",
+   "ro": "okaikei onegaishimasu"
+  },
+  {
+   "fr": "Détaxe, s'il vous plaît",
+   "jp": "免税でお願いします",
+   "ro": "menzei de onegaishimasu"
+  },
+  {
+   "fr": "Où sont les toilettes ?",
+   "jp": "トイレはどこですか？",
+   "ro": "toire wa doko desu ka"
+  },
+  {
+   "fr": "Une table pour quatre",
+   "jp": "四人です",
+   "ro": "yonin desu"
+  },
+  {
+   "fr": "Cette adresse, s'il vous plaît",
+   "jp": "この住所までお願いします",
+   "ro": "kono jūsho made onegaishimasu"
+  },
+  {
+   "fr": "Ce train va à … ?",
+   "jp": "この電車は…に行きますか？",
+   "ro": "kono densha wa … ni ikimasu ka"
+  },
+  {
+   "fr": "Je ne comprends pas",
+   "jp": "わかりません",
+   "ro": "wakarimasen"
+  }
+ ],
+ "drinks": [
+  {
+   "fr": "Thé vert",
+   "jp": "お茶",
+   "ro": "o-cha"
+  },
+  {
+   "fr": "Eau froide",
+   "jp": "お冷",
+   "ro": "o-hiya"
+  },
+  {
+   "fr": "Café",
+   "jp": "コーヒー",
+   "ro": "kōhī"
+  },
+  {
+   "fr": "Thé oolong",
+   "jp": "ウーロン茶",
+   "ro": "ūron-cha"
+  },
+  {
+   "fr": "Bière",
+   "jp": "ビール",
+   "ro": "bīru"
+  },
+  {
+   "fr": "Liqueur de prune soda",
+   "jp": "梅酒ソーダ",
+   "ro": "umeshu sōda"
+  }
+ ],
+ "pratique": [
+  {
+   "title": "Suica",
+   "body": "Une carte par personne, dans Cartes sur iPhone ou en physique. Train, métro, bus, konbini, distributeurs. Recharger aux machines des gares ou dans l'app Cartes."
+  },
+  {
+   "title": "Détaxe",
+   "body": "Logo « Japan. Tax-free Shop ». Minimum 5 000 ¥ par catégorie (articles divers / consommables) et par magasin. Passeport physique obligatoire. Les consommables sont scellés : ne pas ouvrir le sac avant de quitter le Japon. Montrer le passeport à la douane de KIX."
+  },
+  {
+   "title": "Ta-Q-Bin",
+   "body": "Livraison de valises par Yamato (logo chat noir), depuis l'hôtel ou un konbini. Vers l'aéroport : déposer au moins 2 jours avant le vol, récupérer au comptoir du hall des départs."
+  },
+  {
+   "title": "Trains",
+   "body": "Local (tous les arrêts) < Rapid < Express < Limited Express. Si le train ne s'arrête pas à ta gare, descendre et prendre un local. Shinkansen depuis Odawara : Hikari ou Kodama, jamais Nozomi."
+  },
+  {
+   "title": "Konbini",
+   "body": "7-Eleven, FamilyMart, Lawson : repas, distributeurs qui acceptent les cartes étrangères (7-Eleven), parapluies, Ta-Q-Bin."
+  },
+  {
+   "title": "Électricité",
+   "body": "Prises à 2 broches plates, 100 V. Les chargeurs Apple acceptent le 100 V."
+  },
+  {
+   "title": "Poubelles",
+   "body": "Rares dans la rue. Garder un sac et trier dans les konbini ou les gares."
+  }
+ ],
+ "emergency": [
+  {
+   "label": "Police",
+   "tel": "110"
+  },
+  {
+   "label": "Ambulance, pompiers",
+   "tel": "119"
+  },
+  {
+   "label": "Japan Visitor Hotline (anglais, 24h/24)",
+   "tel": "+815038162787"
+  },
+  {
+   "label": "Ambassade de France, Tokyo",
+   "tel": "+81357986000"
+  }
+ ],
+ "shopping": [
+  {
+   "id": "macmini",
+   "name": "Mac mini",
+   "icon": "chip",
+   "budget": "~149 800 ¥ TTC, ~136 200 ¥ détaxé",
+   "note": "Comparé à 1 049 € en France. Bagage cabine. Prévoir un câble secteur C7 français. À déclarer à la douane en France (TVA 20 %, au-delà de 430 €).",
+   "where": [
+    {
+     "place": "yodobashi-akiba",
+     "role": "Repérer prix et stock"
+    },
+    {
+     "place": "yodobashi-umeda",
+     "role": "Achat prévu"
+    },
+    {
+     "place": "apple-ginza",
+     "role": "Alternative"
+    }
+   ]
+  },
+  {
+   "id": "ipad",
+   "name": "iPad",
+   "icon": "tablet",
+   "budget": "prix Apple Japon, détaxe 10 %",
+   "note": "Passeport physique pour la détaxe. Clavier japonais JIS sur les modèles avec clavier : acheter le clavier en France.",
+   "where": [
+    {
+     "place": "yodobashi-akiba",
+     "role": "Achat prévu"
+    },
+    {
+     "place": "apple-ginza",
+     "role": "Alternative"
+    },
+    {
+     "place": "yodobashi-umeda",
+     "role": "Dernière chance"
+    }
+   ]
+  },
+  {
+   "id": "pg-unleashed",
+   "name": "Gundam PG Unleashed RX-78-2",
+   "icon": "robot",
+   "budget": "27 500 ¥ neuf · 30 000–36 000 ¥ occasion scellée",
+   "note": "Boîte 59 × 40 × 17 cm, ~4,5 kg : rentrer la déposer à l'hôtel juste après l'achat. Si la valise est pleine, demander un sac renforcé.",
+   "where": [
+    {
+     "place": "yodobashi-akiba",
+     "role": "1er essai à l'ouverture (9h30)"
+    },
+    {
+     "place": "surugaya-akiba",
+     "role": "Occasion scellée"
+    },
+    {
+     "place": "mandarake-akiba",
+     "role": "Occasion scellée"
+    },
+    {
+     "place": "radio-kaikan",
+     "role": "Occasion"
+    },
+    {
+     "place": "gundam-base",
+     "role": "Boutique officielle"
+    },
+    {
+     "place": "nakano",
+     "role": "Occasion"
+    },
+    {
+     "place": "joshin",
+     "role": "Neuf, plan B Osaka"
+    },
+    {
+     "place": "surugaya-osaka",
+     "role": "Occasion, plan B Osaka"
+    },
+    {
+     "place": "jungle-osaka",
+     "role": "Occasion"
+    },
+    {
+     "place": "yodobashi-umeda",
+     "role": "Neuf, dernière chance"
+    }
+   ]
+  }
+ ]
+}

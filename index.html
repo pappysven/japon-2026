@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Japon">
+<meta name="theme-color" content="#F1F2EF">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Japon 2026</title>
+<style>
+/* ============ tokens ============ */
+:root{
+  --ground:#F1F2EF; --plate:#FFFFFF; --ink:#16181D; --body:#2B2F36; --muted:#6A717B; --rule:#DCDFDA; --soft:#E7E9E4;
+  --warn:#9A5200; --warn-bg:#FFF1DC;
+  --line:#D9427F; --accent:var(--line);
+  --font:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,-apple-system,sans-serif;
+  --tab:64px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+/* Nuit : indigo teint (ai-zome), encre couleur papier, couleurs d'étape adoucies */
+:root[data-theme="dark"]{
+  --ground:#0D1424; --plate:#152038; --ink:#F1ECE2; --body:#D9D4CA; --muted:#8E9AB3; --rule:#25314C; --soft:#1C2845;
+  --warn:#F2B35A; --warn-bg:#2B2416;
+  --accent:color-mix(in oklab, var(--line) 72%, #FFFFFF);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0D1424; --plate:#152038; --ink:#F1ECE2; --body:#D9D4CA; --muted:#8E9AB3; --rule:#25314C; --soft:#1C2845;
+    --warn:#F2B35A; --warn-bg:#2B2416;
+    --accent:color-mix(in oklab, var(--line) 72%, #FFFFFF);
+    color-scheme:dark;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;-webkit-text-size-adjust:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;min-height:100%;background:var(--ground);color:var(--body);font-family:var(--font);font-size:17px;line-height:1.55;-webkit-tap-highlight-color:transparent;transition:background-color .35s,color .35s}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+svg.i{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+h1,h2,h3{color:var(--ink);margin:0;line-height:1.25}
+.num{font-variant-numeric:tabular-nums}
+
+/* ============ top bar ============ */
+.top{position:sticky;top:0;z-index:15;background:color-mix(in oklab, var(--ground) 88%, transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);
+  padding-top:env(safe-area-inset-top,0px);margin-top:calc(-1 * env(safe-area-inset-top,0px));border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:var(--rule)}
+.top .in{max-width:1180px;margin:0 auto;height:56px;display:flex;align-items:center;gap:10px;padding:0 16px}
+.top .ttl{flex:1;min-width:0;display:flex;align-items:baseline;gap:8px;white-space:nowrap;overflow:hidden}
+.top .ttl b{font-size:19px;color:var(--ink);font-weight:800}
+.top .ttl span{font-size:14px;color:var(--muted);overflow:hidden;text-overflow:ellipsis}
+.theme{display:flex;align-items:center;height:36px;border-radius:999px;background:var(--soft);padding:3px;gap:2px;border:0}
+.theme span{width:30px;height:30px;border-radius:999px;display:grid;place-items:center;color:var(--muted);transition:background .3s,color .3s}
+.theme span.on{background:var(--plate);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.18)}
+.theme svg.i{width:17px;height:17px}
+
+/* ============ layout ============ */
+.app{max-width:1180px;margin:0 auto;padding:6px 16px calc(var(--tab) + env(safe-area-inset-bottom,0px) + 96px)}
+.sec{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:var(--muted);margin:28px 2px 10px}
+.sec svg.i{width:17px;height:17px;color:var(--accent)}
+.small{font-size:14px}.muted{color:var(--muted)}
+.stack>*+*{margin-top:10px}
+
+/* ============ bottom tabs ============ */
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;justify-content:center;background:var(--plate);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav.tabs .wrap{display:flex;width:100%;max-width:560px}
+nav.tabs button{flex:1;height:var(--tab);border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:11px;font-weight:600;color:var(--muted);position:relative}
+nav.tabs button svg.i{width:24px;height:24px}
+nav.tabs button[aria-current="page"]{color:var(--ink)}
+nav.tabs button[aria-current="page"] svg.i{color:var(--accent);stroke-width:2.2}
+nav.tabs button[aria-current="page"]::before{content:"";position:absolute;top:0;left:30%;right:30%;height:3px;border-radius:0 0 3px 3px;background:var(--accent)}
+
+/* ============ day ribbon ============ */
+.ribbon{display:flex;gap:4px;overflow-x:auto;padding:4px 2px 10px;margin:0 -2px;scrollbar-width:none;scroll-snap-type:x proximity}
+.ribbon::-webkit-scrollbar{display:none}
+.ribbon button{flex:none;width:46px;padding:6px 0 0;border:0;background:var(--plate);border-radius:8px;display:flex;flex-direction:column;align-items:center;scroll-snap-align:center;border:1px solid var(--rule);overflow:hidden}
+.ribbon .w{font-size:11px;color:var(--muted);line-height:1}
+.ribbon .d{font-size:18px;font-weight:800;color:var(--ink);line-height:1.3}
+.ribbon .s{height:5px;width:100%;margin-top:4px}
+.ribbon button.today .w{color:var(--accent);font-weight:700}
+.ribbon button[aria-current="true"]{background:var(--ink);border-color:var(--ink)}
+.ribbon button[aria-current="true"] .d,.ribbon button[aria-current="true"] .w{color:var(--plate)}
+
+/* ============ station sign ============ */
+.sign{background:var(--plate);border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px var(--rule)}
+.sign .face{padding:20px 16px 10px;text-align:center;position:relative}
+.sign .kanji{font-size:58px;font-weight:800;letter-spacing:.14em;margin-right:-.14em;line-height:1.05;color:var(--ink)}
+.sign .name{font-size:18px;font-weight:700;color:var(--ink);margin-top:6px}
+.sign .meta{font-size:14px;color:var(--muted)}
+.sign .band{height:30px;background:var(--line);display:flex;align-items:center;justify-content:center;margin-top:10px}
+.sign .band b{background:var(--plate);color:var(--ink);font-size:13px;font-weight:800;border-radius:999px;min-width:44px;height:22px;padding:0 10px;display:grid;place-items:center;box-shadow:0 0 0 2px var(--ink)}
+.sign .ends{display:grid;grid-template-columns:1fr 1fr}
+.sign .ends button{border:0;background:none;padding:10px 14px 12px;text-align:left;font-size:13px;color:var(--muted);line-height:1.3;display:flex;gap:6px;align-items:flex-start}
+.sign .ends button:last-child{justify-content:flex-end;text-align:right}
+.sign .ends button b{display:block;font-size:15px;color:var(--ink)}
+.sign .ends button[disabled]{visibility:hidden}
+.sign .ends svg.i{width:18px;height:18px;margin-top:2px}
+
+/* ============ metro-line timeline ============ */
+.route{list-style:none;margin:0;padding:6px 0;background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule)}
+.route li{display:grid;grid-template-columns:58px 30px 1fr;padding:0 14px 0 6px}
+.route .t{font-size:14px;font-weight:800;color:var(--c,var(--ink));text-align:right;padding-top:12px;font-variant-numeric:tabular-nums;line-height:1.2}
+.route .t small{display:block;font-size:11px;font-weight:600;color:var(--muted)}
+.route .rail{position:relative}
+.route .rail::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:4px;margin-left:-2px;background:color-mix(in oklab, var(--line) 35%, var(--soft))}
+.route li:first-child .rail::before{top:18px}
+.route li:last-child .rail::before{bottom:calc(100% - 22px)}
+.route .stop{position:absolute;left:50%;top:13px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--plate);box-shadow:0 0 0 3px var(--c,var(--cat-free))}
+.route .stop.ico{width:28px;height:28px;margin-left:-14px;top:7px;border-radius:9px;background:var(--c,var(--cat-free));color:#fff;display:grid;place-items:center;box-shadow:0 0 0 3px var(--plate)}
+.route .stop.ico svg.i{width:15px;height:15px;stroke-width:2.2}
+.route .x{padding:10px 0 12px 10px;min-width:0;border-bottom:1px solid var(--soft)}
+.route li:last-child .x{border-bottom:0}
+.route .txt{color:var(--ink);font-weight:600}
+.route .sub{font-size:14px;color:var(--muted)}
+.acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+
+/* ============ buttons ============ */
+.btn{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--rule);background:var(--plate);font-size:14px;font-weight:700;color:var(--ink);white-space:nowrap}
+.btn svg.i{width:17px;height:17px}
+.btn.go{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.go{color:#0D1424}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.go{color:#0D1424}}
+.btn.big{height:46px;padding:0 18px;font-size:15px}
+.btn.ghost{background:none;border-color:transparent;color:var(--muted);padding:0 8px}
+.btn.icon{width:36px;padding:0;justify-content:center}
+
+/* ============ ticket ============ */
+.ticket{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);position:relative}
+.ticket .main{padding:14px 16px 12px}
+.ticket .hd{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.ticket .kind{width:30px;height:30px;border-radius:8px;background:var(--cat-move);color:#fff;display:grid;place-items:center;flex:none}
+.ticket .kind svg.i{width:17px;height:17px;stroke-width:2.1}
+.ticket .times{display:flex;align-items:baseline;gap:10px;margin-top:8px;font-variant-numeric:tabular-nums}
+.ticket .times b{font-size:30px;font-weight:800;color:var(--ink);letter-spacing:-.01em;line-height:1.1}
+.ticket .times i{font-style:normal;color:var(--muted)}
+.ticket .stn{font-size:15px;color:var(--body)}
+.ticket .nm{font-weight:800;color:var(--ink);margin-top:2px}
+.ticket .stub{border-top:2px dashed var(--rule);padding:10px 16px 14px;position:relative}
+.ticket .stub::before,.ticket .stub::after{content:"";position:absolute;top:-9px;width:16px;height:16px;border-radius:50%;background:var(--ground)}
+.ticket .stub::before{left:-8px;box-shadow:inset -1px 0 0 var(--rule)}
+.ticket .stub::after{right:-8px;box-shadow:inset 1px 0 0 var(--rule)}
+.seat{display:flex;gap:18px;flex-wrap:wrap}
+.seat div{font-size:12px;color:var(--muted);line-height:1.2}
+.seat div b{display:block;font-size:20px;color:var(--ink);font-weight:800;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+.note{font-size:14px;margin:8px 0 0}
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--soft);color:var(--muted)}
+.tag.reserve{background:color-mix(in oklab, var(--accent) 16%, transparent);color:var(--accent)}
+.tag.acheter,.tag.faire{background:var(--warn-bg);color:var(--warn)}
+.ticket.past{opacity:.5}
+.mybill{display:flex;align-items:center;gap:10px;margin-top:10px;padding:10px 12px;border-radius:8px;background:var(--soft)}
+.mybill .ref{flex:1;min-width:0;font-size:13px;color:var(--muted);line-height:1.3}
+.mybill .ref b{display:block;font-size:17px;color:var(--ink);letter-spacing:.03em;font-variant-numeric:tabular-nums}
+
+/* ============ hotel ============ */
+.hotel{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);padding:14px 16px;display:grid;grid-template-columns:34px 1fr;gap:4px 12px}
+.hotel .ic{width:34px;height:34px;border-radius:8px;background:var(--cat-hotel);color:#fff;display:grid;place-items:center}
+.hotel .nm{font-size:18px;font-weight:800;color:var(--ink);line-height:1.3}
+.hotel .full{grid-column:1 / -1}
+
+/* ============ lists ============ */
+.days{list-style:none;margin:0;padding:0;background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);overflow:hidden}
+.days button{width:100%;display:grid;grid-template-columns:6px 54px 1fr 38px;gap:12px;align-items:center;text-align:left;border:0;background:none;padding:11px 12px 11px 0;border-top:1px solid var(--soft)}
+.days li:first-child button{border-top:0}
+.days .c{align-self:stretch}
+.days .d{font-weight:800;color:var(--ink);font-size:15px;line-height:1.2;font-variant-numeric:tabular-nums}
+.days .d span{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.days .t{color:var(--ink);font-weight:700;line-height:1.3}
+.days .h{display:block;font-size:13px;color:var(--muted);font-weight:400}
+.days .k{font-size:17px;font-weight:800;color:var(--muted);text-align:center}
+.days button[aria-current="true"]{background:var(--soft)}
+.days button.today .d span{color:var(--accent);font-weight:700}
+
+.chips{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--rule);background:var(--plate);font-size:14px;font-weight:600;color:var(--ink)}
+.chip svg.i{width:17px;height:17px;color:var(--c,var(--muted))}
+.chip .dot{width:9px;height:9px;border-radius:50%}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--plate)}
+.chip[aria-pressed="true"] svg.i{color:var(--plate)}
+
+.places{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);overflow:hidden}
+.place{display:grid;grid-template-columns:38px 1fr auto;gap:12px;align-items:start;padding:12px 14px;border-top:1px solid var(--soft)}
+.place:first-child{border-top:0}
+.place .pi{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--soft);color:var(--line)}
+:root[data-theme="dark"] .place .pi{color:var(--accent)}
+.place .nm{font-weight:800;color:var(--ink);line-height:1.3}
+.place .jp{font-size:13px;color:var(--muted)}
+.place .nt{font-size:14px;margin-top:2px}
+.place.done .nm{text-decoration:line-through;text-decoration-thickness:2px;color:var(--muted)}
+.check{width:34px;height:34px;border-radius:50%;border:2px solid var(--rule);background:none;display:grid;place-items:center;color:transparent}
+.check[aria-pressed="true"]{background:var(--cc,var(--accent));border-color:var(--cc,var(--accent));color:#fff}
+.check svg.i{width:17px;height:17px;stroke-width:2.6}
+
+/* ============ pratique tiles ============ */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:14px;border-radius:6px;background:var(--plate);box-shadow:0 0 0 1px var(--rule);border:0;text-align:left;min-height:96px}
+.tile .ti{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--soft);color:var(--ink)}
+.tile b{color:var(--ink);font-size:15px;line-height:1.25}
+.tile span{font-size:12px;color:var(--muted);line-height:1.3;margin-top:-6px}
+.tile.danger{background:#B3243A;box-shadow:none}
+.tile.danger b,.tile.danger span{color:#fff}
+.tile.danger .ti{background:rgba(255,255,255,.18);color:#fff}
+
+.todo{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);padding:4px 14px}
+.todo button{width:100%;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;text-align:left;border:0;background:none;padding:8px 0;border-top:1px solid var(--soft);color:var(--ink)}
+.todo button:first-child{border-top:0}
+.todo button[aria-pressed="true"] .tx{color:var(--muted);text-decoration:line-through}
+.todo .check{width:28px;height:28px}
+
+/* ============ sheet & show ============ */
+.sheet{position:fixed;inset:0;z-index:40;background:rgba(5,10,20,.42);display:flex;align-items:flex-end;justify-content:center;animation:fade .2s}
+.sheet .pan{width:100%;max-width:640px;max-height:92vh;overflow:auto;background:var(--ground);border-radius:16px 16px 0 0;padding:8px 16px calc(env(safe-area-inset-bottom,0px) + 20px);animation:up .25s cubic-bezier(.2,.8,.2,1)}
+.sheet .grab{display:flex;align-items:center;gap:10px;position:sticky;top:-8px;background:var(--ground);padding:10px 0;z-index:1}
+.sheet .grab h2{flex:1;font-size:19px}
+@media (min-width:760px){.sheet{align-items:center}.sheet .pan{border-radius:16px;max-height:86vh}}
+@keyframes up{from{transform:translateY(40px);opacity:.4}}
+@keyframes fade{from{opacity:0}}
+.show{position:fixed;inset:0;z-index:60;background:#fff;color:#000;display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 16px) 22px calc(env(safe-area-inset-bottom,0px) + 20px);overflow:auto}
+.show .bar{display:flex;justify-content:flex-end}
+.show .close{height:44px;padding:0 20px;border-radius:999px;border:2px solid #000;background:#fff;color:#000;font-weight:800}
+.show .body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.show .big{font-size:clamp(28px,7.4vw,52px);font-weight:800;line-height:1.45;white-space:pre-line;color:#000}
+.show .sub{font-size:17px;color:#333}
+.show img{max-width:100%;max-height:74vh;object-fit:contain;align-self:center}
+
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;padding:11px 0;border-top:1px solid var(--soft)}
+.row:first-child{border-top:0}
+.row .jp{font-size:19px;font-weight:700;color:var(--ink)}
+.row .ro{font-size:13px;color:var(--muted)}
+.box{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);padding:4px 16px}
+.box.pad{padding:14px 16px}
+.conv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.conv label{font-size:13px;color:var(--muted);display:block;margin-bottom:4px}
+.field{width:100%;height:52px;font:inherit;font-size:24px;font-weight:800;padding:0 14px;border:1px solid var(--rule);border-radius:8px;background:var(--ground);color:var(--ink);font-variant-numeric:tabular-nums}
+.field.txt{font-size:18px;font-weight:600;height:46px}
+.alert{display:flex;gap:10px;border-radius:6px;background:var(--warn-bg);color:var(--body);padding:10px 12px;font-size:14px}
+.alert svg.i{color:var(--warn);margin-top:2px}
+.demo{max-width:1180px;margin:0 auto;padding:0 16px 6px;display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
+.demo select{font:inherit;font-size:14px;height:32px;border-radius:8px;border:1px solid var(--rule);background:var(--plate);color:var(--ink);padding:0 8px}
+
+
+/* ============ météo ============ */
+.wx{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);margin-top:10px;padding:14px 16px}
+.wx .hd{display:flex;align-items:center;gap:14px}
+.wx .big{width:56px;height:56px;flex:none;color:var(--accent)}
+.wx .big svg.i{width:56px;height:56px;stroke-width:1.5}
+.wx .tmp{font-size:32px;font-weight:800;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.wx .tmp span{font-size:20px;color:var(--muted);font-weight:700}
+.wx .lab{font-size:14px;color:var(--muted);margin-top:4px}
+.wx .facts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:14px;color:var(--body)}
+.wx .facts span{display:inline-flex;align-items:center;gap:5px}
+.wx .facts svg.i{width:16px;height:16px;color:var(--muted)}
+.wx .hours{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin-top:12px;padding-top:12px;border-top:1px solid var(--soft);text-align:center;font-size:12px;color:var(--muted)}
+.wx .hours b{display:block;font-size:15px;color:var(--ink);font-variant-numeric:tabular-nums}
+.wx .hours svg.i{display:block;width:22px;height:22px;color:var(--body);margin:4px auto 2px}
+.wx .tip{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:14px;color:var(--warn);font-weight:600}
+.wx .tip svg.i{width:17px;height:17px;margin-top:2px}
+.wx .src{font-size:11px;color:var(--muted);margin-top:10px}
+/* ============ compact : météo + prochain trajet ============ */
+.strip{width:100%;display:flex;align-items:center;gap:12px;margin-top:10px;padding:10px 12px;border:0;border-radius:6px;background:var(--plate);box-shadow:0 0 0 1px var(--rule);text-align:left;color:var(--body)}
+.strip .ic{width:40px;height:40px;flex:none;display:grid;place-items:center;border-radius:10px}
+.strip .ic svg.i{width:26px;height:26px}
+.strip .mid{flex:1;min-width:0;line-height:1.3}
+.strip .mid b{color:var(--ink);font-size:17px;font-variant-numeric:tabular-nums}
+.strip .mid small{display:block;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.strip .end{text-align:right;font-size:12px;color:var(--muted);line-height:1.2;flex:none}
+.strip .end b{display:block;font-size:17px;color:var(--accent);font-variant-numeric:tabular-nums}
+.strip > svg.i:last-child{color:var(--muted);width:18px;height:18px}
+.strip .warn{color:var(--warn)}
+.strip.wxs .ic{color:var(--accent);background:var(--soft)}
+.strip.nx .ic{background:var(--cat-move);color:#fff}
+.hourly{list-style:none;margin:0;padding:4px 16px;background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule)}
+.hourly li{display:grid;grid-template-columns:44px 30px 1fr 40px 46px;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--soft);font-variant-numeric:tabular-nums}
+.hourly li:first-child{border-top:0}
+.hourly .h{color:var(--muted);font-size:14px}
+.hourly svg.i{width:22px;height:22px}
+.hourly .bar{height:6px;border-radius:3px;background:var(--soft);position:relative;overflow:hidden}
+.hourly .bar i{position:absolute;left:0;top:0;bottom:0;background:#4C8BD8;border-radius:3px}
+.hourly .t{font-weight:800;color:var(--ink);text-align:right}
+.hourly li.now{background:var(--soft);margin:0 -16px;padding-left:16px;padding-right:16px}
+
+/* ============ code couleur des activités ============ */
+:root{--cat-move:#2C6DB5;--cat-temple:#C23B2E;--cat-nature:#2E8A55;--cat-food:#C98100;--cat-shop:#B83C86;--cat-gunpla:#5A4FC8;--cat-musee:#0F8B8D;--cat-walk:#7A8794;--cat-hotel:#8A6A3F;--cat-free:#9AA3AD}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin:0 2px 8px;font-size:12px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.legend i{width:10px;height:10px;border-radius:3px;background:var(--c)}
+.cc{--cc:var(--c)}
+:root[data-theme="dark"] .cc{--cc:color-mix(in oklab, var(--c) 70%, #FFFFFF)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cc{--cc:color-mix(in oklab, var(--c) 70%, #FFFFFF)}}
+.cc .btn.go{background:var(--cc);border-color:var(--cc)}
+.cc .place-pi,.place.cc .pi{color:var(--cc)}
+.ticket.cc .tag.reserve{background:color-mix(in oklab, var(--cc) 16%, transparent);color:var(--cc)}
+/* ============ fiche lieu ============ */
+.hero{position:relative;height:190px;border-radius:8px;overflow:hidden;background:var(--line);margin-top:2px}
+.hero .pat{position:absolute;inset:0;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cg fill='none' stroke='white' stroke-width='1.6'%3E%3Ccircle cx='20' cy='20' r='18'/%3E%3Ccircle cx='20' cy='20' r='13'/%3E%3Ccircle cx='20' cy='20' r='8'/%3E%3Ccircle cx='0' cy='10' r='18'/%3E%3Ccircle cx='0' cy='10' r='13'/%3E%3Ccircle cx='0' cy='10' r='8'/%3E%3Ccircle cx='40' cy='10' r='18'/%3E%3Ccircle cx='40' cy='10' r='13'/%3E%3Ccircle cx='40' cy='10' r='8'/%3E%3C/g%3E%3C/svg%3E")}
+.hero .art{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#fff}
+.hero .art svg.i{width:54px;height:54px;stroke-width:1.5}
+.hero .art b{font-size:26px;letter-spacing:.08em;font-weight:800;text-shadow:0 1px 8px rgba(0,0,0,.2)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s}
+.hero img.ok{opacity:1}
+.hero .credit{position:absolute;right:8px;bottom:6px;font-size:11px;color:#fff;background:rgba(0,0,0,.45);padding:1px 7px;border-radius:999px}
+.pmeta{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px}
+.pmeta span{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--body)}
+.pmeta span svg.i{width:15px;height:15px;color:var(--cc,var(--muted))}
+.pdesc{font-size:16px;color:var(--body);margin:8px 0 0}
+.wikix{font-size:14px;color:var(--muted);margin:10px 0 0;border-left:3px solid var(--soft);padding-left:10px}
+.buyrow{width:100%;display:grid;grid-template-columns:36px 1fr auto;gap:10px;align-items:center;padding:10px 0;border:0;border-top:1px solid var(--soft);background:none;text-align:left;color:var(--body)}
+.buyrow:first-child{border-top:0}
+.buyrow .bi{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:color-mix(in oklab, var(--cat-shop) 16%, transparent);color:var(--cat-shop)}
+.buyrow b{color:var(--ink);display:block;line-height:1.3}
+.buyrow small{font-size:13px;color:var(--muted)}
+.buyrow.done b{text-decoration:line-through;color:var(--muted)}
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:800;color:var(--cat-shop);background:color-mix(in oklab, var(--cat-shop) 14%, transparent);border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:2px}
+.badge svg.i{width:13px;height:13px;stroke-width:2.2}
+.tap{cursor:pointer}
+.item{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);padding:14px 16px}
+.item .top2{display:grid;grid-template-columns:40px 1fr 34px;gap:12px;align-items:start}
+.item .ii{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:color-mix(in oklab, var(--cat-shop) 16%, transparent);color:var(--cat-shop)}
+.item .nm{font-size:17px;font-weight:800;color:var(--ink);line-height:1.3}
+.item.done .nm{text-decoration:line-through;color:var(--muted)}
+.wherelist{margin-top:10px;border-top:1px solid var(--soft)}
+.where{width:100%;display:grid;grid-template-columns:10px 1fr auto;gap:10px;align-items:center;padding:9px 0;border:0;border-bottom:1px solid var(--soft);background:none;text-align:left}
+.where:last-child{border-bottom:0}
+.where .dt{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.where b{color:var(--ink);font-size:15px;display:block;line-height:1.3}
+.where small{font-size:13px;color:var(--muted)}
+.where em{font-style:normal;font-size:12px;font-weight:700;color:var(--muted);text-align:right}
+.pblock{margin-top:18px}
+.pblock h4{display:flex;align-items:center;gap:7px;margin:0 0 6px;font-size:14px;color:var(--cc,var(--muted));font-weight:800}
+.pblock h4 svg.i{width:17px;height:17px}
+.pblock p{margin:0;font-size:16px}
+.pblock ul{margin:0;padding:0;list-style:none}
+.pblock li{position:relative;padding:5px 0 5px 18px;font-size:16px;border-top:1px solid var(--soft)}
+.pblock li:first-child{border-top:0}
+.pblock li::before{content:"";position:absolute;left:2px;top:14px;width:7px;height:7px;border-radius:2px;background:var(--cc)}
+.tipbox{display:flex;gap:10px;margin-top:16px;padding:12px 14px;border-radius:8px;background:color-mix(in oklab, var(--cc) 12%, var(--plate));font-size:15px;color:var(--body)}
+.tipbox svg.i{color:var(--cc);margin-top:2px}
+.gal{display:flex;gap:6px;overflow-x:auto;margin:10px -16px 0;padding:0 16px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal img{flex:none;height:150px;width:auto;max-width:260px;border-radius:6px;object-fit:cover;scroll-snap-align:start;background:var(--soft)}
+.tag.btnlike{border:0;cursor:pointer;font:inherit;font-size:12px;font-weight:700}
+.tag.btnlike svg.i{width:13px;height:13px;stroke-width:2.4}
+.howbox{background:var(--plate);border-radius:6px;box-shadow:0 0 0 1px var(--rule);padding:14px 16px;margin-top:10px}
+.howbox h4{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:15px;color:var(--ink)}
+.howbox h4 .n{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--cat-move);color:#fff}.howbox h4 .n svg.i{width:16px;height:16px;stroke-width:2.2}
+.howbox ol{margin:6px 0 0;padding-left:20px}
+.howbox li{margin:4px 0;font-size:15px}
+.jpbox{margin-top:10px;padding:14px;border-radius:8px;background:var(--soft);cursor:pointer}
+.jpbox .jp{font-size:20px;font-weight:700;color:var(--ink);line-height:1.6;white-space:pre-line}
+.jpbox .fr{font-size:13px;color:var(--muted);margin-top:6px}
+.jpbox .hint{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--cat-move);margin-top:8px}
+.jpbox .hint svg.i{width:15px;height:15px}
+/* ============ v2 : maintenant, bouton Montrer, kanji, audio ============ */
+.route li.past{opacity:.42}
+.route li.past .stop.ico{background:var(--muted)}
+.route li.now .x{background:color-mix(in oklab, var(--c) 9%, transparent);margin-left:4px;padding-left:10px;border-radius:8px}
+.nowpin{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:800;color:#fff;background:var(--c);border-radius:999px;padding:2px 8px;margin-bottom:4px;letter-spacing:.02em}
+.nowpin i{width:7px;height:7px;border-radius:50%;background:#fff;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.25}}
+.stnjp{font-size:15px;color:var(--muted);letter-spacing:.06em;margin-top:2px}
+.fab{position:fixed;right:16px;bottom:calc(var(--tab) + env(safe-area-inset-bottom,0px) + 14px);z-index:25;display:flex;align-items:center;gap:8px;height:52px;padding:0 18px 0 14px;border:0;border-radius:999px;background:var(--ink);color:var(--plate);font-weight:800;font-size:15px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.fab svg.i{width:22px;height:22px}
+@media (min-width:760px){.fab{bottom:28px;right:28px}}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.quick .tile{min-height:110px}
+.say{flex:none}
+.tomorrow .ic{background:var(--soft);color:var(--ink)}
+@media (max-width:759px){
+  .sign .face{padding:14px 12px 4px}
+  .sign .kanji{font-size:44px}
+  .sign .name{font-size:17px;margin-top:2px}
+  .sign .band{height:24px;margin-top:8px}
+  .sign .ends button{padding:7px 12px 9px;font-size:12px}
+  .sign .ends button b{font-size:14px}
+  .sign .meta{display:none}
+}
+/* ============ pas à pas ============ */
+.steps{list-style:none;margin:12px 0 0;padding:0}
+.steps li{display:grid;grid-template-columns:34px 1fr;gap:10px;position:relative;padding-bottom:12px}
+.steps li:not(:last-child)::before{content:"";position:absolute;left:16px;top:32px;bottom:0;width:2px;background:var(--rule)}
+.steps .si{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:var(--cat-move);color:#fff}
+.steps .si svg.i{width:17px;height:17px;stroke-width:2.1}
+.steps li.walk .si,.steps li.taxi .si{background:var(--soft);color:var(--ink)}
+.steps li.change .si{background:var(--warn-bg);color:var(--warn)}
+.steps b{display:block;color:var(--ink);line-height:1.3}
+.steps .jp{font-size:14px;color:var(--muted);letter-spacing:.04em}
+.steps .sub{font-size:14px;margin-top:2px}
+.steps li.change b{color:var(--warn)}
+.calm{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.calm span{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:color-mix(in oklab, #2E8A55 14%, transparent);color:#2E8A55}
+.calm svg.i{width:14px;height:14px}
+.chg{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:800;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:2px 8px;margin-left:4px}
+/* ============ prêt à partir ============ */
+.rd{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:start;padding:11px 0;border-top:1px solid var(--soft)}
+.rd:first-child{border-top:0}
+.rd .dot2{margin-top:2px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.rd .dot2 svg.i{width:15px;height:15px;stroke-width:2.6}
+.rd.ok .dot2{background:#2E8A55}.rd.ko .dot2{background:var(--warn)}.rd.na .dot2{background:var(--muted)}
+.rd b{display:block;color:var(--ink);line-height:1.3}
+.rd small{font-size:13px;color:var(--muted)}
+.score{display:flex;align-items:center;gap:14px;padding:16px;border-radius:8px;background:var(--plate);box-shadow:0 0 0 1px var(--rule)}
+.score .big{font-size:34px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
+.prog{height:8px;border-radius:4px;background:var(--soft);overflow:hidden;margin-top:10px}
+.prog i{display:block;height:100%;width:0;background:#2E8A55;transition:width .3s}
+/* ============ iPad ============ */
+.split>.detail{display:none}
+@media (min-width:760px){
+  .app{padding-left:calc(92px + 28px);padding-right:28px;padding-bottom:40px}
+  .top .in{padding-left:calc(92px + 28px);padding-right:28px}
+  .demo{padding-left:calc(92px + 28px)}
+  nav.tabs{top:0;bottom:0;right:auto;width:92px;border-top:0;border-right:1px solid var(--rule);align-items:center;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+  nav.tabs .wrap{flex-direction:column;gap:6px}
+  nav.tabs button{flex:none;height:72px;font-size:12px}
+  nav.tabs button[aria-current="page"]::before{top:18%;bottom:18%;left:0;right:auto;width:3px;height:auto;border-radius:0 3px 3px 0}
+  .split{display:grid;grid-template-columns:320px 1fr;gap:22px;align-items:start}
+  .split>.detail{display:block}
+  .split>.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 66px);max-height:calc(100vh - 90px);overflow:auto;border-radius:6px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+  .two>*+*{margin-top:0}
+  .jour{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+  .tiles{grid-template-columns:repeat(4,1fr)}
+  .sign .kanji{font-size:74px}
+}
+</style>
+</head>
+<body>
+<header class="top" id="top"><div class="in"><div class="ttl" id="ttl"></div>
+  <button class="theme" id="theme" aria-label="Mode jour ou nuit"><span data-m="light"></span><span data-m="dark"></span></button></div></header>
+
+<main class="app" id="app"></main>
+<nav class="tabs" aria-label="Sections"><div class="wrap" id="tabs"></div></nav>
+<button class="fab" id="fab" data-quick aria-label="Montrer : billet, taxi, allergie"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11M11 10.5V4.5a1.5 1.5 0 0 1 3 0v6M14 10.5V6a1.5 1.5 0 0 1 3 0v8a6 6 0 0 1-6 6h-.5a6 6 0 0 1-4.6-2.2L3.4 14.5a1.5 1.5 0 0 1 2.3-2L8 15"/></svg>Montrer</button>
+<div id="layer"></div>
+
+<script>
+/* ============ icônes ============ */
+const P = {
+  ready:'<path d="M5 12.5 9.5 17 19 7.5"/><circle cx="12" cy="12" r="10"/>',
+  download:'<path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/>',
+  swap:'<path d="M7 4v13M7 17l-3-3M7 17l3-3M17 20V7M17 7l-3 3M17 7l3 3"/>',
+  shield:'<path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>',
+  speaker:'<path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>',
+  moonrise:'<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  star:'<path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z"/>',
+  bulb:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z"/>',
+  scroll:'<path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v12M11 9h4M11 13h4"/>',
+  eye:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
+  chip:'<rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/>',
+  tablet:'<rect x="5" y="2.5" width="14" height="19" rx="2.5"/><path d="M11 18.5h2"/>',
+  cart:'<path d="M3 4h2.5l2 11h10l2-7.5H7"/><circle cx="9" cy="19.5" r="1.3"/><circle cx="16.5" cy="19.5" r="1.3"/>',
+  w_sun:'<circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M2.5 12h2M19.5 12h2M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>',
+  w_part:'<path d="M8 3.5v1.5M3.6 6.1l1 1M2 10.5h1.5M12.4 6.1l-1 1"/><path d="M5.5 11a3 3 0 0 1 5.3-2"/><path d="M8 19.5h9.5a3.5 3.5 0 0 0 0-7 5 5 0 0 0-9.6 1.5A2.8 2.8 0 0 0 8 19.5Z"/>',
+  w_cloud:'<path d="M7 18.5h10.5a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.7 1.7A3.2 3.2 0 0 0 7 18.5Z"/>',
+  w_rain:'<path d="M7 14.5h10.5a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.7 1.7A3.2 3.2 0 0 0 7 14.5Z"/><path d="m8 17.5-1 2.5M12 17.5l-1 2.5M16 17.5l-1 2.5"/>',
+  w_storm:'<path d="M7 14.5h10.5a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.7 1.7A3.2 3.2 0 0 0 7 14.5Z"/><path d="m12.5 15-2 3.5h3l-2 3.5"/>',
+  w_snow:'<path d="M7 14.5h10.5a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.7 1.7A3.2 3.2 0 0 0 7 14.5Z"/><path d="M8 18v.5M12 19v.5M16 18v.5M10 21v.5M14 21v.5"/>',
+  w_fog:'<path d="M4 9h16M6 13h12M4 17h16"/>',
+  drop:'<path d="M12 3.5s-6 6.5-6 10.5a6 6 0 0 0 12 0c0-4-6-10.5-6-10.5Z"/>',
+  wind:'<path d="M3 9h11a2.5 2.5 0 1 0-2.5-2.5M3 13h15a2.5 2.5 0 1 1-2.5 2.5M3 17h7"/>',
+  sunset:'<path d="M12 9V3M9 6l3 3 3-3M4 17a8 8 0 0 1 16 0M2 20h20"/>',
+  today:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  route:'<circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M8 5h7a3.5 3.5 0 0 1 0 7H9a3.5 3.5 0 0 0 0 7h7"/>',
+  train:'<rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l1.5-4M15 21l-1.5-4"/><circle cx="8.5" cy="14" r=".6" fill="currentColor"/><circle cx="15.5" cy="14" r=".6" fill="currentColor"/>',
+  bus:'<rect x="4" y="3" width="16" height="15" rx="2.5"/><path d="M4 11h16M7 18v2.5M17 18v2.5M8 3v8"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/>',
+  plane:'<path d="M10.5 13.5 3 11l1.5-1.5 8 .5 4-4.5c1-1 2.6-1.3 3.2-.7.6.6.3 2.2-.7 3.2L14.5 12l.5 8L13.5 21.5 11 14"/>',
+  pass:'<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h6M7 14h3M16 9v6"/>',
+  bag:'<path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+  suitcase:'<rect x="5" y="7" width="14" height="13" rx="2"/><path d="M9 7V4h6v3M9 11v6M15 11v6"/>',
+  pin:'<path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.3 12 21 12 21Z"/><circle cx="12" cy="10" r="2.3"/>',
+  bed:'<path d="M3 18V7M3 13h18v5M21 18v-3a2 2 0 0 0-2-2"/><path d="M7 13v-2.5a1.5 1.5 0 0 1 1.5-1.5H11a1 1 0 0 1 1 1v3"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.5"/>',
+  torii:'<path d="M3 5c3 1 15 1 18 0M5 9h14M7 6.5V21M17 6.5V21M12 9v4"/>',
+  leaf:'<path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/>',
+  walk:'<circle cx="13" cy="4.5" r="1.8"/><path d="m10 21 2-6-2.5-2.5L11 8l3 2 3 1M9.5 12.5 7 15M12 15l3 6"/>',
+  bowl:'<path d="M3.5 12h17a8.5 8.5 0 0 1-17 0Z"/><path d="M8 20h8M14 3l-3 9M19 4l-6 8"/>',
+  shop:'<path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 11V6.5a3 3 0 0 1 6 0V11"/>',
+  robot:'<path d="M12 3 9 7h6l-3-4Z"/><rect x="6" y="7" width="12" height="10" rx="2"/><path d="M9 11h2M13 11h2M9 14h6M8 17v3M16 17v3M4 10v4M20 10v4"/>',
+  museum:'<path d="m3 9 9-5 9 5M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/>',
+  view:'<path d="m3 19 6-10 4 6 3-4 5 8H3Z"/><circle cx="17" cy="6" r="2"/>',
+  phone:'<path d="M6.5 3h3l1.5 4.5-2 1.3a11 11 0 0 0 6.2 6.2l1.3-2L21 14.5v3A2.5 2.5 0 0 1 18.5 20 15.5 15.5 0 0 1 4 5.5 2.5 2.5 0 0 1 6.5 3Z"/>',
+  copy:'<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/>',
+  qr:'<rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><path d="M14 14h2v2h-2zM18 14h2M14 18h2M18 18h2v2"/>',
+  sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/>',
+  left:'<path d="m15 18-6-6 6-6"/>', right:'<path d="m9 18 6-6-6-6"/>',
+  out:'<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+  check:'<path d="m5 12 4.5 4.5L19 7"/>',
+  camera:'<path d="M4 8h3l2-3h6l2 3h3v11H4V8Z"/><circle cx="12" cy="13" r="3.5"/>',
+  alert:'<path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17v.5"/>',
+  yen:'<path d="m6 4 6 8 6-8M12 12v8M8 13h8M8 16.5h8"/>',
+  chat:'<path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 9h8M8 12h5"/>',
+  cup:'<path d="M5 8h12v6a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8Z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M9 3v2M12 3v2"/>',
+  sos:'<path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"/><path d="M12 7v6M12 16v.5"/>',
+  list:'<path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/>',
+  taxi:'<path d="M5 11 7 6h10l2 5M4 11h16v6H4zM6 17v2M18 17v2M10 3h4"/><circle cx="8" cy="14" r=".7" fill="currentColor"/><circle cx="16" cy="14" r=".7" fill="currentColor"/>',
+  hand:'<path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11M11 10.5V4.5a1.5 1.5 0 0 1 3 0v6M14 10.5V6a1.5 1.5 0 0 1 3 0v8a6 6 0 0 1-6 6h-.5a6 6 0 0 1-4.6-2.2L3.4 14.5a1.5 1.5 0 0 1 2.3-2L8 15"/>',
+  google:'<circle cx="12" cy="12" r="8"/><path d="M12 12h6"/>',
+  ticket:'<path d="M3 8a2 2 0 0 0 0 4v-0 4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-4a2 2 0 0 1 0-4V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v3Z"/><path d="M15 5v14" stroke-dasharray="2 2"/>'
+};
+const I = (n, cls="") => `<svg class="i ${cls}" viewBox="0 0 24 24" aria-hidden="true">${P[n]||""}</svg>`;
+
+/* ============ données ============ */
+let D = /*__DATA__*/null;
+const KIND_ICON = {train:"train", bus:"bus", vol:"plane", pass:"pass", bagage:"suitcase"};
+const CATS = {temple:["Temples","torii"], nature:["Nature","leaf"], balade:["Balades","walk"], resto:["Restos","bowl"], shopping:["Shopping","shop"], gunpla:["Gunpla","robot"], musee:["Musées","museum"], vue:["Vues","view"], gare:["Gares","train"]};
+const STATUS = {reserve:"Réservé", acheter:"À acheter", libre:"Sans réservation", pass:"Inclus dans le pass", suica:"Suica", faire:"À faire"};
+
+/* ============ utilitaires ============ */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = {
+  get(k,d){ try{ const v = localStorage.getItem("jp-"+k); return v===null? d : JSON.parse(v);}catch(e){ return d; } },
+  set(k,v){ try{ localStorage.setItem("jp-"+k, JSON.stringify(v)); return true; }catch(e){ return false; } }
+};
+const JOURS = ["dim.","lun.","mar.","mer.","jeu.","ven.","sam."], J1 = ["D","L","M","M","J","V","S"];
+const MOIS = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+const parseD = s => { const [y,m,d] = s.split("-").map(Number); return new Date(Date.UTC(y,m-1,d)); };
+const fmtD = (s,long) => { const d = parseD(s); return (long? JOURS[d.getUTCDay()]+" " : "")+d.getUTCDate()+" "+MOIS[d.getUTCMonth()]; };
+const daysBetween = (a,b) => Math.round((parseD(b)-parseD(a))/86400000);
+const tokyoToday = () => window.DEMO_DATE || new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+const NOW = () => window.DEMO_DATE ? Date.parse(window.DEMO_DATE+"T"+String(window.DEMO_HOUR??8).padStart(2,"0")+":00:00+09:00") : Date.now();
+const nowMin = () => window.DEMO_DATE ? (window.DEMO_HOUR??8)*60 : (()=>{ const [h,m] = new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date()).split(":").map(Number); return h*60+m; })();
+const WORDT = {"tôt":390,"matin":540,"midi":720,"aprèm":870,"fin d'aprèm":1020,"fin":1020,"soir":1140};
+function blockMins(d){
+  let prev = 0;
+  return d.blocks.map(b => {
+    const t = (b.t||"").trim(); let v = null;
+    const m = /(\d{1,2}):(\d{2})/.exec(t);
+    if(m) v = +m[1]*60 + +m[2] - (/avant/.test(t)? 30 : 0);
+    else if(WORDT[t]!=null) v = WORDT[t];
+    if(v==null || v < prev) v = prev + 1;
+    prev = v; return v;
+  });
+}
+function speak(txt){
+  if(!("speechSynthesis" in window)) return;
+  const u = new SpeechSynthesisUtterance(txt.replace(/\n/g,"。")); u.lang = "ja-JP"; u.rate = .9;
+  const v = speechSynthesis.getVoices().find(v=>v.lang && v.lang.startsWith("ja")); if(v) u.voice = v;
+  speechSynthesis.cancel(); speechSynthesis.speak(u);
+}
+const sayBtn = (txt) => ("speechSynthesis" in window)? `<button class="btn icon say" data-say="${esc(txt)}" aria-label="Écouter la prononciation">${I("speaker")}</button>` : "";
+const tsOf = (date,hhmm) => { const m = /(\d{1,2}):(\d{2})/.exec(hhmm||""); return m? Date.parse(`${date}T${m[1].padStart(2,"0")}:${m[2]}:00+09:00`) : null; };
+const stage = k => D.stages[k] || D.stages.tokyo;
+const hotel = id => D.hotels.find(h=>h.id===id);
+const place = id => D.places.find(p=>p.id===id);
+const tr = id => D.transports.find(t=>t.id===id);
+const dayOf = date => D.days.find(d=>d.date===date);
+const lineOf = st => `--line:${stage(st).color}`;
+
+function maps(o){
+  const dest = o.ll ? o.ll.join(",") : encodeURIComponent(o.q);
+  return { apple:`https://maps.apple.com/?daddr=${dest}&dirflg=r`, google:`https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=transit` };
+}
+const placeTarget = p => p.ll ? {ll:p.ll} : {q: p.q || (p.name+" "+stage(p.city).name)};
+const hotelTarget = h => ({q: h.addrJp || (h.name+", "+h.addr)});
+function goBtns(o, label="Y aller"){
+  const m = maps(o);
+  return `<a class="btn go" href="${m.apple}" target="_blank" rel="noopener">${I("pin")}${label}</a><a class="btn ghost" href="${m.google}" target="_blank" rel="noopener">Google</a>`;
+}
+
+/* ============ mes billets (stockés sur l'appareil) ============ */
+const bills = () => store.get("bills", {});
+function billBox(key){
+  if(!key) return "";
+  const b = bills()[key] || {};
+  const has = b.ref || b.img;
+  return `<div class="mybill">
+    ${I("ticket")}
+    <div class="ref">${b.ref? `${esc(b.label||"Réservation")}<b>${esc(b.ref)}</b>` : has? "Billet enregistré" : "Ajoute ton n° ou la capture du QR"}</div>
+    ${b.img? `<button class="btn go" data-qr="${esc(key)}">${I("qr")}QR</button>`:""}
+    ${b.ref? `<button class="btn icon" data-copy="${esc(b.ref)}" aria-label="Copier">${I("copy")}</button>`:""}
+    <button class="btn ${has?"icon":""}" data-editbill="${esc(key)}" aria-label="Modifier">${has? I("camera") : I("camera")+"Ajouter"}</button>
+  </div>`;
+}
+
+/* ============ achats de billets ============ */
+const paid = () => store.get("paid", {});
+function statusOf(t){
+  if(paid()[t.id]) return {cls:"reserve", txt: t.status==="faire"? "Fait" : "Acheté"};
+  return {cls:t.status, txt: t.kind==="pass" && t.status==="reserve" ? "Acheté" : STATUS[t.status]};
+}
+function statusTag(t){
+  const s = statusOf(t);
+  if(t.buy && !paid()[t.id]) return `<button class="tag ${s.cls} btnlike" data-howbuy="${t.id}">${esc(s.txt)} ${I("right")}</button>`;
+  return `<span class="tag ${s.cls}">${esc(s.txt)}</span>`;
+}
+function buySheet(id){
+  const t = tr(id), b = t.buy, done = !!paid()[id];
+  const jp = (txt, fr) => `<div class="jpbox" data-show="${esc(txt)}" data-sub="${esc(fr)}" role="button"><div class="jp" lang="ja">${esc(txt)}</div><div class="fr">${esc(fr)}</div><div class="hint">${I("hand")}Toucher pour montrer en plein écran</div></div>${("speechSynthesis" in window)? `<div class="acts"><button class="btn" data-say="${esc(txt)}">${I("speaker")}Écouter</button></div>`:""}`;
+  let n = 0;
+  return `<div class="cc" style="--c:var(--cat-move)">
+    <div class="alert" style="background:color-mix(in oklab, var(--cat-move) 12%, var(--plate))">${I("info")}<span>${esc(b.summary)}</span></div>
+    ${b.online? `<div class="howbox"><h4><span class="n">${I("out")}</span>En ligne</h4>
+      <ol>${b.online.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>
+      <div class="acts"><a class="btn go big" href="${esc(b.online.url)}" target="_blank" rel="noopener">${I("out")}${esc(b.online.label)}</a></div></div>`:""}
+    ${b.inperson? `<div class="howbox"><h4><span class="n">${I("pin")}</span>${b.online? "Sur place (ou pour l'échange)" : "Sur place"}</h4>
+      <p class="small" style="margin:0"><b style="color:var(--ink)">Où :</b> ${esc(b.inperson.where)}</p>
+      ${b.inperson.hours? `<p class="small muted" style="margin:4px 0 0">${esc(b.inperson.hours)}</p>`:""}
+      <ol>${b.inperson.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>
+      ${b.inperson.ll? `<div class="acts">${goBtns({ll:b.inperson.ll},"Y aller")}</div>`:""}</div>`:""}
+    ${b.phrase? `<div class="sec">${I("chat")}Phrase pour le guichet</div>${jp(b.phrase.jp, b.phrase.fr)}${b.phrase.jp2? jp(b.phrase.jp2, b.phrase.fr2):""}`:""}
+    <div class="acts" style="margin-top:16px"><button class="btn ${done?"":"go"} big" data-paid="${id}">${I("check")}${done? "Remettre « à acheter »" : (t.status==="faire"? "Marquer comme fait" : "Marquer comme acheté")}</button></div>
+  </div>`;
+}
+
+/* ============ pas à pas ============ */
+const STEPI = {train:"train", bus:"bus", walk:"walk", taxi:"taxi", change:"swap"};
+const nChanges = t => (t.steps||[]).filter(x=>x.k==="change").length;
+function stepsBlock(t){
+  if(!t.steps?.length) return "";
+  const m = t.maps? `https://maps.apple.com/?saddr=${encodeURIComponent(t.maps[0])}&daddr=${encodeURIComponent(t.maps[1])}&dirflg=r` : null;
+  return `${t.tags?.length? `<div class="calm">${t.tags.map(x=>`<span>${I("shield")}${esc(x)}</span>`).join("")}</div>`:""}
+    <ol class="steps">${t.steps.map(x=>`<li class="${x.k}"><span class="si">${I(STEPI[x.k]||"train")}</span><div><b>${esc(x.t)}</b>${x.jp? `<div class="jp" lang="ja">${esc(x.jp)}</div>`:""}${x.sub? `<div class="sub">${esc(x.sub)}</div>`:""}</div></li>`).join("")}</ol>
+    ${m? `<div class="acts"><a class="btn" href="${m}" target="_blank" rel="noopener">${I("clock")}Horaires en direct (Plans)</a></div>`:""}`;
+}
+
+/* ============ prêt à partir ============ */
+const BILL_KEYS = () => [...D.transports.filter(t=>t.secret).map(t=>({key:t.secret, name:t.name, date:t.date})), ...D.hotels.filter(h=>h.secret).map(h=>({key:h.secret, name:h.name, date:h.from}))];
+async function readyState(){
+  const b = bills(), keys = BILL_KEYS(), wk = wikiCache(), wikiPlaces = D.places.filter(p=>p.wiki||p.wikiEn);
+  const spots = [...new Set(D.days.map(d=>wxSpot(d).key))], wx = wxCache();
+  let imgs = 0; try{ if(window.caches){ const c = await caches.open("japon-ext"); imgs = (await c.keys()).length; } }catch(_){}
+  const done = store.get("todo",{}), todoLeft = D.todo.filter(t=>!done[t.id]).length;
+  const toBuy = D.transports.filter(t=>t.buy && !paid()[t.id]);
+  const standalone = window.navigator.standalone === true || matchMedia("(display-mode: standalone)").matches;
+  const sw = !!(navigator.serviceWorker && navigator.serviceWorker.controller);
+  return [
+    {id:"install", ok: standalone, na: window.IS_DEMO, t:"App installée sur l'écran d'accueil", s: standalone? "Ouverte depuis l'icône" : "Safari → Partager → Sur l'écran d'accueil, puis l'ouvrir depuis l'icône"},
+    {id:"offline", ok: sw, na: window.IS_DEMO, t:"Mode hors ligne actif", s: sw? "L'app fonctionne sans réseau" : "Ouvrir l'app une fois avec du réseau, puis la relancer"},
+    {id:"wiki", ok: wikiPlaces.every(p=>wk[p.id]), na: window.IS_DEMO, t:"Fiches et photos des lieux", s: `${wikiPlaces.filter(p=>wk[p.id]).length} / ${wikiPlaces.length} fiches · ${imgs} photos en mémoire`, act:"prep"},
+    {id:"wx", ok: spots.every(k=>wx[k]), na: window.IS_DEMO, t:"Météo des étapes", s: `${spots.filter(k=>wx[k]).length} / ${spots.length} lieux en mémoire`, act:"prep"},
+    {id:"qr", ok: keys.filter(k=>k.key!=="coco").every(k=>b[k.key]?.img), t:"QR codes des billets", s: `${keys.filter(k=>b[k.key]?.img).length} / ${keys.filter(k=>k.key!=="coco").length} enregistrés`, list: keys.filter(k=>k.key!=="coco"&&!b[k.key]?.img)},
+    {id:"ref", ok: keys.every(k=>b[k.key]?.ref), t:"Numéros de réservation", s: `${keys.filter(k=>b[k.key]?.ref).length} / ${keys.length} saisis`, list: keys.filter(k=>!b[k.key]?.ref)},
+    {id:"buy", ok: toBuy.length===0, t:"Billets à acheter", s: toBuy.length? toBuy.map(t=>t.name.split(" (")[0]).join(", ") : "Tout est acheté", buys: toBuy},
+    {id:"todo", ok: todoLeft===0, t:"Checklist avant le départ", s: todoLeft? `${todoLeft} action${todoLeft>1?"s":""} restante${todoLeft>1?"s":""}` : "Tout est fait", act:"todo"}
+  ];
+}
+async function readySheet(){
+  const items = await readyState(), scored = items.filter(x=>!x.na), okN = scored.filter(x=>x.ok).length;
+  return `<div class="score"><div class="big">${okN}/${scored.length}</div><div><b style="color:var(--ink)">${okN===scored.length? "Tout est prêt" : "Points à régler avant le départ"}</b><div class="small muted">À refaire la veille du départ, en wifi</div></div></div>
+    <div class="acts" style="margin-top:12px"><button class="btn go big" data-prep ${window.IS_DEMO? "disabled":""}>${I("download")}Tout préparer pour le hors-ligne</button></div>
+    <div id="prepzone"></div>
+    ${window.IS_DEMO? `<p class="small muted">Dans la démo, le téléchargement hors ligne est désactivé : il fonctionnera dans l'app installée.</p>`:""}
+    <div class="box" style="margin-top:12px">${items.map(x=>`<div class="rd ${x.na?"na":x.ok?"ok":"ko"}"><span class="dot2">${I(x.na? "info" : x.ok? "check" : "alert")}</span>
+      <div><b>${esc(x.t)}</b><small>${x.na? "À vérifier dans l'app installée" : esc(x.s)}</small>
+      ${!x.ok && x.list?.length? `<div class="acts">${x.list.map(k=>`<button class="btn" data-editbill="${esc(k.key)}">${I("camera")}${esc(k.name.split(" (")[0])}</button>`).join("")}</div>`:""}
+      ${!x.ok && x.buys?.length? `<div class="acts">${x.buys.map(t=>`<button class="btn" data-howbuy="${t.id}">${I("cart")}${esc(t.name.split(" (")[0])}</button>`).join("")}</div>`:""}</div>
+      ${!x.ok && x.act==="todo"? `<button class="btn" data-sheet="todo">Voir</button>`:""}</div>`).join("")}</div>`;
+}
+async function prepareOffline(btn){
+  const zone = $("#prepzone"); btn.disabled = true;
+  const wikiPlaces = D.places.filter(p=>p.wiki||p.wikiEn);
+  const spots = []; const seen = new Set(); D.days.forEach(d=>{ const s = wxSpot(d); if(!seen.has(s.key)){ seen.add(s.key); spots.push(s); } });
+  const total = wikiPlaces.length + spots.length; let n = 0, fails = 0;
+  const upd = (txt) => zone.innerHTML = `<div class="prog"><i style="width:${Math.round(n/total*100)}%"></i></div><p class="small muted" style="margin:6px 0 0">${txt}</p>`;
+  upd("Démarrage…");
+  for(const s of spots){ try{ await wxFetch(s); }catch(_){ fails++; } n++; upd(`Météo : ${s.label}`); }
+  for(const p of wikiPlaces){
+    try{
+      const w = await wikiLoad(p);
+      const urls = [w?.img, ...(w?.gal||[])].filter(Boolean);
+      await Promise.all(urls.map(u=>fetch(u,{mode:"no-cors"}).catch(()=>{ })));
+      if(!w) fails++;
+    }catch(_){ fails++; }
+    n++; upd(`Fiche : ${p.name}`);
+  }
+  try{ if(navigator.storage?.persist) await navigator.storage.persist(); }catch(_){}
+  upd(fails? `Terminé avec ${fails} élément${fails>1?"s":""} non chargé${fails>1?"s":""} : relancer plus tard en wifi.` : "Terminé : fiches, photos et météo sont en mémoire.");
+  setTimeout(async ()=>{ const h = await readySheet(); const pan = document.querySelector(".pan"); if(pan){ pan.querySelector(".grab").nextElementSibling; openSheet("Prêt à partir", h); } }, 1500);
+}
+
+/* ============ composants ============ */
+function ticket(t, o={}){
+  const d = dayOf(t.date), st = d? d.stage : "vol";
+  const past = o.date && t.date < tokyoToday();
+  const times = t.dep ? `<div class="times"><b>${esc(t.dep)}</b>${t.arr? `<i>→</i><b>${esc(t.arr)}</b>`:""}</div>`
+    : t.arr ? `<div class="times"><i>arrivée</i><b>${esc(t.arr)}</b></div>` : "";
+
+  const seats = [t.car && `<div>Voiture<b>${esc(t.car)}</b></div>`, t.seats && `<div>Places<b>${esc(t.seats)}</b></div>`].filter(Boolean).join("");
+  const facts = [t.pax, t.price, t.app && ("Billet : "+t.app)].filter(Boolean).map(esc).join(" · ");
+  const acts = [];
+  if(t.buy && !paid()[t.id]) acts.push(`<button class="btn go big" data-howbuy="${t.id}">${I("cart")}${t.status==="faire"? "Comment faire" : "Comment l'acheter"}</button>`);
+  else if(t.link) acts.push(`<a class="btn go big" href="${esc(t.link)}" target="_blank" rel="noopener">${I("out")}Mon billet · ${esc(t.linkLabel)}</a>`);
+  if(t.ll) acts.push(`<a class="btn big" href="${maps({ll:t.ll}).apple}" target="_blank" rel="noopener">${I("pin")}Aller à la gare</a>`);
+  return `<article class="ticket cc ${past?"past":""}" style="${lineOf(st)};--c:var(--cat-move)">
+    <div class="main">
+      <div class="hd"><span class="kind">${I(KIND_ICON[t.kind]||"train")}</span><span>${o.date? fmtD(t.date,true)+" · ":""}${statusTag(t)}</span></div>
+      ${times}
+      ${(t.from||t.to)? `<div class="stn">${esc(t.from)}${t.to? " → "+esc(t.to):""}</div>`:""}
+      ${(t.fromJp||t.toJp)? `<div class="stnjp" lang="ja">${esc(t.fromJp||"")}${t.fromJp&&t.toJp? " → ":""}${esc(t.toJp||"")}</div>`:""}
+      <div class="nm">${esc(t.name)}</div>
+      ${t.note && !o.short? `<p class="note">${esc(t.note)}</p>`:""}
+    </div>
+    ${(seats||facts||acts.length||t.secret||t.steps)? `<div class="stub">
+      ${seats? `<div class="seat">${seats}</div>`:""}
+      ${facts? `<div class="small muted" style="margin-top:${seats?6:0}px">${facts}</div>`:""}
+      ${billBox(t.secret)}
+      ${!o.short && t.steps? `<div style="margin-top:12px"><div class="small" style="font-weight:800;color:var(--ink)">Pas à pas${nChanges(t)? ` <span class="chg">${I("swap")}${nChanges(t)} changement${nChanges(t)>1?"s":""}</span>`:""}</div>${stepsBlock(t)}</div>`:""}
+      ${acts.length? `<div class="acts">${acts.join("")}</div>`:""}
+    </div>`:""}
+  </article>`;
+}
+
+function hotelCard(h, title){
+  if(!h) return "";
+  return `<section class="hotel cc" style="${lineOf(h.stage)};--c:var(--cat-hotel)">
+    <div class="ic">${I("bed")}</div>
+    <div><div class="small muted">${esc(title || stage(h.stage).name)} · ${fmtD(h.from)} → ${fmtD(h.to)}</div><div class="nm">${esc(h.name)}</div></div>
+    <div class="full small">${esc(h.addr)}${h.addrJp? `<br><span class="muted" lang="ja">${esc(h.addrJp)}</span>`:""}</div>
+    <div class="full small" style="margin-top:4px">Arrivée <b>${esc(h.checkin)}</b>${h.checkout? " · départ <b>"+esc(h.checkout)+"</b>":""}</div>
+    ${h.note? `<div class="full small muted">${esc(h.note)}</div>`:""}
+    <div class="full">${billBox(h.secret)}</div>
+    <div class="full acts">
+      ${goBtns(hotelTarget(h))}
+      <button class="btn" data-showhotel="${h.id}">${I("taxi")}Taxi</button>
+      ${h.phone? `<a class="btn icon" href="tel:${h.phone.replace(/\s/g,"")}" aria-label="Appeler">${I("phone")}</a>`:""}
+      ${h.link? `<a class="btn" href="${esc(h.link)}" target="_blank" rel="noopener">${esc(h.linkLabel)}</a>`:""}
+    </div>
+  </section>`;
+}
+
+function sign(i, before){
+  const d = D.days[i], st = stage(d.stage), prev = D.days[i-1], next = D.days[i+1];
+  const lbl = before ? `J−${daysBetween(tokyoToday(), D.trip.start)}` : `J${i+1}`;
+  return `<section class="sign" style="${lineOf(d.stage)}">
+    <div class="face"><div class="kanji" lang="ja">${st.jp}</div><div class="name">${esc(d.title)}</div><div class="meta">${fmtD(d.date,true)} · ${esc(st.name)}</div></div>
+    <div class="band"><b>${lbl}</b></div>
+    <div class="ends">
+      <button data-day="${i-1}" ${prev?"":"disabled"}>${I("left")}<span>${prev? fmtD(prev.date):""}<b>${prev? esc(prev.title):""}</b></span></button>
+      <button data-day="${i+1}" ${next?"":"disabled"}><span>${next? fmtD(next.date):""}<b>${next? esc(next.title):""}</b></span>${I("right")}</button>
+    </div>
+  </section>`;
+}
+
+function ribbon(sel){
+  const today = tokyoToday();
+  return `<div class="ribbon" id="ribbon">${D.days.map((d,i)=>{const p=parseD(d.date);return `<button data-day="${i}" aria-current="${i===sel}" class="${d.date===today?"today":""}" aria-label="${fmtD(d.date,true)}"><span class="w">${J1[p.getUTCDay()]}</span><span class="d">${p.getUTCDate()}</span><span class="s" style="background:${stage(d.stage).color}"></span></button>`}).join("")}</div>`;
+}
+
+function routeList(i){
+  const d = D.days[i];
+  const cats = [...new Set(d.blocks.map(blockCat))];
+  const mins = blockMins(d), live = d.date===tokyoToday() && !(tokyoToday() < D.trip.start);
+  let cur = -1; if(live){ const n = nowMin(); mins.forEach((v,k)=>{ if(v<=n) cur = k; }); }
+  const legend = `<div class="legend">${cats.map(c=>`<span style="${catVar(c)}"><i></i>${CAT[c][0]}</span>`).join("")}</div>`;
+  return legend + `<ol class="route" style="${lineOf(d.stage)}">${d.blocks.map((b,k)=>{
+    const t = b.transport && tr(b.transport), p = b.place && place(b.place);
+    const cat = blockCat(b);
+    const icon = t ? (KIND_ICON[t.kind]||"train") : (p || ["hotel","food","gunpla","shop"].includes(cat)) ? CAT[cat][1] : null;
+    const tm = (b.t||"").match(/^~?\d{1,2}:\d{2}$/) ? `${esc(b.t)}` : b.t ? `<small>${esc(b.t)}</small>` : "";
+    let extra = "";
+    if(t){
+      const seats = [t.car && "voiture "+t.car, t.seats && t.seats].filter(Boolean).join(" · ");
+      extra = `${seats? `<div class="sub num">${esc(seats)}</div>`:""}${t.buy && !paid()[t.id]? `<div class="acts"><button class="btn go" data-howbuy="${t.id}">${I("cart")}${t.status==="faire"? "Comment faire" : "Comment l'acheter"}</button></div>`:""}<div class="acts">${t.link? `<a class="btn go" href="${esc(t.link)}" target="_blank" rel="noopener">${I("out")}Mon billet</a>`:""}${t.steps? `<button class="btn" data-ticket="${t.id}">${I("route")}Pas à pas${nChanges(t)? ` · ${nChanges(t)} chgt`:""}</button>` : `<button class="btn ${t.link?"icon":""}" data-ticket="${t.id}" aria-label="Détails du trajet">${I(t.secret?"qr":"info")}${t.link?"":"Détails"}</button>`}</div>`;
+    } else if(p){
+      extra = `<div class="acts">${goBtns(placeTarget(p))}</div>`;
+    }
+    const state = !live? "" : k < cur ? "past" : k===cur ? "now" : "";
+    return `<li class="cc ${state}" style="${catVar(cat)}"><div class="t">${tm}</div><div class="rail"><span class="stop ${icon?"ico":""}">${icon? I(icon):""}</span></div><div class="x">${state==="now"? `<span class="nowpin"><i></i>maintenant</span>`:""}${p? `<div class="txt tap" data-place="${p.id}">${esc(b.txt)} <span style="color:var(--muted)">${I("info").replace('class="i "','class="i" style="width:16px;height:16px;vertical-align:-2px"')}</span></div>` : `<div class="txt">${esc(b.txt)}</div>`}${p&&p.note? `<div class="sub">${esc(p.note)}</div>`:""}${p&&buysAt(p.id).length? `<div class="sub" style="color:var(--cat-shop)">À acheter : ${buysAt(p.id).map(it=>esc(it.name)).join(", ")}</div>`:""}${extra}</div></li>`;
+  }).join("")}</ol>`;
+}
+
+function dayDetail(i, noHotel){
+  const d = D.days[i], h = noHotel? null : hotel(d.hotel);
+  return `${d.tips?.length? `<div class="sec">${I("info")}À retenir</div><div class="box pad stack small">${d.tips.map(t=>`<div>${esc(t)}</div>`).join("")}</div>`:""}
+    ${h? `<div class="sec">${I("bed")}Ce soir</div>${hotelCard(h, "Nuit à "+stage(h.stage).name)}`:""}`;
+}
+
+function nextTransport(){
+  const now = NOW();
+  return D.transports.map(t=>({t, ts:tsOf(t.date,t.dep)})).filter(x=>x.ts && x.ts > now-10*60000).sort((a,b)=>a.ts-b.ts)[0];
+}
+function cd(ts){
+  const m = Math.round((ts-NOW())/60000);
+  if(m < 0) return "parti il y a "+(-m)+" min";
+  if(m < 60) return "dans "+m+" min";
+  const h = Math.floor(m/60);
+  return h < 24 ? `dans ${h} h ${String(m%60).padStart(2,"0")}` : `dans ${Math.floor(h/24)} j`;
+}
+function cdShort(ts){ return cd(ts).replace(/^dans /,"");
+}
+
+
+/* ============ météo (Open-Meteo, sans clé, mise en cache) ============ */
+const WMO = c => c===0?["w_sun","Ensoleillé"] : c<=2?["w_part","Éclaircies"] : c===3?["w_cloud","Couvert"] : c<=48?["w_fog","Brouillard"]
+  : c<=57?["w_rain","Bruine"] : c<=67?["w_rain","Pluie"] : c<=77?["w_snow","Neige"] : c<=82?["w_rain","Averses"] : c<=86?["w_snow","Averses de neige"] : ["w_storm","Orages"];
+function wxSpot(d){ const w = d.wx || stage(d.stage).wx; return {key: w.ll.join(","), ...w}; }
+function wxCache(){ return store.get("wx", {}); }
+async function wxFetch(spot){
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${spot.ll[0]}&longitude=${spot.ll[1]}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max,sunset&hourly=temperature_2m,weather_code,precipitation_probability&timezone=Asia%2FTokyo&forecast_days=16`;
+  const r = await fetch(url); if(!r.ok) throw 0; const j = await r.json();
+  const c = wxCache(); c[spot.key] = {at: Date.now(), daily: j.daily, hourly: j.hourly}; store.set("wx", c); return c[spot.key];
+}
+function wxDemo(date){
+  const seed = [...date].reduce((a,ch)=>a+ch.charCodeAt(0),0), r = n => (seed*9301+49297*n)%233280/233280;
+  const codes = [0,1,2,3,61,80,2,1];
+  return {code: codes[Math.floor(r(1)*codes.length)], max: 16+Math.round(r(2)*6), min: 8+Math.round(r(3)*5), rain: Math.round(r(4)*8)*10, wind: 8+Math.round(r(5)*30), sunset:"17:05",
+    hours:Array.from({length:18},(_,k)=>({h:k+6, t: 10+Math.round(Math.sin((k-2)/5.5)*7+r(6+k)*1.5), c: codes[Math.floor(r(10+(k>>2))*codes.length)], p: Math.round(r(30+(k>>2))*7)*10}))};
+}
+function wxPick(entry, date){
+  const i = entry?.daily?.time?.indexOf(date); if(i==null || i<0) return null;
+  const dl = entry.daily, hr = entry.hourly;
+  const hours = Array.from({length:18},(_,k)=>k+6).map(h=>{ const j = hr.time.indexOf(`${date}T${String(h).padStart(2,"0")}:00`); return j<0? null : {h, t: Math.round(hr.temperature_2m[j]), c: hr.weather_code[j], p: hr.precipitation_probability[j]}; }).filter(Boolean);
+  return {code: dl.weather_code[i], max: Math.round(dl.temperature_2m_max[i]), min: Math.round(dl.temperature_2m_min[i]), rain: dl.precipitation_probability_max[i], wind: Math.round(dl.wind_speed_10m_max[i]), sunset: (dl.sunset[i]||"").slice(11,16), hours};
+}
+function wxData(d){
+  const spot = wxSpot(d), e = wxCache()[spot.key];
+  return {spot, w: window.IS_DEMO ? wxDemo(d.date) : wxPick(e, d.date), ago: !window.IS_DEMO && e ? Math.round((Date.now()-e.at)/3600000) : null};
+}
+function wxTips(d, w){
+  const t = [];
+  if(w.rain >= 50) t.push("Parapluie : en vente dans tous les konbini");
+  if(w.wind >= 35 && d.stage==="hakone") t.push("Vent fort : téléphérique et bateau peuvent s'arrêter");
+  if(w.min <= 7) t.push("Frais le matin : prévoir une couche chaude");
+  return t;
+}
+function wxCard(d){
+  const {spot, w} = wxData(d);
+  if(!w) return `<button class="strip wxs" id="wx" data-wx="${d.date}"><span class="ic">${I("w_part")}</span><span class="mid"><b>${spot.normal[0]}° / ${spot.normal[1]}°</b><small>Normales de saison · ${esc(spot.label)}</small></span>${I("right")}</button>`;
+  const [ic, lab] = WMO(w.code), tips = wxTips(d, w);
+  return `<button class="strip wxs" id="wx" data-wx="${d.date}"><span class="ic">${I(ic)}</span>
+    <span class="mid"><b>${w.max}° / ${w.min}°</b> <span class="small muted">${lab}</span><small>${esc(spot.label)} · pluie ${w.rain ?? "–"} %${w.sunset? " · coucher "+w.sunset.replace(":","h"):""}</small></span>
+    ${tips.length? `<span class="warn">${I("alert")}</span>`:""}${I("right")}</button>`;
+}
+function wxSheet(date){
+  const d = dayOf(date), {spot, w, ago} = wxData(d);
+  if(!w){
+    const dispo = new Date(parseD(d.date) - 15*86400000).toISOString().slice(0,10);
+    return `<div class="box pad"><div class="small muted">Normales fin octobre · ${esc(spot.label)}</div><div style="font-size:30px;font-weight:800;color:var(--ink)">${spot.normal[0]}° / ${spot.normal[1]}°</div><p class="small" style="margin:6px 0 0">Prévisions détaillées disponibles à partir du ${fmtD(dispo)}.</p></div>`;
+  }
+  const [ic, lab] = WMO(w.code), tips = wxTips(d, w);
+  const nowH = (window.IS_DEMO? 8 : Number(new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Tokyo",hour:"2-digit",hour12:false}).format(new Date())));
+  const isToday = d.date === tokyoToday();
+  return `<div class="box pad" style="display:flex;gap:14px;align-items:center">
+      <span style="color:var(--accent)">${I(ic).replace('class="i "','class="i" style="width:52px;height:52px;stroke-width:1.5"')}</span>
+      <div><div style="font-size:32px;font-weight:800;color:var(--ink);line-height:1">${w.max}° <span style="font-size:20px;color:var(--muted)">/ ${w.min}°</span></div><div class="small muted">${lab} · ${esc(spot.label)}</div></div></div>
+    <div class="box pad small" style="display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:8px"><span>${I("drop")} Pluie ${w.rain ?? "–"} %</span><span>${I("wind")} ${w.wind} km/h</span>${w.sunset? `<span>${I("sunset")} Coucher ${w.sunset.replace(":","h")}</span>`:""}</div>
+    ${tips.map(t=>`<div class="alert" style="margin-top:8px">${I("alert")}${t}</div>`).join("")}
+    <div class="sec">${I("today")}Heure par heure</div>
+    <ul class="hourly">${w.hours.map(h=>`<li class="${isToday && h.h===nowH?"now":""}"><span class="h">${h.h}h</span>${I(WMO(h.c)[0])}<span class="bar"><i style="width:${h.p ?? 0}%"></i></span><span class="small muted" style="text-align:right">${h.p? h.p+" %":""}</span><span class="t">${h.t}°</span></li>`).join("")}</ul>
+    <p class="small muted" style="margin:8px 2px 0">La barre bleue indique la probabilité de pluie. ${window.IS_DEMO? "Démo : météo simulée." : "Source Open-Meteo"+(ago? " · mise à jour il y a "+ago+" h":"")+"."}</p>`;
+}
+async function wxRefresh(d){
+  if(window.IS_DEMO || navigator.onLine===false) return;
+  const spot = wxSpot(d), e = wxCache()[spot.key];
+  if(e && Date.now()-e.at < 3*3600000) return;
+  try{ await wxFetch(spot); const n = $("#wx"); if(n && tab==="jour") n.outerHTML = wxCard(d); }catch(_){}
+}
+
+/* ============ code couleur ============ */
+const CAT = {
+  move:["Déplacement","train"], temple:["Culture","torii"], nature:["Nature","leaf"], food:["Repas","bowl"],
+  shop:["Shopping","shop"], gunpla:["Gunpla","robot"], musee:["Musée","museum"], walk:["Balade","walk"], hotel:["Hôtel","bed"], free:["Libre","pin"]
+};
+const PCAT = {temple:"temple", nature:"nature", balade:"walk", resto:"food", shopping:"shop", gunpla:"gunpla", musee:"musee", vue:"walk", gare:"move"};
+function blockCat(b){
+  if(b.transport) return "move";
+  if(b.place){ const p = place(b.place); if(p) return PCAT[p.cat] || "free"; }
+  const t = b.txt.toLowerCase();
+  if(/hôtel|onsen|installation|réveil|check-in|valises au|départ de l'hôtel/.test(t)) return "hotel";
+  if(/train|bus|métro|tozan|kintetsu|skyliner|shinkansen|taxi|quai|vol |atterrissage|arrivée|ta-q-bin|kix/.test(t)) return "move";
+  if(/déjeuner|dîner|sukiyaki|ramen|takoyaki|konbini|onigiri|kushikatsu|marché/.test(t)) return "food";
+  if(/yodobashi|joshin|mandarake|surugaya|gunpla|gundam|animate|figurine/.test(t)) return "gunpla";
+  if(/shopping|apple|grands magasins|boutique/.test(t)) return "shop";
+  if(/temple|sanctuaire|ji\b|jinja|taisha|château/.test(t)) return "temple";
+  if(/cerfs|parc|lac|chute|bambou/.test(t)) return "nature";
+  if(/cérémonie|musée/.test(t)) return "musee";
+  return "walk";
+}
+const catVar = c => `--c:var(--cat-${c})`;
+
+/* ============ fiches lieux + achats ============ */
+const SHOP = () => D.shopping || [];
+const buysAt = id => SHOP().filter(it => it.where.some(w => w.place===id));
+const bought = () => store.get("bought", {});
+function placeDay(id){ const i = D.days.findIndex(d => d.blocks.some(b => b.place===id)); return i<0? null : D.days[i]; }
+function badge(id){ const n = buysAt(id).filter(it=>!bought()[it.id]).length; return n? `<span class="badge">${I("cart")}${n}</span>` : ""; }
+const wikiCache = () => store.get("wiki", {});
+async function wikiLoad(p){
+  if(window.IS_DEMO || !(p.wiki||p.wikiEn)) return null;
+  const c = wikiCache(); if(c[p.id]) return c[p.id];
+  const tryOne = async (lang, title) => { if(!title) return null; const r = await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g,"_"))}`); if(!r.ok) return null; const j = await r.json(); return j.type==="disambiguation"? null : {img: j.thumbnail?.source?.replace(/\/\d+px-/,"/800px-") || null, txt: j.extract, url: j.content_urls?.desktop?.page, lang}; };
+  let w = null; try{ w = await tryOne("fr", p.wiki) || await tryOne("en", p.wikiEn); }catch(_){}
+  try{
+    const t = p.wikiEn || p.wiki, lang = p.wikiEn? "en" : "fr";
+    const r = await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/media-list/${encodeURIComponent(t.replace(/ /g,"_"))}`);
+    if(r.ok){ const j = await r.json();
+      const imgs = (j.items||[]).filter(it=>it.type==="image" && it.srcset?.length && !/\.svg/i.test(it.title||"") && !/(logo|map|carte|icon|flag)/i.test(it.title||""))
+        .map(it=>{ const src = it.srcset[it.srcset.length-1].src; return (src.startsWith("//")? "https:"+src : src); }).slice(0,8);
+      if(imgs.length){ w = w || {}; w.gal = imgs; }
+    }
+  }catch(_){}
+  if(w){ c[p.id] = w; store.set("wiki", c); }
+  return w;
+}
+function placeSheet(id){
+  const p = place(id), cat = PCAT[p.cat]||"free", st = stage(p.city), day = placeDay(id), items = buysAt(id), b = bought();
+  const w = wikiCache()[id];
+  const hero = `<div class="hero" id="hero" style="--line:${st.color}"><div class="pat"></div><div class="art">${I(CATS[p.cat]?.[1]||"pin")}<b lang="ja">${esc(p.jp || st.jp)}</b></div>
+    ${w?.img? `<img src="${esc(w.img)}" alt="" class="ok"><a class="credit" href="${esc(w.url)}" target="_blank" rel="noopener">Wikipédia</a>`:""}</div>`;
+  return `<div class="cc" style="${lineOf(p.city)};--c:var(--cat-${cat})">${hero}
+    <div class="pmeta"><span><i class="dot" style="width:9px;height:9px;border-radius:50%;background:${st.color}"></i>${esc(st.name)}</span><span>${I(CATS[p.cat]?.[1]||"pin")}${esc(CATS[p.cat]?.[0]||"")}</span>${day? `<span>${I("today")}${fmtD(day.date,true)}</span>`:""}</div>
+    <div class="acts" style="margin-top:8px">${goBtns(placeTarget(p))}${p.jp? `<button class="btn icon" data-show="${esc(p.jp)}" data-sub="${esc(p.name)}" aria-label="Montrer en japonais">${I("hand")}</button>`:""}${p.link? `<a class="btn" href="${esc(p.link)}" target="_blank" rel="noopener">${I("out")}Site</a>`:""}</div>
+    <p class="pdesc">${esc(p.desc||"")}</p>
+    <div id="gal">${w?.gal?.length? `<div class="gal">${w.gal.map(u=>`<img src="${esc(u)}" alt="" loading="lazy">`).join("")}</div>`:""}</div>
+    ${p.infos? `<div class="tipbox" style="margin-top:12px">${I("clock")}<span><b style="color:var(--ink)">Infos pratiques</b><br>${esc(p.infos)}</span></div>`:""}
+    ${p.hist? `<div class="pblock"><h4>${I("scroll")}Un peu d'histoire</h4><p>${esc(p.hist)}</p></div>`:""}
+    ${p.voir?.length? `<div class="pblock"><h4>${I("eye")}À ne pas manquer</h4><ul>${p.voir.map(v=>`<li>${esc(v)}</li>`).join("")}</ul></div>`:""}
+    ${p.savez? `<div class="pblock"><h4>${I("star")}Le saviez-vous ?</h4><p>${esc(p.savez)}</p></div>`:""}
+    ${p.astuce? `<div class="tipbox">${I("bulb")}<span><b style="color:var(--ink)">Astuce</b><br>${esc(p.astuce)}</span></div>`:""}
+    ${p.note? `<div class="alert" style="margin-top:10px">${I("info")}${esc(p.note)}</div>`:""}
+    ${items.length? `<div class="sec" style="color:var(--cat-shop)">${I("cart")}À acheter ici</div><div class="box">${items.map(it=>{const role = it.where.find(x=>x.place===id).role; return `<button class="buyrow ${b[it.id]?"done":""}" data-item="${it.id}"><span class="bi">${I(it.icon||"shop")}</span><span><b>${esc(it.name)}</b><small>${esc(role)} · ${esc(it.budget||"")}</small></span>${I("right")}</button>`}).join("")}</div>`:""}
+    <div id="wikitxt">${w?.txt? `<p class="wikix">${esc(w.txt)}</p>`:""}</div>
+    ${window.IS_DEMO && (p.wiki||p.wikiEn)? `<p class="small muted" style="margin-top:14px">${I("camera")} Dans l'app installée, les photos et le résumé Wikipédia s'affichent ici.</p>`:""}
+  </div>`;
+}
+async function openPlace(id){
+  const p = place(id);
+  openSheet(p.name, placeSheet(id));
+  const w = await wikiLoad(p);
+  if(w && $("#hero") && !$("#hero img")){
+    if(!w.img && w.gal?.length) w.img = w.gal[0];
+    if(w.img) $("#hero").insertAdjacentHTML("beforeend", `<img src="${esc(w.img)}" alt="" onload="this.classList.add('ok')"><a class="credit" href="${esc(w.url)}" target="_blank" rel="noopener">Wikipédia</a>`);
+    if(w.txt) $("#wikitxt").innerHTML = `<p class="wikix">${esc(w.txt)}</p>`;
+    if(w.gal?.length) $("#gal").innerHTML = `<div class="gal">${w.gal.map(u=>`<img src="${esc(u)}" alt="" loading="lazy">`).join("")}</div>`;
+  }
+}
+function shoppingSheet(focus){
+  const b = bought();
+  const list = focus ? SHOP().filter(it=>it.id===focus) : SHOP();
+  return `<div class="stack">${list.map(it=>`<div class="item ${b[it.id]?"done":""}">
+    <div class="top2"><span class="ii">${I(it.icon||"shop")}</span><div><div class="nm">${esc(it.name)}</div><div class="small muted">${esc(it.budget||"")}</div></div>
+      <button class="check" data-buy="${it.id}" aria-pressed="${!!b[it.id]}" aria-label="Acheté" style="--cc:var(--cat-shop)">${I("check")}</button></div>
+    ${it.note? `<p class="small" style="margin:10px 0 0">${esc(it.note)}</p>`:""}
+    <div class="wherelist">${it.where.map(w=>{const p = place(w.place), day = placeDay(w.place); return p? `<button class="where" data-place="${p.id}" style="${lineOf(p.city)}"><span class="dt"></span><span><b>${esc(p.name)}</b><small>${esc(w.role)}</small></span><em>${day? fmtD(day.date) : esc(stage(p.city).name)}</em></button>`:""}).join("")}</div>
+  </div>`).join("")}</div>
+  ${focus? `<div style="margin-top:12px"><button class="btn" data-sheet="achats">${I("cart")}Toute la liste</button></div>`:""}`;
+}
+
+/* ============ vues ============ */
+let tab = "jour", viewDay = null, fCity = null, fCat = "tous";
+function curIndex(){
+  const today = tokyoToday();
+  if(viewDay!==null) return {i:viewDay, before:false};
+  if(today < D.trip.start) return {i:0, before:true};
+  const i = D.days.findIndex(d=>d.date===today);
+  return {i: i<0 ? D.days.length-1 : i, before:false};
+}
+
+function tomorrowCard(i){
+  const n = D.days[i+1]; if(!n) return "";
+  const t = D.transports.filter(x=>x.date===n.date && x.dep).sort((a,b)=>(tsOf(a.date,a.dep)||0)-(tsOf(b.date,b.dep)||0))[0];
+  const first = n.blocks.find(b=>/\d:\d\d/.test(b.t||""));
+  const line = t? `Premier départ ${esc(t.dep)} · ${esc(t.name)}` : first? `${esc(first.t)} · ${esc(first.txt)}` : esc(n.blocks[0]?.txt||"");
+  return `<button class="strip tomorrow" data-day="${i+1}" style="${lineOf(n.stage)}"><span class="ic">${I("moonrise")}</span><span class="mid"><b>Demain · ${esc(n.title)}</b><small>${line}</small></span>${I("right")}</button>`;
+}
+function vJour(){
+  const {i, before} = curIndex(), d = D.days[i];
+  setTitle(before? "Avant le départ" : `J${i+1}`, before? `Départ dans ${daysBetween(tokyoToday(),D.trip.start)} jours` : fmtD(d.date,true)+" · "+stage(d.stage).name);
+  const live = !before && viewDay===null && d.date===tokyoToday();
+  const h = Math.floor(nowMin()/60), phase = !live? "day" : h < 11 ? "matin" : h < 18 ? "jour" : "soir";
+  let left = ribbon(before? -1 : i) + sign(i, before);
+  setTimeout(()=>wxRefresh(d), 0);
+  if(phase==="soir"){
+    left += `<div class="sec">${I("bed")}Ce soir</div>${hotelCard(hotel(d.hotel), "Nuit à "+stage(d.stage).name)}${tomorrowCard(i)}`;
+  }
+  if(phase!=="jour") left += wxCard(d);
+  const nx = nextTransport();
+  if(nx && !before && viewDay===null && daysBetween(d.date, nx.t.date) <= 1){
+    const t = nx.t, seats = [t.car && "voit. "+t.car, t.seats].filter(Boolean).join(" · ");
+    left += `<button class="strip nx" data-ticket="${t.id}"><span class="ic">${I(KIND_ICON[t.kind]||"train")}</span>
+      <span class="mid"><b>${esc(t.dep)}${t.arr? " → "+esc(t.arr):""}</b> <span class="small muted">${esc(t.name)}</span><small>${nChanges(t)? `${nChanges(t)} changement · `:""}${esc(t.from)} → ${esc(t.to)}${seats? " · "+esc(seats):""}</small></span>
+      <span class="end">départ<b class="cd" data-ts="${nx.ts}">${cdShort(nx.ts)}</b></span>${I("right")}</button>`;
+  }
+  if(before){
+    left += `<button class="strip" data-sheet="pret" style="margin-top:10px"><span class="ic" style="background:color-mix(in oklab, #2E8A55 15%, transparent);color:#2E8A55">${I("ready")}</span><span class="mid"><b>Prêt à partir ?</b><small>Billets, QR, hors-ligne : faire le point</small></span>${I("right")}</button>`;
+    const done = store.get("todo",{}), n = D.todo.filter(t=>!done[t.id]).length;
+    left += `<div class="sec">${I("list")}Avant le départ · ${n} à faire</div>${todoList()}`;
+  }
+  if(phase==="jour") left += wxCard(d);
+  if(viewDay!==null) left += `<div style="margin-top:12px"><button class="btn" data-day="today">${I("today")}Revenir à aujourd'hui</button></div>`;
+  const right = `<div class="sec">${I("route")}Programme ${before? "du premier jour":""}</div>${routeList(i)}${dayDetail(i, phase==="soir")}${phase!=="soir" && live? tomorrowCard(i):""}`;
+  return `<div class="jour" style="${lineOf(d.stage)}"><div>${left}</div><div>${right}</div></div>`;
+}
+
+function todoList(){
+  const done = store.get("todo",{});
+  return `<div class="todo">${D.todo.map(t=>`<button data-todo="${t.id}" aria-pressed="${!!done[t.id]}"><span class="check" aria-pressed="${!!done[t.id]}">${I("check")}</span><span class="tx">${esc(t.txt)}</span></button>`).join("")}</div>`;
+}
+
+function vProg(){
+  const today = tokyoToday();
+  let sel = viewDay ?? D.days.findIndex(d=>d.date===today); if(sel<0) sel = 0;
+  setTitle("Programme", "16 jours · 7 étapes");
+  const list = `<ul class="days">${D.days.map((d,i)=>{const st=stage(d.stage);return `<li><button data-pick="${i}" aria-current="${i===sel}" class="${d.date===today?"today":""}">
+    <span class="c" style="background:${st.color}"></span>
+    <span class="d">${fmtD(d.date)}<span>${JOURS[parseD(d.date).getUTCDay()]} · J${i+1}</span></span>
+    <span class="t">${esc(d.title)}<span class="h">${I("bed")} ${esc(hotel(d.hotel)?.name || "Vol retour")}</span></span>
+    <span class="k" lang="ja">${st.jp}</span></button></li>`}).join("")}</ul>`;
+  return `<div class="split"><div class="side">${list}</div><div class="detail" style="${lineOf(D.days[sel].stage)}">${sign(sel)}<div class="sec">${I("route")}Programme</div>${routeList(sel)}${dayDetail(sel)}</div></div>`;
+}
+
+function vTrajets(){
+  setTitle("Trajets", "billets, passes, hôtels");
+  const today = tokyoToday();
+  const up = D.transports.filter(t=>t.date>=today), past = D.transports.filter(t=>t.date<today);
+  const resa = up.filter(t=>t.status==="reserve"||t.status==="acheter"||t.kind==="pass"), libre = up.filter(t=>!resa.includes(t));
+  return `<div class="sec">${I("ticket")}Réservés et à acheter</div><div class="stack two">${resa.map(t=>ticket(t,{date:true})).join("")||'<p class="muted">Plus rien à venir.</p>'}</div>
+    ${libre.length? `<div class="sec">${I("train")}Sans réservation</div><div class="stack two">${libre.map(t=>ticket(t,{date:true})).join("")}</div>`:""}
+    <div class="sec">${I("bed")}Hôtels</div><div class="stack two">${D.hotels.filter(h=>h.to>today).map(h=>hotelCard(h)).join("")}</div>
+    ${past.length? `<div class="sec">Trajets passés</div><div class="stack two">${past.map(t=>ticket(t,{date:true,short:true})).join("")}</div>`:""}`;
+}
+
+function vLieux(){
+  setTitle("Lieux", "temples, restos, boutiques");
+  const done = store.get("done",{});
+  if(fCity===null){ const td = dayOf(tokyoToday()); fCity = td ? (td.stage==="vol"?"osaka":td.stage) : "tous"; }
+  const cities = ["tous", ...Object.keys(D.stages).filter(k=>D.places.some(p=>p.city===k))];
+  const inCity = D.places.filter(p=>fCity==="tous"||p.city===fCity);
+  const cats = ["tous", ...(inCity.some(p=>buysAt(p.id).length)? ["achats"]:[]), ...Object.keys(CATS).filter(k=>inCity.some(p=>p.cat===k))];
+  if(!cats.includes(fCat)) fCat = "tous";
+  const list = inCity.filter(p=>fCat==="tous"||(fCat==="achats"? buysAt(p.id).length : p.cat===fCat));
+  return `<div class="chips">${cities.map(c=>`<button class="chip" data-city="${c}" aria-pressed="${c===fCity}">${c==="tous"? "Partout" : `<span class="dot" style="background:${stage(c).color}"></span>${stage(c).name}`}</button>`).join("")}</div>
+  <div class="chips">${cats.map(c=>`<button class="chip" data-cat="${c}" aria-pressed="${c===fCat}" style="${c==="tous"?"":"--c:var(--cat-"+(c==="achats"?"shop":(PCAT[c]||"free"))+")"}">${c==="tous"? "Tout" : c==="achats"? I("cart")+"Achats" : I(CATS[c][1])+CATS[c][0]}</button>`).join("")}</div>
+  <div class="places">${list.map(p=>`<div class="place cc ${done[p.id]?"done":""}" style="${lineOf(p.city)};--c:var(--cat-${PCAT[p.cat]||"free"})">
+    <div class="pi tap" data-place="${p.id}">${I(CATS[p.cat]?.[1]||"pin")}</div>
+    <div><div class="tap" data-place="${p.id}"><div class="nm">${esc(p.name)}${badge(p.id)}</div>${p.jp? `<div class="jp" lang="ja">${esc(p.jp)}</div>`:""}<div class="nt muted" style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${esc(p.desc||p.note||"")}</div></div>
+      <div class="acts">${goBtns(placeTarget(p))}${p.jp? `<button class="btn icon" data-show="${esc(p.jp)}" data-sub="${esc(p.name)}" aria-label="Montrer le nom en japonais">${I("hand")}</button>`:""}${p.link? `<a class="btn" href="${esc(p.link)}" target="_blank" rel="noopener">${I("out")}Site</a>`:""}</div></div>
+    <button class="check" data-done="${p.id}" aria-pressed="${!!done[p.id]}" aria-label="Visité">${I("check")}</button>
+  </div>`).join("") || '<p class="muted" style="padding:14px">Rien dans cette catégorie.</p>'}</div>`;
+}
+
+function vPrat(){
+  setTitle("Pratique", "sur place");
+  const done = store.get("todo",{}), n = D.todo.filter(t=>!done[t.id]).length;
+  const T = (k, ic, b, s, cls="") => `<button class="tile ${cls}" data-sheet="${k}"><span class="ti">${I(ic)}</span><b>${b}</b><span>${s}</span></button>`;
+  return `<div class="tiles">
+    ${T("pret","ready","Prêt à partir ?","vérifier billets et hors-ligne")}
+    ${T("allergie","alert","Carte d'allergie","plein écran, en japonais","danger")}
+    ${T("achats","cart","Liste d'achats", (()=>{const n = SHOP().filter(it=>!bought()[it.id]).length; return n? n+" à acheter" : "tout est acheté";})())}
+    ${T("taxi","taxi","Adresses taxi","les 7 hôtels en japonais")}
+    ${T("phrases","chat","Phrases","toucher pour montrer")}
+    ${T("boissons","cup","Boissons","commander au resto")}
+    ${T("yen","yen","Yens ↔ euros","convertisseur")}
+    ${T("urgences","sos","Urgences","110 · 119 · ambassade")}
+    ${T("infos","info","Bon à savoir","Suica, détaxe, Ta-Q-Bin…")}
+    ${T("todo","list","Avant le départ", n? n+" à faire":"tout est fait")}
+  </div>
+  <p class="small muted" style="text-align:center;margin-top:28px">Version ${esc(window.VERSION||"")} · fonctionne hors ligne une fois installée</p>`;
+}
+
+/* ============ panneaux ============ */
+function sheetContent(k){
+  const rate = store.get("rate", D.trip.rate);
+  const rows = (arr) => `<div class="box">${arr.map(p=>`<div class="row" style="grid-template-columns:1fr auto auto" data-show="${esc(p.jp)}" data-sub="${esc(p.fr)}" role="button"><div><div class="jp" lang="ja">${esc(p.jp)}</div><div class="ro">${esc(p.ro)}</div></div><div class="small muted" style="text-align:right">${esc(p.fr)}</div>${sayBtn(p.jp)}</div>`).join("")}</div>`;
+  switch(k){
+    case "taxi": return ["Montrer l'adresse au chauffeur", `<div class="stack">${D.hotels.map(h=>`<button class="tile" style="width:100%;min-height:0;flex-direction:row;align-items:center;${lineOf(h.stage)}" data-showhotel="${h.id}"><span class="ti" style="background:var(--line);color:#fff">${I("bed")}</span><span style="margin:0;flex:1"><b style="display:block">${esc(h.name)}</b><span class="small muted">${fmtD(h.from)} → ${fmtD(h.to)}</span></span>${I("right")}</button>`).join("")}</div>`];
+    case "phrases": return ["Phrases utiles", rows(D.phrases)];
+    case "boissons": return ["Boissons", rows(D.drinks)];
+    case "yen": return ["Yens ↔ euros", `<div class="box pad"><div class="conv"><div><label for="yen">Yens</label><input class="field" id="yen" inputmode="decimal" placeholder="0"></div><div><label for="eur">Euros</label><input class="field" id="eur" inputmode="decimal" placeholder="0"></div></div>
+      <div class="small muted" style="margin-top:12px;display:flex;align-items:center;gap:8px">1 € = <input class="field txt" id="rate" inputmode="decimal" style="width:90px;height:36px" value="${rate}"> ¥</div></div>`];
+    case "urgences": return ["Urgences", `<div class="box">${D.emergency.map(e=>`<div class="row"><div style="color:var(--ink);font-weight:700">${esc(e.label)}</div><a class="btn go" style="--line:#B3243A" href="tel:${esc(e.tel)}">${I("phone")}${e.tel.length<5? esc(e.tel) : "Appeler"}</a></div>`).join("")}</div>`];
+    case "infos": return ["Bon à savoir", `<div class="stack">${D.pratique.map(s=>`<div class="box pad"><b style="color:var(--ink)">${esc(s.title)}</b><div class="small" style="margin-top:4px">${esc(s.body)}</div></div>`).join("")}</div>`];
+    case "todo": return ["Avant le départ", todoList()];
+    case "achats": return ["Liste d'achats", shoppingSheet()];
+  }
+}
+function quickSheet(){
+  const {i} = curIndex(), d = D.days[i], h = hotel(d.hotel) || hotel(D.days[Math.max(0,i-1)].hotel), nx = nextTransport();
+  const b = nx && nx.t.secret ? bills()[nx.t.secret] : null;
+  const T = (attrs, ic, title, sub, cls="") => `<button class="tile ${cls}" ${attrs}><span class="ti">${I(ic)}</span><b>${title}</b><span>${sub}</span></button>`;
+  let billet;
+  if(b?.img) billet = T(`data-qr="${esc(nx.t.secret)}"`, "qr", "QR du prochain train", esc(nx.t.name));
+  else if(nx?.t.link) billet = `<a class="tile" href="${esc(nx.t.link)}" target="_blank" rel="noopener"><span class="ti">${I("ticket")}</span><b>Prochain billet</b><span>${esc(nx.t.name)} · ${esc(nx.t.linkLabel)}</span></a>`;
+  else billet = T(`data-tab="trajets"`, "ticket", "Mes billets", "liste des trajets");
+  return `<div class="quick">
+    ${billet}
+    ${h? T(`data-showhotel="${h.id}"`, "taxi", "Adresse taxi", esc(h.name)) : ""}
+    ${T(`data-sheet="allergie"`, "alert", "Carte d'allergie", "plein écran", "danger")}
+    ${T(`data-sheet="phrases"`, "chat", "Phrases", "avec prononciation")}
+  </div>`;
+}
+function openSheet(title, html){
+  $("#layer").innerHTML = `<div class="sheet" data-closesheet><div class="pan" role="dialog" aria-modal="true" aria-label="${esc(title)}"><div class="grab"><h2>${esc(title)}</h2><button class="btn icon" data-close aria-label="Fermer">✕</button></div>${html}</div></div>`;
+}
+function show(inner){
+  $("#layer").insertAdjacentHTML("beforeend", `<div class="show" role="dialog" aria-modal="true"><div class="bar"><button class="close" data-closeshow>Fermer</button></div><div class="body">${inner}</div></div>`);
+}
+function editBill(key){
+  const b = bills()[key] || {};
+  openSheet("Mon billet", `<div class="box pad stack">
+    <label class="small muted" for="bref">N° de réservation</label><input class="field txt" id="bref" value="${esc(b.ref||"")}" autocomplete="off">
+    <label class="small muted">Capture du QR code</label>
+    ${b.img? `<img src="${b.img}" alt="" style="max-width:180px;border-radius:6px;display:block">`:""}
+    <label class="btn big" style="width:max-content">${I("camera")}${b.img? "Remplacer":"Choisir dans Photos"}<input type="file" accept="image/*" id="bimg" hidden></label>
+    <p class="small muted" style="margin:0">Enregistré uniquement sur cet appareil.</p>
+    <div class="acts"><button class="btn go big" data-savebill="${esc(key)}">${I("check")}Enregistrer</button>${(b.ref||b.img)? `<button class="btn big" data-delbill="${esc(key)}">Effacer</button>`:""}</div>
+  </div>`);
+}
+function shrink(file){
+  return new Promise((res,rej)=>{
+    const img = new Image(), url = URL.createObjectURL(file);
+    img.onload = () => { const s = Math.min(1, 1100/Math.max(img.width,img.height)); const c = document.createElement("canvas");
+      c.width = Math.round(img.width*s); c.height = Math.round(img.height*s); c.getContext("2d").drawImage(img,0,0,c.width,c.height);
+      URL.revokeObjectURL(url); res(c.toDataURL("image/jpeg",.85)); };
+    img.onerror = rej; img.src = url;
+  });
+}
+
+/* ============ thème ============ */
+function themeMode(){ return store.get("theme","auto"); }
+function applyTheme(){
+  const m = themeMode(), r = document.documentElement;
+  if(m==="auto") r.removeAttribute("data-theme"); else r.setAttribute("data-theme", m);
+  const dark = m==="dark" || (m==="auto" && matchMedia("(prefers-color-scheme:dark)").matches);
+  document.querySelector('meta[name="theme-color"]').content = dark? "#0D1424" : "#F1F2EF";
+  const t = $("#theme"); t.querySelector('[data-m="light"]').innerHTML = I("sun"); t.querySelector('[data-m="dark"]').innerHTML = I("moon");
+  t.querySelector('[data-m="light"]').className = dark? "" : "on"; t.querySelector('[data-m="dark"]').className = dark? "on" : "";
+  t.setAttribute("aria-label", dark? "Passer en mode jour" : "Passer en mode nuit");
+}
+
+/* ============ rendu ============ */
+function setTitle(a,b){ $("#ttl").innerHTML = `<b>${esc(a)}</b><span>${esc(b)}</span>`; }
+const TABS = [["jour","today","Aujourd'hui"],["prog","route","Programme"],["trajets","ticket","Trajets"],["lieux","pin","Lieux"],["prat","info","Pratique"]];
+function render(top=true){
+  const V = {jour:vJour, prog:vProg, trajets:vTrajets, lieux:vLieux, prat:vPrat};
+  $("#app").innerHTML = V[tab]();
+  $("#tabs").innerHTML = TABS.map(([k,ic,l])=>`<button data-tab="${k}" aria-current="${k===tab?"page":"false"}">${I(ic)}${l}</button>`).join("");
+  const c = curIndex(); document.documentElement.style.setProperty("--line", stage(D.days[c.i].stage).color);
+  if(top) window.scrollTo(0,0);
+  $("#ribbon [aria-current='true']")?.scrollIntoView({inline:"center",block:"nearest"});
+  $(".side [aria-current='true']")?.scrollIntoView({block:"nearest"});
+}
+const wide = () => matchMedia("(min-width:760px)").matches;
+
+document.addEventListener("click", async e => {
+  const el = e.target.closest("[data-tab],[data-day],[data-pick],[data-city],[data-cat],[data-done],[data-todo],[data-copy],[data-qr],[data-show],[data-showhotel],[data-sheet],[data-close],[data-closeshow],[data-closesheet],[data-ticket],[data-wx],[data-prep],[data-say],[data-quick],[data-howbuy],[data-paid],[data-place],[data-item],[data-buy],[data-editbill],[data-savebill],[data-delbill],#theme");
+  if(!el) return;
+  const d = el.dataset;
+  if(el.id==="theme"){ const dark = document.documentElement.getAttribute("data-theme")==="dark" || (themeMode()==="auto" && matchMedia("(prefers-color-scheme:dark)").matches); store.set("theme", dark? "light":"dark"); applyTheme(); return; }
+  if(d.closesheet!==undefined && e.target!==el) return;
+  if(d.tab){ tab = d.tab; viewDay = null; history.replaceState(null,"","#"+tab); render(); return; }
+  if(d.day!==undefined){ $("#layer").innerHTML=""; viewDay = d.day==="today"? null : Number(d.day); if(tab!=="jour" && !(tab==="prog"&&wide())) tab = "jour"; render(); return; }
+  if(d.pick!==undefined){ viewDay = Number(d.pick); if(wide()) render(false); else { tab="jour"; render(); } return; }
+  if(d.city){ fCity = d.city; fCat = "tous"; render(false); return; }
+  if(d.cat){ fCat = d.cat; render(false); return; }
+  if(d.done){ const v = store.get("done",{}); v[d.done] = !v[d.done]; store.set("done",v); el.setAttribute("aria-pressed", v[d.done]); el.closest(".place").classList.toggle("done", v[d.done]); return; }
+  if(d.todo){ const v = store.get("todo",{}); v[d.todo] = !v[d.todo]; store.set("todo",v); el.setAttribute("aria-pressed", v[d.todo]); el.querySelector(".check").setAttribute("aria-pressed", v[d.todo]); return; }
+  if(d.copy){ try{ await navigator.clipboard.writeText(d.copy); el.innerHTML = I("check"); setTimeout(()=>el.innerHTML=I("copy"),1400);}catch(_){} return; }
+  if(d.qr){ const b = bills()[d.qr]; if(b?.img) show(`<img src="${b.img}" alt="QR code"><div class="sub" style="text-align:center">Luminosité au maximum</div>`); return; }
+  if(d.showhotel){ const h = hotel(d.showhotel); show(`<div class="sub">${esc(h.name)}</div><div class="big" lang="ja">${esc(h.addrJp||h.addr)}</div><div class="sub" lang="ja">この住所までお願いします。</div>`); return; }
+  if(d.show){ show(`<div class="big" lang="ja">${esc(d.show)}</div><div class="sub">${esc(d.sub||"")}</div>${("speechSynthesis" in window)? `<div><button class="close" data-say="${esc(d.show)}" style="display:inline-flex;align-items:center;gap:8px">${I("speaker")}Écouter</button></div>`:""}`); return; }
+  if(d.sheet==="pret"){ openSheet("Prêt à partir", await readySheet()); return; }
+  if(d.prep!==undefined){ prepareOffline(el); return; }
+  if(d.sheet){ if(d.sheet==="allergie"){ show(D.allergy.img? `<img src="${esc(D.allergy.img)}" alt="${esc(D.allergy.fr)}" style="max-height:86vh;border-radius:12px">` : `<div class="big" lang="ja" style="font-size:clamp(24px,6.4vw,44px)">${esc(D.allergy.jp)}</div><div class="sub">${esc(D.allergy.fr)}</div>`); return; }
+    const [t,h] = sheetContent(d.sheet); openSheet(t,h); return; }
+  if(d.ticket){ const t = tr(d.ticket); openSheet(t.name, ticket(t,{date:true})); return; }
+  if(d.wx){ const dd = dayOf(d.wx); openSheet("Météo · "+fmtD(dd.date,true), wxSheet(d.wx)); return; }
+  if(d.say){ speak(d.say); return; }
+  if(d.quick!==undefined){ openSheet("Montrer", quickSheet()); return; }
+  if(d.howbuy){ const t = tr(d.howbuy); openSheet((t.status==="faire"? "À faire · " : "Acheter · ")+t.name, buySheet(d.howbuy)); return; }
+  if(d.paid){ const v = paid(); v[d.paid] = !v[d.paid]; store.set("paid", v); $("#layer").innerHTML=""; render(false); return; }
+  if(d.place){ openPlace(d.place); return; }
+  if(d.item){ openSheet("À acheter", shoppingSheet(d.item)); return; }
+  if(d.buy){ const v = bought(); v[d.buy] = !v[d.buy]; store.set("bought", v); el.setAttribute("aria-pressed", v[d.buy]); el.closest(".item")?.classList.toggle("done", v[d.buy]); return; }
+  if(d.editbill){ editBill(d.editbill); return; }
+  if(d.savebill){ const all = bills(), k = d.savebill, cur = all[k] || {}; cur.ref = $("#bref").value.trim();
+    const f = $("#bimg").files[0]; if(f){ try{ cur.img = await shrink(f); }catch(_){} }
+    all[k] = cur; if(!store.set("bills", all)) alert("Stockage plein : image trop lourde."); $("#layer").innerHTML=""; render(false); return; }
+  if(d.delbill){ const all = bills(); delete all[d.delbill]; store.set("bills", all); $("#layer").innerHTML=""; render(false); return; }
+  if(d.closeshow!==undefined){ el.closest(".show").remove(); return; }
+  if(d.close!==undefined || d.closesheet!==undefined){ $("#layer").innerHTML=""; render(false); return; }
+});
+document.addEventListener("input", e => {
+  const n = s => parseFloat(String(s).replace(/\s/g,"").replace(",", "."));
+  if(e.target.id==="rate"){ const v = n(e.target.value); if(v>0) store.set("rate", v); }
+  const rate = store.get("rate", D.trip.rate);
+  if(e.target.id==="yen"){ const v = n(e.target.value); $("#eur").value = isNaN(v)? "" : (v/rate).toFixed(2).replace(".",","); }
+  if(e.target.id==="eur"){ const v = n(e.target.value); $("#yen").value = isNaN(v)? "" : Math.round(v*rate).toLocaleString("fr-FR"); }
+});
+document.addEventListener("keydown", e => { if(e.key==="Escape"){ const s = document.querySelector(".show"); if(s) s.remove(); else $("#layer").innerHTML=""; } });
+addEventListener("scroll", () => $("#top").classList.toggle("scrolled", scrollY > 4), {passive:true});
+setInterval(() => document.querySelectorAll(".cd[data-ts]").forEach(el => el.textContent = cdShort(Number(el.dataset.ts))), 30000);
+matchMedia("(min-width:760px)").addEventListener("change", () => render(false));
+matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme);
+
+(async function init(){
+  if(!D){ try{ D = await (await fetch("data.json",{cache:"no-cache"})).json(); store.set("data", D); } catch(_){ D = store.get("data", null); } }
+  if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
+  const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
+  applyTheme();
+  window.VERSION = "2026-10-05-1406";
+  render();
+  if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
+})();
+</script>
+</body>
+</html>
