@@ -944,6 +944,7 @@ function shoppingSheet(focus){
     <div class="top2"><span class="ii">${I(it.icon||"shop")}</span><div><div class="nm">${esc(it.name)}</div><div class="small muted">${esc(it.budget||"")}</div></div>
       <button class="check" data-buy="${it.id}" aria-pressed="${!!b[it.id]}" aria-label="Acheté" style="--cc:var(--cat-shop)">${I("check")}</button></div>
     ${it.note? `<p class="small" style="margin:10px 0 0">${esc(it.note)}</p>`:""}
+    ${(it.link||it.jp)? `<div class="acts">${it.link? `<a class="btn" href="${esc(it.link)}" target="_blank" rel="noopener">${I("out")}Fiche produit</a>`:""}${it.jp? `<button class="btn" data-show="${esc(it.jp)}" data-sub="${esc(it.name)}">${I("hand")}Montrer en japonais</button>`:""}</div>`:""}
     <div class="wherelist">${it.where.map(w=>{const p = place(w.place), day = placeDay(w.place); return p? `<button class="where" data-place="${p.id}" style="${lineOf(p.city)}"><span class="dt"></span><span><b>${esc(p.name)}</b><small>${esc(w.role)}</small></span><em>${day? fmtD(day.date) : esc(stage(p.city).name)}</em></button>`:""}).join("")}</div>
   </div>`).join("")}</div>
   ${focus? `<div style="margin-top:12px"><button class="btn" data-sheet="achats">${I("cart")}Toute la liste</button></div>`:""}`;
@@ -1201,7 +1202,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-05-2137";
+  window.VERSION = "2026-10-05-2144";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();

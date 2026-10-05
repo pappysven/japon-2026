@@ -1067,6 +1067,10 @@
      "place": "mandarake-akiba"
     },
     {
+     "txt": "Gashapon no Depāto Akihabara (namco 4F) : premiers tirages EXCEED RX-78-2",
+     "place": "gashapon-akiba"
+    },
+    {
      "txt": "Animate, Jump Shop, figurines"
     },
     {
@@ -1229,6 +1233,10 @@
      "t": "aprèm",
      "txt": "Ikebukuro : déjeuner, Sunshine City, Pokémon Center, Animate",
      "place": "sunshine"
+    },
+    {
+     "txt": "Gashapon no Depāto (Sunshine City 3F) : 3 000 machines, EXCEED RX-78-2",
+     "place": "gashapon-ikebukuro"
     },
     {
      "t": "17:30",
@@ -2885,6 +2893,37 @@
    ],
    "desc": "Gorge de lave au bord de la Daiya, longée par une rangée d'environ 70 statues de Jizō coiffées de bonnets rouges : on dit qu'on n'en compte jamais deux fois le même nombre.",
    "infos": "Gratuit · ~20 min à pied du pont Shinkyō · compter 45 min"
+  },
+  {
+   "id": "gashapon-ikebukuro",
+   "name": "Gashapon no Depāto Ikebukuro",
+   "jp": "ガシャポンのデパート池袋総本店",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "q": "東京都豊島区東池袋3-1-3 サンシャインシティ ワールドインポートマートビル3F",
+   "note": "Sunshine City, World Import Mart 3F · 10h–21h · ouvert tous les jours.",
+   "desc": "Le vaisseau amiral des gashapon Bandai : plus de 3 000 machines, avec la boutique officielle Gashapon Bandai Official Shop. Toutes les nouveautés Bandai y arrivent en premier, c'est le meilleur endroit pour trouver une série récente.",
+   "infos": "Accès libre · dans Sunshine City, à côté du Pokémon Center · compter 45 min"
+  },
+  {
+   "id": "gashapon-akiba",
+   "name": "Gashapon no Depāto Akihabara",
+   "jp": "ガシャポンのデパート秋葉原店",
+   "city": "tokyo",
+   "cat": "gunpla",
+   "q": "東京都千代田区外神田1-15-9 namco秋葉原店 4F",
+   "note": "namco Akihabara, 4e étage · 10h–20h · ~5 min de la gare JR Akihabara.",
+   "desc": "Magasin officiel de gashapon Bandai au cœur d'Akihabara, avec les dernières séries Gundam et anime."
+  },
+  {
+   "id": "gashapon-namba",
+   "name": "Gashapon no Depāto Namba Parks",
+   "jp": "ガシャポンのデパート なんばパークス店",
+   "city": "osaka",
+   "cat": "gunpla",
+   "q": "大阪府大阪市浪速区難波中2-10-70 なんばパークス",
+   "note": "Namba Parks, 6e étage (5e selon certaines sources) · à 10 min à pied de l'hôtel.",
+   "desc": "Le magasin officiel de gashapon Bandai à Osaka, dans le centre commercial Namba Parks, juste au-dessus de la gare Nankai Namba. Pratique pour une dernière tentative avant le départ."
   }
  ],
  "todo": [
@@ -3199,6 +3238,49 @@
     {
      "place": "yodobashi-umeda",
      "role": "Neuf, dernière chance"
+    }
+   ]
+  },
+  {
+   "id": "exceed-rx78",
+   "name": "Gashapon EXCEED MODEL TRINITY RX-78-2",
+   "icon": "robot",
+   "budget": "1 500 ¥ la capsule · 3 pièces à réunir : 4 500 ¥ au mieux, ~8 000 ¥ en moyenne",
+   "note": "Trois capsules différentes (extérieur, structure interne, cockpit du Core Fighter) qui s'assemblent en un buste de Gundam de ~20 cm. Sortie fin septembre 2026, donc encore bien présent en octobre. Le tirage est aléatoire : tirer en magasin officiel, puis compléter la pièce manquante en occasion (Nakano Broadway, Mandarake, Surugaya). Machines à 1 500 ¥ : prévoir de la monnaie, changeurs sur place.",
+   "link": "https://gashapon.jp/products/detail.php?jan_code=4570118196217000",
+   "jp": "EXCEED MODEL TRINITY RX-78-2 ガンダム",
+   "where": [
+    {
+     "place": "gashapon-akiba",
+     "role": "Premiers tirages (magasin officiel)"
+    },
+    {
+     "place": "gashapon-ikebukuro",
+     "role": "Le plus grand choix : tirer ici en priorité"
+    },
+    {
+     "place": "nakano",
+     "role": "Occasion : compléter la pièce manquante"
+    },
+    {
+     "place": "mandarake-akiba",
+     "role": "Occasion, à l'unité ou en set"
+    },
+    {
+     "place": "surugaya-akiba",
+     "role": "Occasion"
+    },
+    {
+     "place": "radio-kaikan",
+     "role": "Revendeurs de capsules à l'unité"
+    },
+    {
+     "place": "gashapon-namba",
+     "role": "Dernière chance à Osaka, près de l'hôtel"
+    },
+    {
+     "place": "surugaya-osaka",
+     "role": "Occasion, plan B Osaka"
     }
    ]
   }
