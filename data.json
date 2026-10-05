@@ -1764,8 +1764,7 @@
     139.699
    ],
    "note": "21-1 Udagawacho.",
-   "desc": "Le concurrent de Hands, plus orienté papeterie, déco et cosmétiques, sur plusieurs étages de petits objets bien pensés.",
-   "wikiEn": "Loft (Japanese store)"
+   "desc": "Le concurrent de Hands, plus orienté papeterie, déco et cosmétiques, sur plusieurs étages de petits objets bien pensés."
   },
   {
    "id": "scramble",
@@ -1839,8 +1838,7 @@
    "city": "tokyo",
    "cat": "gunpla",
    "q": "駿河屋 秋葉原プラモデル館",
-   "desc": "Un Surugaya entièrement consacré aux maquettes : boîtes neuves de collectionneurs vendues à la cote. Bon endroit pour un kit épuisé ailleurs.",
-   "wikiEn": "Suruga-ya"
+   "desc": "Un Surugaya entièrement consacré aux maquettes : boîtes neuves de collectionneurs vendues à la cote. Bon endroit pour un kit épuisé ailleurs."
   },
   {
    "id": "gundam-base",
@@ -1853,7 +1851,6 @@
    ],
    "note": "DiverCity 7e étage. Ticket numéroté possible le week-end.",
    "desc": "La boutique officielle de Bandai pour les Gunpla, au 7e étage de DiverCity, au-dessus du Gundam Unicorn grandeur nature (19,7 m) qui se transforme plusieurs fois par jour.",
-   "wikiEn": "The Gundam Base",
    "hist": "Le Gundam grandeur nature trône à Odaiba depuis 2009. Depuis 2017, c'est un RX-0 Unicorn de 19,7 m, et la boutique officielle Bandai s'est installée juste au-dessus.",
    "voir": [
     "La transformation du Unicorn, plusieurs fois par jour, avec projections vidéo le soir",
@@ -1877,7 +1874,7 @@
    "note": "Entrée Ōtemon. Fermés lundi et vendredi.",
    "desc": "Les anciens jardins du château d'Edo : douves, murailles monumentales, base du donjon et jardin japonais à étang. Entrée gratuite par la porte Ōtemon.",
    "wiki": "Jardins est du palais impérial",
-   "wikiEn": "East Gardens of the Imperial Palace",
+   "wikiEn": "Imperial Palace East Garden",
    "hist": "C'était le cœur du château d'Edo, siège des shoguns Tokugawa de 1603 à 1868. Le donjon, le plus haut jamais construit au Japon, brûla en 1657 et ne fut jamais rebâti. Le château devint ensuite le palais impérial, et ces jardins sont ouverts au public depuis 1968.",
    "voir": [
     "La porte Ōtemon et ses murs de pierres colossales",
@@ -1923,7 +1920,7 @@
    ],
    "note": "Pokémon Center Mega Tokyo, aquarium, boutiques anime. Observatoire Sunshine 60 retiré du programme (vue gratuite à la mairie le soir).",
    "desc": "Complexe d'Ikebukuro avec aquarium sur le toit, planétarium et le plus grand Pokémon Center de Tokyo. L'observatoire du 60e étage domine toute la ville.",
-   "wikiEn": "Sunshine City (Tokyo)",
+   "wikiEn": "Sunshine City, Tokyo",
    "hist": "Inaugurée en 1978, la tour Sunshine 60 (240 m) fut le plus haut gratte-ciel d'Asie pendant plusieurs années. Le complexe au pied de la tour est devenu un lieu de sortie familial.",
    "voir": [
     "L'observatoire Tenbō Park au 60e étage, avec pelouse artificielle",
@@ -2141,7 +2138,7 @@
    ],
    "desc": "Le pont sacré laqué de rouge qui marque l'entrée du site de Nikko, au-dessus des eaux turquoise de la rivière Daiya.",
    "wiki": "Shinkyō",
-   "wikiEn": "Shinkyō",
+   "wikiEn": "Shinkyo",
    "hist": "La légende raconte qu'au VIIIe siècle, le moine Shōdō Shōnin, bloqué par la rivière, fut aidé par un dieu qui fit apparaître deux serpents géants en guise de pont. L'ouvrage actuel, laqué de vermillon, a été reconstruit en 1904 après une crue.",
    "voir": [
     "Le pont lui-même, l'un des trois plus beaux ponts anciens du Japon",
@@ -2649,8 +2646,7 @@
    "city": "osaka",
    "cat": "gunpla",
    "q": "駿河屋 大阪日本橋本館",
-   "desc": "Le Surugaya principal de Nipponbashi : maquettes de collectionneurs non montées, vendues à la cote.",
-   "wikiEn": "Suruga-ya"
+   "desc": "Le Surugaya principal de Nipponbashi : maquettes de collectionneurs non montées, vendues à la cote."
   },
   {
    "id": "jungle-osaka",

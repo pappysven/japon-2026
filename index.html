@@ -672,7 +672,7 @@ async function readyState(){
   return [
     {id:"install", ok: standalone, na: window.IS_DEMO, t:"App installée sur l'écran d'accueil", s: standalone? "Ouverte depuis l'icône" : "Safari → Partager → Sur l'écran d'accueil, puis l'ouvrir depuis l'icône"},
     {id:"offline", ok: sw, na: window.IS_DEMO, t:"Mode hors ligne actif", s: sw? "L'app fonctionne sans réseau" : "Ouvrir l'app une fois avec du réseau, puis la relancer"},
-    {id:"wiki", ok: wikiPlaces.every(p=>wk[p.id]), na: window.IS_DEMO, t:"Fiches et photos des lieux", s: `${wikiPlaces.filter(p=>wk[p.id]).length} / ${wikiPlaces.length} fiches · ${imgs} photos en mémoire`, act:"prep"},
+    {id:"wiki", ok: wikiPlaces.every(p=>wk[p.id]?.galTried), na: window.IS_DEMO, t:"Fiches et photos des lieux", s: `${wikiPlaces.filter(p=>wk[p.id]?.galTried).length} / ${wikiPlaces.length} fiches · ${imgs} photos en mémoire`, act:"prep"},
     {id:"wx", ok: spots.every(k=>wx[k]), na: window.IS_DEMO, t:"Météo des étapes", s: `${spots.filter(k=>wx[k]).length} / ${spots.length} lieux en mémoire`, act:"prep"},
     {id:"qr", ok: keys.filter(k=>k.key!=="coco"&&!k.noqr).every(k=>b[k.key]?.img), t:"QR codes des billets", s: `${keys.filter(k=>b[k.key]?.img).length} / ${keys.filter(k=>k.key!=="coco"&&!k.noqr).length} enregistrés`, list: keys.filter(k=>k.key!=="coco"&&!b[k.key]?.img)},
     {id:"ref", ok: keys.every(k=>b[k.key]?.ref), t:"Numéros de réservation", s: `${keys.filter(k=>b[k.key]?.ref).length} / ${keys.length} saisis`, list: keys.filter(k=>!b[k.key]?.ref)},
@@ -692,26 +692,36 @@ async function readySheet(){
       ${!x.ok && x.buys?.length? `<div class="acts">${x.buys.map(t=>`<button class="btn" data-howbuy="${t.id}">${I("cart")}${esc(t.name.split(" (")[0])}</button>`).join("")}</div>`:""}</div>
       ${!x.ok && x.act==="todo"? `<button class="btn" data-sheet="todo">Voir</button>`:""}</div>`).join("")}</div>`;
 }
+async function imgCached(u){ try{ return window.caches ? !!(await caches.match(u)) : false; }catch(_){ return false; } }
 async function prepareOffline(btn){
   const zone = $("#prepzone"); btn.disabled = true;
   const wikiPlaces = D.places.filter(p=>p.wiki||p.wikiEn);
   const spots = []; const seen = new Set(); D.days.forEach(d=>{ const s = wxSpot(d); if(!seen.has(s.key)){ seen.add(s.key); spots.push(s); } });
-  const total = wikiPlaces.length + spots.length; let n = 0, fails = 0;
+  const total = wikiPlaces.length + spots.length; let n = 0, fails = 0, imgFails = 0;
   const upd = (txt) => zone.innerHTML = `<div class="prog"><i style="width:${Math.round(n/total*100)}%"></i></div><p class="small muted" style="margin:6px 0 0">${txt}</p>`;
-  upd("Démarrage…");
-  for(const s of spots){ try{ await wxFetch(s); }catch(_){ fails++; } n++; upd(`Météo : ${s.label}`); }
+  upd("Démarrage… garde l'app ouverte, écran allumé.");
+  for(const s of spots){ try{ await wxFetch(s); }catch(_){ fails++; } n++; upd(`Météo : ${esc(s.label)}`); await sleep(200); }
   for(const p of wikiPlaces){
-    try{
-      const w = await wikiLoad(p);
-      const urls = [w?.img, ...(w?.gal||[])].filter(Boolean);
-      await Promise.all(urls.map(u=>fetch(u,{mode:"no-cors"}).catch(()=>{ })));
-      if(!w) fails++;
-    }catch(_){ fails++; }
-    n++; upd(`Fiche : ${p.name}`);
+    upd(`Fiche ${n-spots.length+1}/${wikiPlaces.length} : ${esc(p.name)}`);
+    let w = null; try{ w = await wikiLoad(p); }catch(_){}
+    if(!w) fails++;
+    const urls = [w?.img, ...(w?.gal||[])].filter(Boolean);
+    for(const u of urls){
+      if(await imgCached(u)) continue;
+      let ok = false;
+      for(let k=0;k<3 && !ok;k++){ try{ await fetch(u,{mode:"no-cors"}); ok = await imgCached(u) || true; }catch(_){ await sleep(1500*(k+1)); } }
+      if(!ok) imgFails++;
+      await sleep(250);
+    }
+    n++; await sleep(500);
   }
   try{ if(navigator.storage?.persist) await navigator.storage.persist(); }catch(_){}
-  upd(fails? `Terminé avec ${fails} élément${fails>1?"s":""} non chargé${fails>1?"s":""} : relancer plus tard en wifi.` : "Terminé : fiches, photos et météo sont en mémoire.");
-  setTimeout(async ()=>{ const h = await readySheet(); const pan = document.querySelector(".pan"); if(pan){ pan.querySelector(".grab").nextElementSibling; openSheet("Prêt à partir", h); } }, 1500);
+  const wk = wikiCache(), done = wikiPlaces.filter(p=>wk[p.id]?.txt || wk[p.id]?.gal?.length).length;
+  upd(fails||imgFails
+    ? `Terminé : ${done}/${wikiPlaces.length} fiches. Wikipédia a limité le débit pour ${fails+imgFails} élément(s) : relance « Tout préparer » dans quelques minutes, seuls les manquants seront rechargés.`
+    : `Terminé : ${done}/${wikiPlaces.length} fiches, photos et météo sont en mémoire.`);
+  btn.disabled = false;
+  setTimeout(async ()=>{ if(document.querySelector(".pan")) openSheet("Prêt à partir", await readySheet()); }, 2500);
 }
 
 /* ============ composants ============ */
@@ -921,18 +931,37 @@ const bought = () => store.get("bought", {});
 function placeDay(id){ const i = D.days.findIndex(d => d.blocks.some(b => b.place===id)); return i<0? null : D.days[i]; }
 function badge(id){ const n = buysAt(id).filter(it=>!bought()[it.id]).length; return n? `<span class="badge">${I("cart")}${n}</span>` : ""; }
 const wikiCache = () => store.get("wiki", {});
-async function wikiLoad(p){
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+async function wfetch(url, tries=4){
+  for(let k=0;k<tries;k++){
+    let r; try{ r = await fetch(url); }catch(_){ r = null; }
+    if(r && r.ok) return r;
+    if(r && r.status!==429 && r.status<500) return r;
+    const ra = r && Number(r.headers.get("Retry-After"));
+    await sleep(ra? ra*1000 : 1500*Math.pow(2,k));
+  }
+  return null;
+}
+const thumb = (u, w) => u ? u.replace(/\/\d+px-/, `/${w}px-`) : u;
+async function wikiLoad(p, force){
   if(window.IS_DEMO || !(p.wiki||p.wikiEn)) return null;
-  const c = wikiCache(); if(c[p.id]) return c[p.id];
-  const tryOne = async (lang, title) => { if(!title) return null; const r = await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g,"_"))}`); if(!r.ok) return null; const j = await r.json(); return j.type==="disambiguation"? null : {img: j.thumbnail?.source?.replace(/\/\d+px-/,"/800px-") || null, txt: j.extract, url: j.content_urls?.desktop?.page, lang}; };
-  let w = null; try{ w = await tryOne("fr", p.wiki) || await tryOne("en", p.wikiEn); }catch(_){}
+  const c = wikiCache(); const old = c[p.id];
+  if(old && old.galTried && !force) return old;
+  const tryOne = async (lang, title) => {
+    if(!title) return null;
+    const r = await wfetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g,"_"))}`);
+    if(!r || !r.ok) return null; const j = await r.json();
+    return j.type==="disambiguation"? null : {img: thumb(j.thumbnail?.source, 960) || null, txt: j.extract, url: j.content_urls?.desktop?.page, lang};
+  };
+  let w = old && old.txt ? {...old} : null;
+  if(!w){ try{ w = await tryOne("fr", p.wiki) || await tryOne("en", p.wikiEn); }catch(_){} }
   try{
     const t = p.wikiEn || p.wiki, lang = p.wikiEn? "en" : "fr";
-    const r = await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/media-list/${encodeURIComponent(t.replace(/ /g,"_"))}`);
-    if(r.ok){ const j = await r.json();
+    const r = await wfetch(`https://${lang}.wikipedia.org/api/rest_v1/page/media-list/${encodeURIComponent(t.replace(/ /g,"_"))}`);
+    if(r && r.ok){ const j = await r.json();
       const imgs = (j.items||[]).filter(it=>it.type==="image" && it.srcset?.length && !/\.svg/i.test(it.title||"") && !/(logo|map|carte|icon|flag)/i.test(it.title||""))
-        .map(it=>{ const src = it.srcset[it.srcset.length-1].src; return (src.startsWith("//")? "https:"+src : src); }).slice(0,8);
-      if(imgs.length){ w = w || {}; w.gal = imgs; }
+        .map(it=>{ const src = it.srcset[0].src; return thumb(src.startsWith("//")? "https:"+src : src, 500); }).slice(0,6);
+      w = w || {}; w.gal = imgs; w.galTried = true;
     }
   }catch(_){}
   if(w){ c[p.id] = w; store.set("wiki", c); }
@@ -965,7 +994,7 @@ async function openPlace(id){
   openSheet(p.name, placeSheet(id));
   const w = await wikiLoad(p);
   if(w && $("#hero") && !$("#hero img")){
-    if(!w.img && w.gal?.length) w.img = w.gal[0];
+    if(w.img) w.img = thumb(w.img, 960); if(!w.img && w.gal?.length) w.img = w.gal[0];
     if(w.img) $("#hero").insertAdjacentHTML("beforeend", `<img src="${esc(w.img)}" alt="" onload="this.classList.add('ok')"><a class="credit" href="${esc(w.url)}" target="_blank" rel="noopener">Wikipédia</a>`);
     if(w.txt) $("#wikitxt").innerHTML = `<p class="wikix">${esc(w.txt)}</p>`;
     if(w.gal?.length) $("#gal").innerHTML = `<div class="gal">${w.gal.map(u=>`<img src="${esc(u)}" alt="" loading="lazy">`).join("")}</div>`;
@@ -1232,11 +1261,12 @@ matchMedia("(min-width:760px)").addEventListener("change", () => render(false));
 matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme);
 
 (async function init(){
+  try{ if(!store.get("wikiv2",false)){ store.set("wiki",{}); store.set("wikiv2",true); } }catch(_){}
   if(!D){ try{ D = await (await fetch("data.json",{cache:"no-cache"})).json(); store.set("data", D); } catch(_){ D = store.get("data", null); } }
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-05-2148";
+  window.VERSION = "2026-10-05-2159";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
