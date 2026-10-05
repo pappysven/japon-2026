@@ -418,8 +418,8 @@
   {
    "id": "kinugawa-soir",
    "date": "2026-10-20",
-   "dep": "~16:30",
-   "arr": "~17:10",
+   "dep": "~16:00",
+   "arr": "~16:40",
    "from": "Tobu-Nikko",
    "to": "Kinugawa-Onsen",
    "name": "Train local Tobu, changement à Shimo-Imaichi",
@@ -473,7 +473,7 @@
    "name": "Bus Tobu — Irohazaka",
    "kind": "bus",
    "status": "suica",
-   "note": "Partir tôt : bouchons d'Irohazaka en saison des feuilles rouges. Redescente vers 14h30–15h30.",
+   "note": "~1 250 ¥ adulte jusqu'à Chūzenji (demi-tarif enfant), payé à la Suica. Partir tôt : bouchons d'Irohazaka en saison des feuilles rouges.",
    "ll": [
     36.748,
     139.6188
@@ -537,6 +537,12 @@
      "t": "Ligne Tozai, direction Nakano",
      "jp": "東西線 · 中野 方面",
      "sub": "Descendre à Kagurazaka (神楽坂), ~10 min. Hôtel à quelques minutes."
+    },
+    {
+     "k": "taxi",
+     "t": "Ou taxi Asakusa → Kagurazaka",
+     "jp": "神楽坂",
+     "sub": "~3 500–4 500 ¥ (estimation), plus simple en fin de journée."
     }
    ]
   },
@@ -578,7 +584,7 @@
      "k": "walk",
      "t": "Tobu-Nikko → arrêt de bus",
      "jp": "東武日光駅",
-     "sub": "Arrêts devant la gare. Bus de 8h vers 中禅寺温泉 (Chūzenji Onsen), payé à la Suica."
+     "sub": "Laisser les sacs dans les casiers de la gare. Bus de 8h vers 中禅寺温泉 (Chūzenji Onsen), devant la gare, payé à la Suica."
     }
    ]
   },
@@ -998,36 +1004,47 @@
   {
    "date": "2026-10-18",
    "stage": "tokyo",
-   "title": "Meiji, Harajuku, Shibuya",
+   "title": "Meiji, Harajuku, Shimokitazawa, Shibuya",
    "hotel": "coco",
    "blocks": [
     {
-     "t": "matin",
+     "t": "8:30",
      "txt": "Sanctuaire Meiji Jingu, tôt et au calme",
      "place": "meiji"
     },
     {
+     "t": "9:30",
      "txt": "Takeshita-dori (streetwear, crêpes)",
      "place": "takeshita"
     },
     {
-     "txt": "Omotesando, l'avenue « Champs-Élysées »",
+     "t": "10:30",
+     "txt": "Cat Street à pied jusqu'à Shibuya",
      "place": "omotesando"
     },
     {
-     "t": "fin d'aprèm",
+     "t": "12:00",
+     "txt": "Déjeuner à Shibuya"
+    },
+    {
+     "t": "13:15",
+     "txt": "Shimokitazawa : friperies, disquaires, jouets rétro",
+     "place": "shimokitazawa"
+    },
+    {
+     "t": "16:15",
      "txt": "Hands Shibuya + Loft Shibuya, à 2 min l'un de l'autre",
      "place": "hands-shibuya"
     },
     {
-     "t": "soir",
-     "txt": "Scramble de Shibuya + Shibuya 109",
+     "t": "18:00",
+     "txt": "Scramble de Shibuya de nuit + Shibuya 109, dîner",
      "place": "scramble"
     }
    ],
    "tips": [
-    "Ligne Chiyoda → Meiji-Jingumae (10–15 min), départ vers 8h",
-    "Harajuku → Cat Street → Shibuya à pied (15–20 min)",
+    "Ligne Chiyoda → Meiji-Jingumae, départ vers 8h",
+    "Shibuya ↔ Shimokitazawa : Keio Inokashira, ~5 min en express",
     "Retour : ligne Ginza Shibuya → Akasaka-mitsuke",
     "Hands Shibuya ferme définitivement le 15 nov : foule le dimanche",
     "Détaxe : regrouper les achats (5 000 ¥ min par catégorie et par magasin)"
@@ -1056,12 +1073,26 @@
      "t": "aprèm",
      "txt": "Odaiba : Gundam Base Tokyo, Unicorn géant et DiverCity",
      "place": "gundam-base"
+    },
+    {
+     "t": "soir",
+     "txt": "Gundam géant éclairé à la tombée de la nuit"
+    },
+    {
+     "t": "19:00",
+     "txt": "Dîner : Ramen Kokugikan Mai (Aqua City 5F), ou Takoyaki Museum",
+     "place": "ramen-kokugikan"
+    },
+    {
+     "t": "20:30",
+     "txt": "Rainbow Bridge illuminé, puis Yurikamome → Shimbashi → Akasaka (~30–40 min)"
     }
    ],
    "tips": [
     "Akasaka → Akihabara ~25 min, départ vers 8h15",
-    "Akihabara → Odaiba : Shimbashi puis Yurikamome (places à l'avant pour la vue sur le Rainbow Bridge)",
+    "Akihabara → Odaiba : Shimbashi puis Yurikamome (places à l'avant)",
     "Rentrer déposer les grosses boîtes avant Odaiba si besoin",
+    "Allergie : signaler au restaurant (fonds de ramen, sauces), carte en japonais",
     "iPad : clavier japonais JIS, acheter le clavier en France"
    ]
   },
@@ -1072,6 +1103,10 @@
    "hotel": "manyotei",
    "blocks": [
     {
+     "t": "8:45",
+     "txt": "Akasaka → Asakusa (ligne Ginza, ~25 min), quai Tobu à 9h15"
+    },
+    {
      "t": "9:30",
      "txt": "Revaty Kegon 013 depuis Asakusa",
      "transport": "revaty-aller"
@@ -1081,11 +1116,16 @@
      "txt": "Arrivée Tobu-Nikko"
     },
     {
+     "t": "11:30",
+     "txt": "Déjeuner près de la gare ou du pont Shinkyō"
+    },
+    {
      "txt": "Pont Shinkyō",
      "place": "shinkyo"
     },
     {
-     "txt": "Tōshō-gū",
+     "t": "12:30",
+     "txt": "Tōshō-gū (jusqu'à ~15h30)",
      "place": "toshogu"
     },
     {
@@ -1093,15 +1133,15 @@
      "place": "futarasan"
     },
     {
-     "t": "~16:30",
-     "txt": "Train Tobu → Kinugawa-Onsen, onsen à l'hôtel",
+     "t": "~16:00",
+     "txt": "Train Tobu → Kinugawa-Onsen, onsen et dîner à l'hôtel",
      "transport": "kinugawa-soir"
     }
    ],
    "tips": [
-    "Akasaka → Asakusa : ligne Ginza, ~25 min",
-    "Valises : Ta-Q-Bin Coco Shuku → Kagurazaka (livraison le 21), à demander à la réception ; sinon consignes d'Asakusa",
-    "Prévoir un sac pour la nuit à Kinugawa"
+    "Tōshō-gū ~9h–17h en octobre, dernière entrée ~16h30",
+    "Grosses valises : Ta-Q-Bin Coco Shuku → Kagurazaka ; sac pour une nuit",
+    "Pas de montée en montagne le 20 : Irohazaka saturée l'après-midi"
    ]
   },
   {
@@ -1112,7 +1152,7 @@
    "blocks": [
     {
      "t": "7:00",
-     "txt": "Train Kinugawa → Tobu-Nikko",
+     "txt": "Train Kinugawa → Tobu-Nikko, sacs dans les casiers de la gare",
      "transport": "kinugawa-matin"
     },
     {
@@ -1121,20 +1161,25 @@
      "transport": "bus-chuzenji"
     },
     {
-     "txt": "Chutes de Kegon",
+     "txt": "Chutes de Kegon (ascenseur)",
      "place": "kegon"
     },
     {
-     "txt": "Lac Chūzenji",
+     "txt": "Bord du lac Chūzenji",
      "place": "chuzenji"
     },
     {
-     "txt": "Chutes de Ryūzu",
+     "txt": "Bus Chūzenji → Ryūzu (~10–15 min) : la cascade",
      "place": "ryuzu"
     },
     {
-     "t": "14:30",
-     "txt": "Redescente à Nikko, temps libre"
+     "t": "aprèm",
+     "txt": "Redescente, abîme de Kanmangafuchi ou balade près de Shinkyō",
+     "place": "kanmangafuchi"
+    },
+    {
+     "t": "17:30",
+     "txt": "Dîner à Nikko avant le train"
     },
     {
      "t": "18:41",
@@ -1147,8 +1192,10 @@
     }
    ],
    "tips": [
-    "Pic des momiji fin octobre : une seule montée, tôt",
-    "Bus de montagne payés à la Suica"
+    "Bouchons d'automne : Irohazaka peut passer de 45 min à 2–4 h, d'où le bus de 8h",
+    "Bus de montagne à la Suica : ~1 250 ¥ adulte jusqu'à Chūzenji, demi-tarif enfant",
+    "Téléphérique d'Akechidaira fermé jusqu'en 2027",
+    "Retour Asakusa → Kagurazaka : métro (~35–40 min) ou taxi (~3 500–4 500 ¥)"
    ],
    "wx": {
     "ll": [
@@ -1165,46 +1212,64 @@
   {
    "date": "2026-10-22",
    "stage": "tokyo",
-   "title": "Palais, Toei, Ikebukuro, Nakano",
+   "title": "Palais, Toei, Ikebukuro, soirée Shinjuku",
    "hotel": "vintage",
    "blocks": [
     {
      "t": "9:00",
-     "txt": "Jardins Est du Palais impérial (pas Kitanomaru)",
+     "txt": "Jardins Est du Palais impérial (pas Kitanomaru), repartir vers 10h30",
      "place": "east-gardens"
     },
     {
-     "t": "10:30",
-     "txt": "Musée Toei Animation (Dragon Ball, One Piece)",
+     "t": "11:30",
+     "txt": "Musée Toei Animation (sans réservation)",
      "place": "toei"
     },
     {
-     "t": "midi",
-     "txt": "Ikebukuro : Sunshine City, Pokémon Center, Sunshine 60, Animate",
+     "t": "aprèm",
+     "txt": "Ikebukuro : déjeuner, Sunshine City, Pokémon Center, Animate",
      "place": "sunshine"
     },
     {
-     "t": "16:30",
-     "txt": "Nakano Broadway, Mandarake",
-     "place": "nakano"
+     "t": "17:30",
+     "txt": "Ikebukuro → Shinjuku (JR, ~5 min), sortie ouest"
     },
     {
-     "t": "soir",
-     "txt": "Mairie de Shinjuku au coucher du soleil → Omoide Yokocho → ramen Menya Musashi",
+     "t": "18:00",
+     "txt": "Mairie : projection lumineuse, puis observatoire sud (vue de nuit)",
+     "place": "tocho"
+    },
+    {
+     "t": "19:15",
+     "txt": "Balade Omoide Yokocho",
+     "place": "omoide"
+    },
+    {
+     "t": "19:45",
+     "txt": "Dîner ramen chez Menya Musashi",
      "place": "menya-musashi"
+    },
+    {
+     "t": "21:00",
+     "txt": "Golden Gai et sanctuaire Hanazono, balade et photos",
+     "place": "golden-gai"
+    },
+    {
+     "t": "21:45",
+     "txt": "Retour : Higashi-Shinjuku → Ushigome-Kagurazaka (Oedo, ~8 min)"
     }
    ],
    "tips": [
     "Kagurazaka → Otemachi : ligne Tozai directe, ~8 min",
-    "Ōizumi-Gakuen → Ikebukuro : ligne Seibu, 15–20 min ; Ikebukuro → Nakano : JR Saikyo puis Chuo",
-    "Retour Nakano → Kagurazaka : ligne Tozai directe, ~15 min",
-    "Toei : fermetures irrégulières, vérifier le calendrier"
+    "Otemachi → Ōizumi-Gakuen : Tozai, Iidabashi, puis Yurakucho/Seibu, ~45 min",
+    "Jardins Est fermés lundi et vendredi : jeudi OK",
+    "Menya Musashi : file possible au dîner, allergie à signaler"
    ]
   },
   {
    "date": "2026-10-23",
    "stage": "tokyo",
-   "title": "Asakusa, Ginza",
+   "title": "Asakusa, Ginza, Nakano",
    "hotel": "vintage",
    "blocks": [
     {
@@ -1223,20 +1288,25 @@
     },
     {
      "t": "aprèm",
-     "txt": "Apple Ginza, Peak Design Tokyo, balade Chuo-dori",
+     "txt": "Apple Ginza, Peak Design Tokyo",
      "place": "apple-ginza"
     },
     {
-     "t": "option",
-     "txt": "Vintage Jimbocho (affiches de cinéma)",
-     "place": "vintage-jimbocho"
+     "t": "15:00",
+     "txt": "Nakano Broadway, Mandarake",
+     "place": "nakano"
+    },
+    {
+     "t": "soir",
+     "txt": "Dîner à Nakano (Sun Mall et ruelles), soirée calme"
     }
    ],
    "tips": [
-    "Asakusa → Ginza : ligne Ginza directe, ~17 min",
+    "Kagurazaka → Asakusa : Tozai puis Ginza, ~30 min, départ vers 7h15",
+    "Chinya : 10 min de retard maximum, sinon la réservation peut être annulée",
+    "Ginza → Nakano : Ginza Line → Nihombashi, puis Tozai direct (~30 min)",
     "Peak Design : comparer avec Yodobashi avant d'acheter",
-    "Jimbocho : boutiques qui ferment tôt",
-    "Chinya : 10 min de retard maximum, sinon la réservation peut être annulée"
+    "Départ de l'hôtel à 9h demain (Romancecar 10h)"
    ]
   },
   {
@@ -1327,6 +1397,11 @@
     {
      "t": "~16:45",
      "txt": "Taxi → Guesthouse Kyoto Compass"
+    },
+    {
+     "t": "soir",
+     "txt": "Première soirée à Kyoto : Gion, Pontochō ou dîner près de la guesthouse",
+     "place": "gion"
     }
    ],
    "tips": [
@@ -1378,13 +1453,19 @@
    "hotel": "compass",
    "blocks": [
     {
-     "t": "avant 8:00",
-     "txt": "Bambouseraie, la lumière du matin",
+     "t": "7:30",
+     "txt": "Bambouseraie et sanctuaire Nonomiya",
      "place": "bambous"
     },
     {
-     "txt": "Tenryū-ji",
+     "t": "8:30",
+     "txt": "Jardin du Tenryū-ji",
      "place": "tenryuji"
+    },
+    {
+     "t": "9:45",
+     "txt": "Rivière Ōi et pont Togetsukyō",
+     "place": "togetsukyo"
     },
     {
      "t": "10:30",
@@ -1398,12 +1479,12 @@
     },
     {
      "t": "12:15",
-     "txt": "Rendez-vous au pied du pont Togetsukyō, côté sud",
+     "txt": "Rendez-vous au pied du pont Togetsukyō, côté sud, puis déjeuner",
      "place": "togetsukyo"
     },
     {
      "t": "aprèm",
-     "txt": "Bord de la rivière Ōi, retour vers Kyoto"
+     "txt": "Barque sur la rivière Ōi, ou Kimono Forest et bain de pieds à la gare Randen"
     },
     {
      "t": "soir",
@@ -1413,9 +1494,9 @@
    ],
    "tips": [
     "JR Sagano Line → Saga-Arashiyama, 25 min, départ vers 7h",
-    "Komurasaki An est à 3 min de la gare Hankyu Arashiyama ; Monkey Park : 20 min de montée",
-    "Retour : même train, ou Hankyu Arashiyama → Katsura → Kawaramachi",
-    "Achats Gunpla en volume plutôt à Osaka"
+    "Retour vers 15h30 : Hankyu Arashiyama → Katsura → Kawaramachi, ou JR",
+    "Monkey Park : sachets de pommes (pas de cacahuètes), se laver les mains",
+    "Si forte pluie : barque ou train Sagano Torokko à la place du Monkey Park"
    ]
   },
   {
@@ -1807,7 +1888,7 @@
    "city": "tokyo",
    "cat": "musee",
    "q": "Toei Animation Museum",
-   "note": "Ōizumi-Gakuen. Fermé le mercredi + fermetures irrégulières.",
+   "note": "Ōizumi-Gakuen. Sans réservation. Fermé le mercredi + fermetures irrégulières : vérifier le calendrier.",
    "link": "https://museum.toei-anim.co.jp/",
    "desc": "Le musée du studio de Dragon Ball, One Piece et Sailor Moon : expositions interactives sur la fabrication de l'animation, dans le quartier où le studio est installé.",
    "wiki": "Toei Animation",
@@ -1832,7 +1913,7 @@
     35.729,
     139.7194
    ],
-   "note": "Observatoire Sunshine 60 (payant), aquarium.",
+   "note": "Pokémon Center Mega Tokyo, aquarium, boutiques anime. Observatoire Sunshine 60 retiré du programme (vue gratuite à la mairie le soir).",
    "desc": "Complexe d'Ikebukuro avec aquarium sur le toit, planétarium et le plus grand Pokémon Center de Tokyo. L'observatoire du 60e étage domine toute la ville.",
    "wikiEn": "Sunshine City (Tokyo)",
    "hist": "Inaugurée en 1978, la tour Sunshine 60 (240 m) fut le plus haut gratte-ciel d'Asie pendant plusieurs années. Le complexe au pied de la tour est devenu un lieu de sortie familial.",
@@ -1893,7 +1974,7 @@
     35.6896,
     139.6922
    ],
-   "note": "Gratuit.",
+   "note": "Observatoire SUD ouvert le soir (9h30–22h, dernière entrée 21h30, fermé les 1er et 3e mardis). Projection lumineuse sur la façade toutes les 30 min de 18h à 21h30. Attente possible 20–30 min.",
    "desc": "Les deux tours de la mairie de Tokyo, signées Kenzō Tange, ont un observatoire gratuit au 45e étage. Par temps clair, le mont Fuji se découpe au coucher du soleil.",
    "wiki": "Bâtiment du gouvernement métropolitain de Tokyo",
    "wikiEn": "Tokyo Metropolitan Government Building",
@@ -2132,7 +2213,7 @@
     "Les érables flamboyants en fin octobre"
    ],
    "astuce": "L'ascenseur est payant mais indispensable : d'en haut, on voit à peine la chute.",
-   "infos": "Ascenseur ~570 ¥ adulte, ~340 ¥ enfant · ~8h–17h · compter 45 min",
+   "infos": "Ascenseur ~600 ¥ adulte · ~8h–17h · compter 45 min",
    "savez": "Le trajet en bus monte par l'Irohazaka : 48 virages en épingle, chacun portant une syllabe de l'ancien alphabet japonais."
   },
   {
@@ -2452,8 +2533,9 @@
     "La cabane grillagée d'où l'on nourrit les singes"
    ],
    "astuce": "20 minutes de montée raide : bonnes chaussures et ne pas regarder les singes dans les yeux.",
-   "infos": "~800 ¥ adulte (à vérifier) · ~9h–16h · compter 1 h 30 avec la montée",
-   "savez": "Les macaques japonais sont les primates vivant le plus au nord du monde, en dehors de l'homme."
+   "infos": "~550 ¥ adulte, ~250 ¥ enfant · ~9h–16h · 20–30 min de montée",
+   "savez": "Les macaques japonais sont les primates vivant le plus au nord du monde, en dehors de l'homme.",
+   "note": "Nourrir les singes avec les sachets de pommes (pas de cacahuètes : allergie), se laver les mains ensuite. Peut fermer en cas de forte pluie."
   },
   {
    "id": "yodobashi-kyoto",
@@ -2719,7 +2801,7 @@
    "note": "Réservé : ven. 23 oct. à 12h00, 3 adultes + 1 enfant. Retard toléré 10 min maximum, sinon la réservation peut être annulée.",
    "desc": "Maison de sukiyaki d'Asakusa, au pied ouest du pont Kototoi. Le bœuf est cuit à table dans un bouillon sucré-salé ; à midi en semaine, le gyūnabe gozen est la formule la plus simple. Les menus se choisissent sur place.",
    "resa": {
-    "txt": "Ven. 23 oct. · 12h00 · 3 adultes + 1 enfant · table",
+    "txt": "Ven. 23 oct. · 12h00 · 3 adultes + 1 enfant · table · menus sur place : gyūnabe Take 120 g 4 800 ¥ / Matsu 160 g 5 600 ¥",
     "warn": "Arriver vers 11h50 : 10 min de retard maximum, sinon la réservation peut être annulée.",
     "tel": "+81338410010",
     "telLabel": "03-3841-0010",
@@ -2751,6 +2833,58 @@
    "note": "Point de rendez-vous à 12h15 : au pied du pont, côté sud.",
    "desc": "Le « pont qui traverse la lune », emblème d'Arashiyama, enjambe la rivière Ōi face aux collines en couleurs d'automne.",
    "savez": "Son nom viendrait d'un empereur du XIIIe siècle, pour qui la lune semblait traverser le pont d'une rive à l'autre."
+  },
+  {
+   "id": "shimokitazawa",
+   "name": "Shimokitazawa",
+   "jp": "下北沢",
+   "city": "tokyo",
+   "cat": "shopping",
+   "ll": [
+    35.6616,
+    139.668
+   ],
+   "note": "Boutiques ~11h–20h. Raccourcir à 1h30 si le décalage horaire se fait sentir.",
+   "desc": "Le quartier vintage et bohème de Tokyo : friperies (Flamingo, New York Joe Exchange, Chicago), disquaires, jouets et jeux rétro, Village Vanguard, et les allées de Reload et Bonus Track.",
+   "infos": "Accès libre · Keio Inokashira depuis Shibuya, ~5 min en express (~140 ¥) · compter 2 h 30"
+  },
+  {
+   "id": "ramen-kokugikan",
+   "name": "Ramen Kokugikan Mai (Aqua City)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6276,
+    139.7737
+   ],
+   "note": "Aqua City Odaiba, 5e étage. Signaler l'allergie (fonds de ramen, sauces) avec la carte.",
+   "desc": "Un étage de comptoirs de ramen venus de tout le Japon, avec vue sur le Rainbow Bridge. Alternatives : Odaiba Takoyaki Museum et sa rue rétro (Decks Tokyo Beach), ou le food court de DiverCity."
+  },
+  {
+   "id": "golden-gai",
+   "name": "Golden Gai et sanctuaire Hanazono",
+   "jp": "ゴールデン街",
+   "city": "tokyo",
+   "cat": "balade",
+   "ll": [
+    35.694,
+    139.7046
+   ],
+   "note": "Balade et photos des ruelles uniquement : respecter les panneaux « No photo », ne pas photographier l'intérieur des bars. Passer par le sanctuaire Hanazono, éviter le cœur de Kabukichō avec les enfants.",
+   "desc": "Six ruelles serrées de minuscules bars de l'après-guerre, chacun de quelques places, juste à côté du sanctuaire Hanazono, illuminé le soir."
+  },
+  {
+   "id": "kanmangafuchi",
+   "name": "Abîme de Kanmangafuchi",
+   "jp": "憾満ヶ淵",
+   "city": "nikko",
+   "cat": "nature",
+   "ll": [
+    36.7469,
+    139.5867
+   ],
+   "desc": "Gorge de lave au bord de la Daiya, longée par une rangée d'environ 70 statues de Jizō coiffées de bonnets rouges : on dit qu'on n'en compte jamais deux fois le même nombre.",
+   "infos": "Gratuit · ~20 min à pied du pont Shinkyō · compter 45 min"
   }
  ],
  "todo": [
@@ -2776,7 +2910,7 @@
   },
   {
    "id": "taqbin-coco",
-   "txt": "Demander à Coco Shuku le Ta-Q-Bin vers Kagurazaka (envoi le 20)"
+   "txt": "Demander à Coco Shuku le Ta-Q-Bin vers Kagurazaka (envoi le 20 oct.)"
   },
   {
    "id": "freepass",
@@ -2817,6 +2951,26 @@
   {
    "id": "liens",
    "txt": "Tester une fois chaque bouton « Mon billet »"
+  },
+  {
+   "id": "apple",
+   "txt": "Achats Apple : choisir la config du Mac mini et le modèle d'iPad, comparer prix FR/JP"
+  },
+  {
+   "id": "c7",
+   "txt": "Acheter un câble secteur C7 (« en 8 ») français pour le Mac mini"
+  },
+  {
+   "id": "hakone-last",
+   "txt": "Vérifier les derniers bateaux et téléphériques de Hakone fin octobre"
+  },
+  {
+   "id": "nankai-first",
+   "txt": "Vérifier le 1er Nankai du dim. 1er nov. et les horaires du comptoir Yamato de KIX"
+  },
+  {
+   "id": "films",
+   "txt": "Préparer la famille : films Ghibli, Naruto, DBZ, docs sur le Japon"
   }
  ],
  "allergy": {
