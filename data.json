@@ -1849,7 +1849,7 @@
     35.6251,
     139.7756
    ],
-   "note": "DiverCity 7e étage. Ticket numéroté possible le week-end.",
+   "note": "DiverCity 7e étage. Entrée libre la plupart des jours de semaine. Week-ends, jours fériés et jours de sortie : entrée sur tirage au sort en ligne ou ticket numéroté (WEB整理券). Vérifier la page « 店舗営業案内 » quelques jours avant le lundi 19.",
    "desc": "La boutique officielle de Bandai pour les Gunpla, au 7e étage de DiverCity, au-dessus du Gundam Unicorn grandeur nature (19,7 m) qui se transforme plusieurs fois par jour.",
    "hist": "Le Gundam grandeur nature trône à Odaiba depuis 2009. Depuis 2017, c'est un RX-0 Unicorn de 19,7 m, et la boutique officielle Bandai s'est installée juste au-dessus.",
    "voir": [
@@ -1859,7 +1859,8 @@
    ],
    "astuce": "Consulter les horaires des transformations sur place et caler la visite autour.",
    "infos": "Entrée libre · statue visible à toute heure, transformations à heures fixes · compter 1 à 2 h",
-   "savez": "Le premier Gundam grandeur nature, un RX-78-2, a été installé à Odaiba en 2009 pour les 30 ans de la série."
+   "savez": "Le premier Gundam grandeur nature, un RX-78-2, a été installé à Odaiba en 2009 pour les 30 ans de la série.",
+   "link": "https://www.gundam-base.net/news/55669.html"
   },
   {
    "id": "east-gardens",
@@ -3003,6 +3004,10 @@
   {
    "id": "films",
    "txt": "Préparer la famille : films Ghibli, Naruto, DBZ, docs sur le Japon"
+  },
+  {
+   "id": "gundam-base",
+   "txt": "Vers le 12–14 oct : vérifier si la Gundam Base Tokyo impose un tirage d'entrée le lun. 19 oct (sinon entrée libre)"
   }
  ],
  "allergy": {
