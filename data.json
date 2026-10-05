@@ -1217,9 +1217,9 @@
      "place": "asakusa-info"
     },
     {
-     "t": "midi",
-     "txt": "Sukiyaki chez Asakusa Imahan",
-     "place": "imahan"
+     "t": "12:00",
+     "txt": "Déjeuner sukiyaki réservé : Sukiyaki Chinya (arriver vers 11h50)",
+     "place": "chinya"
     },
     {
      "t": "aprèm",
@@ -1235,7 +1235,8 @@
    "tips": [
     "Asakusa → Ginza : ligne Ginza directe, ~17 min",
     "Peak Design : comparer avec Yodobashi avant d'acheter",
-    "Jimbocho : boutiques qui ferment tôt"
+    "Jimbocho : boutiques qui ferment tôt",
+    "Chinya : 10 min de retard maximum, sinon la réservation peut être annulée"
    ]
   },
   {
@@ -1373,7 +1374,7 @@
   {
    "date": "2026-10-27",
    "stage": "kyoto",
-   "title": "Arashiyama",
+   "title": "Arashiyama, cérémonie du thé",
    "hotel": "compass",
    "blocks": [
     {
@@ -1386,12 +1387,23 @@
      "place": "tenryuji"
     },
     {
-     "txt": "Bord de la rivière Ōi, Monkey Park Iwatayama",
+     "t": "10:30",
+     "txt": "Alexia : cérémonie du thé privée chez Komurasaki An",
+     "place": "komurasaki"
+    },
+    {
+     "t": "10:30",
+     "txt": "Antoine et les enfants : Monkey Park Iwatayama",
      "place": "monkey"
     },
     {
-     "t": "option",
-     "txt": "Cérémonie du thé"
+     "t": "12:15",
+     "txt": "Rendez-vous au pied du pont Togetsukyō, côté sud",
+     "place": "togetsukyo"
+    },
+    {
+     "t": "aprèm",
+     "txt": "Bord de la rivière Ōi, retour vers Kyoto"
     },
     {
      "t": "soir",
@@ -1401,6 +1413,7 @@
    ],
    "tips": [
     "JR Sagano Line → Saga-Arashiyama, 25 min, départ vers 7h",
+    "Komurasaki An est à 3 min de la gare Hankyu Arashiyama ; Monkey Park : 20 min de montée",
     "Retour : même train, ou Hankyu Arashiyama → Katsura → Kawaramachi",
     "Achats Gunpla en volume plutôt à Osaka"
    ]
@@ -2695,6 +2708,49 @@
    "note": "Mac mini. Gunpla au 6e.",
    "desc": "L'un des plus grands magasins d'électronique du Japon, accolé à la gare d'Osaka. Rayon Apple, Gunpla au 6e et détaxe sur place.",
    "wikiEn": "Yodobashi Camera"
+  },
+  {
+   "id": "chinya",
+   "name": "Sukiyaki Chinya",
+   "jp": "浅草ちんや",
+   "city": "tokyo",
+   "cat": "resto",
+   "q": "東京都台東区花川戸2-16-1",
+   "note": "Réservé : ven. 23 oct. à 12h00, 3 adultes + 1 enfant. Retard toléré 10 min maximum, sinon la réservation peut être annulée.",
+   "desc": "Maison de sukiyaki d'Asakusa, au pied ouest du pont Kototoi. Le bœuf est cuit à table dans un bouillon sucré-salé ; à midi en semaine, le gyūnabe gozen est la formule la plus simple. Les menus se choisissent sur place.",
+   "resa": {
+    "txt": "Ven. 23 oct. · 12h00 · 3 adultes + 1 enfant · table",
+    "warn": "Arriver vers 11h50 : 10 min de retard maximum, sinon la réservation peut être annulée.",
+    "tel": "+81338410010",
+    "telLabel": "03-3841-0010",
+    "secret": "chinya"
+   },
+   "astuce": "Montrer la carte d'allergie en arrivant : demander que la sauce et les accompagnements soient sans fruits à coque."
+  },
+  {
+   "id": "komurasaki",
+   "name": "Komurasaki An (cérémonie du thé)",
+   "city": "kyoto",
+   "cat": "musee",
+   "q": "Komurasaki An Arashiyama tea ceremony",
+   "note": "Pour Alexia : séance privée de 90 min, 4 000 ¥, créneau visé ~10h30. À réserver au moins 2 jours avant sur tea-komurasaki.com.",
+   "desc": "Petite maison de thé d'Arashiyama (73-1 Kamikaido-cho), à 3 minutes de la gare Hankyu Arashiyama. La séance privée permet de suivre et de pratiquer chaque geste de la cérémonie, à son rythme.",
+   "link": "https://tea-komurasaki.com/",
+   "infos": "4 000 ¥ · 90 min · réservation ≥ 2 jours avant"
+  },
+  {
+   "id": "togetsukyo",
+   "name": "Pont Togetsukyō",
+   "jp": "渡月橋",
+   "city": "kyoto",
+   "cat": "balade",
+   "ll": [
+    35.0128,
+    135.6778
+   ],
+   "note": "Point de rendez-vous à 12h15 : au pied du pont, côté sud.",
+   "desc": "Le « pont qui traverse la lune », emblème d'Arashiyama, enjambe la rivière Ōi face aux collines en couleurs d'automne.",
+   "savez": "Son nom viendrait d'un empereur du XIIIe siècle, pour qui la lune semblait traverser le pont d'une rive à l'autre."
   }
  ],
  "todo": [
@@ -2705,6 +2761,10 @@
   {
    "id": "skyliner",
    "txt": "Acheter l'e-ticket Skyliner (Keisei)"
+  },
+  {
+   "id": "the",
+   "txt": "Réserver la cérémonie du thé d'Alexia chez Komurasaki An (27 oct. ~10h30), au moins 2 jours avant"
   },
   {
    "id": "vjw",

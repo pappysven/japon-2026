@@ -626,7 +626,7 @@ function stepsBlock(t){
 }
 
 /* ============ prêt à partir ============ */
-const BILL_KEYS = () => [...D.transports.filter(t=>t.secret).map(t=>({key:t.secret, name:t.name, date:t.date})), ...D.hotels.filter(h=>h.secret).map(h=>({key:h.secret, name:h.name, date:h.from}))];
+const BILL_KEYS = () => [...D.transports.filter(t=>t.secret).map(t=>({key:t.secret, name:t.name, date:t.date})), ...D.hotels.filter(h=>h.secret).map(h=>({key:h.secret, name:h.name, date:h.from})), ...D.places.filter(p=>p.resa?.secret).map(p=>({key:p.resa.secret, name:p.name, date:"", noqr:true}))];
 async function readyState(){
   const b = bills(), keys = BILL_KEYS(), wk = wikiCache(), wikiPlaces = D.places.filter(p=>p.wiki||p.wikiEn);
   const spots = [...new Set(D.days.map(d=>wxSpot(d).key))], wx = wxCache();
@@ -640,7 +640,7 @@ async function readyState(){
     {id:"offline", ok: sw, na: window.IS_DEMO, t:"Mode hors ligne actif", s: sw? "L'app fonctionne sans réseau" : "Ouvrir l'app une fois avec du réseau, puis la relancer"},
     {id:"wiki", ok: wikiPlaces.every(p=>wk[p.id]), na: window.IS_DEMO, t:"Fiches et photos des lieux", s: `${wikiPlaces.filter(p=>wk[p.id]).length} / ${wikiPlaces.length} fiches · ${imgs} photos en mémoire`, act:"prep"},
     {id:"wx", ok: spots.every(k=>wx[k]), na: window.IS_DEMO, t:"Météo des étapes", s: `${spots.filter(k=>wx[k]).length} / ${spots.length} lieux en mémoire`, act:"prep"},
-    {id:"qr", ok: keys.filter(k=>k.key!=="coco").every(k=>b[k.key]?.img), t:"QR codes des billets", s: `${keys.filter(k=>b[k.key]?.img).length} / ${keys.filter(k=>k.key!=="coco").length} enregistrés`, list: keys.filter(k=>k.key!=="coco"&&!b[k.key]?.img)},
+    {id:"qr", ok: keys.filter(k=>k.key!=="coco"&&!k.noqr).every(k=>b[k.key]?.img), t:"QR codes des billets", s: `${keys.filter(k=>b[k.key]?.img).length} / ${keys.filter(k=>k.key!=="coco"&&!k.noqr).length} enregistrés`, list: keys.filter(k=>k.key!=="coco"&&!b[k.key]?.img)},
     {id:"ref", ok: keys.every(k=>b[k.key]?.ref), t:"Numéros de réservation", s: `${keys.filter(k=>b[k.key]?.ref).length} / ${keys.length} saisis`, list: keys.filter(k=>!b[k.key]?.ref)},
     {id:"buy", ok: toBuy.length===0, t:"Billets à acheter", s: toBuy.length? toBuy.map(t=>t.name.split(" (")[0]).join(", ") : "Tout est acheté", buys: toBuy},
     {id:"todo", ok: todoLeft===0, t:"Checklist avant le départ", s: todoLeft? `${todoLeft} action${todoLeft>1?"s":""} restante${todoLeft>1?"s":""}` : "Tout est fait", act:"todo"}
@@ -920,6 +920,7 @@ function placeSheet(id){
     ${p.savez? `<div class="pblock"><h4>${I("star")}Le saviez-vous ?</h4><p>${esc(p.savez)}</p></div>`:""}
     ${p.astuce? `<div class="tipbox">${I("bulb")}<span><b style="color:var(--ink)">Astuce</b><br>${esc(p.astuce)}</span></div>`:""}
     ${p.note? `<div class="alert" style="margin-top:10px">${I("info")}${esc(p.note)}</div>`:""}
+    ${p.resa? `<div class="howbox" style="margin-top:10px;border-left:4px solid var(--cat-food)"><h4>${I("check")}Réservation confirmée</h4><p style="margin:0;font-weight:700;color:var(--ink)">${esc(p.resa.txt)}</p><p class="small" style="margin:6px 0 0;color:var(--warn);font-weight:700">${esc(p.resa.warn)}</p>${billBox(p.resa.secret)}<div class="acts">${p.resa.tel? `<a class="btn" href="tel:${esc(p.resa.tel)}">${I("phone")}${esc(p.resa.telLabel||"Appeler")}</a>`:""}</div></div>`:""}
     ${items.length? `<div class="sec" style="color:var(--cat-shop)">${I("cart")}À acheter ici</div><div class="box">${items.map(it=>{const role = it.where.find(x=>x.place===id).role; return `<button class="buyrow ${b[it.id]?"done":""}" data-item="${it.id}"><span class="bi">${I(it.icon||"shop")}</span><span><b>${esc(it.name)}</b><small>${esc(role)} · ${esc(it.budget||"")}</small></span>${I("right")}</button>`}).join("")}</div>`:""}
     <div id="wikitxt">${w?.txt? `<p class="wikix">${esc(w.txt)}</p>`:""}</div>
     ${window.IS_DEMO && (p.wiki||p.wikiEn)? `<p class="small muted" style="margin-top:14px">${I("camera")} Dans l'app installée, les photos et le résumé Wikipédia s'affichent ici.</p>`:""}
@@ -1200,7 +1201,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-05-1406";
+  window.VERSION = "2026-10-05-2129";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
