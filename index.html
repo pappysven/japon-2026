@@ -412,6 +412,9 @@ nav.tabs button[aria-current="page"]::before{content:"";position:absolute;top:0;
 .score .big{font-size:34px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
 .prog{height:8px;border-radius:4px;background:var(--soft);overflow:hidden;margin-top:10px}
 .prog i{display:block;height:100%;width:0;background:#2E8A55;transition:width .3s}
+.toast{position:fixed;left:16px;right:16px;bottom:calc(var(--tab) + env(safe-area-inset-bottom,0px) + 80px);z-index:80;max-width:520px;margin:0 auto;padding:12px 14px;border-radius:10px;background:var(--ink);color:var(--plate);font-size:14px;line-height:1.45;box-shadow:0 8px 24px rgba(0,0,0,.3);opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s,transform .2s}
+.toast.on{opacity:1;transform:none;pointer-events:auto}
+.speaking{animation:blink 1s infinite}
 /* ============ iPad ============ */
 .split>.detail{display:none}
 @media (min-width:760px){
@@ -543,11 +546,42 @@ function blockMins(d){
     prev = v; return v;
   });
 }
-function speak(txt){
-  if(!("speechSynthesis" in window)) return;
-  const u = new SpeechSynthesisUtterance(txt.replace(/\n/g,"。")); u.lang = "ja-JP"; u.rate = .9;
-  const v = speechSynthesis.getVoices().find(v=>v.lang && v.lang.startsWith("ja")); if(v) u.voice = v;
-  speechSynthesis.cancel(); speechSynthesis.speak(u);
+let JA_VOICE = null;
+function pickVoice(){
+  if(!("speechSynthesis" in window)) return null;
+  const vs = speechSynthesis.getVoices().filter(v => (v.lang||"").toLowerCase().replace("_","-").startsWith("ja"));
+  JA_VOICE = vs.find(v=>/kyoko|o-ren|otoya|hattori/i.test(v.name)) || vs.find(v=>v.localService) || vs[0] || null;
+  return JA_VOICE;
+}
+if("speechSynthesis" in window){ pickVoice(); speechSynthesis.addEventListener?.("voiceschanged", pickVoice); }
+function toast(msg, ms=6000){
+  let t = document.getElementById("toast");
+  if(!t){ t = document.createElement("div"); t.id = "toast"; t.className = "toast"; t.setAttribute("role","status"); document.body.appendChild(t); }
+  t.innerHTML = msg; t.classList.add("on"); clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove("on"), ms);
+  t.onclick = () => t.classList.remove("on");
+}
+function speak(txt, btn){
+  if(!("speechSynthesis" in window)){ toast("La lecture vocale n'est pas disponible sur cet appareil."); return; }
+  const synth = window.speechSynthesis;
+  const go = () => {
+    const u = new SpeechSynthesisUtterance(String(txt).replace(/\n+/g,"。"));
+    u.lang = "ja-JP"; u.rate = .85; u.volume = 1;
+    const v = JA_VOICE || pickVoice(); if(v) u.voice = v;
+    let started = false;
+    u.onstart = () => { started = true; btn?.classList.add("speaking"); };
+    u.onend = () => btn?.classList.remove("speaking");
+    u.onerror = (e) => { btn?.classList.remove("speaking"); if(e.error!=="interrupted" && e.error!=="canceled") toast("Lecture impossible ("+esc(e.error||"erreur")+")."); };
+    synth.resume(); synth.speak(u);
+    setTimeout(() => {
+      if(!started && !synth.speaking){
+        const noVoice = !(JA_VOICE || pickVoice());
+        toast(noVoice
+          ? "<b>Aucune voix japonaise sur l'appareil.</b><br>Réglages → Accessibilité → Contenu énoncé → Voix → Japonais → télécharger une voix (ex. Kyoko), puis réessayer."
+          : "<b>Pas de son ?</b><br>Vérifie que le mode silencieux est désactivé (interrupteur ou Centre de contrôle) et que le volume est monté.", 9000);
+      }
+    }, 1800);
+  };
+  if(synth.speaking || synth.pending){ synth.cancel(); setTimeout(go, 150); } else go();
 }
 const sayBtn = (txt) => ("speechSynthesis" in window)? `<button class="btn icon say" data-say="${esc(txt)}" aria-label="Écouter la prononciation">${I("speaker")}</button>` : "";
 const tsOf = (date,hhmm) => { const m = /(\d{1,2}):(\d{2})/.exec(hhmm||""); return m? Date.parse(`${date}T${m[1].padStart(2,"0")}:${m[2]}:00+09:00`) : null; };
@@ -1169,7 +1203,7 @@ document.addEventListener("click", async e => {
     const [t,h] = sheetContent(d.sheet); openSheet(t,h); return; }
   if(d.ticket){ const t = tr(d.ticket); openSheet(t.name, ticket(t,{date:true})); return; }
   if(d.wx){ const dd = dayOf(d.wx); openSheet("Météo · "+fmtD(dd.date,true), wxSheet(d.wx)); return; }
-  if(d.say){ speak(d.say); return; }
+  if(d.say){ speak(d.say, el); return; }
   if(d.quick!==undefined){ openSheet("Montrer", quickSheet()); return; }
   if(d.howbuy){ const t = tr(d.howbuy); openSheet((t.status==="faire"? "À faire · " : "Acheter · ")+t.name, buySheet(d.howbuy)); return; }
   if(d.paid){ const v = paid(); v[d.paid] = !v[d.paid]; store.set("paid", v); $("#layer").innerHTML=""; render(false); return; }
@@ -1202,7 +1236,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-05-2144";
+  window.VERSION = "2026-10-05-2148";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
