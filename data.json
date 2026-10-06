@@ -350,6 +350,43 @@
    ]
   },
   {
+   "id": "taqbin-tokyo",
+   "date": "2026-10-19",
+   "dep": "",
+   "arr": "",
+   "from": "FamilyMart près de Coco Shuku (Akasaka)",
+   "to": "Hotel Vintage Kagurazaka",
+   "name": "Ta-Q-Bin valises → Kagurazaka (dépôt au konbini)",
+   "kind": "bagage",
+   "status": "faire",
+   "note": "Dépôt le 19 au soir au konbini à côté de l'hôtel, livraison le 21 à l'Hotel Vintage. Partir à Nikko avec un sac pour la nuit. Sous réserve de l'accord de l'Hotel Vintage (e-mail envoyé).",
+   "buy": {
+    "summary": "Au comptoir du FamilyMart (ou 7-Eleven) à côté de Coco Shuku, ouvert 24 h/24, le 19 au soir.",
+    "inperson": {
+     "where": "FamilyMart, 3-7-13 Akasaka (à une minute de l'hôtel). Autres options 24 h/24 : FamilyMart 3-14-9 Akasaka, 7-Eleven 2-13-1 Akasaka.",
+     "hours": "Ouvert 24 h/24. Le camion Yamato passe une fois par jour : un dépôt le soir du 19 part le 20 et arrive le 21.",
+     "steps": [
+      "Demander un bordereau Yamato (宅急便の伝票) au comptoir.",
+      "Destinataire : Hotel Vintage Tokyo Kagurazaka, 東京都新宿区中里町30, à votre nom avec la date d'arrivée.",
+      "Date de livraison : 10月21日 (21 oct.).",
+      "Payer à la caisse (~2 000–2 500 ¥ par valise) et garder les reçus avec les numéros de suivi."
+     ],
+     "ll": [
+      35.6749533,
+      139.7376817
+     ]
+    },
+    "phrase": {
+     "jp": "このスーツケースを宅急便で送りたいです。\n届け先：ホテル・ヴィンテージ東京神楽坂\n東京都新宿区中里町30\nお届け日は10月21日でお願いします。",
+     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'Hotel Vintage Tokyo Kagurazaka, Nakazatocho 30, avec une livraison le 21 octobre."
+    }
+   },
+   "ll": [
+    35.6749533,
+    139.7376817
+   ]
+  },
+  {
    "id": "revaty-aller",
    "date": "2026-10-20",
    "dep": "09:30",
@@ -387,33 +424,6 @@
    "link": "https://www.tobu.co.jp/en/service/",
    "linkLabel": "Tobu",
    "secret": "pass-nikko"
-  },
-  {
-   "id": "taqbin-tokyo",
-   "date": "2026-10-20",
-   "dep": "",
-   "arr": "",
-   "from": "Coco Shuku Akasaka",
-   "to": "Hotel Vintage Kagurazaka",
-   "name": "Ta-Q-Bin valises → Kagurazaka",
-   "kind": "bagage",
-   "status": "faire",
-   "note": "Pour partir à Nikko avec un simple sac. Livraison le 21 à l'Hotel Vintage.",
-   "buy": {
-    "summary": "À la réception de Coco Shuku, la veille au soir (19 oct.) ou le matin du 20.",
-    "inperson": {
-     "where": "Réception de Coco Shuku Akasaka Premium.",
-     "hours": "Demander d'abord si l'hôtel gère l'envoi ; sinon konbini du quartier (Yamato).",
-     "steps": [
-      "Montrer la phrase et l'adresse de l'Hotel Vintage ci-dessous.",
-      "Garder le reçu ; prévenir l'Hotel Vintage de l'arrivée des valises."
-     ]
-    },
-    "phrase": {
-     "jp": "このスーツケースを宅急便で送りたいです。\n届け先：ホテル・ヴィンテージ東京神楽坂\n東京都新宿区中里町30\n10月21日に届くようにお願いします。",
-     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'Hotel Vintage Tokyo Kagurazaka, Nakazatocho 30, pour une livraison le 21 octobre."
-    }
-   }
   },
   {
    "id": "kinugawa-soir",
@@ -1155,6 +1165,11 @@
      "t": "18:45",
      "txt": "Option dîner à Akasaka : Ramen Mozu (espèces, éviter le tantanmen)",
      "place": "resto-mozu"
+    },
+    {
+     "t": "~20:00",
+     "txt": "Retour à l'hôtel : envoi des 4 valises en Ta-Q-Bin au FamilyMart d'à côté, livraison le 21 à l'Hotel Vintage",
+     "place": "konbini-akasaka"
     }
    ],
    "tips": [
@@ -1164,7 +1179,8 @@
     "La statue géante du Gundam Unicorn a été retirée fin août 2026 : la Gundam Base reste ouverte",
     "Gundam Base : vérifier vers le 12–14 oct. s'il y a un tirage d'entrée le 19",
     "Retour : Yurikamome → Shimbashi, ligne Ginza → Akasaka-mitsuke (~10 min)",
-    "Allergie : montrer la carte au restaurant"
+    "Allergie : montrer la carte au restaurant",
+    "Ce soir : préparer un sac pour la nuit à Kinugawa, puis Ta-Q-Bin des 4 valises au konbini (date de livraison : 21 oct.)"
    ]
   },
   {
@@ -1211,7 +1227,7 @@
    ],
    "tips": [
     "Tōshō-gū ~9h–17h en octobre, dernière entrée ~16h30",
-    "Grosses valises : Ta-Q-Bin Coco Shuku → Kagurazaka ; sac pour une nuit",
+    "Grosses valises parties la veille au soir en Ta-Q-Bin vers l'Hotel Vintage : sac pour une nuit seulement",
     "Pas de montée en montagne le 20 : Irohazaka saturée l'après-midi"
    ]
   },
@@ -3167,12 +3183,30 @@
    "infos": "Akasaka Biz Tower B1F, 5-3-1 Akasaka · tous les jours 11h–23h · espèces uniquement · tél. 03-6277-8238",
    "note": "⚠ Allergie : éviter le tantanmen, dont le bouillon contient des fruits secs. Montrer la carte d'allergie en arrivant.",
    "link": "https://ramenmozu.group/"
+  },
+  {
+   "id": "konbini-akasaka",
+   "name": "FamilyMart à côté de Coco Shuku (Ta-Q-Bin)",
+   "jp": "ファミリーマート 赤坂3丁目",
+   "city": "tokyo",
+   "cat": "gare",
+   "ll": [
+    35.6749533,
+    139.7376817
+   ],
+   "desc": "Konbini ouvert 24 h/24, à une minute de l'hôtel, partenaire de Yamato pour l'envoi des valises en Ta-Q-Bin. Autres options tout près, aussi ouvertes 24 h/24 : FamilyMart 3-14-9 Akasaka et 7-Eleven 2-13-1 Akasaka.",
+   "infos": "3-7-13 Akasaka · ouvert 24 h/24 · ~2 000–2 500 ¥ par valise (selon la taille), paiement à la caisse",
+   "note": "Déposer les 4 valises le 19 au soir, date de livraison 21 oct. Le camion Yamato passe une fois par jour (souvent l'après-midi) : un dépôt le soir part le lendemain."
   }
  ],
  "todo": [
   {
    "id": "coco-late",
    "txt": "Prévenir Coco Shuku : arrivée 21h30–22h30 le 17 (check-in jusqu'à 22h)"
+  },
+  {
+   "id": "vintage-mail",
+   "txt": "Hotel Vintage : réponse à l'e-mail (réception du Ta-Q-Bin le 21, arrivée possible après 22h)"
   },
   {
    "id": "skyliner",
@@ -3192,7 +3226,7 @@
   },
   {
    "id": "taqbin-coco",
-   "txt": "Demander à Coco Shuku le Ta-Q-Bin vers Kagurazaka (envoi le 20 oct.)"
+   "txt": "Ta-Q-Bin des 4 valises le 19 au soir au FamilyMart à côté de Coco Shuku (attendre l'accord de l'Hotel Vintage)"
   },
   {
    "id": "freepass",
