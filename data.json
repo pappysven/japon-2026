@@ -1004,50 +1004,70 @@
   {
    "date": "2026-10-18",
    "stage": "tokyo",
-   "title": "Meiji, Harajuku, Shimokitazawa, Shibuya",
+   "title": "Meiji, Harajuku, rockabillies, Shibuya",
    "hotel": "coco",
    "blocks": [
     {
-     "t": "8:30",
-     "txt": "Sanctuaire Meiji Jingu, tôt et au calme",
+     "t": "9:00",
+     "txt": "Sanctuaire Meiji Jingu, au calme",
      "place": "meiji"
     },
     {
-     "t": "9:30",
-     "txt": "Takeshita-dori (streetwear, crêpes)",
+     "t": "10:15",
+     "txt": "Takeshita-dori, à l'ouverture des boutiques",
      "place": "takeshita"
     },
     {
-     "t": "10:30",
-     "txt": "Cat Street à pied jusqu'à Shibuya",
+     "t": "11:45",
+     "txt": "Déjeuner à Harajuku, pause (parc Yoyogi, café)"
+    },
+    {
+     "t": "14:30",
+     "txt": "Rockabillies à l'entrée Harajuku du parc Yoyogi (s'il fait beau)",
+     "place": "rockabilly"
+    },
+    {
+     "t": "15:15",
+     "txt": "Cat Street en descente : friperies d'Ura-Harajuku (Chicago, Kinji)",
      "place": "omotesando"
     },
     {
-     "t": "12:00",
-     "txt": "Déjeuner à Shibuya"
+     "t": "16:00",
+     "txt": "Nintendo Tokyo, Shibuya Parco 6F (Jump Shop sur le même étage)",
+     "place": "nintendo-tokyo"
     },
     {
-     "t": "13:15",
-     "txt": "Shimokitazawa : friperies, disquaires, jouets rétro",
-     "place": "shimokitazawa"
-    },
-    {
-     "t": "16:15",
-     "txt": "Hands Shibuya + Loft Shibuya, à 2 min l'un de l'autre",
+     "t": "16:45",
+     "txt": "Hands puis Loft Shibuya",
      "place": "hands-shibuya"
     },
     {
-     "t": "18:00",
-     "txt": "Scramble de Shibuya de nuit + Shibuya 109, dîner",
+     "t": "17:30",
+     "txt": "Scramble de nuit, Shibuya 109 et cabines de purikura",
+     "place": "purikura"
+    },
+    {
+     "t": "18:15",
+     "txt": "Mega Don Quijote : Kit Kat, bonbons, gadgets",
+     "place": "donki-shibuya"
+    },
+    {
+     "t": "19:00",
+     "txt": "Dîner à Shibuya (Center-gai ou Shibuya Yokochō)",
      "place": "scramble"
+    },
+    {
+     "t": "~20:00",
+     "txt": "Retour à l'hôtel"
     }
    ],
    "tips": [
-    "Ligne Chiyoda → Meiji-Jingumae, départ vers 8h",
-    "Shibuya ↔ Shimokitazawa : Keio Inokashira, ~5 min en express",
-    "Retour : ligne Ginza Shibuya → Akasaka-mitsuke",
+    "Ligne Chiyoda → Meiji-Jingumae, départ vers 8h45",
+    "Retour : ligne Ginza Shibuya → Akasaka-mitsuke (~10 min)",
+    "S'il pleut : pas de danseurs, plus de temps sur Cat Street puis Shibuya",
+    "Nintendo Tokyo le dimanche : tickets numérotés possibles, en prendre un en arrivant",
     "Hands Shibuya ferme définitivement le 15 nov : foule le dimanche",
-    "Détaxe : regrouper les achats (5 000 ¥ min par catégorie et par magasin)"
+    "Fatigue : Don Quijote peut être reporté (Shinjuku le 22, Dotonbori à Osaka)"
    ]
   },
   {
@@ -1263,6 +1283,11 @@
      "place": "golden-gai"
     },
     {
+     "t": "option",
+     "txt": "Don Quijote Shinjuku, si pas fait le 18",
+     "place": "donki-shinjuku"
+    },
+    {
      "t": "21:45",
      "txt": "Retour : Higashi-Shinjuku → Ushigome-Kagurazaka (Oedo, ~8 min)"
     }
@@ -1277,7 +1302,7 @@
   {
    "date": "2026-10-23",
    "stage": "tokyo",
-   "title": "Asakusa, Ginza, Nakano",
+   "title": "Asakusa, Shimokitazawa, Nakano",
    "hotel": "vintage",
    "blocks": [
     {
@@ -1295,25 +1320,31 @@
      "place": "chinya"
     },
     {
-     "t": "aprèm",
-     "txt": "Apple Ginza, Peak Design Tokyo",
-     "place": "apple-ginza"
+     "t": "13:45",
+     "txt": "Shimokitazawa : friperies, disquaires, jouets rétro",
+     "place": "shimokitazawa"
     },
     {
-     "t": "15:00",
-     "txt": "Nakano Broadway, Mandarake",
+     "t": "16:15",
+     "txt": "Nakano Broadway, Mandarake (boutiques jusqu'à 20h)",
      "place": "nakano"
     },
     {
      "t": "soir",
      "txt": "Dîner à Nakano (Sun Mall et ruelles), soirée calme"
+    },
+    {
+     "t": "option",
+     "txt": "Ginza : Apple Ginza, Peak Design (si un achat le justifie)",
+     "place": "apple-ginza"
     }
    ],
    "tips": [
     "Kagurazaka → Asakusa : Tozai puis Ginza, ~30 min, départ vers 7h15",
     "Chinya : 10 min de retard maximum, sinon la réservation peut être annulée",
-    "Ginza → Nakano : Ginza Line → Nihombashi, puis Tozai direct (~30 min)",
-    "Peak Design : comparer avec Yodobashi avant d'acheter",
+    "Asakusa → Shimokitazawa : ligne Ginza directe jusqu'à Shibuya (~33 min), puis Keio Inokashira (5 min)",
+    "Shimokitazawa → Nakano : Odakyu → Shinjuku, puis JR Chuo → Nakano (~25 min)",
+    "Retour Nakano → Kagurazaka : Tozai direct, ~15 min",
     "Départ de l'hôtel à 9h demain (Romancecar 10h)"
    ]
   },
@@ -1568,6 +1599,11 @@
      "t": "19:00",
      "txt": "RDV Dotonbori, takoyaki",
      "place": "dotonbori"
+    },
+    {
+     "t": "option",
+     "txt": "Don Quijote Dotonbori (grande roue sur la façade)",
+     "place": "donki-dotonbori"
     }
    ],
    "tips": [
@@ -2846,9 +2882,9 @@
     35.6616,
     139.668
    ],
-   "note": "Boutiques ~11h–20h. Raccourcir à 1h30 si le décalage horaire se fait sentir.",
+   "note": "Boutiques ~11h–20h. Le vendredi, bien plus calme que le week-end.",
    "desc": "Le quartier vintage et bohème de Tokyo : friperies (Flamingo, New York Joe Exchange, Chicago), disquaires, jouets et jeux rétro, Village Vanguard, et les allées de Reload et Bonus Track.",
-   "infos": "Accès libre · Keio Inokashira depuis Shibuya, ~5 min en express (~140 ¥) · compter 2 h 30"
+   "infos": "Accès libre · Keio Inokashira depuis Shibuya, ~5 min · compter 2 h"
   },
   {
    "id": "ramen-kokugikan",
@@ -2918,6 +2954,70 @@
    "q": "大阪府大阪市浪速区難波中2-10-70 なんばパークス",
    "note": "Namba Parks, 6e étage (5e selon certaines sources) · à 10 min à pied de l'hôtel.",
    "desc": "Le magasin officiel de gashapon Bandai à Osaka, dans le centre commercial Namba Parks, juste au-dessus de la gare Nankai Namba. Pratique pour une dernière tentative avant le départ."
+  },
+  {
+   "id": "rockabilly",
+   "name": "Rockabillies du parc Yoyogi",
+   "jp": "代々木公園 原宿門",
+   "city": "tokyo",
+   "cat": "balade",
+   "ll": [
+    35.6694,
+    139.6987
+   ],
+   "note": "Le dimanche après-midi, à l'entrée Harajuku du parc, s'il fait beau (annulé en cas de pluie). Pas d'horaire fixe : en général à partir de 13h–14h.",
+   "desc": "Depuis plus de trente ans, des groupes de « rollers » en blouson de cuir et banane gominée dansent le rock'n'roll des années 1950 devant l'entrée du parc, certains membres ayant plus de 60 ans. Un spectacle gratuit et bon enfant.",
+   "astuce": "Rester un peu en retrait et demander d'un geste avant de photographier de près."
+  },
+  {
+   "id": "nintendo-tokyo",
+   "name": "Nintendo Tokyo (Shibuya Parco 6F)",
+   "jp": "Nintendo TOKYO 渋谷PARCO 6F",
+   "city": "tokyo",
+   "cat": "shopping",
+   "q": "東京都渋谷区宇田川町15-1 渋谷PARCO 6F",
+   "note": "Shibuya Parco 6F « Cyberspace Shibuya », 10h–21h. Le dimanche, tickets numérotés possibles à l'entrée de l'étage : en prendre un en arrivant. Détaxe.",
+   "desc": "Le premier magasin officiel Nintendo du Japon : Mario, Zelda (statue de Link grandeur nature), Splatoon, Animal Crossing. Sur le même étage : Jump Shop (Naruto, Dragon Ball, My Hero Academia), Pokémon Center Shibuya avec son Mewtwo, et Capcom Store."
+  },
+  {
+   "id": "purikura",
+   "name": "Cabines de purikura",
+   "jp": "プリクラ",
+   "city": "tokyo",
+   "cat": "balade",
+   "q": "渋谷109",
+   "note": "Shibuya 109 et salles de jeux de Center-gai. Quelques centaines de yens la séance, en pièces de 100 ¥.",
+   "desc": "Les cabines photo japonaises : on pose à plusieurs, puis on décore les photos à l'écran (cadres, textes, effets) avant l'impression en autocollants. Un souvenir drôle à faire en famille."
+  },
+  {
+   "id": "donki-shibuya",
+   "name": "Mega Don Quijote Shibuya",
+   "jp": "MEGAドン・キホーテ渋谷本店",
+   "city": "tokyo",
+   "cat": "shopping",
+   "q": "MEGAドン・キホーテ渋谷本店",
+   "note": "Près de Center-gai, ouvert très tard. Détaxe à la caisse avec le passeport.",
+   "desc": "Le bazar géant japonais sur plusieurs étages : Kit Kat aux saveurs locales, bonbons, cosmétiques, gadgets et déguisements. Un passage favori des ados."
+  },
+  {
+   "id": "donki-shinjuku",
+   "name": "Don Quijote Shinjuku (option)",
+   "jp": "ドン・キホーテ新宿東南口店",
+   "city": "tokyo",
+   "cat": "shopping",
+   "q": "ドン・キホーテ 新宿東南口店",
+   "note": "Option si Don Quijote n'a pas pu être fait le 18 : en fin de soirée Shinjuku (22 oct).",
+   "desc": "Grand Don Quijote ouvert tard, près de la gare de Shinjuku."
+  },
+  {
+   "id": "donki-dotonbori",
+   "name": "Don Quijote Dotonbori (option)",
+   "jp": "ドン・キホーテ道頓堀店",
+   "city": "osaka",
+   "cat": "shopping",
+   "q": "ドン・キホーテ 道頓堀店",
+   "note": "Option à Osaka (29–31 oct), avec sa grande roue Ebisu Tower sur la façade.",
+   "desc": "Le Don Quijote du canal de Dotonbori, reconnaissable à sa grande roue elliptique jaune."
   }
  ],
  "todo": [
