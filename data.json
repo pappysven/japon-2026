@@ -1073,51 +1073,98 @@
   {
    "date": "2026-10-19",
    "stage": "tokyo",
-   "title": "Akihabara, Odaiba",
+   "title": "Akihabara, Hamarikyu, Odaiba",
    "hotel": "coco",
    "blocks": [
+    {
+     "t": "9:00",
+     "txt": "Départ de l'hôtel vers Akihabara (~25 min)"
+    },
     {
      "t": "9:30",
      "txt": "Yodobashi Akiba à l'ouverture : iPad, prix Mac mini, rayon Gunpla (6e)",
      "place": "yodobashi-akiba"
     },
     {
-     "t": "11:00",
-     "txt": "Occasion : Radio Kaikan, Mandarake Complex, Surugaya",
-     "place": "mandarake-akiba"
-    },
-    {
+     "t": "10:30",
      "txt": "Gashapon no Depāto Akihabara (namco 4F) : premiers tirages EXCEED RX-78-2",
      "place": "gashapon-akiba"
     },
     {
-     "txt": "Animate, Jump Shop, figurines"
+     "t": "11:00",
+     "txt": "Radio Kaikan (AmiAmi), Surugaya",
+     "place": "radio-kaikan"
     },
     {
-     "t": "aprèm",
-     "txt": "Odaiba : Gundam Base Tokyo, Unicorn géant et DiverCity",
+     "t": "12:00",
+     "txt": "Mandarake Complex (ouvre à 12h)",
+     "place": "mandarake-akiba"
+    },
+    {
+     "t": "12:45",
+     "txt": "Déjeuner à Akihabara"
+    },
+    {
+     "t": "13:45",
+     "txt": "JR Yamanote → Shimbashi : achats dans un grand casier de la gare (sinon : passage à l'hôtel)"
+    },
+    {
+     "t": "14:15",
+     "txt": "Jardins Hamarikyu, pause matcha au pavillon Nakajima no Ochaya",
+     "place": "hamarikyu"
+    },
+    {
+     "t": "15:30",
+     "txt": "Yurikamome Shiodome → Daiba (~15 min)"
+    },
+    {
+     "t": "15:45",
+     "txt": "The Gundam Base Tokyo (DiverCity 7F)",
      "place": "gundam-base"
     },
     {
-     "t": "soir",
-     "txt": "Gundam géant éclairé à la tombée de la nuit"
+     "t": "17:00",
+     "txt": "Coucher du soleil sur la baie, plage d'Odaiba Seaside Park",
+     "place": "odaiba-beach"
     },
     {
-     "t": "19:00",
-     "txt": "Dîner : Ramen Kokugikan Mai (Aqua City 5F), ou Takoyaki Museum",
-     "place": "ramen-kokugikan"
+     "t": "17:45",
+     "txt": "Retour en Yurikamome de nuit sur le Rainbow Bridge (places à l'avant)"
     },
     {
-     "t": "20:30",
-     "txt": "Rainbow Bridge illuminé, puis Yurikamome → Shimbashi → Akasaka (~30–40 min)"
+     "t": "18:15",
+     "txt": "Option dîner à Shimbashi (si casier) : Ichiban, sushi sur tapis",
+     "place": "resto-ichiban"
+    },
+    {
+     "t": "18:15",
+     "txt": "Option dîner à Shimbashi : Tori Ichidai, yakitori",
+     "place": "resto-tori-ichidai"
+    },
+    {
+     "t": "18:45",
+     "txt": "Option dîner à Akasaka : Kyushu Jangara, ramen",
+     "place": "resto-jangara"
+    },
+    {
+     "t": "18:45",
+     "txt": "Option dîner à Akasaka : Kuraji, tonkatsu",
+     "place": "resto-kuraji"
+    },
+    {
+     "t": "18:45",
+     "txt": "Option dîner à Akasaka : Ramen Mozu (espèces, éviter le tantanmen)",
+     "place": "resto-mozu"
     }
    ],
    "tips": [
-    "Akasaka → Akihabara ~25 min, départ vers 8h15",
-    "Akihabara → Odaiba : Shimbashi puis Yurikamome (places à l'avant)",
-    "Rentrer déposer les grosses boîtes avant Odaiba si besoin",
-    "Allergie : signaler au restaurant (fonds de ramen, sauces), carte en japonais",
-    "iPad : clavier japonais JIS, acheter le clavier en France"
+    "Départ à 9h : inutile d'arriver avant l'ouverture de Yodobashi (9h30)",
+    "Mandarake Complex ouvre à 12h : le garder pour la fin de matinée",
+    "Boîte du PG (59 × 40 × 17 cm) : grand casier à Shimbashi, souvent pris d'assaut ; plan B : passage à l'hôtel (ligne Ginza)",
+    "La statue géante du Gundam Unicorn a été retirée fin août 2026 : la Gundam Base reste ouverte",
+    "Gundam Base : vérifier vers le 12–14 oct. s'il y a un tirage d'entrée le 19",
+    "Retour : Yurikamome → Shimbashi, ligne Ginza → Akasaka-mitsuke (~10 min)",
+    "Allergie : montrer la carte au restaurant"
    ]
   },
   {
@@ -1302,7 +1349,7 @@
   {
    "date": "2026-10-23",
    "stage": "tokyo",
-   "title": "Asakusa, Shimokitazawa, Nakano",
+   "title": "Asakusa, Ginza, Shimokitazawa, Nakano",
    "hotel": "vintage",
    "blocks": [
     {
@@ -1320,31 +1367,31 @@
      "place": "chinya"
     },
     {
-     "t": "13:45",
+     "t": "13:15",
+     "txt": "Arrêt à Ginza : Apple Ginza, Peak Design",
+     "place": "apple-ginza"
+    },
+    {
+     "t": "14:30",
      "txt": "Shimokitazawa : friperies, disquaires, jouets rétro",
      "place": "shimokitazawa"
     },
     {
-     "t": "16:15",
+     "t": "16:45",
      "txt": "Nakano Broadway, Mandarake (boutiques jusqu'à 20h)",
      "place": "nakano"
     },
     {
      "t": "soir",
      "txt": "Dîner à Nakano (Sun Mall et ruelles), soirée calme"
-    },
-    {
-     "t": "option",
-     "txt": "Ginza : Apple Ginza, Peak Design (si un achat le justifie)",
-     "place": "apple-ginza"
     }
    ],
    "tips": [
     "Kagurazaka → Asakusa : Tozai puis Ginza, ~30 min, départ vers 7h15",
     "Chinya : 10 min de retard maximum, sinon la réservation peut être annulée",
-    "Asakusa → Shimokitazawa : ligne Ginza directe jusqu'à Shibuya (~33 min), puis Keio Inokashira (5 min)",
-    "Shimokitazawa → Nakano : Odakyu → Shinjuku, puis JR Chuo → Nakano (~25 min)",
-    "Retour Nakano → Kagurazaka : Tozai direct, ~15 min",
+    "Asakusa → Ginza : ligne Ginza directe (~17 min) ; Apple Ginza ↔ Peak Design ~10 min à pied",
+    "Ginza → Shimokitazawa : ligne Ginza jusqu'à Shibuya (~16 min), puis Keio Inokashira (5 min)",
+    "Shimokitazawa → Nakano : Odakyu → Shinjuku, puis JR Chuo (~25 min) ; retour Tozai direct (~15 min)",
     "Départ de l'hôtel à 9h demain (Romancecar 10h)"
    ]
   },
@@ -1886,17 +1933,16 @@
     139.7756
    ],
    "note": "DiverCity 7e étage. Entrée libre la plupart des jours de semaine. Week-ends, jours fériés et jours de sortie : entrée sur tirage au sort en ligne ou ticket numéroté (WEB整理券). Vérifier la page « 店舗営業案内 » quelques jours avant le lundi 19.",
-   "desc": "La boutique officielle de Bandai pour les Gunpla, au 7e étage de DiverCity, au-dessus du Gundam Unicorn grandeur nature (19,7 m) qui se transforme plusieurs fois par jour.",
-   "hist": "Le Gundam grandeur nature trône à Odaiba depuis 2009. Depuis 2017, c'est un RX-0 Unicorn de 19,7 m, et la boutique officielle Bandai s'est installée juste au-dessus.",
+   "desc": "La boutique officielle de Bandai pour les Gunpla, au 7e étage de DiverCity : les kits « Limited » vendus uniquement ici, et des vitrines de modèles montés par les meilleurs maquettistes.",
+   "hist": "Le Gundam grandeur nature a trôné devant DiverCity de 2009 à août 2026 (d'abord un RX-78-2, puis un RX-0 Unicorn de 19,7 m). La statue a été retirée le 31 août 2026 ; la boutique officielle reste ouverte.",
    "voir": [
-    "La transformation du Unicorn, plusieurs fois par jour, avec projections vidéo le soir",
     "Les kits Limited vendus uniquement ici",
-    "Les vitrines de modèles montés par les meilleurs maquettistes"
+    "Les vitrines de modèles montés par les meilleurs maquettistes",
+    "Le rayon outillage et peintures"
    ],
-   "astuce": "Consulter les horaires des transformations sur place et caler la visite autour.",
-   "infos": "Entrée libre · statue visible à toute heure, transformations à heures fixes · compter 1 à 2 h",
-   "savez": "Le premier Gundam grandeur nature, un RX-78-2, a été installé à Odaiba en 2009 pour les 30 ans de la série.",
-   "link": "https://www.gundam-base.net/news/55669.html"
+   "astuce": "Vérifier vers le 12–14 oct. si le lundi 19 est soumis à un tirage d'entrée (sinon entrée libre).",
+   "link": "https://www.gundam-base.net/news/55669.html",
+   "infos": "Entrée libre en semaine (tirage possible le week-end) · DiverCity 7F · compter 1 h"
   },
   {
    "id": "east-gardens",
@@ -3018,6 +3064,109 @@
    "q": "ドン・キホーテ 道頓堀店",
    "note": "Option à Osaka (29–31 oct), avec sa grande roue Ebisu Tower sur la façade.",
    "desc": "Le Don Quijote du canal de Dotonbori, reconnaissable à sa grande roue elliptique jaune."
+  },
+  {
+   "id": "hamarikyu",
+   "name": "Jardins Hamarikyu",
+   "jp": "浜離宮恩賜庭園",
+   "city": "tokyo",
+   "cat": "nature",
+   "ll": [
+    35.66,
+    139.763
+   ],
+   "desc": "Ancien domaine de chasse et de villégiature des shoguns Tokugawa, au bord de la baie. Son étang est alimenté par l'eau de mer et suit les marées, au pied des gratte-ciel de Shiodome.",
+   "voir": [
+    "Le pavillon de thé Nakajima no Ochaya, sur l'étang : matcha et petit gâteau japonais",
+    "Le pin de 300 ans planté pour le shogun Ienobu",
+    "Le contraste entre les pins taillés et les tours de verre de Shiodome"
+   ],
+   "infos": "~300 ¥ adulte · 9h–17h, dernière entrée 16h30 · compter 1 h",
+   "astuce": "Sortir côté Shiodome (porte Nakanogomon), la plus proche de la station du Yurikamome.",
+   "wikiEn": "Hama Rikyu Gardens"
+  },
+  {
+   "id": "odaiba-beach",
+   "name": "Plage d'Odaiba Seaside Park",
+   "jp": "お台場海浜公園",
+   "city": "tokyo",
+   "cat": "vue",
+   "ll": [
+    35.63,
+    139.7759
+   ],
+   "desc": "Plage de sable artificielle face au Rainbow Bridge et à la skyline de Tokyo. Le meilleur endroit d'Odaiba pour le coucher du soleil, puis pour voir le pont s'illuminer.",
+   "infos": "Accès libre · coucher du soleil ~17h05 le 19 oct. · 10 min à pied de DiverCity"
+  },
+  {
+   "id": "resto-ichiban",
+   "name": "Ichiban (sushi sur tapis, Shimbashi)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6657979,
+    139.7573392
+   ],
+   "desc": "Petit restaurant de sushis sur tapis roulant, fréquenté surtout par des Japonais. On prend les assiettes qui défilent et on paie à l'assiette : les enfants adorent, et c'est le moins cher.",
+   "infos": "3-16-4 Shinbashi · ouvert tous les jours 11h–23h30 · tél. 03-3431-6946",
+   "note": "Option dîner du 19 oct. si vous récupérez des achats au casier de Shimbashi. Montrer la carte d'allergie en arrivant.",
+   "link": "https://maps.google.com/?cid=2491471961412816448"
+  },
+  {
+   "id": "resto-tori-ichidai",
+   "name": "Tori Ichidai Shimbashi (yakitori)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6655889,
+    139.7557569
+   ],
+   "desc": "Izakaya de yakitori, brochettes de poulet grillées au charbon, karaage et petits plats. Ambiance détendue.",
+   "infos": "3-9-6 Shinbashi · lundi–vendredi dès 16h, jusqu'à minuit · tél. 03-3436-3730",
+   "note": "Option dîner du 19 oct. à Shimbashi. Montrer la carte d'allergie en arrivant.",
+   "link": "https://tabelog.com/tokyo/A1301/A130103/13161526/"
+  },
+  {
+   "id": "resto-jangara",
+   "name": "Kyushu Jangara Akasaka (ramen)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6716388,
+    139.7379706
+   ],
+   "desc": "Ramen de Kyushu au bouillon de porc, menu en anglais, service rapide. Option végane disponible.",
+   "infos": "2-15-15 Akasaka · lundi 11h–22h · tél. 03-3505-7882",
+   "note": "Option dîner du 19 oct. près de l'hôtel (recommandée si pas de casier). Montrer la carte d'allergie en arrivant.",
+   "link": "https://kyushujangara.co.jp/shops/akasaka/"
+  },
+  {
+   "id": "resto-kuraji",
+   "name": "Kuraji (tonkatsu, Akasaka)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6761148,
+    139.7356908
+   ],
+   "desc": "Tonkatsu (porc pané) avec plusieurs morceaux au choix et sésame à moudre soi-même, à quelques minutes d'Akasaka-mitsuke.",
+   "infos": "4-2-2 Akasaka · lundi–samedi 11h–22h, fermé le dimanche · tél. 03-5544-9797",
+   "note": "Option dîner du 19 oct. près de l'hôtel. Montrer la carte d'allergie en arrivant.",
+   "link": "https://maps.google.com/?cid=14510274442885579542"
+  },
+  {
+   "id": "resto-mozu",
+   "name": "Ramen Mozu (Akasaka)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6729853,
+    139.7365164
+   ],
+   "desc": "Ramen très bien notés, commande au distributeur de tickets à l'entrée.",
+   "infos": "Akasaka Biz Tower B1F, 5-3-1 Akasaka · tous les jours 11h–23h · espèces uniquement · tél. 03-6277-8238",
+   "note": "⚠ Allergie : éviter le tantanmen, dont le bouillon contient des fruits secs. Montrer la carte d'allergie en arrivant.",
+   "link": "https://ramenmozu.group/"
   }
  ],
  "todo": [
