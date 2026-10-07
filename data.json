@@ -136,18 +136,18 @@
    "note": "Arrivée prévue 21h30–22h30 le 17 : check-in jusqu'à 22h, prévenir l'hôtel."
   },
   {
-   "id": "manyotei",
-   "name": "Hotel Manyotei",
+   "id": "unwind",
+   "name": "UNWIND HOTEL & BAR Oku-Nikko",
    "stage": "nikko",
    "from": "2026-10-20",
    "to": "2026-10-21",
-   "addr": "Kinugawa Onsen Ohara 390-3, Nikko",
-   "addrJp": "栃木県日光市鬼怒川温泉大原390-3",
-   "checkin": "15h–22h",
-   "checkout": "7h–10h",
-   "note": "À ~1,7 km de la gare de Kinugawa-Onsen (~20 min à pied, pas de navette) : prendre un taxi à la gare. Pas de konbini à proximité. Selon des avis, la carte bancaire peut être refusée : prévoir des espèces. Onsen sur place.",
-   "link": "https://secure.booking.com/myreservations.html",
-   "linkLabel": "Booking"
+   "addr": "Yumoto Onsen 2549-5, Nikko",
+   "addrJp": "栃木県日光市湯元2549-5",
+   "checkin": "à vérifier",
+   "checkout": "à vérifier",
+   "note": "Ancien Oku-Nikko Konishi Hotel, rénové et rouvert en août 2026, à Yumoto Onsen (~1 480 m). Bains au soufre avec bain en plein air. Dîner et petit-déjeuner à l'hôtel (rien d'autre à Yumoto le soir) : allergie aux fruits à coque à signaler à l'avance. Nuits fraîches (0–5 °C).",
+   "link": "https://www.livelyhotels.com/ja/unwindokunikko/",
+   "linkLabel": "Site de l'hôtel"
   },
   {
    "id": "vintage",
@@ -420,76 +420,100 @@
    "status": "reserve",
    "pax": "3 adultes + 1 enfant",
    "price": "3 000 ¥ / 1 500 ¥",
-   "note": "Couvre les trains Tobu jusqu'à Kinugawa Onsen et les bus du centre. Bus de montagne (Chūzenji) à la Suica.",
+   "note": "Couvre l'aller-retour Asakusa ↔ Tobu-Nikko et les bus du centre (sanctuaires). Ne couvre PAS les bus de montagne vers Chūzenji, Ryūzu et Yumoto : à payer à la Suica (~1 950 ¥ l'aller Nikko → Yumoto par adulte).",
    "link": "https://tobu-japantrip-tickets.com",
    "linkLabel": "Tobu Japan Trip",
    "secret": "pass-nikko"
   },
   {
-   "id": "kinugawa-soir",
+   "id": "bus-yumoto",
    "date": "2026-10-20",
-   "dep": "~16:00",
-   "arr": "~16:40",
-   "from": "Tobu-Nikko",
-   "to": "Kinugawa-Onsen",
-   "name": "Train local Tobu, changement à Shimo-Imaichi",
-   "kind": "train",
-   "status": "pass",
-   "note": "Non réservé, inclus dans le World Heritage Pass. Heures indicatives : vérifier le prochain départ avec « Horaires en direct ».",
-   "fromJp": "東武日光",
-   "toJp": "鬼怒川温泉",
+   "dep": "~15:45",
+   "arr": "~17:15",
+   "from": "Shinkyō ou Tobu-Nikko",
+   "to": "Yumoto Onsen",
+   "fromJp": "神橋 / 東武日光",
+   "toJp": "湯元温泉",
+   "name": "Bus Tobu vers Yumoto Onsen (par l'Irohazaka)",
+   "kind": "bus",
+   "status": "suica",
+   "price": "~1 950 ¥ l'aller par adulte, demi-tarif enfant",
+   "note": "⚠ Bus Tobu : vérifier impérativement les horaires exacts sur place (gare de Tobu-Nikko à l'arrivée, puis à l'hôtel pour le retour). Les grilles d'automne peuvent être ajustées et la route d'Irohazaka est très encombrée en saison des momiji. Non couvert par le World Heritage Pass : à payer à la Suica.",
    "tags": [
-    "Inclus dans le pass",
-    "Sans réservation"
-   ],
-   "maps": [
-    "東武日光駅",
-    "鬼怒川温泉駅"
+    "Suica",
+    "Non couvert par le pass"
    ],
    "steps": [
     {
-     "k": "train",
-     "t": "Train local depuis Tobu-Nikko",
-     "jp": "東武日光 → 下今市",
-     "sub": "Tobu-Nikko est un terminus : tous les trains passent par Shimo-Imaichi, 2 arrêts, ~8 min. Prendre un local (普通), pas un Limited Express (特急, supplément)."
+     "k": "bus",
+     "t": "Bus Tobu direction Yumoto Onsen",
+     "jp": "湯元温泉行",
+     "sub": "Depuis l'arrêt Shinkyō (神橋) ou la gare Tobu-Nikko. Monter par l'avant ou l'arrière selon le bus, passer la Suica en montant et en descendant."
     },
     {
-     "k": "change",
-     "t": "Changement à Shimo-Imaichi",
-     "jp": "下今市",
-     "sub": "Petite gare : descendre et rester dans la zone des quais. Chercher la ligne Kinugawa (鬼怒川線). Attente 5 à 20 min selon l'horaire."
+     "k": "bus",
+     "t": "Montée par l'Irohazaka et le lac Chūzenji",
+     "jp": "いろは坂・中禅寺湖",
+     "sub": "~1 h 20 à 1 h 30 hors bouchons."
     },
     {
-     "k": "train",
-     "t": "Ligne Tobu Kinugawa vers Kinugawa-Onsen",
-     "jp": "下今市 → 鬼怒川温泉",
-     "sub": "Tout train affichant 鬼怒川温泉, 新藤原 ou 会津田島 convient. ~15 à 20 min, descendre à Kinugawa-Onsen."
-    },
-    {
-     "k": "taxi",
-     "t": "Gare → Hotel Manyotei",
-     "jp": "鬼怒川温泉駅",
-     "sub": "Taxi à la sortie de la gare, montrer l'adresse (bouton Taxi de la fiche hôtel)."
+     "k": "walk",
+     "t": "Terminus Yumoto Onsen → UNWIND",
+     "jp": "湯元温泉",
+     "sub": "L'hôtel est dans le village, à quelques minutes à pied."
     }
-   ]
-  },
-  {
-   "id": "bus-chuzenji",
-   "date": "2026-10-21",
-   "dep": "08:00",
-   "arr": "~08:50",
-   "from": "Tobu-Nikko (arrêt bus)",
-   "to": "Chūzenji Onsen",
-   "name": "Bus Tobu — Irohazaka",
-   "kind": "bus",
-   "status": "suica",
-   "note": "~1 250 ¥ adulte jusqu'à Chūzenji (demi-tarif enfant), payé à la Suica. Partir tôt : bouchons d'Irohazaka en saison des feuilles rouges.",
+   ],
+   "maps": [
+    "東武日光駅",
+    "湯元温泉"
+   ],
    "ll": [
     36.748,
     139.6188
+   ]
+  },
+  {
+   "id": "bus-descente",
+   "date": "2026-10-21",
+   "dep": "14:30",
+   "arr": "~15:15–16:30",
+   "from": "Chūzenji Onsen",
+   "to": "Tobu-Nikko",
+   "fromJp": "中禅寺温泉",
+   "toJp": "東武日光",
+   "name": "Bus Tobu de descente (par l'Irohazaka)",
+   "kind": "bus",
+   "status": "suica",
+   "price": "~1 250 ¥ par adulte depuis Chūzenji, demi-tarif enfant (à vérifier)",
+   "note": "⚠ Bus Tobu : vérifier impérativement les horaires exacts sur place (gare de Tobu-Nikko à l'arrivée, puis à l'hôtel pour le retour). Les grilles d'automne peuvent être ajustées et la route d'Irohazaka est très encombrée en saison des momiji. Partir de Chūzenji à 14h30 au plus tard pour garder la marge avant le Kegon 052 (18h41).",
+   "tags": [
+    "Suica",
+    "Non couvert par le pass"
    ],
-   "fromJp": "東武日光駅",
-   "toJp": "中禅寺温泉"
+   "steps": [
+    {
+     "k": "walk",
+     "t": "Arrêt Chūzenji Onsen, près des chutes de Kegon",
+     "jp": "中禅寺温泉",
+     "sub": "Vérifier les départs à l'hôtel le matin."
+    },
+    {
+     "k": "bus",
+     "t": "Bus direction Nikko Station",
+     "jp": "日光駅行",
+     "sub": "~45 min hors bouchons, jusqu'à 2 h fin octobre l'après-midi."
+    },
+    {
+     "k": "walk",
+     "t": "Gare Tobu-Nikko",
+     "jp": "東武日光駅",
+     "sub": "Kegon 052 à 18h41, voiture 1."
+    }
+   ],
+   "maps": [
+    "中禅寺温泉",
+    "東武日光駅"
+   ]
   },
   {
    "id": "kegon-retour",
@@ -553,48 +577,6 @@
      "t": "Ou taxi Asakusa → Kagurazaka",
      "jp": "神楽坂",
      "sub": "~3 500–4 500 ¥ (estimation), plus simple en fin de journée."
-    }
-   ]
-  },
-  {
-   "id": "kinugawa-matin",
-   "date": "2026-10-21",
-   "dep": "~07:00",
-   "arr": "~07:40",
-   "from": "Kinugawa-Onsen",
-   "to": "Tobu-Nikko",
-   "name": "Train local Tobu (changement possible à Shimo-Imaichi)",
-   "kind": "train",
-   "status": "pass",
-   "note": "Inclus dans le pass. Bus de 8h pour Chūzenji ensuite.",
-   "fromJp": "鬼怒川温泉",
-   "toJp": "東武日光",
-   "tags": [
-    "Inclus dans le pass",
-    "Sans réservation"
-   ],
-   "maps": [
-    "鬼怒川温泉駅",
-    "東武日光駅"
-   ],
-   "steps": [
-    {
-     "k": "train",
-     "t": "Train local depuis Kinugawa-Onsen",
-     "jp": "鬼怒川温泉 → 下今市",
-     "sub": "Prendre un local (普通) vers 下今市 ou 東武日光. Éviter les Limited Express (特急) vers Asakusa : supplément."
-    },
-    {
-     "k": "change",
-     "t": "Changement à Shimo-Imaichi (si le train ne va pas jusqu'à Tobu-Nikko)",
-     "jp": "下今市",
-     "sub": "Prendre un train vers 東武日光 (Tobu-Nikko), 2 arrêts."
-    },
-    {
-     "k": "walk",
-     "t": "Tobu-Nikko → arrêt de bus",
-     "jp": "東武日光駅",
-     "sub": "Laisser les sacs dans les casiers de la gare. Bus de 8h vers 中禅寺温泉 (Chūzenji Onsen), devant la gare, payé à la Suica."
     }
    ]
   },
@@ -1191,8 +1173,8 @@
   {
    "date": "2026-10-20",
    "stage": "nikko",
-   "title": "Nikko, centre historique",
-   "hotel": "manyotei",
+   "title": "Nikko, centre historique, nuit à Yumoto",
+   "hotel": "unwind",
    "blocks": [
     {
      "t": "8:45",
@@ -1225,56 +1207,73 @@
      "place": "futarasan"
     },
     {
-     "t": "~16:00",
-     "txt": "Train Tobu → Kinugawa-Onsen, onsen et dîner à l'hôtel",
-     "transport": "kinugawa-soir"
+     "t": "~15:45",
+     "txt": "Bus Tobu vers Yumoto Onsen (~1 h 20 à 1 h 30), horaires à vérifier à la gare",
+     "transport": "bus-yumoto"
     },
     {
-     "t": "~16:45",
-     "txt": "Taxi gare de Kinugawa-Onsen → Hotel Manyotei (~5 min ; ~20 min à pied, pas de navette)"
+     "t": "~17:15",
+     "txt": "Arrivée à l'UNWIND Oku-Nikko, bains au soufre"
+    },
+    {
+     "t": "18:30",
+     "txt": "Dîner à l'hôtel"
     }
    ],
    "tips": [
+    "⚠ Bus Tobu : vérifier impérativement les horaires exacts sur place (gare de Tobu-Nikko à l'arrivée, puis à l'hôtel pour le retour). Les grilles d'automne peuvent être ajustées et la route d'Irohazaka est très encombrée en saison des momiji.",
+    "World Heritage Pass : ne couvre pas le bus de Yumoto (~1 950 ¥ l'aller par adulte, Suica)",
     "Tōshō-gū ~9h–17h en octobre, dernière entrée ~16h30",
-    "Grosses valises parties la veille au soir en Ta-Q-Bin vers l'Hotel Vintage : sac pour une nuit seulement",
-    "Pas de montée en montagne le 20 : Irohazaka saturée l'après-midi"
+    "Grosses valises parties la veille au soir en Ta-Q-Bin : sac pour une nuit",
+    "Yumoto à ~1 480 m : vêtements chauds"
    ]
   },
   {
    "date": "2026-10-21",
    "stage": "nikko",
-   "title": "Kegon, Chūzenji, Ryūzu",
+   "title": "Oku-Nikko en descendant : Yunoko, Senjōgahara, Ryūzu, Kegon",
    "hotel": "vintage",
    "blocks": [
     {
-     "t": "6:35",
-     "txt": "Départ de l'hôtel en taxi vers la gare de Kinugawa-Onsen (taxi à réserver la veille à la réception)"
+     "t": "7:30",
+     "txt": "Petit-déjeuner à l'hôtel"
     },
     {
-     "t": "7:00",
-     "txt": "Train Kinugawa → Tobu-Nikko, sacs dans les casiers de la gare",
-     "transport": "kinugawa-matin"
+     "t": "8:45",
+     "txt": "Départ de l'hôtel avec les sacs"
     },
     {
-     "t": "8:00",
-     "txt": "Bus pour Chūzenji par Irohazaka",
-     "transport": "bus-chuzenji"
+     "t": "9:00",
+     "txt": "Tour du lac Yunoko jusqu'à la chute de Yudaki",
+     "place": "yunoko"
     },
     {
-     "txt": "Chutes de Kegon (ascenseur)",
-     "place": "kegon"
+     "t": "10:00",
+     "txt": "Senjōgahara : sentier sur pilotis jusqu'à Ryūzu (~2 h 30)",
+     "place": "senjogahara"
     },
     {
-     "txt": "Bord du lac Chūzenji",
-     "place": "chuzenji"
-    },
-    {
-     "txt": "Bus Chūzenji → Ryūzu (~10–15 min) : la cascade",
+     "t": "12:45",
+     "txt": "Chutes de Ryūzu, déjeuner au salon de thé",
      "place": "ryuzu"
     },
     {
+     "t": "13:30",
+     "txt": "Bus Ryūzu → Chūzenji Onsen (~15 min)"
+    },
+    {
+     "t": "13:45",
+     "txt": "Chutes de Kegon (ascenseur) et bord du lac Chūzenji",
+     "place": "kegon"
+    },
+    {
+     "t": "14:30",
+     "txt": "Descente en bus vers Tobu-Nikko (au plus tard)",
+     "transport": "bus-descente"
+    },
+    {
      "t": "aprèm",
-     "txt": "Redescente, abîme de Kanmangafuchi ou balade près de Shinkyō",
+     "txt": "Selon l'heure : abîme de Kanmangafuchi ou balade près de Shinkyō",
      "place": "kanmangafuchi"
     },
     {
@@ -1287,13 +1286,15 @@
      "transport": "kegon-retour"
     },
     {
-     "t": "~21:15",
-     "txt": "Arrivée Hotel Vintage Kagurazaka"
+     "t": "~21:45",
+     "txt": "Arrivée Hotel Vintage Kagurazaka (valises du Ta-Q-Bin)"
     }
    ],
    "tips": [
-    "Bouchons d'automne : Irohazaka peut passer de 45 min à 2–4 h, d'où le bus de 8h",
-    "Bus de montagne à la Suica : ~1 250 ¥ adulte jusqu'à Chūzenji, demi-tarif enfant",
+    "⚠ Bus Tobu : vérifier impérativement les horaires exacts sur place (gare de Tobu-Nikko à l'arrivée, puis à l'hôtel pour le retour). Les grilles d'automne peuvent être ajustées et la route d'Irohazaka est très encombrée en saison des momiji.",
+    "Descente de l'Irohazaka : jusqu'à 2–4 h l'après-midi en saison, d'où le départ de Chūzenji à 14h30 au plus tard",
+    "Plan B (pluie, fatigue) : bus Yumoto → Ryūzu au lieu de la marche",
+    "Bus de montagne à la Suica, non couverts par le pass",
     "Téléphérique d'Akechidaira fermé jusqu'en 2027",
     "Retour Asakusa → Kagurazaka : métro (~35–40 min) ou taxi (~3 500–4 500 ¥)"
    ],
@@ -3642,6 +3643,29 @@
    "infos": "1-1-19 Namba (ruelle Hōzenji) · 12h–15h et 17h–23h",
    "note": "Réservation conseillée. Allergie : viandes au sel (shio), sans marinade, vérifier l'huile.",
    "link": "https://www.google.com/maps/place/?q=place_id:ChIJa0f0lRTnAGARXNWOLs7nBqg"
+  },
+  {
+   "id": "yunoko",
+   "name": "Lac Yunoko et chute de Yudaki",
+   "jp": "湯ノ湖・湯滝",
+   "city": "nikko",
+   "cat": "nature",
+   "q": "湯滝 日光",
+   "desc": "Petit lac de montagne au pied de Yumoto Onsen, avec un sentier qui en fait le tour. À son extrémité sud, la chute de Yudaki dévale 70 m de roche en large voile, avec une plateforme d'observation au pied.",
+   "infos": "Gratuit · ~1 h à pied de l'hôtel jusqu'à Yudaki",
+   "wikiEn": "Lake Yunoko"
+  },
+  {
+   "id": "senjogahara",
+   "name": "Plateau de Senjōgahara",
+   "jp": "戦場ヶ原",
+   "city": "nikko",
+   "cat": "nature",
+   "q": "戦場ヶ原 日光",
+   "desc": "Ancien lac devenu un vaste plateau marécageux à 1 400 m, traversé par un sentier sur pilotis. Fin octobre, les herbes prennent des teintes dorées face au mont Nantai.",
+   "infos": "Gratuit · sentier Yudaki → Ryūzu ~2 h 30, plat, ~7 km",
+   "astuce": "Plan B s'il pleut : bus Yumoto → Ryūzu avec arrêt à Akanuma.",
+   "wikiEn": "Senjōgahara"
   }
  ],
  "todo": [
@@ -3740,6 +3764,14 @@
   {
    "id": "plafond",
    "txt": "Relever temporairement le plafond de paiement de la carte avant les gros achats"
+  },
+  {
+   "id": "annul-manyotei",
+   "txt": "Annuler le Hotel Manyotei (Booking) après confirmation de l'UNWIND Oku-Nikko"
+  },
+  {
+   "id": "unwind-diner",
+   "txt": "UNWIND Oku-Nikko : réserver dîner et petit-déjeuner, signaler l'allergie aux fruits à coque"
   }
  ],
  "allergy": {

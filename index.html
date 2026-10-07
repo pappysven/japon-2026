@@ -817,7 +817,7 @@ function routeList(i){
 
 function dayDetail(i, noHotel){
   const d = D.days[i], h = noHotel? null : hotel(d.hotel);
-  return `${d.tips?.length? `<div class="sec">${I("info")}À retenir</div><div class="box pad stack small">${d.tips.map(t=>`<div>${esc(t)}</div>`).join("")}</div>`:""}
+  return `${d.tips?.length? `<div class="sec">${I("info")}À retenir</div><div class="box pad stack small">${d.tips.map(t=>t.startsWith("⚠")? `<div class="alert" style="background:color-mix(in oklab, #B3243A 12%, var(--plate));color:var(--ink);font-weight:600">${I("alert").replace('class="i "','class="i" style="color:#B3243A"')}<span>${esc(t.replace(/^⚠\s*/,""))}</span></div>` : `<div>${esc(t)}</div>`).join("")}</div>`:""}
     ${h? `<div class="sec">${I("bed")}Ce soir</div>${hotelCard(h, "Nuit à "+stage(h.stage).name)}`:""}`;
 }
 
@@ -1267,7 +1267,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-07-1126";
+  window.VERSION = "2026-10-07-2112";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
