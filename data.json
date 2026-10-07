@@ -1008,7 +1008,8 @@
    "tips": [
     "Charger les Suica à l'aéroport ; carte enfant au guichet JR East avec les passeports (vérifier ses horaires)",
     "Visit Japan Web rempli avant le départ pour accélérer l'immigration",
-    "Check-in jusqu'à 22h : hôtel prévenu de l'arrivée tardive"
+    "Check-in jusqu'à 22h : hôtel prévenu de l'arrivée tardive",
+    "Premier achat au konbini avec la carte bancaire physique et le code : la banque voit que vous êtes au Japon"
    ]
   },
   {
@@ -1839,7 +1840,7 @@
    ],
    "tips": [
     "Ta-Q-Bin : à la réception avant 12h, garder un sac pour 2 nuits",
-    "Transports à la Suica : ~3 trajets de métro, ni Osaka Amazing Pass ni pass journée nécessaires",
+    "Transports à la Suica (~3 trajets) ; pass journée Enjoy Eco Card (820 ¥) seulement si vous ajoutez des trajets",
     "Shinsekai → Shinsaibashi : métro Midosuji depuis Dobutsuen-mae, ou Nankai Shin-Imamiya → Namba",
     "Kushikatsu : une seule trempette dans la sauce commune ; carte d'allergie",
     "Vendredi soir avant Halloween : Dotonbori très fréquenté"
@@ -1848,30 +1849,83 @@
   {
    "date": "2026-10-31",
    "stage": "osaka",
-   "title": "Dernier shopping",
+   "title": "Umeda, Nakazakichō, Halloween",
    "hotel": "eslead",
    "blocks": [
     {
-     "t": "9:10",
-     "txt": "Départ : Nippombashi ou Namba, métro Midosuji → Umeda (~15 min)"
+     "t": "9:00",
+     "txt": "Départ : Nippombashi ou Namba, métro Midosuji → Umeda (~10 min)"
     },
     {
-     "t": "matin",
+     "t": "9:35",
+     "txt": "Umeda Sky Building à l'ouverture : escalators vitrés et observatoire en plein air",
+     "place": "umeda-sky"
+    },
+    {
+     "t": "10:45",
      "txt": "Yodobashi Umeda : Mac mini (détaxe)",
      "place": "yodobashi-umeda"
     },
     {
-     "txt": "Umeda, grands magasins"
+     "t": "11:30",
+     "txt": "master-piece, Daimaru Umeda : sac Aer Go Pack",
+     "place": "daimaru-umeda-aer"
     },
     {
-     "t": "soir",
-     "txt": "Dernier Dotonbori"
+     "t": "12:15",
+     "txt": "Nakazakichō à pied (~10–15 min), déjeuner : Taiyō no Tō",
+     "place": "cafe-taiyo"
+    },
+    {
+     "t": "12:15",
+     "txt": "ou Salon de AManTo",
+     "place": "cafe-amanto"
+    },
+    {
+     "t": "12:15",
+     "txt": "ou Dexter Diner (burgers, jusqu'à 15h)",
+     "place": "dexter-diner"
+    },
+    {
+     "t": "14:30",
+     "txt": "Retour à pied vers Umeda, métro Midosuji → Namba (~15 min)"
+    },
+    {
+     "t": "15:00",
+     "txt": "Namba Parks, dernier passage au Gashapon no Depāto",
+     "place": "gashapon-namba"
+    },
+    {
+     "t": "16:30",
+     "txt": "Dépôt du Mac mini et des achats à l'hôtel, sacs du lendemain"
+    },
+    {
+     "t": "17:30",
+     "txt": "Halloween à Dotonbori : regarder depuis les bords, pas sur le pont Ebisu",
+     "place": "dotonbori"
+    },
+    {
+     "t": "18:30",
+     "txt": "Dîner yakiniku : Aburiya Sennichimae (réserver)",
+     "place": "resto-aburiya"
+    },
+    {
+     "t": "18:30",
+     "txt": "ou Matsusakagyū Yakiniku M (haut de gamme, réserver)",
+     "place": "resto-yakiniku-m"
+    },
+    {
+     "t": "~20:30",
+     "txt": "Retour à l'hôtel (réveil à 4h35)"
     }
    ],
    "tips": [
     "Mac mini en cabine ; câble secteur C7 français",
     "À déclarer en douane en France (TVA 20 %, au-delà de 430 €)",
-    "Samedi de Halloween : Dotonbori et Amerika-mura bondés le soir, rentrer tôt",
+    "Halloween : la plus grosse foule de l'année au pont Ebisu ; avec les enfants, rester sur les bords et partir tôt",
+    "Illuminations de Midōsuji : seulement à partir du 3 novembre",
+    "Yakiniku : viandes au sel (shio), sans marinade ; carte d'allergie",
+    "Cafés indépendants : vigilance sur les pâtisseries (fruits à coque)",
     "Préparer le sac : passeports, sac détaxe scellé, reçu Ta-Q-Bin ; Suica rechargées",
     "Vérifier l'horaire du premier Nankai Airport Express de dimanche"
    ]
@@ -1909,7 +1963,8 @@
     }
    ],
    "tips": [
-    "Ne pas ouvrir le sac détaxe scellé avant l'aéroport"
+    "Ne pas ouvrir le sac détaxe scellé avant l'aéroport",
+    "Vider les Suica à KIX : « Suica, and the rest in cash » au konbini, ou distributeurs de boissons"
    ]
   }
  ],
@@ -3480,6 +3535,113 @@
    "desc": "Sanctuaire de quartier célèbre pour son pavillon en forme de tête de lion géante (environ 12 m), gueule ouverte, censée avaler les mauvais esprits et porter chance aux examens et aux affaires.",
    "infos": "Gratuit · ~10–15 min à pied de Kuromon et Den Den Town · compter 20 min",
    "wikiEn": "Namba Yasaka Shrine"
+  },
+  {
+   "id": "umeda-sky",
+   "name": "Umeda Sky Building (Kūchū Teien)",
+   "jp": "梅田スカイビル 空中庭園展望台",
+   "city": "osaka",
+   "cat": "vue",
+   "ll": [
+    34.7054375,
+    135.4903279
+   ],
+   "desc": "Deux tours reliées au sommet par un anneau. On monte par des escalators vitrés suspendus dans le vide, jusqu'à un observatoire en plein air à 173 m, sans vitre, avec une vue à 360° sur Osaka.",
+   "infos": "~2 000 ¥ adulte, tarif réduit enfant · 9h30–22h30 · ~10–15 min à pied de la gare d'Osaka/Umeda · compter 1 h",
+   "wikiEn": "Umeda Sky Building",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJbbXqmojmAGARh-OQXHzkwEc"
+  },
+  {
+   "id": "daimaru-umeda-aer",
+   "name": "master-piece store, Daimaru Umeda (sacs Aer)",
+   "jp": "大丸梅田店 master-piece",
+   "city": "osaka",
+   "cat": "shopping",
+   "q": "大丸梅田店",
+   "desc": "Revendeur officiel de la marque Aer à Osaka, dans le grand magasin Daimaru Umeda, accolé à la gare d'Osaka (et à deux pas de Yodobashi Umeda).",
+   "note": "Revendeur listé par Aer ; modèles et stock variables : vérifier sur place. Détaxe avec le passeport."
+  },
+  {
+   "id": "isetan-shinjuku-aer",
+   "name": "Isetan Shinjuku Men's B1F (sacs Aer, option)",
+   "jp": "伊勢丹新宿店メンズ館 B1F",
+   "city": "tokyo",
+   "cat": "shopping",
+   "q": "伊勢丹新宿店メンズ館",
+   "desc": "Étage bagagerie du grand magasin Isetan pour hommes, revendeur officiel Aer à Tokyo.",
+   "infos": "10h–20h · métro Shinjuku-sanchōme",
+   "note": "Option le 22 oct. en arrivant à Shinjuku (vers 17h30)."
+  },
+  {
+   "id": "cafe-taiyo",
+   "name": "Taiyō no Tō (café, Nakazakichō)",
+   "jp": "太陽ノ塔 本店",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.708551,
+    135.5058182
+   ],
+   "desc": "Café rétro emblématique de Nakazakichō, gâteaux joliment décorés, plats légers et sets du midi.",
+   "infos": "2-3-12 Nakazaki · 9h–22h",
+   "note": "Allergie : vigilance sur les pâtisseries (fruits à coque), carte à montrer.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJD4lf_ZXmAGARUQaNS6ytpec"
+  },
+  {
+   "id": "cafe-amanto",
+   "name": "Salon de AManTo (café, Nakazakichō)",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.7080705,
+    135.5043988
+   ],
+   "desc": "Café-maison associatif plein de recoins, de meubles anciens et d'œuvres d'art. On s'installe, puis on commande et on paie au comptoir.",
+   "infos": "1-7-26 Nakazakinishi · 12h–22h",
+   "note": "Allergie : vigilance sur les pâtisseries, carte à montrer.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJzUwQeZbmAGARoYXgxwJkjdA"
+  },
+  {
+   "id": "dexter-diner",
+   "name": "Dexter Diner (burgers, Nakazakichō)",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.7087172,
+    135.5039925
+   ],
+   "desc": "Petit diner américain très bien noté pour ses burgers maison. Une dizaine de places seulement : attente possible dehors.",
+   "infos": "4-1-7 Nakazakinishi · samedi 10h–15h (fermé le mercredi)",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJiz-uArbnAGARF8J0vcl6lok"
+  },
+  {
+   "id": "resto-aburiya",
+   "name": "Aburiya Sennichimae (yakiniku)",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6668286,
+    135.5019245
+   ],
+   "desc": "Yakiniku à volonté commandé sur tablette, viande de bonne qualité, ambiance animée. Très demandé : réserver.",
+   "infos": "ECS 32 Bldg 4F, 3-4-16 Namba · samedi 11h30–14h et 16h–23h",
+   "note": "Allergie : commander les viandes au sel (shio), sans marinade, et vérifier l'huile du grill.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJVVWlrBTnAGARVs2cmieKMso"
+  },
+  {
+   "id": "resto-yakiniku-m",
+   "name": "Matsusakagyū Yakiniku M (Hōzenji)",
+   "jp": "松阪牛焼肉M 横丁店",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.668169,
+    135.5025595
+   ],
+   "desc": "Yakiniku haut de gamme au bœuf de Matsusaka, servi en plateaux et cuit avec l'aide du personnel. Pour un dernier dîner mémorable ; cher.",
+   "infos": "1-1-19 Namba (ruelle Hōzenji) · 12h–15h et 17h–23h",
+   "note": "Réservation conseillée. Allergie : viandes au sel (shio), sans marinade, vérifier l'huile.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJa0f0lRTnAGARXNWOLs7nBqg"
   }
  ],
  "todo": [
@@ -3570,6 +3732,14 @@
   {
    "id": "gundam-base",
    "txt": "Vers le 12–14 oct : vérifier si la Gundam Base Tokyo impose un tirage d'entrée le lun. 19 oct (sinon entrée libre)"
+  },
+  {
+   "id": "suica-visa",
+   "txt": "Tester une recharge de 1 000 ¥ de la Suica dans Cartes (la Visa peut être refusée)"
+  },
+  {
+   "id": "plafond",
+   "txt": "Relever temporairement le plafond de paiement de la carte avant les gros achats"
   }
  ],
  "allergy": {
@@ -3689,6 +3859,26 @@
   {
    "title": "Poubelles",
    "body": "Rares dans la rue. Garder un sac et trier dans les konbini ou les gares."
+  },
+  {
+   "title": "Payer en yens, toujours",
+   "body": "Quand un terminal ou un distributeur propose de payer en euros ou en yens, choisir toujours le yen (JPY) : le taux de votre banque est meilleur que la conversion proposée par la machine."
+  },
+  {
+   "title": "Espèces",
+   "body": "Le liquide reste utile (petits sanctuaires, street-food, Suica de l'enfant). Les distributeurs des konbini 7-Eleven sont les plus fiables avec une carte étrangère."
+  },
+  {
+   "title": "Suica dans Cartes et carte Visa",
+   "body": "La recharge de la Suica dans Cartes par Apple Pay passe avec Mastercard et American Express ; avec une Visa, cela dépend de la banque. Tester une recharge de 1 000 ¥ avant le départ. Si elle échoue, la Suica se recharge en espèces aux bornes des gares ou à la caisse des konbini."
+  },
+  {
+   "title": "Carte bancaire et anti-fraude",
+   "body": "Relever le plafond de paiement dans l'appli de la banque avant les gros achats (Mac mini, iPad, PG). Garder la carte physique sur soi : en cas de refus, l'insérer et taper le code. Faire un premier petit achat au konbini avec le code dès l'arrivée. Avoir l'eSIM active pour valider les notifications de la banque."
+  },
+  {
+   "title": "Vider ses Suica avant de partir",
+   "body": "Au konbini ou à KIX : « Suica, and the rest in cash » (le caissier vide la carte et vous payez le reste en espèces). Les distributeurs de boissons acceptent aussi la Suica. Les Suica dans Cartes restent valables 10 ans."
   }
  ],
  "emergency": [
@@ -3841,6 +4031,64 @@
     {
      "place": "surugaya-osaka",
      "role": "Occasion, plan B Osaka"
+    }
+   ]
+  },
+  {
+   "id": "shupatto",
+   "name": "Sacs Shupatto (Marna)",
+   "icon": "shop",
+   "budget": "~1 500–2 500 ¥ le sac selon la taille",
+   "note": "Sacs de courses qui se replient d'un geste en un boudin. Plusieurs tailles et couleurs.",
+   "jp": "マーナ シュパット",
+   "where": [
+    {
+     "place": "hands-shibuya",
+     "role": "Le 18 oct., rayon voyage / cuisine"
+    },
+    {
+     "place": "loft-shibuya",
+     "role": "Le 18 oct., alternative"
+    }
+   ]
+  },
+  {
+   "id": "parapluie",
+   "name": "Parapluies compacts",
+   "icon": "shop",
+   "budget": "~1 000–4 000 ¥",
+   "note": "Modèles ultra-légers et pliants, très courants au Japon. En dépannage, tous les konbini en vendent.",
+   "jp": "折りたたみ傘",
+   "where": [
+    {
+     "place": "hands-shibuya",
+     "role": "Le 18 oct., grand choix"
+    },
+    {
+     "place": "loft-shibuya",
+     "role": "Le 18 oct."
+    },
+    {
+     "place": "konbini-akasaka",
+     "role": "En dépannage, n'importe quel konbini"
+    }
+   ]
+  },
+  {
+   "id": "aer-gopack",
+   "name": "Sac Aer Go Pack",
+   "icon": "bag",
+   "budget": "Go Pack 2 : ~22 990 ¥ TTC chez les revendeurs (à vérifier)",
+   "note": "Pas vendu chez Loft ni Don Quijote : seulement chez les revendeurs officiels Aer. Modèles en stock variables.",
+   "jp": "Aer（エアー）ゴーパック",
+   "where": [
+    {
+     "place": "daimaru-umeda-aer",
+     "role": "Achat prévu le 31 oct., à côté de Yodobashi Umeda"
+    },
+    {
+     "place": "isetan-shinjuku-aer",
+     "role": "Option le 22 oct. à Shinjuku"
     }
    ]
   }
