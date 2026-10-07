@@ -1649,7 +1649,7 @@
   {
    "date": "2026-10-28",
    "stage": "nara",
-   "title": "Nara",
+   "title": "Nara, du parc au coucher du soleil",
    "hotel": "nono",
    "blocks": [
     {
@@ -1662,63 +1662,105 @@
      "transport": "kintetsu-nara"
     },
     {
-     "txt": "Parc aux cerfs (senbei 200 ¥)",
-     "place": "nara-park"
+     "t": "~10:20",
+     "txt": "Valises à l'Onyado Nono, en face de la gare JR"
     },
     {
-     "txt": "Tōdai-ji, le Grand Bouddha",
-     "place": "todaiji"
+     "t": "10:45",
+     "txt": "Sanjō-dōri à pied, mochi pilé chez Nakatanidō",
+     "place": "nakatanido"
     },
     {
-     "txt": "Kasuga Taisha et ses lanternes",
+     "t": "11:30",
+     "txt": "Parc aux cerfs et pagode du Kōfuku-ji",
+     "place": "kofukuji"
+    },
+    {
+     "t": "12:30",
+     "txt": "Déjeuner"
+    },
+    {
+     "t": "14:00",
+     "txt": "Kasuga Taisha et la forêt aux lanternes",
      "place": "kasuga"
     },
     {
-     "t": "soir",
-     "txt": "Onsen à l'hôtel"
+     "t": "15:30",
+     "txt": "Tōdai-ji, quand les groupes repartent (fermeture 17h30)",
+     "place": "todaiji"
+    },
+    {
+     "t": "16:50",
+     "txt": "Coucher du soleil depuis la terrasse du Nigatsu-dō",
+     "place": "nigatsudo"
+    },
+    {
+     "t": "17:45",
+     "txt": "Retour à pied (~25 min) ou en bus vers la gare JR"
+    },
+    {
+     "t": "18:30",
+     "txt": "Dîner près de la gare (Nara ferme tôt)"
+    },
+    {
+     "t": "21:30",
+     "txt": "Onsen, puis yonaki soba offert à l'hôtel"
     }
    ],
    "tips": [
-    "L'hôtel est face à la gare JR Nara : déposer les valises en arrivant",
-    "Le parc aux cerfs est à ~20 min à pied, ou bus depuis la gare"
+    "Cerfs : quand il n'y a plus de biscuits, montrer les deux mains ouvertes et vides",
+    "Senbei à 200 ¥ : les donner vite, les cerfs sont insistants autour des vendeurs",
+    "Lanternes de Kasuga allumées seulement aux fêtes de février et d'août",
+    "Nara se couche tôt : beaucoup de restaurants ferment vers 19h–20h",
+    "Onyado Nono : yonaki soba (ramen offert) vers 21h30, ne pas trop dîner"
    ]
   },
   {
    "date": "2026-10-29",
    "stage": "osaka",
-   "title": "Nara → Osaka, Den Den Town",
+   "title": "Nara → Osaka, Kuromon, Den Den Town",
    "hotel": "eslead",
    "blocks": [
     {
      "t": "tôt",
-     "txt": "Les cerfs au lever du soleil"
+     "txt": "Cerfs au lever du soleil (option)",
+     "place": "nara-park"
     },
     {
      "t": "10:30",
      "txt": "Départ en taxi vers Kintetsu-Nara (~5 min, ou 15–20 min à pied)"
     },
     {
+     "t": "10:45",
      "txt": "Kintetsu → Osaka-Namba",
-     "transport": "kintetsu-osaka",
-     "t": "10:45"
+     "transport": "kintetsu-osaka"
     },
     {
      "t": "~11:45",
      "txt": "Dépôt des valises à l'ESLEAD (check-in à 15h)"
     },
     {
-     "t": "aprèm",
-     "txt": "Antoine : Joshin Super Kids Land, Surugaya, Jungle",
-     "place": "joshin"
-    },
-    {
-     "t": "aprèm",
-     "txt": "Alexia : marché Kuromon",
+     "t": "12:00",
+     "txt": "Alexia : marché Kuromon, déjeuner street-food",
      "place": "kuromon"
     },
     {
-     "t": "19:00",
-     "txt": "RDV Dotonbori, takoyaki",
+     "t": "12:00",
+     "txt": "Antoine et les enfants : Joshin, Surugaya, Jungle (passeports pour la détaxe)",
+     "place": "joshin"
+    },
+    {
+     "t": "15:30",
+     "txt": "Regroupement, sanctuaire Namba Yasaka (tête de lion)",
+     "place": "namba-yasaka"
+    },
+    {
+     "t": "17:00",
+     "txt": "Pause à l'hôtel"
+    },
+    {
+     "t": "18:45",
+     "txt": "Rendez-vous dans le hall de l'hôtel, puis Dotonbori à pied",
      "place": "dotonbori"
     },
     {
@@ -1728,7 +1770,10 @@
     }
    ],
    "tips": [
-    "Passeport physique obligatoire pour la détaxe"
+    "Kuromon : marché du matin et du midi, beaucoup d'échoppes ferment vers 16h–17h",
+    "Street-food de Kuromon : montrer la carte d'allergie",
+    "Passeport physique obligatoire pour la détaxe chez Joshin",
+    "Rendez-vous du soir dans le hall de l'hôtel, pas dans la foule de Dotonbori"
    ]
   },
   {
@@ -3385,6 +3430,56 @@
    "infos": "1-4-22 Dotonbori, 2F · 11h–minuit · ~150–500 ¥ l'assiette",
    "note": "Montrer la carte d'allergie.",
    "link": "https://www.google.com/maps/place/?q=place_id:ChIJu6DP33fnAGARV0AEBbW3gX4"
+  },
+  {
+   "id": "nakatanido",
+   "name": "Nakatanidō (mochi pilé)",
+   "jp": "中谷堂",
+   "city": "nara",
+   "cat": "resto",
+   "q": "中谷堂 奈良",
+   "desc": "Petite boutique de Sanjō-dōri célèbre pour son yomogi-mochi (pâte de riz à l'armoise) pilé à toute vitesse à coups de maillet, avec des cris rythmés. Le mochi tiède, fourré de pâte de haricot et roulé dans le kinako, se mange sur place.",
+   "note": "Les démonstrations ont lieu quand une fournée est préparée, pas en continu. Mochi : petites bouchées pour les enfants."
+  },
+  {
+   "id": "kofukuji",
+   "name": "Kōfuku-ji",
+   "jp": "興福寺",
+   "city": "nara",
+   "cat": "temple",
+   "ll": [
+    34.683,
+    135.8318
+   ],
+   "desc": "Temple du clan Fujiwara fondé en 710, avec sa pagode à cinq étages (50 m), la deuxième plus haute du Japon, à l'entrée du parc.",
+   "infos": "Enceinte gratuite · trésor national payant · compter 20 min",
+   "wiki": "Kōfuku-ji",
+   "wikiEn": "Kōfuku-ji"
+  },
+  {
+   "id": "nigatsudo",
+   "name": "Terrasse du Nigatsu-dō",
+   "jp": "東大寺二月堂",
+   "city": "nara",
+   "cat": "vue",
+   "ll": [
+    34.6893,
+    135.8443
+   ],
+   "desc": "Pavillon du Tōdai-ji perché sur la colline, avec une grande terrasse en bois et la plus belle vue sur Nara. Le coucher du soleil y est magnifique, sur les toits du grand hall.",
+   "infos": "Gratuit · ouvert en permanence · ~10 min à pied du grand hall · coucher du soleil ~17h05",
+   "wikiEn": "Nigatsu-dō"
+  },
+  {
+   "id": "namba-yasaka",
+   "name": "Sanctuaire Namba Yasaka",
+   "jp": "難波八阪神社",
+   "city": "osaka",
+   "cat": "temple",
+   "q": "難波八阪神社",
+   "desc": "Sanctuaire de quartier célèbre pour son pavillon en forme de tête de lion géante (environ 12 m), gueule ouverte, censée avaler les mauvais esprits et porter chance aux examens et aux affaires.",
+   "infos": "Gratuit · ~10–15 min à pied de Kuromon et Den Den Town · compter 20 min",
+   "wikiEn": "Namba Yasaka Shrine"
   }
  ],
  "todo": [
