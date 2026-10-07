@@ -145,7 +145,7 @@
    "addrJp": "栃木県日光市鬼怒川温泉大原390-3",
    "checkin": "15h–22h",
    "checkout": "7h–10h",
-   "note": "À Kinugawa Onsen, pas dans le centre de Nikko. Onsen sur place.",
+   "note": "À ~1,7 km de la gare de Kinugawa-Onsen (~20 min à pied, pas de navette) : prendre un taxi à la gare. Pas de konbini à proximité. Selon des avis, la carte bancaire peut être refusée : prévoir des espèces. Onsen sur place.",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -159,7 +159,7 @@
    "addrJp": "東京都新宿区中里町30",
    "checkin": "15h–23h30",
    "checkout": "10h",
-   "note": "Arrivée ~21h15 le 21 oct (retour de Nikko).",
+   "note": "Arrivée ~21h30–22h le 21 (retour de Nikko) ; check-in jusqu'à 23h30. Valises envoyées en Ta-Q-Bin (accord demandé). ~5 min à pied de la station Kagurazaka (Tozai).",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -189,7 +189,7 @@
    "checkout": "",
    "phone": "+81 75-204-3250",
    "email": "guesthouse.compass@gmail.com",
-   "note": "Arrivée prévue ~16h45 le 25 (Hikari 645). Taxi depuis Kyoto Station ~10 min (~1 000 ¥). 4 personnes + valises : jumbo taxi, sortie Hachijō.",
+   "note": "Arrivée prévue ~16h45 le 25 (Hikari 645). ~8 min à pied de la gare JR Nishiōji (1 arrêt de Kyoto Station, ~3 min). Taxi depuis Kyoto Station ~10 min (~1 000 ¥) ; 4 personnes + valises : jumbo taxi, sortie Hachijō.",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -213,11 +213,11 @@
    "stage": "osaka",
    "from": "2026-10-29",
    "to": "2026-11-01",
-   "addr": "Namba Kuromon, Nipponbashi, Osaka",
-   "addrJp": "",
+   "addr": "3-8-29 Kozu, Chuo-ku, Osaka",
+   "addrJp": "大阪府大阪市中央区高津3-8-29",
    "checkin": "15h",
    "checkout": "10h",
-   "note": "Adresse japonaise à recopier depuis Booking. 5 min de Kuromon et Den Den Town, 8 min de Nankai Namba.",
+   "note": "Check-in à 15h : déposer les valises à la réception en arrivant vers 11h30 le 29 (garde avant check-in). 5 min à pied de Nippombashi, ~10–12 min de Nankai Namba par le marché Kuromon.",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   }
@@ -397,9 +397,9 @@
    "kind": "train",
    "status": "reserve",
    "pax": "3 adultes + 1 enfant",
-   "app": "Tobu (billet en ligne)",
-   "link": "https://www.tobu.co.jp/en/service/",
-   "linkLabel": "Tobu",
+   "app": "Tobu Japan Trip Tickets",
+   "link": "https://tobu-japantrip-tickets.com",
+   "linkLabel": "Tobu Japan Trip",
    "ll": [
     35.7119,
     139.7983
@@ -421,8 +421,8 @@
    "pax": "3 adultes + 1 enfant",
    "price": "3 000 ¥ / 1 500 ¥",
    "note": "Couvre les trains Tobu jusqu'à Kinugawa Onsen et les bus du centre. Bus de montagne (Chūzenji) à la Suica.",
-   "link": "https://www.tobu.co.jp/en/service/",
-   "linkLabel": "Tobu",
+   "link": "https://tobu-japantrip-tickets.com",
+   "linkLabel": "Tobu Japan Trip",
    "secret": "pass-nikko"
   },
   {
@@ -504,9 +504,9 @@
    "car": "1",
    "seats": "03C 03D 04C 04D",
    "pax": "3 adultes + 1 enfant",
-   "app": "Tobu (billet en ligne)",
-   "link": "https://www.tobu.co.jp/en/service/",
-   "linkLabel": "Tobu",
+   "app": "Tobu Japan Trip Tickets",
+   "link": "https://tobu-japantrip-tickets.com",
+   "linkLabel": "Tobu Japan Trip",
    "ll": [
     36.748,
     139.6188
@@ -967,7 +967,7 @@
      "k": "walk",
      "t": "Hôtel → gare Nankai Namba",
      "jp": "南海なんば駅",
-     "sub": "~8 min à pied. La gare est en étage, dans le bâtiment Namba City : suivre 南海線."
+     "sub": "~10–12 min à pied par le marché Kuromon (ou taxi). La gare est en étage, dans le bâtiment Namba City : suivre 南海線."
     },
     {
      "k": "train",
@@ -1017,6 +1017,10 @@
    "title": "Meiji, Harajuku, rockabillies, Shibuya",
    "hotel": "coco",
    "blocks": [
+    {
+     "t": "8:45",
+     "txt": "Départ de l'hôtel : station Akasaka (~3 min à pied), ligne Chiyoda → Meiji-Jingumae"
+    },
     {
      "t": "9:00",
      "txt": "Sanctuaire Meiji Jingu, au calme",
@@ -1191,7 +1195,7 @@
    "blocks": [
     {
      "t": "8:45",
-     "txt": "Akasaka → Asakusa (ligne Ginza, ~25 min), quai Tobu à 9h15"
+     "txt": "Départ de l'hôtel : Akasaka-mitsuke, ligne Ginza → Asakusa (~25 min), quai Tobu à 9h15"
     },
     {
      "t": "9:30",
@@ -1223,6 +1227,10 @@
      "t": "~16:00",
      "txt": "Train Tobu → Kinugawa-Onsen, onsen et dîner à l'hôtel",
      "transport": "kinugawa-soir"
+    },
+    {
+     "t": "~16:45",
+     "txt": "Taxi gare de Kinugawa-Onsen → Hotel Manyotei (~5 min ; ~20 min à pied, pas de navette)"
     }
    ],
    "tips": [
@@ -1237,6 +1245,10 @@
    "title": "Kegon, Chūzenji, Ryūzu",
    "hotel": "vintage",
    "blocks": [
+    {
+     "t": "6:35",
+     "txt": "Départ de l'hôtel en taxi vers la gare de Kinugawa-Onsen (taxi à réserver la veille à la réception)"
+    },
     {
      "t": "7:00",
      "txt": "Train Kinugawa → Tobu-Nikko, sacs dans les casiers de la gare",
@@ -1302,6 +1314,10 @@
    "title": "Palais, Toei, Ikebukuro, soirée Shinjuku",
    "hotel": "vintage",
    "blocks": [
+    {
+     "t": "8:40",
+     "txt": "Départ de l'hôtel : station Kagurazaka (~5 min à pied), ligne Tozai → Otemachi"
+    },
     {
      "t": "9:00",
      "txt": "Jardins Est du Palais impérial (pas Kitanomaru), repartir vers 10h30",
@@ -1369,6 +1385,10 @@
    "hotel": "vintage",
    "blocks": [
     {
+     "t": "7:10",
+     "txt": "Départ de l'hôtel : station Kagurazaka, Tozai puis ligne Ginza → Asakusa (~30 min)"
+    },
+    {
      "t": "avant 8:00",
      "txt": "Sensō-ji avant la foule",
      "place": "sensoji"
@@ -1419,7 +1439,7 @@
    "blocks": [
     {
      "t": "9:00",
-     "txt": "Départ de l'hôtel avec les valises"
+     "txt": "Départ de l'hôtel avec les valises, taxi → Shinjuku sortie ouest (~20 min)"
     },
     {
      "t": "9:45",
@@ -1478,13 +1498,17 @@
   {
    "date": "2026-10-25",
    "stage": "kyoto",
-   "title": "Hakone → Kyoto",
+   "title": "Hakone → Kyoto, soirée au bord de la Kamo",
    "hotel": "compass",
    "blocks": [
     {
      "t": "matin",
      "txt": "Parc de Gora ou Open-Air Museum",
      "place": "open-air"
+    },
+    {
+     "t": "12:15",
+     "txt": "Départ du WPÜ avec les valises (gare de Gora à 1 min)"
     },
     {
      "t": "~12:30",
@@ -1501,9 +1525,22 @@
      "txt": "Taxi → Guesthouse Kyoto Compass"
     },
     {
-     "t": "soir",
-     "txt": "Première soirée à Kyoto : Gion, Pontochō ou dîner près de la guesthouse",
-     "place": "gion"
+     "t": "~17:45",
+     "txt": "Taxi Kyoto Compass → Kawaramachi (~20 min, ~2 000 ¥)"
+    },
+    {
+     "t": "18:00",
+     "txt": "Balade au bord de la rivière Kamo au crépuscule",
+     "place": "kamo-pontocho"
+    },
+    {
+     "t": "18:45",
+     "txt": "Dîner à Pontochō ou Kawaramachi (Kawaramachi plus simple en famille)",
+     "place": "kamo-pontocho"
+    },
+    {
+     "t": "~20:30",
+     "txt": "Retour en taxi à la guesthouse"
     }
    ],
    "tips": [
@@ -1517,6 +1554,10 @@
    "title": "Fushimi Inari, Nishiki, Gion",
    "hotel": "compass",
    "blocks": [
+    {
+     "t": "6:15",
+     "txt": "Départ : JR Nishiōji (~8 min à pied) → Kyoto (1 arrêt), puis JR Nara Line → Inari"
+    },
     {
      "t": "avant 7:00",
      "txt": "Fushimi Inari sans la foule (JR Nara Line jusqu'à Inari, 5 min)",
@@ -1554,6 +1595,10 @@
    "title": "Arashiyama, cérémonie du thé",
    "hotel": "compass",
    "blocks": [
+    {
+     "t": "6:50",
+     "txt": "Départ : JR Nishiōji (~8 min à pied) → Kyoto, puis JR Sagano → Saga-Arashiyama (~25 min)"
+    },
     {
      "t": "7:30",
      "txt": "Bambouseraie et sanctuaire Nonomiya",
@@ -1608,7 +1653,11 @@
    "hotel": "nono",
    "blocks": [
     {
-     "t": "matin",
+     "t": "9:15",
+     "txt": "Départ avec les valises en taxi vers Kyoto Station (~10 min)"
+    },
+    {
+     "t": "9:30",
      "txt": "JR Kyoto → Nara (Miyakoji Rapid), 45 min",
      "transport": "kintetsu-nara"
     },
@@ -1645,8 +1694,17 @@
      "txt": "Les cerfs au lever du soleil"
     },
     {
+     "t": "10:30",
+     "txt": "Départ en taxi vers Kintetsu-Nara (~5 min, ou 15–20 min à pied)"
+    },
+    {
      "txt": "Kintetsu → Osaka-Namba",
-     "transport": "kintetsu-osaka"
+     "transport": "kintetsu-osaka",
+     "t": "10:45"
+    },
+    {
+     "t": "~11:45",
+     "txt": "Dépôt des valises à l'ESLEAD (check-in à 15h)"
     },
     {
      "t": "aprèm",
@@ -1676,36 +1734,70 @@
   {
    "date": "2026-10-30",
    "stage": "osaka",
-   "title": "Château, Shinsekai",
+   "title": "Château, Shinsekai, Dotonbori",
    "hotel": "eslead",
    "blocks": [
     {
-     "t": "matin",
-     "txt": "Envoyer les valises en Ta-Q-Bin depuis l'hôtel (dernier délai)",
+     "t": "9:00",
+     "txt": "Ta-Q-Bin des valises vers KIX à la réception (avant 12h)",
      "transport": "taqbin"
     },
     {
-     "txt": "Château d'Osaka",
+     "t": "9:15",
+     "txt": "Départ : Nippombashi (~5 min à pied), métro → Tanimachi 4-chome"
+    },
+    {
+     "t": "9:45",
+     "txt": "Château d'Osaka : parc et murailles (sans le donjon)",
      "place": "osaka-castle"
     },
     {
-     "txt": "Shinsekai, Tsutenkaku, kushikatsu",
+     "t": "12:00",
+     "txt": "Shinsekai : déjeuner Kushikatsu Daruma",
+     "place": "resto-daruma"
+    },
+    {
+     "t": "12:00",
+     "txt": "ou Yaekatsu (file d'attente habituelle)",
+     "place": "resto-yaekatsu"
+    },
+    {
+     "t": "13:15",
+     "txt": "Shinsekai, tour Tsutenkaku (option, ~1 000 ¥ à vérifier)",
      "place": "shinsekai"
     },
     {
-     "t": "aprèm",
-     "txt": "Shinsaibashi, Amerika-mura",
+     "t": "14:30",
+     "txt": "Shinsaibashi et Amerika-mura",
      "place": "amemura"
     },
     {
-     "t": "soir",
-     "txt": "Dotonbori"
+     "t": "17:30",
+     "txt": "Dotonbori, ruelle Hōzenji Yokochō",
+     "place": "hozenji"
+    },
+    {
+     "t": "18:30",
+     "txt": "Dîner : Chibo (okonomiyaki)",
+     "place": "resto-chibo"
+    },
+    {
+     "t": "18:30",
+     "txt": "ou Kura Sushi (jeu Bikkura Pon)",
+     "place": "resto-kura"
+    },
+    {
+     "t": "18:30",
+     "txt": "ou street-food : takoyaki, gyoza",
+     "place": "dotonbori"
     }
    ],
    "tips": [
-    "Ta-Q-Bin : à la réception avant 12h",
-    "Kushikatsu : on ne trempe qu'une fois dans la sauce",
-    "Garder un sac pour 2 nuits"
+    "Ta-Q-Bin : à la réception avant 12h, garder un sac pour 2 nuits",
+    "Transports à la Suica : ~3 trajets de métro, ni Osaka Amazing Pass ni pass journée nécessaires",
+    "Shinsekai → Shinsaibashi : métro Midosuji depuis Dobutsuen-mae, ou Nankai Shin-Imamiya → Namba",
+    "Kushikatsu : une seule trempette dans la sauce commune ; carte d'allergie",
+    "Vendredi soir avant Halloween : Dotonbori très fréquenté"
    ]
   },
   {
@@ -1714,6 +1806,10 @@
    "title": "Dernier shopping",
    "hotel": "eslead",
    "blocks": [
+    {
+     "t": "9:10",
+     "txt": "Départ : Nippombashi ou Namba, métro Midosuji → Umeda (~15 min)"
+    },
     {
      "t": "matin",
      "txt": "Yodobashi Umeda : Mac mini (détaxe)",
@@ -1742,8 +1838,12 @@
    "hotel": "",
    "blocks": [
     {
-     "t": "4:45",
-     "txt": "Réveil, hôtel → Nankai Namba (8 min à pied)"
+     "t": "4:35",
+     "txt": "Réveil"
+    },
+    {
+     "t": "4:55",
+     "txt": "Départ de l'hôtel à pied vers Nankai Namba (~10–12 min par Kuromon), ou taxi"
     },
     {
      "t": "~5:15",
@@ -3197,6 +3297,94 @@
    "desc": "Konbini ouvert 24 h/24, à une minute de l'hôtel, partenaire de Yamato pour l'envoi des valises en Ta-Q-Bin. Autres options tout près, aussi ouvertes 24 h/24 : FamilyMart 3-14-9 Akasaka et 7-Eleven 2-13-1 Akasaka.",
    "infos": "3-7-13 Akasaka · ouvert 24 h/24 · ~2 000–2 500 ¥ par valise (selon la taille), paiement à la caisse",
    "note": "Déposer les 4 valises le 19 au soir, date de livraison 21 oct. Le camion Yamato passe une fois par jour (souvent l'après-midi) : un dépôt le soir part le lendemain."
+  },
+  {
+   "id": "kamo-pontocho",
+   "name": "Rivière Kamo et Pontochō",
+   "jp": "鴨川・先斗町",
+   "city": "kyoto",
+   "cat": "balade",
+   "ll": [
+    35.0055,
+    135.771
+   ],
+   "desc": "Les berges de la Kamo, très animées le soir, et la ruelle étroite de Pontochō bordée de restaurants et de maisons de thé éclairées de lanternes. Kawaramachi, juste à côté, offre plus de choix pour une famille.",
+   "note": "À Pontochō, beaucoup de restaurants sont chers et petits ; certains refusent les enfants ou demandent une réservation. Kawaramachi est plus simple en famille.",
+   "infos": "Accès libre · ~20 min en taxi depuis Kyoto Compass (~2 000 ¥, estimation) · coucher du soleil ~17h10"
+  },
+  {
+   "id": "resto-daruma",
+   "name": "Kushikatsu Daruma (Shinsekai)",
+   "jp": "串かつだるま 新世界総本店",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6515704,
+    135.5062032
+   ],
+   "desc": "La maison historique du kushikatsu, brochettes panées et frites à tremper une seule fois dans la sauce commune. Petite salle au comptoir, file fréquente.",
+   "infos": "2-3-9 Ebisuhigashi · vendredi 11h–22h30 · menu anglais",
+   "note": "Friture dans une huile commune : montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJ5V4HCWDnAGARd6bIaaK91O4"
+  },
+  {
+   "id": "resto-yaekatsu",
+   "name": "Yaekatsu (Shinsekai)",
+   "jp": "八重勝",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6496971,
+    135.5060154
+   ],
+   "desc": "Kushikatsu réputé chez les habitants, pâte légère, chou à volonté. File d'attente habituelle.",
+   "infos": "3-4-13 Ebisuhigashi · 10h30–20h30, fermé le jeudi (ouvert le vendredi 30) · photos interdites à l'intérieur",
+   "note": "Friture dans une huile commune : montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJve4ZtordAGARBOe37AfMfUg"
+  },
+  {
+   "id": "hozenji",
+   "name": "Hōzenji Yokochō",
+   "jp": "法善寺横丁",
+   "city": "osaka",
+   "cat": "balade",
+   "ll": [
+    34.6681187,
+    135.5026104
+   ],
+   "desc": "Ruelle pavée éclairée de lanternes, à deux pas du tumulte de Dotonbori, autour du petit temple Hōzen-ji et de sa statue Fudō Myōō couverte de mousse, que l'on asperge d'eau en faisant un vœu.",
+   "infos": "Accès libre · le plus beau le soir",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJY4ZQxRTnAGAR0mjfWQwO7ho"
+  },
+  {
+   "id": "resto-chibo",
+   "name": "Chibo Dotonbori (okonomiyaki)",
+   "jp": "千房 道頓堀ビル",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6688552,
+    135.5038377
+   ],
+   "desc": "Okonomiyaki dans un bâtiment entier de six étages au cœur de Dotonbori, cuisiné sur la plaque devant vous. Menu anglais avec photos.",
+   "infos": "1-5-5 Dotonbori · 11h–23h · plan B si attente : Chibo Sennichimae, à 5 min",
+   "note": "Montrer la carte d'allergie (sauces, garnitures).",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJk9v34BTnAGAR8SL3pWF-3Js"
+  },
+  {
+   "id": "resto-kura",
+   "name": "Kura Sushi Dotonbori (Global Flagship)",
+   "jp": "くら寿司 道頓堀店",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6685366,
+    135.5036138
+   ],
+   "desc": "Sushis sur tapis roulant à petit prix, commande sur tablette. Toutes les 5 assiettes glissées dans la fente, le jeu Bikkura Pon peut faire gagner une petite figurine : les enfants adorent.",
+   "infos": "1-4-22 Dotonbori, 2F · 11h–minuit · ~150–500 ¥ l'assiette",
+   "note": "Montrer la carte d'allergie.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJu6DP33fnAGARV0AEBbW3gX4"
   }
  ],
  "todo": [
@@ -3255,10 +3443,6 @@
   {
    "id": "allergie",
    "txt": "Relire la carte d'allergie avec Alexia"
-  },
-  {
-   "id": "eslead",
-   "txt": "Recopier l'adresse japonaise de l'ESLEAD dans l'app"
   },
   {
    "id": "qr",

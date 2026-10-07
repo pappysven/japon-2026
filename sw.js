@@ -1,5 +1,5 @@
 // Japon 2026 — service worker : l'app et ses données restent disponibles hors ligne.
-const VERSION = "2026-10-06-2154";
+const VERSION = "2026-10-07-0933";
 const CORE = "japon-core-" + VERSION;
 const EXT = "japon-ext"; // photos et fiches Wikipédia : gardées d'une version à l'autre
 const FILES = ["./", "./index.html", "./data.json", "./allergie.jpg", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
