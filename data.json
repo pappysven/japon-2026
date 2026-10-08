@@ -189,7 +189,7 @@
    "checkout": "",
    "phone": "+81 75-204-3250",
    "email": "guesthouse.compass@gmail.com",
-   "note": "Confirmé : réception des valises en Ta-Q-Bin le 25 et arrivée ~16h45 (Hikari 645). ~8 min à pied de JR Nishiōji (1 arrêt de Kyoto Station). Taxi depuis Kyoto Station ~10 min (~1 000 ¥).",
+   "note": "Confirmé : réception des valises en Ta-Q-Bin le 25 et arrivée ~16h45 (Hikari 645). ~10 min à pied de la gare Umekōji-Kyōtonishi (ligne Sagano : 1 arrêt de Kyoto Station, direct pour Arashiyama). Taxi depuis Kyoto Station ~10 min (~1 000 ¥).",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -1044,13 +1044,27 @@
      "place": "takeshita"
     },
     {
-     "t": "12:30",
-     "txt": "Déjeuner à l'Aoyama Farmers Market (food trucks fermiers, en plein air), ~20 min à pied",
-     "place": "farmers-market"
+     "t": "12:00",
+     "txt": "Déjeuner à Harajuku : Kura Sushi Global Flagship",
+     "place": "resto-kura-harajuku"
+    },
+    {
+     "t": "12:00",
+     "txt": "ou Tonkatsu Maisen Aoyama (~10 min à pied)",
+     "place": "resto-maisen"
+    },
+    {
+     "t": "12:00",
+     "txt": "ou Harajuku Gyozarō (espèces, file le dimanche)",
+     "place": "resto-gyozaro"
+    },
+    {
+     "t": "13:15",
+     "txt": "Pause au parc Yoyogi, à côté de l'entrée des danseurs"
     },
     {
      "t": "14:15",
-     "txt": "Retour vers l'entrée Harajuku du parc Yoyogi (~25 min) : rockabillies (s'il fait beau)",
+     "txt": "Rockabillies à l'entrée Harajuku du parc Yoyogi (s'il fait beau)",
      "place": "rockabilly"
     },
     {
@@ -1089,8 +1103,6 @@
     }
    ],
    "tips": [
-    "Harajuku → Aoyama → Yoyogi : ~45 min de marche en plus, prévoir des pauses",
-    "Food trucks : montrer la carte d'allergie à chaque stand",
     "We Are The Farm : réserver en ligne à l'avance (dimanche soir très demandé) ; pas de Shibuya Yokochō",
     "Retour : ligne Ginza Shibuya → Akasaka-mitsuke (~10 min)",
     "S'il pleut : pas de danseurs, plus de temps sur Cat Street puis Shibuya",
@@ -1234,7 +1246,12 @@
      "place": "toshogu"
     },
     {
-     "txt": "Futarasan et Taiyūin",
+     "txt": "Futarasan-jinja",
+     "place": "futarasan"
+    },
+    {
+     "t": "option",
+     "txt": "Taiyūin, seulement si vous avez vraiment de l'avance",
      "place": "futarasan"
     },
     {
@@ -1254,6 +1271,7 @@
    "tips": [
     "⚠ Bus Tobu : vérifier impérativement les horaires exacts sur place (gare de Tobu-Nikko à l'arrivée, puis à l'hôtel pour le retour). Les grilles d'automne peuvent être ajustées et la route d'Irohazaka est très encombrée en saison des momiji.",
     "⚠ Piège de l'Irohazaka : fin octobre, c'est le pic du momiji en Oku-Nikko et la route est très congestionnée. La marge pour le Kegon 052 de 18h41 est correcte, mais soyez prêts à écourter Senjōgahara si le trafic est bloqué dès le début de l'après-midi. En pratique : vers 10h à Yudaki, regarder sur Google Maps si l'Irohazaka est déjà rouge en descente ; si oui, prendre le bus à Akanuma plutôt que de marcher jusqu'à Ryūzu, pour arriver plus tôt à Kegon.",
+    "Impératif du jour : le bus de 15h45 vers Yumoto ; Tōshō-gū prioritaire, Taiyūin en option",
     "World Heritage Pass : ne couvre pas le bus de Yumoto (~1 950 ¥ l'aller par adulte, Suica)",
     "Tōshō-gū ~9h–17h en octobre, dernière entrée ~16h30",
     "Grosses valises parties la veille au soir en Ta-Q-Bin : sac pour une nuit",
@@ -1663,7 +1681,7 @@
    "blocks": [
     {
      "t": "6:15",
-     "txt": "Départ : JR Nishiōji (~8 min à pied) → Kyoto (1 arrêt), puis JR Nara Line → Inari"
+     "txt": "Départ : Umekōji-Kyōtonishi (~10 min à pied) → Kyoto (1 arrêt), puis JR Nara Line → Inari"
     },
     {
      "t": "avant 7:00",
@@ -1687,11 +1705,6 @@
     {
      "txt": "Galeries manga de Teramachi",
      "place": "teramachi"
-    },
-    {
-     "t": "option",
-     "txt": "Kinkaku-ji, si vous êtes en forme (loin de Nishiki et de Gion)",
-     "place": "kinkakuji"
     },
     {
      "t": "soir",
@@ -1730,7 +1743,7 @@
    "blocks": [
     {
      "t": "6:50",
-     "txt": "Départ : JR Nishiōji (~8 min à pied) → Kyoto, puis JR Sagano → Saga-Arashiyama (~25 min)"
+     "txt": "Départ : Umekōji-Kyōtonishi (~10 min à pied), ligne Sagano directe → Saga-Arashiyama (~20 min)"
     },
     {
      "t": "7:30",
@@ -1773,8 +1786,22 @@
      "place": "resto-upits"
     },
     {
-     "t": "aprèm",
-     "txt": "Barque sur la rivière Ōi, ou Kimono Forest et bain de pieds à la gare Randen"
+     "t": "13:45",
+     "txt": "Kimono Forest à la gare Randen Arashiyama (~10 min)",
+     "place": "kimono-forest"
+    },
+    {
+     "t": "14:00",
+     "txt": "Tram Randen (une voiture, rétro) jusqu'au terminus Kitano-Hakubaichō (~20 min), puis taxi ~5 min (< 1 000 ¥)"
+    },
+    {
+     "t": "14:45",
+     "txt": "Kinkaku-ji, lumière de l'après-midi sur le pavillon (circuit ~45 min)",
+     "place": "kinkakuji"
+    },
+    {
+     "t": "16:00",
+     "txt": "Retour : taxi ou bus → JR Emmachi (~10 min), puis ligne Sagano → Kyoto (~10 min)"
     },
     {
      "t": "soir",
@@ -1804,11 +1831,10 @@
    ],
    "tips": [
     "JR Sagano Line → Saga-Arashiyama, 25 min, départ vers 7h",
-    "Retour vers 15h30 : Hankyu Arashiyama → Katsura → Kawaramachi, ou JR",
     "Monkey Park : sachets de pommes (pas de cacahuètes), se laver les mains",
-    "Si forte pluie : barque ou train Sagano Torokko à la place du Monkey Park",
     "Arashiyama bondé le midi : pas de gastronomique sans réservation",
-    "Pas de Kura Sushi côté gare : Sushi no Musashi Hachijō à la place"
+    "Pas de Kura Sushi côté gare : Sushi no Musashi Hachijō à la place",
+    "Tram Randen : payé à la Suica ; Kinkaku-ji ~500 ¥, 9h–17h"
    ]
   },
   {
@@ -4340,6 +4366,61 @@
    "infos": "1-7-26 Dōtonbori",
    "note": "Bouillon avec huile de sésame. Montrer la carte d'allergie en arrivant.",
    "link": "https://www.google.com/maps/place/?q=place_id:ChIJs0wJ7BTnAGARb7rarouI46o"
+  },
+  {
+   "id": "resto-kura-harajuku",
+   "name": "Kura Sushi Global Flagship Harajuku",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6691041,
+    139.7062187
+   ],
+   "desc": "Kaitenzushi géant décoré façon Japon pop, commande sur tablette, jeu Bikkura Pon toutes les 5 assiettes. Attente fréquente le midi : borne de tickets à l'entrée. Doublon : Kura Sushi aussi le 22 (plan B) et le 30.",
+   "infos": "4-31-10 Jingūmae, 4F · 11h–23h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJO6OiHe-NGGARQznWexQ1Lgg"
+  },
+  {
+   "id": "resto-maisen",
+   "name": "Tonkatsu Maisen Aoyama",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.667925,
+    139.7115365
+   ],
+   "desc": "Tonkatsu réputé dans un ancien bain public, porc très tendre, formules du midi avantageuses. Côté Omotesandō, ~10 min à pied de Takeshita. Doublon : tonkatsu aussi le 25 (Katsukura).",
+   "infos": "4-8-5 Jingūmae · 11h–21h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJa2mnui2NGGAR7z4tvWkl7HM"
+  },
+  {
+   "id": "resto-gyozaro",
+   "name": "Harajuku Gyozarō",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6675016,
+    139.7061026
+   ],
+   "desc": "Gyoza grillés ou bouillis préparés devant vous au comptoir en U, prix bas. File fréquente le dimanche midi, espèces uniquement. Doublon : gyoza aussi le 25 et le 29.",
+   "infos": "6-2-4 Jingūmae · 11h30–21h30 · espèces",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJF6tIb6SMGGAR2iuQeXjrMIs"
+  },
+  {
+   "id": "kimono-forest",
+   "name": "Kimono Forest (gare Randen Arashiyama)",
+   "city": "kyoto",
+   "cat": "balade",
+   "ll": [
+    35.0152682,
+    135.6783695
+   ],
+   "desc": "Allée de 600 piliers habillés de tissus kimono à la gare du tram Randen, avec un petit bassin aux vœux. Arrêt rapide avant le tram.",
+   "infos": "Gratuit · ouvert en permanence · ~10 min",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJMTtrxv-pAWAR6eEV1vOC2cY"
   }
  ],
  "todo": [

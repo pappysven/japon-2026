@@ -1268,7 +1268,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-08-0806";
+  window.VERSION = "2026-10-08-2049";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
