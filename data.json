@@ -1244,16 +1244,16 @@
     },
     {
      "t": "9:00",
-     "txt": "Tour du lac Yunoko jusqu'à la chute de Yudaki",
+     "txt": "À pied depuis l'hôtel : bord du lac Yunoko jusqu'à la chute de Yudaki (~2 km, ~40 min). Version courte : bus jusqu'à Yudaki-iriguchi",
      "place": "yunoko"
     },
     {
-     "t": "10:00",
-     "txt": "Senjōgahara : sentier sur pilotis jusqu'à Ryūzu (~2 h 30)",
+     "t": "9:45",
+     "txt": "Senjōgahara à pied : sentier sur pilotis de Yudaki jusqu'à Ryūzu (~6–7 km, ~2 h–2 h 30). Fatigue : bus aux arrêts Yudaki-iriguchi ou Akanuma",
      "place": "senjogahara"
     },
     {
-     "t": "12:45",
+     "t": "12:15",
      "txt": "Chutes de Ryūzu, déjeuner au salon de thé",
      "place": "ryuzu"
     },
@@ -1292,6 +1292,7 @@
    ],
    "tips": [
     "⚠ Bus Tobu : vérifier impérativement les horaires exacts sur place (gare de Tobu-Nikko à l'arrivée, puis à l'hôtel pour le retour). Les grilles d'automne peuvent être ajustées et la route d'Irohazaka est très encombrée en saison des momiji.",
+    "Fatigue : la route longe le sentier, prendre le bus vers Ryūzu ou Chūzenji aux arrêts Yudaki-iriguchi ou Akanuma",
     "Descente de l'Irohazaka : jusqu'à 2–4 h l'après-midi en saison, d'où le départ de Chūzenji à 14h30 au plus tard",
     "Plan B (pluie, fatigue) : bus Yumoto → Ryūzu au lieu de la marche",
     "Bus de montagne à la Suica, non couverts par le pass",
@@ -2560,7 +2561,8 @@
    ],
    "astuce": "Le salon de thé sert des dango et un thé chaud bienvenus après la montée.",
    "infos": "Gratuit · arrêt de bus Ryūzu-no-taki · compter 30 min",
-   "savez": "La cascade est le point de départ des plus beaux sentiers de randonnée du plateau de Senjōgahara, juste au-dessus."
+   "savez": "La cascade est le point de départ des plus beaux sentiers de randonnée du plateau de Senjōgahara, juste au-dessus.",
+   "walk": true
   },
   {
    "id": "yumoto",
@@ -3652,8 +3654,10 @@
    "cat": "nature",
    "q": "湯滝 日光",
    "desc": "Petit lac de montagne au pied de Yumoto Onsen, avec un sentier qui en fait le tour. À son extrémité sud, la chute de Yudaki dévale 70 m de roche en large voile, avec une plateforme d'observation au pied.",
-   "infos": "Gratuit · ~1 h à pied de l'hôtel jusqu'à Yudaki",
-   "wikiEn": "Lake Yunoko"
+   "infos": "Gratuit · bord du lac depuis l'hôtel jusqu'au haut de Yudaki : ~2 km, ~40 min · tour complet du lac : ~3 km, ~1 h",
+   "wikiEn": "Lake Yunoko",
+   "walk": true,
+   "astuce": "Version courte : quelques minutes au bord du lac devant le village, puis bus Yumoto Onsen → Yudaki-iriguchi (~5 min) et ~5–10 min à pied jusqu'au pied de la chute."
   },
   {
    "id": "senjogahara",
@@ -3664,8 +3668,9 @@
    "q": "戦場ヶ原 日光",
    "desc": "Ancien lac devenu un vaste plateau marécageux à 1 400 m, traversé par un sentier sur pilotis. Fin octobre, les herbes prennent des teintes dorées face au mont Nantai.",
    "infos": "Gratuit · sentier Yudaki → Ryūzu ~2 h 30, plat, ~7 km",
-   "astuce": "Plan B s'il pleut : bus Yumoto → Ryūzu avec arrêt à Akanuma.",
-   "wikiEn": "Senjōgahara"
+   "astuce": "Fatigue ou pluie : le sentier longe la route ; bus vers Ryūzu ou Chūzenji aux arrêts Yudaki-iriguchi ou Akanuma.",
+   "wikiEn": "Senjōgahara",
+   "walk": true
   }
  ],
  "todo": [

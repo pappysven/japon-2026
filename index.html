@@ -596,10 +596,11 @@ function maps(o){
   const dest = o.ll ? o.ll.join(",") : encodeURIComponent(o.q);
   return { apple:`https://maps.apple.com/?daddr=${dest}&dirflg=r`, google:`https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=transit` };
 }
-const placeTarget = p => p.ll ? {ll:p.ll} : {q: p.q || (p.name+" "+stage(p.city).name)};
+const placeTarget = p => ({...(p.ll ? {ll:p.ll} : {q: p.q || (p.name+" "+stage(p.city).name)}), walk: !!p.walk});
 const hotelTarget = h => ({q: h.addrJp || (h.name+", "+h.addr)});
 function goBtns(o, label="Y aller"){
   const m = maps(o);
+  if(o.walk){ m.apple = m.apple.replace("dirflg=r","dirflg=w"); m.google = m.google.replace("travelmode=transit","travelmode=walking"); }
   return `<a class="btn go" href="${m.apple}" target="_blank" rel="noopener">${I("pin")}${label}</a><a class="btn ghost" href="${m.google}" target="_blank" rel="noopener">Google</a>`;
 }
 
@@ -1267,7 +1268,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   if(!D){ $("#app").innerHTML = "<p>Données introuvables. Ouvre l'app une fois avec du réseau.</p>"; return; }
   const h = location.hash.slice(1); if(TABS.some(t=>t[0]===h)) tab = h;
   applyTheme();
-  window.VERSION = "2026-10-07-2112";
+  window.VERSION = "2026-10-08-0700";
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
