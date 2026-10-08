@@ -133,7 +133,7 @@
    "secret": "coco",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking",
-   "note": "Arrivée prévue 21h30–22h30 le 17 : check-in jusqu'à 22h, prévenir l'hôtel."
+   "note": "Enregistrement électronique : pas de limite d'heure d'arrivée. Conf. et code d'accès à saisir dans l'app."
   },
   {
    "id": "unwind",
@@ -159,7 +159,7 @@
    "addrJp": "東京都新宿区中里町30",
    "checkin": "15h–23h30",
    "checkout": "10h",
-   "note": "Arrivée ~21h30–22h le 21 (retour de Nikko) ; check-in jusqu'à 23h30. Valises envoyées en Ta-Q-Bin (accord demandé). ~5 min à pied de la station Kagurazaka (Tozai). Le 23 au soir : Ta-Q-Bin des valises vers Kyoto Compass.",
+   "note": "Confirmé avec l'hôtel : réception du Ta-Q-Bin le 21, arrivée tardive (~21h45) et envoi des valises vers Kyoto le 23. ~5 min à pied de la station Kagurazaka (Tozai).",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -189,7 +189,7 @@
    "checkout": "",
    "phone": "+81 75-204-3250",
    "email": "guesthouse.compass@gmail.com",
-   "note": "Arrivée prévue ~16h45 le 25 (Hikari 645). ~8 min à pied de la gare JR Nishiōji (1 arrêt de Kyoto Station). Taxi depuis Kyoto Station ~10 min (~1 000 ¥). Valises livrées par Ta-Q-Bin le 25 (accord à demander).",
+   "note": "Confirmé : réception des valises en Ta-Q-Bin le 25 et arrivée ~16h45 (Hikari 645). ~8 min à pied de JR Nishiōji (1 arrêt de Kyoto Station). Taxi depuis Kyoto Station ~10 min (~1 000 ¥).",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -814,6 +814,35 @@
    ]
   },
   {
+   "id": "taqbin-osaka",
+   "date": "2026-10-27",
+   "dep": "",
+   "arr": "",
+   "from": "Guesthouse Kyoto Compass",
+   "to": "ESLEAD Hotel Namba Kuromon",
+   "name": "(Option) Ta-Q-Bin valises Kyoto → ESLEAD Osaka",
+   "kind": "bagage",
+   "status": "faire",
+   "note": "Option : envoyer les valises le 27 au soir pour faire Nara (28) avec les sacs à dos ; livraison le 29, gardées par l'ESLEAD jusqu'à l'arrivée ~11h45. Sous réserve de la réponse de l'ESLEAD (e-mail envoyé).",
+   "buy": {
+    "summary": "Option : konbini près de Kyoto Compass (ou la guesthouse si elle le propose), le 27 au soir ; ~2 000–2 500 ¥ par valise.",
+    "inperson": {
+     "where": "Konbini partenaire Yamato près de la guesthouse (7-Eleven, FamilyMart).",
+     "hours": "Kyoto → Osaka : livraison le lendemain de l'enlèvement ; inscrire le 29 oct., créneau du matin.",
+     "steps": [
+      "Demander un bordereau Yamato (宅急便の伝票).",
+      "Destinataire : ESLEAD Hotel Namba Kuromon, 大阪府大阪市中央区高津3-8-29, à votre nom, arrivée le 29.",
+      "Date de livraison : 10月29日, créneau du matin.",
+      "Garder les reçus avec les numéros de suivi."
+     ]
+    },
+    "phrase": {
+     "jp": "このスーツケースを宅急便で大阪に送りたいです。\n届け先：エスリードホテル難波黒門\n大阪府大阪市中央区高津3-8-29\nお届け日は10月29日の午前でお願いします。",
+     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'ESLEAD Hotel Namba Kuromon (Kōzu 3-8-29, Osaka), avec une livraison le 29 octobre au matin."
+    }
+   }
+  },
+  {
    "id": "kintetsu-nara",
    "date": "2026-10-28",
    "dep": "",
@@ -1013,13 +1042,12 @@
     },
     {
      "t": "~22:00",
-     "txt": "Arrivée Coco Shuku Akasaka (check-in jusqu'à 22h), konbini du quartier"
+     "txt": "Arrivée Coco Shuku Akasaka (enregistrement électronique, sans limite d'heure), konbini du quartier"
     }
    ],
    "tips": [
     "Charger les Suica à l'aéroport ; carte enfant au guichet JR East avec les passeports (vérifier ses horaires)",
     "Visit Japan Web rempli avant le départ pour accélérer l'immigration",
-    "Check-in jusqu'à 22h : hôtel prévenu de l'arrivée tardive",
     "Premier achat au konbini avec la carte bancaire physique et le code : la banque voit que vous êtes au Japon"
    ]
   },
@@ -1683,7 +1711,7 @@
     },
     {
      "t": "option",
-     "txt": "Kinkaku-ji",
+     "txt": "Kinkaku-ji, si vous êtes en forme (loin de Nishiki et de Gion)",
      "place": "kinkakuji"
     },
     {
@@ -1700,11 +1728,6 @@
      "t": "19:00",
      "txt": "ou Sushi no Musashi Sanjō (kaitenzushi, ~10 min de Gion)",
      "place": "resto-musashi-sanjo"
-    },
-    {
-     "t": "19:00",
-     "txt": "ou Donguri (okonomiyaki, ouvre à 17h)",
-     "place": "resto-donguri"
     }
    ],
    "tips": [
@@ -1789,6 +1812,11 @@
      "t": "19:00",
      "txt": "ou Kyoto Ramen Kōji (gare, 10F)",
      "place": "ramen-koji"
+    },
+    {
+     "t": "option",
+     "txt": "Ta-Q-Bin des valises vers l'ESLEAD Osaka (livraison le 29) pour faire Nara en sacs à dos",
+     "transport": "taqbin-osaka"
     }
    ],
    "tips": [
@@ -1808,7 +1836,7 @@
    "blocks": [
     {
      "t": "9:15",
-     "txt": "Départ avec les valises en taxi vers Kyoto Station (~10 min)"
+     "txt": "Départ en taxi vers Kyoto Station (~10 min), avec les valises ou seulement les sacs à dos si l'option Ta-Q-Bin a été prise"
     },
     {
      "t": "9:30",
@@ -1817,7 +1845,7 @@
     },
     {
      "t": "~10:20",
-     "txt": "Valises à l'Onyado Nono, en face de la gare JR"
+     "txt": "Bagages à l'Onyado Nono, en face de la gare JR"
     },
     {
      "t": "10:45",
@@ -1903,7 +1931,7 @@
     },
     {
      "t": "~11:45",
-     "txt": "Dépôt des valises à l'ESLEAD (check-in à 15h)"
+     "txt": "ESLEAD : dépôt des bagages (ou récupération des valises du Ta-Q-Bin), check-in à 15h"
     },
     {
      "t": "12:00",
@@ -4338,14 +4366,6 @@
  ],
  "todo": [
   {
-   "id": "coco-late",
-   "txt": "Prévenir Coco Shuku : arrivée 21h30–22h30 le 17 (check-in jusqu'à 22h)"
-  },
-  {
-   "id": "vintage-mail",
-   "txt": "Hotel Vintage : réponse à l'e-mail (réception du Ta-Q-Bin le 21, arrivée possible après 22h)"
-  },
-  {
    "id": "skyliner",
    "txt": "Acheter l'e-ticket Skyliner (Keisei)"
   },
@@ -4370,16 +4390,8 @@
    "txt": "Acheter le Hakone Free Pass 2 jours (EMot)"
   },
   {
-   "id": "compass",
-   "txt": "Prévenir Kyoto Compass : arrivée ~16h45 le 25 oct"
-  },
-  {
    "id": "typhon",
    "txt": "Mi-octobre : état des routes de Nikko et Hakone (typhon Dujuan)"
-  },
-  {
-   "id": "toei",
-   "txt": "Calendrier du musée Toei pour le 22 oct"
   },
   {
    "id": "allergie",
@@ -4426,20 +4438,16 @@
    "txt": "Relever temporairement le plafond de paiement de la carte avant les gros achats"
   },
   {
-   "id": "annul-manyotei",
-   "txt": "Annuler le Hotel Manyotei (Booking) après confirmation de l'UNWIND Oku-Nikko"
-  },
-  {
    "id": "unwind-diner",
    "txt": "UNWIND Oku-Nikko : réserver dîner et petit-déjeuner, signaler l'allergie aux fruits à coque"
   },
   {
-   "id": "compass-taqbin",
-   "txt": "Kyoto Compass : accepter la réception des valises en Ta-Q-Bin le 25 (après-midi) ?"
-  },
-  {
    "id": "wearethefarm",
    "txt": "Réserver le dîner du dim. 18 oct. vers 19h chez We Are The Farm (Shibuya)"
+  },
+  {
+   "id": "eslead-mail",
+   "txt": "ESLEAD : réponse à l'e-mail (option réception des valises le 29, Ta-Q-Bin vers KIX le 30)"
   }
  ],
  "allergy": {
