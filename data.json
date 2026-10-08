@@ -215,9 +215,9 @@
    "to": "2026-11-01",
    "addr": "3-8-29 Kozu, Chuo-ku, Osaka",
    "addrJp": "大阪府大阪市中央区高津3-8-29",
-   "checkin": "15h",
+   "checkin": "16:00",
    "checkout": "10h",
-   "note": "Check-in à 15h : déposer les valises à la réception en arrivant vers 11h30 le 29 (garde avant check-in). 5 min à pied de Nippombashi, ~10–12 min de Nankai Namba par le marché Kuromon.",
+   "note": "Check-in à 16h, sans réception : enregistrement sur tablette (en ligne à l'avance), chambre ouverte par code. Consigne en libre-service dans le hall pour les bagages. Valises envoyées par Ta-Q-Bin : réceptionnées à l'ESLEAD Namba East (4-1-11 Nipponbashi, à confirmer avec l'hôtel). 5 min à pied de Nippombashi, ~10–12 min de Nankai Namba.",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   }
@@ -819,11 +819,11 @@
    "dep": "",
    "arr": "",
    "from": "Guesthouse Kyoto Compass",
-   "to": "ESLEAD Hotel Namba Kuromon",
+   "to": "ESLEAD Hotel Namba East (réception)",
    "name": "(Option) Ta-Q-Bin valises Kyoto → ESLEAD Osaka",
    "kind": "bagage",
    "status": "faire",
-   "note": "Option : envoyer les valises le 27 au soir pour faire Nara (28) avec les sacs à dos ; livraison le 29, gardées par l'ESLEAD jusqu'à l'arrivée ~11h45. Sous réserve de la réponse de l'ESLEAD (e-mail envoyé).",
+   "note": "Option : envoi le 27 au soir, livraison le 29 à l'ESLEAD Namba East (réception 24 h/24 ; l'ESLEAD Kuromon n'a pas de réception). Récupération à 16h, puis taxi ~5 min. Adresse à confirmer avec l'hôtel.",
    "buy": {
     "summary": "Option : konbini près de Kyoto Compass (ou la guesthouse si elle le propose), le 27 au soir ; ~2 000–2 500 ¥ par valise.",
     "inperson": {
@@ -831,14 +831,14 @@
      "hours": "Kyoto → Osaka : livraison le lendemain de l'enlèvement ; inscrire le 29 oct., créneau du matin.",
      "steps": [
       "Demander un bordereau Yamato (宅急便の伝票).",
-      "Destinataire : ESLEAD Hotel Namba Kuromon, 大阪府大阪市中央区高津3-8-29, à votre nom, arrivée le 29.",
+      "Destinataire : ESLEAD Hotel Namba East, 大阪府大阪市浪速区日本橋4-1-11, à votre nom, arrivée le 29.",
       "Date de livraison : 10月29日, créneau du matin.",
       "Garder les reçus avec les numéros de suivi."
      ]
     },
     "phrase": {
-     "jp": "このスーツケースを宅急便で大阪に送りたいです。\n届け先：エスリードホテル難波黒門\n大阪府大阪市中央区高津3-8-29\nお届け日は10月29日の午前でお願いします。",
-     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'ESLEAD Hotel Namba Kuromon (Kōzu 3-8-29, Osaka), avec une livraison le 29 octobre au matin."
+     "jp": "このスーツケースを宅急便で大阪に送りたいです。\n届け先：エスリードホテル難波イースト\n大阪府大阪市浪速区日本橋4-1-11\nお届け日は10月29日の午前でお願いします。",
+     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'ESLEAD Hotel Namba East (Nipponbashi 4-1-11, Osaka), avec une livraison le 29 octobre au matin."
     }
    }
   },
@@ -1676,7 +1676,7 @@
   {
    "date": "2026-10-26",
    "stage": "kyoto",
-   "title": "Fushimi Inari, Nishiki, Gion",
+   "title": "Fushimi Inari, Kiyomizu-dera, Nishiki, Gion",
    "hotel": "compass",
    "blocks": [
     {
@@ -1689,16 +1689,34 @@
      "place": "fushimi"
     },
     {
+     "t": "9:15",
+     "txt": "Keihan Fushimi-Inari → Kiyomizu-Gojō (~10 min), puis ~20 min de montée à pied"
+    },
+    {
+     "t": "10:00",
+     "txt": "Kiyomizu-dera",
+     "place": "kiyomizu"
+    },
+    {
+     "t": "11:15",
+     "txt": "Descente par Sannenzaka et Ninenzaka",
+     "place": "sannenzaka"
+    },
+    {
+     "txt": "Sanctuaire Yasaka",
+     "place": "yasaka"
+    },
+    {
      "txt": "Marché Nishiki",
      "place": "nishiki"
     },
     {
-     "t": "midi",
+     "t": "12:30",
      "txt": "Déjeuner assis près de Nishiki : Ippudo (ramen)",
      "place": "resto-ippudo-kyoto"
     },
     {
-     "t": "midi",
+     "t": "12:30",
      "txt": "ou CoCo Ichibanya (curry)",
      "place": "resto-coco-kyoto"
     },
@@ -1940,7 +1958,7 @@
     },
     {
      "t": "~11:45",
-     "txt": "ESLEAD : dépôt des bagages (ou récupération des valises du Ta-Q-Bin), check-in à 15h"
+     "txt": "Arrivée à Namba les mains vides (valises envoyées de Kyoto à l'ESLEAD Namba East) ; sinon, valises dans la consigne en libre-service de l'ESLEAD Kuromon"
     },
     {
      "t": "12:00",
@@ -1958,8 +1976,13 @@
      "place": "namba-yasaka"
     },
     {
-     "t": "17:00",
-     "txt": "Pause à l'hôtel"
+     "t": "16:00",
+     "txt": "Récupération des valises à l'ESLEAD Namba East, taxi ~5 min jusqu'à l'ESLEAD Kuromon, check-in avec le code",
+     "place": "eslead-east"
+    },
+    {
+     "t": "16:30",
+     "txt": "Installation à l'ESLEAD Kuromon, pause"
     },
     {
      "t": "18:45",
@@ -1991,7 +2014,8 @@
     "Kuromon : marché du matin et du midi, beaucoup d'échoppes ferment vers 16h–17h",
     "Street-food de Kuromon : montrer la carte d'allergie",
     "Passeport physique obligatoire pour la détaxe chez Joshin",
-    "Rendez-vous du soir dans le hall de l'hôtel, pas dans la foule de Dotonbori"
+    "Rendez-vous du soir dans le hall de l'hôtel, pas dans la foule de Dotonbori",
+    "ESLEAD Kuromon : check-in à 16h, sans réception (tablette, code d'entrée) ; s'enregistrer en ligne à l'avance"
    ]
   },
   {
@@ -4421,6 +4445,63 @@
    "desc": "Allée de 600 piliers habillés de tissus kimono à la gare du tram Randen, avec un petit bassin aux vœux. Arrêt rapide avant le tram.",
    "infos": "Gratuit · ouvert en permanence · ~10 min",
    "link": "https://www.google.com/maps/place/?q=place_id:ChIJMTtrxv-pAWAR6eEV1vOC2cY"
+  },
+  {
+   "id": "kiyomizu",
+   "name": "Kiyomizu-dera",
+   "jp": "清水寺",
+   "city": "kyoto",
+   "cat": "temple",
+   "ll": [
+    34.9948561,
+    135.7850463
+   ],
+   "desc": "Le grand temple de Kyoto sur la colline d'Higashiyama, célèbre pour sa terrasse en bois sur pilotis surplombant la forêt, et sa source Otowa aux trois filets d'eau.",
+   "infos": "~500 ¥ adulte · 6h–18h · compter 1 h",
+   "wikiEn": "Kiyomizu-dera"
+  },
+  {
+   "id": "sannenzaka",
+   "name": "Sannenzaka et Ninenzaka",
+   "jp": "三年坂・二年坂",
+   "city": "kyoto",
+   "cat": "balade",
+   "ll": [
+    34.9983989,
+    135.7808431
+   ],
+   "desc": "Ruelles pavées en pente bordées de maisons de bois traditionnelles, boutiques et salons de thé, qui descendent de Kiyomizu-dera vers Gion.",
+   "infos": "Accès libre · ~30 min en descendant",
+   "walk": true,
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJlwyrGNAIAWARNb5hUHdZruY"
+  },
+  {
+   "id": "yasaka",
+   "name": "Sanctuaire Yasaka",
+   "jp": "八坂神社",
+   "city": "kyoto",
+   "cat": "temple",
+   "ll": [
+    35.0036,
+    135.7785
+   ],
+   "desc": "Le sanctuaire de Gion, avec son portail vermillon au bout de Shijō-dōri et son pavillon de danse orné de lanternes.",
+   "infos": "Gratuit · ouvert en permanence",
+   "wikiEn": "Yasaka Shrine"
+  },
+  {
+   "id": "eslead-east",
+   "name": "ESLEAD Hotel Namba East (réception, valises)",
+   "jp": "エスリードホテル難波イースト",
+   "city": "osaka",
+   "cat": "hotel",
+   "ll": [
+    34.6602556,
+    135.5071735
+   ],
+   "desc": "Hôtel de la même chaîne, avec réception 24 h/24 : c'est ici que les valises envoyées de Kyoto sont réceptionnées (l'ESLEAD Kuromon n'a pas de réception).",
+   "infos": "4-1-11 Nipponbashi, Naniwa · tél. 06-6626-9380 · ~5 min en taxi de l'ESLEAD Kuromon",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJx8P3AE7nAGARi7HlffGWQFk"
   }
  ],
  "todo": [
@@ -4506,7 +4587,7 @@
   },
   {
    "id": "eslead-mail",
-   "txt": "ESLEAD : réponse à l'e-mail (option réception des valises le 29)"
+   "txt": "ESLEAD : confirmer l'adresse de réception des valises (ESLEAD Namba East) et s'enregistrer en ligne avant le 29"
   },
   {
    "id": "diner-31",
