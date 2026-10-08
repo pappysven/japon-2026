@@ -931,36 +931,6 @@
    ]
   },
   {
-   "id": "taqbin",
-   "date": "2026-10-30",
-   "dep": "",
-   "arr": "",
-   "from": "ESLEAD Namba",
-   "to": "Comptoir Yamato KIX T1",
-   "name": "Ta-Q-Bin valises → aéroport",
-   "kind": "bagage",
-   "status": "faire",
-   "note": "Dernier délai : déposer à la réception avant 12h et confirmer le jour de livraison et le comptoir de retrait à KIX. Garder un sac pour les deux dernières nuits.",
-   "link": "https://www.global-yamato.com/en/hands-free-travel/",
-   "linkLabel": "Yamato",
-   "buy": {
-    "summary": "À la réception de l'hôtel, la veille ou le matin avant 12h.",
-    "inperson": {
-     "where": "Réception de l'ESLEAD HOTEL Namba Kuromon (ou un konbini avec le logo chat noir Yamato).",
-     "hours": "Avant 12h le 30 oct. au plus tard.",
-     "steps": [
-      "Demander le formulaire Ta-Q-Bin aéroport ; remplir le n° de vol et l'heure de départ (9h00, 1er nov.).",
-      "Payer à la réception (~2 000 ¥ par valise selon la taille) et garder le reçu : il sert au retrait.",
-      "Retrait au comptoir Yamato du hall des départs, Terminal 1 de KIX."
-     ]
-    },
-    "phrase": {
-     "jp": "このスーツケースを宅急便で関西空港に送りたいです。\n11月1日の朝、第1ターミナルで受け取ります。\nフライトは9時発です。",
-     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à l'aéroport du Kansai. Nous les récupérerons le 1er novembre au matin au Terminal 1. Notre vol part à 9h."
-    }
-   }
-  },
-  {
    "id": "vol-retour",
    "date": "2026-11-01",
    "dep": "09:00",
@@ -1019,7 +989,7 @@
      "k": "walk",
      "t": "Kansai Airport : Terminal 1",
      "jp": "関西空港 第1ターミナル",
-     "sub": "Comptoir Yamato (Ta-Q-Bin) dans le hall des départs."
+     "sub": "Enregistrement des valises au comptoir de la compagnie."
     }
    ]
   }
@@ -1048,7 +1018,9 @@
    "tips": [
     "Charger les Suica à l'aéroport ; carte enfant au guichet JR East avec les passeports (vérifier ses horaires)",
     "Visit Japan Web rempli avant le départ pour accélérer l'immigration",
-    "Premier achat au konbini avec la carte bancaire physique et le code : la banque voit que vous êtes au Japon"
+    "Premier achat au konbini avec la carte bancaire physique et le code : la banque voit que vous êtes au Japon",
+    "Restaurants de Narita fermés tôt : prendre de quoi manger au konbini de l'aéroport ou près de l'hôtel",
+    "Suica enfant : le guichet JR East de Narita peut être fermé après 19h ; sinon, l'acheter le 18 dans une grande gare JR (plein tarif pour l'enfant le 17)"
    ]
   },
   {
@@ -1469,6 +1441,10 @@
     {
      "t": "21:45",
      "txt": "Retour : Higashi-Shinjuku → Ushigome-Kagurazaka (Oedo, ~8 min)"
+    },
+    {
+     "t": "option",
+     "txt": "Lessive : machines de l'hôtel ou laverie du quartier (sinon le 26 à Kyoto)"
     }
    ],
    "tips": [
@@ -1487,12 +1463,12 @@
    "hotel": "vintage",
    "blocks": [
     {
-     "t": "7:10",
+     "t": "7:30",
      "txt": "Départ de l'hôtel : station Kagurazaka, Tozai puis ligne Ginza → Asakusa (~30 min)"
     },
     {
-     "t": "avant 8:00",
-     "txt": "Sensō-ji avant la foule",
+     "t": "~8:00",
+     "txt": "Sensō-ji, tôt avant la foule",
      "place": "sensoji"
     },
     {
@@ -1564,12 +1540,12 @@
      "place": "hakone-jinja"
     },
     {
-     "t": "14:00",
-     "txt": "Bateau pirate depuis le port de Moto-Hakone → Tōgendai",
+     "t": "13:30",
+     "txt": "Bateau pirate depuis le port de Moto-Hakone → Tōgendai (partir tôt : files au téléphérique le samedi)",
      "place": "hakone-cruise"
     },
     {
-     "t": "14:45",
+     "t": "14:15",
      "txt": "Téléphérique → Owakudani (œufs noirs) → Sōunzan → funiculaire",
      "place": "owakudani"
     },
@@ -1597,7 +1573,8 @@
     "Voyage léger : sacs à dos seulement, plus de service bagages à Hakone-Yumoto",
     "Derniers bateaux et téléphériques vers 16h–16h30",
     "Téléphérique sensible au vent et au gaz : vérifier la veille",
-    "Restaurants de Gora fermés tôt : dîner à l'hôtel le plus simple"
+    "Restaurants de Gora fermés tôt : dîner à l'hôtel le plus simple",
+    "Plan B si le téléphérique est fermé (vent, gaz volcanique) : bus de remplacement entre Tōgendai et Sōunzan, ou bus Tōgendai → Gora ; vérifier la veille"
    ],
    "wx": {
     "ll": [
@@ -1728,6 +1705,10 @@
      "t": "19:00",
      "txt": "ou Sushi no Musashi Sanjō (kaitenzushi, ~10 min de Gion)",
      "place": "resto-musashi-sanjo"
+    },
+    {
+     "t": "option",
+     "txt": "Lessive à Kyoto Compass ou dans une laverie proche (si pas faite le 22)"
     }
    ],
    "tips": [
@@ -1992,11 +1973,6 @@
    "hotel": "eslead",
    "blocks": [
     {
-     "t": "9:00",
-     "txt": "Ta-Q-Bin des valises vers KIX à la réception (avant 12h)",
-     "transport": "taqbin"
-    },
-    {
      "t": "9:15",
      "txt": "Départ : Nippombashi (~5 min à pied), métro → Tanimachi 4-chome"
     },
@@ -2047,7 +2023,6 @@
     }
    ],
    "tips": [
-    "Ta-Q-Bin : à la réception avant 12h, garder un sac pour 2 nuits",
     "Transports à la Suica (~3 trajets) ; pass journée Enjoy Eco Card (820 ¥) seulement si vous ajoutez des trajets",
     "Shinsekai → Shinsaibashi : métro Midosuji depuis Dobutsuen-mae, ou Nankai Shin-Imamiya → Namba",
     "Kushikatsu : une seule trempette dans la sauce commune ; carte d'allergie",
@@ -2134,7 +2109,7 @@
     "Illuminations de Midōsuji : seulement à partir du 3 novembre",
     "Yakiniku : viandes au sel (shio), sans marinade ; carte d'allergie",
     "Cafés indépendants : vigilance sur les pâtisseries (fruits à coque)",
-    "Préparer le sac : passeports, sac détaxe scellé, reçu Ta-Q-Bin ; Suica rechargées",
+    "Préparer le sac : passeports, sac détaxe scellé ; Suica rechargées",
     "Vérifier l'horaire du premier Nankai Airport Express de dimanche"
    ]
   },
@@ -2150,7 +2125,7 @@
     },
     {
      "t": "4:55",
-     "txt": "Départ de l'hôtel à pied vers Nankai Namba (~10–12 min par Kuromon), ou taxi"
+     "txt": "Départ de l'hôtel en taxi avec les valises → Nankai Namba (~5 min)"
     },
     {
      "t": "~5:15",
@@ -2159,7 +2134,7 @@
     },
     {
      "t": "6:30",
-     "txt": "KIX : récupérer les valises au comptoir Yamato"
+     "txt": "Arrivée à KIX, enregistrement des valises"
     },
     {
      "txt": "Douane détaxe : passeport + sac scellé"
@@ -2172,7 +2147,8 @@
    ],
    "tips": [
     "Ne pas ouvrir le sac détaxe scellé avant l'aéroport",
-    "Vider les Suica à KIX : « Suica, and the rest in cash » au konbini, ou distributeurs de boissons"
+    "Vider les Suica à KIX : « Suica, and the rest in cash » au konbini, ou distributeurs de boissons",
+    "Taxi à réserver la veille à la réception de l'ESLEAD pour 4h55"
    ]
   }
  ],
@@ -4419,7 +4395,7 @@
   },
   {
    "id": "nankai-first",
-   "txt": "Vérifier le 1er Nankai du dim. 1er nov. et les horaires du comptoir Yamato de KIX"
+   "txt": "Vérifier le 1er Nankai Airport Express du dim. 1er nov. et réserver le taxi de 4h55"
   },
   {
    "id": "films",
@@ -4447,7 +4423,23 @@
   },
   {
    "id": "eslead-mail",
-   "txt": "ESLEAD : réponse à l'e-mail (option réception des valises le 29, Ta-Q-Bin vers KIX le 30)"
+   "txt": "ESLEAD : réponse à l'e-mail (option réception des valises le 29)"
+  },
+  {
+   "id": "diner-31",
+   "txt": "Réserver le dîner du sam. 31 oct. : Aburiya Sennichimae ou Matsusakagyū Yakiniku M"
+  },
+  {
+   "id": "esim",
+   "txt": "eSIM ou forfait data pour au moins deux téléphones (et Gaspard s'il a un téléphone)"
+  },
+  {
+   "id": "allergie-print",
+   "txt": "Imprimer plusieurs cartes d'allergie (une par adulte, une dans le sac des enfants)"
+  },
+  {
+   "id": "batteries",
+   "txt": "Batteries externes : à garder sur soi en avion (pas dans le coffre à bagages)"
   }
  ],
  "allergy": {
