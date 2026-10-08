@@ -159,7 +159,7 @@
    "addrJp": "東京都新宿区中里町30",
    "checkin": "15h–23h30",
    "checkout": "10h",
-   "note": "Arrivée ~21h30–22h le 21 (retour de Nikko) ; check-in jusqu'à 23h30. Valises envoyées en Ta-Q-Bin (accord demandé). ~5 min à pied de la station Kagurazaka (Tozai).",
+   "note": "Arrivée ~21h30–22h le 21 (retour de Nikko) ; check-in jusqu'à 23h30. Valises envoyées en Ta-Q-Bin (accord demandé). ~5 min à pied de la station Kagurazaka (Tozai). Le 23 au soir : Ta-Q-Bin des valises vers Kyoto Compass.",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -173,7 +173,7 @@
    "addrJp": "神奈川県足柄下郡箱根町強羅1320-179",
    "checkin": "~16h",
    "checkout": "7h–10h",
-   "note": "1 min de la gare de Gora. Demander à garder les valises jusqu'à ~12h30 le 25.",
+   "note": "1 min de la gare de Gora. Sacs à dos seulement (valises envoyées vers Kyoto). Restaurant au rez-de-chaussée.",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -189,7 +189,7 @@
    "checkout": "",
    "phone": "+81 75-204-3250",
    "email": "guesthouse.compass@gmail.com",
-   "note": "Arrivée prévue ~16h45 le 25 (Hikari 645). ~8 min à pied de la gare JR Nishiōji (1 arrêt de Kyoto Station, ~3 min). Taxi depuis Kyoto Station ~10 min (~1 000 ¥) ; 4 personnes + valises : jumbo taxi, sortie Hachijō.",
+   "note": "Arrivée prévue ~16h45 le 25 (Hikari 645). ~8 min à pied de la gare JR Nishiōji (1 arrêt de Kyoto Station). Taxi depuis Kyoto Station ~10 min (~1 000 ¥). Valises livrées par Ta-Q-Bin le 25 (accord à demander).",
    "link": "https://secure.booking.com/myreservations.html",
    "linkLabel": "Booking"
   },
@@ -581,6 +581,35 @@
    ]
   },
   {
+   "id": "taqbin-kyoto",
+   "date": "2026-10-23",
+   "dep": "",
+   "arr": "",
+   "from": "Hotel Vintage Kagurazaka",
+   "to": "Guesthouse Kyoto Compass",
+   "name": "Ta-Q-Bin valises → Kyoto Compass",
+   "kind": "bagage",
+   "status": "faire",
+   "note": "Envoi le 23 au soir (ou le 24 au matin) à la réception de l'Hotel Vintage, livraison le 25 l'après-midi. Seulement des sacs à dos pour Hakone. Kyoto Compass doit accepter la réception (à demander).",
+   "buy": {
+    "summary": "À la réception de l'Hotel Vintage le 23 au soir, sinon konbini voisin ; ~2 000–2 500 ¥ par valise.",
+    "inperson": {
+     "where": "Réception de l'Hotel Vintage Tokyo Kagurazaka (ou un konbini partenaire Yamato).",
+     "hours": "Tokyo → Kyoto : livraison en général le lendemain de l'enlèvement ; inscrire le 25 oct., créneau d'après-midi.",
+     "steps": [
+      "Demander un bordereau Yamato (宅急便の伝票).",
+      "Destinataire : Guesthouse Kyoto Compass, 京都市下京区西七条市部町115, à votre nom, arrivée le 25.",
+      "Date de livraison : 10月25日, créneau 14–16h.",
+      "Garder les reçus avec les numéros de suivi."
+     ]
+    },
+    "phrase": {
+     "jp": "このスーツケースを宅急便で京都に送りたいです。\n届け先：ゲストハウス京都コンパス\n京都市下京区西七条市部町115\nお届け日は10月25日の午後でお願いします。",
+     "fr": "Nous voudrions envoyer ces valises par Ta-Q-Bin à la Guesthouse Kyoto Compass, Nishi-Shichijō Ichibe-chō 115, avec une livraison le 25 octobre après-midi."
+    }
+   }
+  },
+  {
    "id": "romancecar",
    "date": "2026-10-24",
    "dep": "10:00",
@@ -602,7 +631,7 @@
     139.6995
    ],
    "secret": "romancecar",
-   "note": "Kagurazaka → Shinjuku ~10 min (JR depuis Iidabashi ou métro Oedo), plus 20–30 min pour traverser la gare avec les valises : gare Odakyu, sortie ouest. Être sur le quai vers 9h45. QR EMot + Free Pass ensemble aux portiques.",
+   "note": "Kagurazaka → Shinjuku ~10 min (JR depuis Iidabashi ou métro Oedo), plus 15–20 min pour traverser la gare : gare Odakyu, sortie ouest. Être sur le quai vers 9h45. QR EMot + Free Pass ensemble aux portiques.",
    "fromJp": "新宿",
    "toJp": "箱根湯本",
    "tags": [
@@ -616,7 +645,7 @@
    "steps": [
     {
      "k": "taxi",
-     "t": "Le plus simple avec les valises : taxi jusqu'à Shinjuku, sortie ouest",
+     "t": "Avec des sacs à dos : métro ou taxi jusqu'à Shinjuku, sortie ouest",
      "jp": "新宿駅西口 小田急線",
      "sub": "~15 à 20 min, environ 2 000 à 3 000 ¥ (estimation). Montrer « 新宿駅西口 小田急線 » au chauffeur."
     },
@@ -624,7 +653,7 @@
      "k": "train",
      "t": "Ou en métro : Tozai jusqu'à Takadanobaba, puis JR Yamanote jusqu'à Shinjuku",
      "jp": "神楽坂 → 高田馬場 → 新宿",
-     "sub": "~20 min avec un changement ; couloirs longs avec les valises."
+     "sub": "~20 min avec un changement ; couloirs longs."
     },
     {
      "k": "walk",
@@ -707,7 +736,7 @@
     139.1554
    ],
    "secret": "hikari",
-   "note": "Hikari, pas Nozomi (ne s'arrête pas à Odawara). Voiture 16 = 1er rang près de l'espace bagages. Valises ≤ 160 cm. Portiques marqués « QR » ; prendre le papier « Seat Information » et garder le QR pour la sortie à Kyoto.",
+   "note": "Hikari, pas Nozomi (ne s'arrête pas à Odawara). Voiture 16 = 1er rang près de l'espace bagages. Portiques marqués « QR » ; prendre le papier « Seat Information » et garder le QR pour la sortie à Kyoto.",
    "fromJp": "小田原",
    "toJp": "京都",
    "tags": [
@@ -728,7 +757,7 @@
      "k": "taxi",
      "t": "Kyoto : taxi sortie Hachijō (côté sud)",
      "jp": "京都駅 八条口",
-     "sub": "~10 min, ~1 000 ¥ ; jumbo taxi ou deux taxis pour 4 avec les valises."
+     "sub": "~10 min, ~1 000 ¥ ; un taxi pour 4 (valises déjà envoyées)."
     }
    ]
   },
@@ -1015,17 +1044,18 @@
      "place": "takeshita"
     },
     {
-     "t": "11:45",
-     "txt": "Déjeuner à Harajuku, pause (parc Yoyogi, café)"
+     "t": "12:30",
+     "txt": "Déjeuner à l'Aoyama Farmers Market (food trucks fermiers, en plein air), ~20 min à pied",
+     "place": "farmers-market"
     },
     {
-     "t": "14:30",
-     "txt": "Rockabillies à l'entrée Harajuku du parc Yoyogi (s'il fait beau)",
+     "t": "14:15",
+     "txt": "Retour vers l'entrée Harajuku du parc Yoyogi (~25 min) : rockabillies (s'il fait beau)",
      "place": "rockabilly"
     },
     {
-     "t": "15:15",
-     "txt": "Cat Street en descente : friperies d'Ura-Harajuku (Chicago, Kinji)",
+     "t": "15:00",
+     "txt": "Cat Street en descente vers Shibuya : friperies d'Ura-Harajuku",
      "place": "omotesando"
     },
     {
@@ -1050,21 +1080,22 @@
     },
     {
      "t": "19:00",
-     "txt": "Dîner à Shibuya (Center-gai ou Shibuya Yokochō)",
-     "place": "scramble"
+     "txt": "Dîner réservé : We Are The Farm (Shōtō, ~10 min à pied)",
+     "place": "resto-wearethefarm"
     },
     {
-     "t": "~20:00",
+     "t": "~20:30",
      "txt": "Retour à l'hôtel"
     }
    ],
    "tips": [
-    "Ligne Chiyoda → Meiji-Jingumae, départ vers 8h45",
+    "Harajuku → Aoyama → Yoyogi : ~45 min de marche en plus, prévoir des pauses",
+    "Food trucks : montrer la carte d'allergie à chaque stand",
+    "We Are The Farm : réserver en ligne à l'avance (dimanche soir très demandé) ; pas de Shibuya Yokochō",
     "Retour : ligne Ginza Shibuya → Akasaka-mitsuke (~10 min)",
     "S'il pleut : pas de danseurs, plus de temps sur Cat Street puis Shibuya",
-    "Nintendo Tokyo le dimanche : tickets numérotés possibles, en prendre un en arrivant",
-    "Hands Shibuya ferme définitivement le 15 nov : foule le dimanche",
-    "Fatigue : Don Quijote peut être reporté (Shinjuku le 22, Dotonbori à Osaka)"
+    "Nintendo Tokyo le dimanche : tickets numérotés possibles",
+    "Hands Shibuya ferme définitivement le 15 nov : foule le dimanche"
    ]
   },
   {
@@ -1314,7 +1345,7 @@
   {
    "date": "2026-10-22",
    "stage": "tokyo",
-   "title": "Palais, Toei, Ikebukuro, soirée Shinjuku",
+   "title": "Palais, ligne Chuo (Asagaya, Kōenji, Nakano), soirée Shinjuku",
    "hotel": "vintage",
    "blocks": [
     {
@@ -1323,26 +1354,44 @@
     },
     {
      "t": "9:00",
-     "txt": "Jardins Est du Palais impérial (pas Kitanomaru), repartir vers 10h30",
+     "txt": "Jardins Est du Palais impérial",
      "place": "east-gardens"
     },
     {
-     "t": "11:30",
-     "txt": "Musée Toei Animation (sans réservation)",
-     "place": "toei"
+     "t": "10:45",
+     "txt": "JR Chuo depuis la gare de Tokyo (à côté d'Otemachi) → Asagaya, ~25 min (le jeudi, les rapides s'y arrêtent)"
     },
     {
-     "t": "aprèm",
-     "txt": "Ikebukuro : déjeuner, Sunshine City, Pokémon Center, Animate",
-     "place": "sunshine"
+     "t": "11:15",
+     "txt": "Asagaya Pearl Center : galerie couverte, street-food, taiyaki",
+     "place": "asagaya-pearl"
     },
     {
-     "txt": "Gashapon no Depāto (Sunshine City 3F) : 3 000 machines, EXCEED RX-78-2",
-     "place": "gashapon-ikebukuro"
+     "txt": "Sanctuaire Asagaya Shinmeigū",
+     "place": "asagaya-shinmeigu"
     },
     {
-     "t": "17:30",
-     "txt": "Ikebukuro → Shinjuku (JR, ~5 min), sortie ouest"
+     "t": "12:45",
+     "txt": "Kōenji (1 arrêt) : friperies et déjeuner dans un petit restaurant sous les voies",
+     "place": "koenji"
+    },
+    {
+     "t": "14:30",
+     "txt": "Nakano Broadway (1 arrêt) : étages, Mandarake, maquettes",
+     "place": "nakano"
+    },
+    {
+     "txt": "Glaces géantes 8 parfums chez Daily Chiko (B1)",
+     "place": "daily-chiko"
+    },
+    {
+     "t": "option",
+     "txt": "Déjeuner tardif possible à Nakano : Chuka Soba Aoba, ou une famiresu (Gusto, Saizeriya)",
+     "place": "resto-aoba"
+    },
+    {
+     "t": "17:15",
+     "txt": "JR Chuo → Shinjuku (~5 min), sortie ouest"
     },
     {
      "t": "18:00",
@@ -1351,7 +1400,7 @@
     },
     {
      "t": "19:15",
-     "txt": "Balade Omoide Yokocho",
+     "txt": "Omoide Yokocho : balade photo et ambiance, sans y dîner",
      "place": "omoide"
     },
     {
@@ -1360,8 +1409,28 @@
      "place": "menya-musashi"
     },
     {
+     "t": "plan B",
+     "txt": "Si trop d'attente : Kura Sushi Nishi-Shinjuku (doublon avec le 30)",
+     "place": "resto-kura-shinjuku"
+    },
+    {
+     "t": "plan B",
+     "txt": "Torikizoku Sortie Sud (yakitori, tablette)",
+     "place": "resto-torikizoku"
+    },
+    {
+     "t": "plan B",
+     "txt": "Katsukura, Takashimaya Times Square 14F (doublon avec le 25)",
+     "place": "resto-katsukura-shinjuku"
+    },
+    {
+     "t": "plan B",
+     "txt": "Lumine Est 7–8F (restaurants variés, sampuru)",
+     "place": "lumine-est"
+    },
+    {
      "t": "21:00",
-     "txt": "Golden Gai et sanctuaire Hanazono, balade et photos",
+     "txt": "Golden Gai et sanctuaire Hanazono : balade et photos, sans y dîner",
      "place": "golden-gai"
     },
     {
@@ -1375,16 +1444,18 @@
     }
    ],
    "tips": [
-    "Kagurazaka → Otemachi : ligne Tozai directe, ~8 min",
-    "Otemachi → Ōizumi-Gakuen : Tozai, Iidabashi, puis Yurakucho/Seibu, ~45 min",
-    "Jardins Est fermés lundi et vendredi : jeudi OK",
-    "Menya Musashi : file possible au dîner, allergie à signaler"
+    "Jardins Est fermés lundi et vendredi : le jeudi est le seul jour possible",
+    "Ligne Chuo : les rapides s'arrêtent à Kōenji et Asagaya en semaine seulement",
+    "Nakano Broadway : boutiques ~12h–20h",
+    "Omoide Yokocho et Golden Gai : pas de dîner (étroit et enfumé pour les enfants) ; respecter les panneaux « No photo »",
+    "Menya Musashi : file possible ; plans B sans réservation (certains font doublon avec d'autres jours)",
+    "Ikebukuro retiré : gashapon EXCEED à Akihabara le 19 ou à Namba Parks le 31"
    ]
   },
   {
    "date": "2026-10-23",
    "stage": "tokyo",
-   "title": "Asakusa, Ginza, Shimokitazawa, Nakano",
+   "title": "Asakusa, Shimokitazawa",
    "hotel": "vintage",
    "blocks": [
     {
@@ -1406,32 +1477,34 @@
      "place": "chinya"
     },
     {
-     "t": "13:15",
-     "txt": "Arrêt à Ginza : Apple Ginza, Peak Design",
-     "place": "apple-ginza"
+     "t": "13:30",
+     "txt": "Asakusa → Shimokitazawa : ligne Ginza directe jusqu'à Shibuya (~33 min), puis Keio Inokashira (5 min)"
     },
     {
-     "t": "14:30",
-     "txt": "Shimokitazawa : friperies, disquaires, jouets rétro",
+     "t": "14:15",
+     "txt": "Shimokitazawa, sans se presser : friperies, disquaires, ruelles, jouets rétro",
      "place": "shimokitazawa"
     },
     {
      "t": "16:45",
-     "txt": "Nakano Broadway, Mandarake (boutiques jusqu'à 20h)",
-     "place": "nakano"
+     "txt": "Retour vers Kagurazaka (Odakyu → Shinjuku, puis JR Sōbu → Iidabashi, ~35 min)"
     },
     {
      "t": "soir",
-     "txt": "Dîner à Nakano (Sun Mall et ruelles), soirée calme"
+     "txt": "Dîner près de l'hôtel, soirée calme ; préparer les sacs à dos pour Hakone"
+    },
+    {
+     "t": "soir",
+     "txt": "Ta-Q-Bin des grosses valises vers Kyoto Compass (réception de l'hôtel), livraison le 25",
+     "transport": "taqbin-kyoto"
     }
    ],
    "tips": [
-    "Kagurazaka → Asakusa : Tozai puis Ginza, ~30 min, départ vers 7h15",
     "Chinya : 10 min de retard maximum, sinon la réservation peut être annulée",
-    "Asakusa → Ginza : ligne Ginza directe (~17 min) ; Apple Ginza ↔ Peak Design ~10 min à pied",
-    "Ginza → Shimokitazawa : ligne Ginza jusqu'à Shibuya (~16 min), puis Keio Inokashira (5 min)",
-    "Shimokitazawa → Nakano : Odakyu → Shinjuku, puis JR Chuo (~25 min) ; retour Tozai direct (~15 min)",
-    "Départ de l'hôtel à 9h demain (Romancecar 10h)"
+    "Plus de Ginza ni de Nakano ce jour-là (Nakano fait le 22)",
+    "Shimokitazawa : boutiques ~11h–20h, calme le vendredi",
+    "Ta-Q-Bin : si la réception est fermée le soir, envoi le 24 au matin avant 9h",
+    "Départ de l'hôtel à 9h demain, seulement avec des sacs à dos"
    ]
   },
   {
@@ -1442,7 +1515,7 @@
    "blocks": [
     {
      "t": "9:00",
-     "txt": "Départ de l'hôtel avec les valises, taxi → Shinjuku sortie ouest (~20 min)"
+     "txt": "Départ de l'hôtel avec les sacs à dos (valises parties vers Kyoto) : métro ou taxi → Shinjuku sortie ouest"
     },
     {
      "t": "9:45",
@@ -1452,11 +1525,6 @@
      "t": "10:00",
      "txt": "Romancecar → Hakone-Yumoto 11:21",
      "transport": "romancecar"
-    },
-    {
-     "t": "11:25",
-     "txt": "Valises au service bagages de Yumoto (avant 12h) → livrées au WPÜ après 15h",
-     "place": "yumoto"
     },
     {
      "t": "11:45",
@@ -1469,7 +1537,8 @@
     },
     {
      "t": "14:00",
-     "txt": "Bateau pirate → Tōgendai"
+     "txt": "Bateau pirate depuis le port de Moto-Hakone → Tōgendai",
+     "place": "hakone-cruise"
     },
     {
      "t": "14:45",
@@ -1479,12 +1548,28 @@
     {
      "t": "~16:00",
      "txt": "WPÜ Hotel, onsen"
+    },
+    {
+     "t": "19:00",
+     "txt": "Dîner (restaurants de Gora fermés vers 17h30–18h) : restaurant du WPÜ, option privilégiée",
+     "place": "resto-wpu"
+    },
+    {
+     "t": "19:00",
+     "txt": "ou Gora Brewery & Grill (faire réserver par la réception l'après-midi)",
+     "place": "resto-gora-brewery"
+    },
+    {
+     "t": "plan B",
+     "txt": "Pique-nique : Daily Yamazaki (bentos, karaage) dans les espaces communs",
+     "place": "konbini-gora"
     }
    ],
    "tips": [
-    "Plan B si comptoir bagages plein : Tozan → Gora avec les valises, boucle dans le sens normal",
+    "Voyage léger : sacs à dos seulement, plus de service bagages à Hakone-Yumoto",
     "Derniers bateaux et téléphériques vers 16h–16h30",
-    "Téléphérique sensible au vent et au gaz : vérifier la veille"
+    "Téléphérique sensible au vent et au gaz : vérifier la veille",
+    "Restaurants de Gora fermés tôt : dîner à l'hôtel le plus simple"
    ],
    "wx": {
     "ll": [
@@ -1511,11 +1596,11 @@
     },
     {
      "t": "12:15",
-     "txt": "Départ du WPÜ avec les valises (gare de Gora à 1 min)"
+     "txt": "Départ du WPÜ avec les sacs (gare de Gora à 1 min)"
     },
     {
      "t": "~12:30",
-     "txt": "Tozan Gora → Yumoto → Odawara avec les valises",
+     "txt": "Tozan Gora → Yumoto → Odawara",
      "transport": "gora-odawara"
     },
     {
@@ -1538,8 +1623,18 @@
     },
     {
      "t": "18:45",
-     "txt": "Dîner à Pontochō ou Kawaramachi (Kawaramachi plus simple en famille)",
-     "place": "kamo-pontocho"
+     "txt": "Dîner : Chao Chao Gyoza (y être vers 18h45)",
+     "place": "resto-chaochao"
+    },
+    {
+     "t": "18:45",
+     "txt": "ou Katsukura Sanjō Honten (tonkatsu)",
+     "place": "resto-katsukura-kyoto"
+    },
+    {
+     "t": "18:45",
+     "txt": "ou Takashimaya Kyoto 7F, étage restaurants (zéro stress)",
+     "place": "takashimaya-kyoto"
     },
     {
      "t": "~20:30",
@@ -1547,8 +1642,10 @@
     }
    ],
    "tips": [
-    "Prévenir Kyoto Compass de l'arrivée ~16h45",
-    "Nozomi ne s'arrête pas à Odawara"
+    "Voyage léger jusqu'à Kyoto : les valises arrivent par Ta-Q-Bin à la guesthouse",
+    "Nozomi ne s'arrête pas à Odawara",
+    "Éviter Pontochō avec les enfants (petit, cher) : Kawaramachi",
+    "Carte d'allergie à chaque restaurant"
    ]
   },
   {
@@ -1571,6 +1668,16 @@
      "place": "nishiki"
     },
     {
+     "t": "midi",
+     "txt": "Déjeuner assis près de Nishiki : Ippudo (ramen)",
+     "place": "resto-ippudo-kyoto"
+    },
+    {
+     "t": "midi",
+     "txt": "ou CoCo Ichibanya (curry)",
+     "place": "resto-coco-kyoto"
+    },
+    {
      "txt": "Galeries manga de Teramachi",
      "place": "teramachi"
     },
@@ -1583,13 +1690,30 @@
      "t": "soir",
      "txt": "Gion, Hanamikoji",
      "place": "gion"
+    },
+    {
+     "t": "19:00",
+     "txt": "Dîner : Issen Yoshoku (crêpe salée, mannequins)",
+     "place": "resto-issen"
+    },
+    {
+     "t": "19:00",
+     "txt": "ou Sushi no Musashi Sanjō (kaitenzushi, ~10 min de Gion)",
+     "place": "resto-musashi-sanjo"
+    },
+    {
+     "t": "19:00",
+     "txt": "ou Donguri (okonomiyaki, ouvre à 17h)",
+     "place": "resto-donguri"
     }
    ],
    "tips": [
     "Départ vers 6h ; Fushimi Inari → Gion : train Keihan jusqu'à Gion-Shijo (~15 min)",
     "Pas de pass bus à 700 ¥ : Suica (bus 230 ¥, on paie en descendant) ou Subway & Bus 1-Day Pass 1 100 ¥ / 550 ¥",
     "En saison des feuillages, le train est plus fiable que le bus",
-    "Glace matcha à la feuille d'or"
+    "Glace matcha à la feuille d'or",
+    "Nishiki : se méfier de la street-food avec l'allergie, préférer un repas assis",
+    "Gion : cher et difficile sans réservation en famille, dîner en bordure"
    ]
   },
   {
@@ -1633,6 +1757,16 @@
      "place": "togetsukyo"
     },
     {
+     "t": "12:30",
+     "txt": "Déjeuner : Ozuru (udon, rue principale)",
+     "place": "resto-ozuru"
+    },
+    {
+     "t": "12:30",
+     "txt": "ou Upit's Burger (plan B occidental)",
+     "place": "resto-upits"
+    },
+    {
      "t": "aprèm",
      "txt": "Barque sur la rivière Ōi, ou Kimono Forest et bain de pieds à la gare Randen"
     },
@@ -1640,13 +1774,30 @@
      "t": "soir",
      "txt": "Yodobashi Kyoto : repérage des prix Gunpla",
      "place": "yodobashi-kyoto"
+    },
+    {
+     "t": "19:00",
+     "txt": "Dîner : étage restaurants de Yodobashi Kyoto",
+     "place": "resto-yodobashi-kyoto"
+    },
+    {
+     "t": "19:00",
+     "txt": "ou Sushi no Musashi Hachijō (gare ; doublon avec le 26)",
+     "place": "resto-musashi-hachijo"
+    },
+    {
+     "t": "19:00",
+     "txt": "ou Kyoto Ramen Kōji (gare, 10F)",
+     "place": "ramen-koji"
     }
    ],
    "tips": [
     "JR Sagano Line → Saga-Arashiyama, 25 min, départ vers 7h",
     "Retour vers 15h30 : Hankyu Arashiyama → Katsura → Kawaramachi, ou JR",
     "Monkey Park : sachets de pommes (pas de cacahuètes), se laver les mains",
-    "Si forte pluie : barque ou train Sagano Torokko à la place du Monkey Park"
+    "Si forte pluie : barque ou train Sagano Torokko à la place du Monkey Park",
+    "Arashiyama bondé le midi : pas de gastronomique sans réservation",
+    "Pas de Kura Sushi côté gare : Sushi no Musashi Hachijō à la place"
    ]
   },
   {
@@ -1680,7 +1831,13 @@
     },
     {
      "t": "12:30",
-     "txt": "Déjeuner"
+     "txt": "Déjeuner : Tonkatsu Ganko",
+     "place": "resto-ganko-nara"
+    },
+    {
+     "t": "12:30",
+     "txt": "ou Kamaiki (udon, près du Kōfuku-ji)",
+     "place": "resto-kamaiki"
     },
     {
      "t": "14:00",
@@ -1703,7 +1860,13 @@
     },
     {
      "t": "18:30",
-     "txt": "Dîner près de la gare (Nara ferme tôt)"
+     "txt": "Dîner léger : Yayoi-ken (gare JR, face à l'hôtel)",
+     "place": "resto-yayoiken-nara"
+    },
+    {
+     "t": "18:30",
+     "txt": "ou Kushikatsu Tanaka (takoyaki à faire soi-même, ~15–20 min à pied)",
+     "place": "resto-tanaka-nara"
     },
     {
      "t": "21:30",
@@ -1765,6 +1928,21 @@
      "t": "18:45",
      "txt": "Rendez-vous dans le hall de l'hôtel, puis Dotonbori à pied",
      "place": "dotonbori"
+    },
+    {
+     "t": "19:00",
+     "txt": "Dîner : Bikkuri Donkey (hamburg steak)",
+     "place": "resto-bikkuri"
+    },
+    {
+     "t": "19:00",
+     "txt": "ou Osaka Ohsho (gyoza ; doublon avec le 25)",
+     "place": "resto-ohsho"
+    },
+    {
+     "t": "19:00",
+     "txt": "ou Kinryu Ramen (dragon géant, tatami)",
+     "place": "resto-kinryu"
     },
     {
      "t": "option",
@@ -3671,6 +3849,491 @@
    "astuce": "Fatigue ou pluie : le sentier longe la route ; bus vers Ryūzu ou Chūzenji aux arrêts Yudaki-iriguchi ou Akanuma.",
    "wikiEn": "Senjōgahara",
    "walk": true
+  },
+  {
+   "id": "farmers-market",
+   "name": "Aoyama Farmers Market (UNU)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6620878,
+    139.7084847
+   ],
+   "desc": "Marché fermier du week-end sur le parvis de l'Université des Nations unies : producteurs, artisans et quelques food trucks.",
+   "infos": "5-53-70 Jingūmae · samedi et dimanche 10h–16h",
+   "note": "Food trucks : montrer la carte d'allergie à chaque stand (certains utilisent fruits à coque, granola, sauces).",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJrS7fZF-LGGARVKU57aWmRKM"
+  },
+  {
+   "id": "resto-wearethefarm",
+   "name": "We Are The Farm (Shibuya)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6595467,
+    139.6939877
+   ],
+   "desc": "Cuisine « de la ferme à la table » : légumes sans pesticides récoltés le matin, viandes simples. Personnel parlant anglais.",
+   "infos": "1-28-11 Shōtō, Pigeon Takada Bldg 1F · 17h–23h · tél. 050-5385-3480",
+   "note": "Réservation en ligne indispensable (dimanche soir très demandé). Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJtwyMq6uMGGARS9gpLPzskoM"
+  },
+  {
+   "id": "asagaya-pearl",
+   "name": "Asagaya Pearl Center",
+   "city": "tokyo",
+   "cat": "balade",
+   "ll": [
+    35.704656,
+    139.6367897
+   ],
+   "desc": "Longue galerie marchande couverte de quartier : petites boutiques, street-food, taiyaki. Un Tokyo résidentiel et authentique.",
+   "infos": "1-36-7 Asagayaminami · sortie sud de la gare JR Asagaya",
+   "note": "Street-food : montrer la carte d'allergie à chaque stand.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJ8_WmNnHyGGARY2Wl4h8qMrc"
+  },
+  {
+   "id": "asagaya-shinmeigu",
+   "name": "Sanctuaire Asagaya Shinmeigū",
+   "city": "tokyo",
+   "cat": "temple",
+   "ll": [
+    35.7075595,
+    139.6369274
+   ],
+   "desc": "Sanctuaire paisible et verdoyant, réputé pour ses bracelets porte-bonheur et ses goshuin brodés.",
+   "infos": "1-25-5 Asagayakita · bureau 9h–17h · ~5 min de la gare",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJhcrJJXbyGGARPi_PgHeQshg"
+  },
+  {
+   "id": "koenji",
+   "name": "Kōenji (friperies, déjeuner sous les voies)",
+   "jp": "高円寺",
+   "city": "tokyo",
+   "cat": "shopping",
+   "q": "高円寺駅",
+   "desc": "Quartier vintage et rock : friperies pointues, disquaires, petits restaurants sous les voies ferrées de la ligne Chuo.",
+   "infos": "À 1 arrêt d'Asagaya et de Nakano · boutiques ~12h–20h",
+   "note": "Montrer la carte d'allergie en arrivant."
+  },
+  {
+   "id": "daily-chiko",
+   "name": "Daily Chiko (glaces 8 parfums)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.7092475,
+    139.6656524
+   ],
+   "desc": "Au sous-sol de Nakano Broadway : la glace à l'italienne à 8 étages de parfums (fraise, café, lait, chocolat, matcha, banane, raisin, ramune).",
+   "infos": "Nakano Broadway B1 · 10h–20h · ~930 ¥ la grande",
+   "note": "Allergie : un parfum pistache existe parfois ; demander et montrer la carte.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJ0Zw0SZfyGGARc4Hv5eKPvqM"
+  },
+  {
+   "id": "resto-aoba",
+   "name": "Chuka Soba Aoba (Nakano)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.7079939,
+    139.6664706
+   ],
+   "desc": "Pionnier du ramen à double bouillon, tickets au distributeur. Option de déjeuner tardif à Nakano.",
+   "infos": "5-58-1 Nakano · 10h30–21h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJ8XASJ5fyGGARObScOgTBwqw"
+  },
+  {
+   "id": "resto-kura-shinjuku",
+   "name": "Kura Sushi Nishi-Shinjuku (plan B)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6944776,
+    139.6990748
+   ],
+   "desc": "Kaitenzushi automatisé, commande sur écran, jeu Bikkura Pon toutes les 5 assiettes. Doublon : Kura Sushi aussi le 30 à Dotonbori.",
+   "infos": "7-1-7 Nishi-Shinjuku, Daikan Plaza A 2F · 11h–minuit",
+   "note": "Ce n'est pas un « Global Flagship ». Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJMY8E3oeNGGARx-CLFEBcspU"
+  },
+  {
+   "id": "resto-torikizoku",
+   "name": "Torikizoku Shinjuku Sortie Sud (plan B)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6892842,
+    139.7025048
+   ],
+   "desc": "Izakaya yakitori à prix unique, commande sur tablette. Ambiance animée, attente fréquente le soir.",
+   "infos": "4-1-13 Shinjuku 9F · 16h–4h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJ5bRxldqMGGARDMIc1GJVsKc"
+  },
+  {
+   "id": "resto-katsukura-shinjuku",
+   "name": "Tonkatsu Katsukura, Takashimaya Times Square (plan B)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6876313,
+    139.7021224
+   ],
+   "desc": "Tonkatsu, sésame à moudre à table, riz, soupe et chou à volonté ; attente sur chaises. Doublon : Katsukura aussi le 25 à Kyoto.",
+   "infos": "Times Square Building 14F, 5-24-2 Sendagaya",
+   "note": "Sésame à table (graine, pas fruit à coque). Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJxeqRsdqMGGARy6m80_WcWLw"
+  },
+  {
+   "id": "lumine-est",
+   "name": "Lumine Est, étages restaurants 7–8F (plan B)",
+   "city": "tokyo",
+   "cat": "resto",
+   "ll": [
+    35.6912505,
+    139.7011419
+   ],
+   "desc": "Au-dessus de la gare de Shinjuku : nombreux restaurants variés, plats en résine (sampuru) en vitrine pour choisir facilement.",
+   "infos": "3-38-1 Shinjuku · jusqu'à ~21h–22h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJ_TibA9qMGGARNYmVIFyGU9k"
+  },
+  {
+   "id": "hakone-cruise",
+   "name": "Bateau pirate, port de Moto-Hakone",
+   "jp": "元箱根港",
+   "city": "hakone",
+   "cat": "transport",
+   "q": "元箱根港 箱根観光船",
+   "walk": true,
+   "desc": "Embarcadère du Hakone Sightseeing Cruise (bateaux pirates) à Moto-Hakone, près du torii du sanctuaire. Traversée du lac Ashi jusqu'à Tōgendai, ~30–40 min.",
+   "infos": "Inclus dans le Hakone Free Pass · derniers départs vers 16h–16h30",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJuSzGc2mYGWARcHDoWGHTLws",
+   "note": "Bouton « Y aller » vers l'embarcadère de Moto-Hakone."
+  },
+  {
+   "id": "resto-wpu",
+   "name": "Restaurant du WPÜ Hotel (rez-de-chaussée)",
+   "city": "hakone",
+   "cat": "resto",
+   "ll": [
+    35.251053,
+    139.0476858
+   ],
+   "desc": "Restaurant de l'hôtel, cuisine accessible, personnel anglophone : l'option zéro fatigue après l'onsen.",
+   "infos": "Samedi jusqu'à 22h (horaires de l'établissement) · dans l'hôtel",
+   "note": "Option privilégiée. Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJPYiJbi-hGWARfqtEqU8xelc"
+  },
+  {
+   "id": "resto-gora-brewery",
+   "name": "Gora Brewery & Grill",
+   "city": "hakone",
+   "cat": "resto",
+   "ll": [
+    35.2475519,
+    139.0464277
+   ],
+   "desc": "Brasserie artisanale chic, viandes grillées, bain de pieds dans le jardin. Une boisson par personne demandée.",
+   "infos": "1300-72 Gōra · 13h–21h · ~5 min à pied",
+   "note": "Faire réserver par la réception du WPÜ dans l'après-midi. Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJQxbH_wGiGWAR4yjosTVcEfg"
+  },
+  {
+   "id": "konbini-gora",
+   "name": "Daily Yamazaki Gora (plan B pique-nique)",
+   "city": "hakone",
+   "cat": "shopping",
+   "ll": [
+    35.248634,
+    139.046237
+   ],
+   "desc": "Konbini à ~5 min de l'hôtel : onigiri, karaage, bentos, à manger dans les espaces communs du WPÜ.",
+   "infos": "1300-556 Gōra · 7h–22h",
+   "note": "Lire les étiquettes : demander si besoin.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJoUhyS_-hGWARCTHrrqZ7gc0"
+  },
+  {
+   "id": "resto-chaochao",
+   "name": "Chao Chao Gyoza (Sanjō-Kiyamachi)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0084706,
+    135.7705683
+   ],
+   "desc": "Institution du gyoza, service très enjoué, menu visuel. Doublon : gyoza aussi le 29 (Osaka Ohsho).",
+   "infos": "117 Ishiyachō, Nakagyō · dimanche 12h–23h · y être vers 18h45",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJp_hFTpMIAWARV2uDmrqPBCo"
+  },
+  {
+   "id": "resto-katsukura-kyoto",
+   "name": "Katsukura Sanjō Honten (tonkatsu)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0088672,
+    135.7677105
+   ],
+   "desc": "Maison mère de Katsukura, dans une ruelle : sésame à moudre, riz, soupe et chou à volonté, menu anglais. Doublon : Katsukura en plan B le 22.",
+   "infos": "Sanjō-dōri Teramachi · 11h–20h30",
+   "note": "Sésame à table (graine, pas fruit à coque). Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJVVXJS5IIAWARFaVO44YN2fw"
+  },
+  {
+   "id": "takashimaya-kyoto",
+   "name": "Takashimaya Kyoto, étage restaurants (7F)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0031004,
+    135.7684962
+   ],
+   "desc": "Étage des restaurants du grand magasin : sushis, tempura, etc., plats en résine en vitrine, attente assise. Option zéro stress.",
+   "infos": "52 Shinchō, Shijō-Kawaramachi",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJwzqJepUIAWARvlUYqigZpJI"
+  },
+  {
+   "id": "resto-ippudo-kyoto",
+   "name": "Ippudo Shijō-Karasuma (ramen)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0034894,
+    135.7608678
+   ],
+   "desc": "Ramen classique et rapide, menu anglais au distributeur.",
+   "infos": "Sous-sol, Naginatabokochō 31 · 11h–22h · ~10 min à pied de Nishiki",
+   "note": "Pas de boutique Ippudo trouvée à Nishiki-kōji : celle-ci est la plus proche. Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJNTeaOuAJAWARDg6NZGKvGIc"
+  },
+  {
+   "id": "resto-coco-kyoto",
+   "name": "CoCo Ichibanya Kawaramachi-Sanjō (curry)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0082607,
+    135.7692321
+   ],
+   "desc": "Curry japonais personnalisable (épices, portion, garnitures), commande en anglais sur écran.",
+   "infos": "Daikokuchō 51 · 11h–23h",
+   "note": "CoCo Ichibanya publie un tableau des allergènes : le consulter. Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJq6q2cpMIAWARHPoOchrxYPY"
+  },
+  {
+   "id": "resto-issen",
+   "name": "Issen Yoshoku (Gion)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0040157,
+    135.7731872
+   ],
+   "desc": "Institution décalée de Gion (mannequins à table, décor rétro) : un seul plat, crêpe salée façon Kyoto.",
+   "infos": "238 Gionmachi Kitagawa · lundi 11h–1h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJK8DmiLYJAWAR8jY_lZ-1vaw"
+  },
+  {
+   "id": "resto-musashi-sanjo",
+   "name": "Sushi no Musashi Sanjō (kaitenzushi)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0089599,
+    135.7687833
+   ],
+   "desc": "Kaitenzushi familial et abordable, très apprécié. ~10 min à pied de Gion.",
+   "infos": "440 Ebisuchō, Nakagyō · 11h–21h20",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJE7K8AJMIAWARFvW9Xldtpbc"
+  },
+  {
+   "id": "resto-donguri",
+   "name": "Donguri (okonomiyaki)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0039068,
+    135.7665843
+   ],
+   "desc": "Okonomiyaki et negiyaki cuits sur plaque, prix raisonnables. Doublon : okonomiyaki aussi le 30 (Chibo).",
+   "infos": "Naramonochō, Shimogyō (Shijō) · ouvre à 17h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJI-P4dpwIAWARHMyAyrlmdaI"
+  },
+  {
+   "id": "resto-ozuru",
+   "name": "Ozuru (udon, Arashiyama)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.0174538,
+    135.6765752
+   ],
+   "desc": "Udon et tempura sur la rue principale, service rapide, grande salle sur deux étages.",
+   "infos": "22-4 Saga-Tenryūji · 10h30–19h30",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJP2OtV_-pAWAR_W1nzCA4vY0"
+  },
+  {
+   "id": "resto-upits",
+   "name": "Upit's Burger (Arashiyama)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    35.017395,
+    135.6810388
+   ],
+   "desc": "Burgers grillés à la commande, personnel anglophone : plan B occidental après le Monkey Park.",
+   "infos": "4-7 Saga-Tenryūji · 11h–20h · arriver avant midi pour éviter l'attente",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJfVWdQoGpAWARO-vV2712BXo"
+  },
+  {
+   "id": "resto-yodobashi-kyoto",
+   "name": "Yodobashi Kyoto, étage restaurants",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    34.988109,
+    135.7593982
+   ],
+   "desc": "Étage des restaurants au dernier étage du magasin, plats en vitrine : pratique juste après le repérage Gunpla.",
+   "infos": "Juste au nord de la gare de Kyoto · magasin 9h30–22h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJNfpddK8IAWAR21KSO4M57nY"
+  },
+  {
+   "id": "resto-musashi-hachijo",
+   "name": "Sushi no Musashi, gare de Kyoto (Hachijō)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    34.9846691,
+    135.7594188
+   ],
+   "desc": "Kaitenzushi dans la gare, côté Hachijō. Remplace le Kura Sushi (pas de Kura Sushi trouvé côté gare). Doublon : Musashi aussi le 26.",
+   "infos": "Gare de Kyoto, Hachijō-guchi · 10h30–21h45",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJJ01j8K0IAWARzS1wzZlK4ss"
+  },
+  {
+   "id": "ramen-koji",
+   "name": "Kyoto Ramen Kōji (gare de Kyoto 10F)",
+   "city": "kyoto",
+   "cat": "resto",
+   "ll": [
+    34.9857204,
+    135.758
+   ],
+   "desc": "Une allée de comptoirs de ramen de tout le Japon au 10e étage de la gare, tickets au distributeur.",
+   "infos": "Kyoto Station Building 10F · 11h–22h",
+   "note": "Certains bouillons contiennent sésame ou huiles parfumées. Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJKRpFOpoIAWARfMEVANUDooo"
+  },
+  {
+   "id": "resto-ganko-nara",
+   "name": "Tonkatsu Ganko (Nara)",
+   "city": "nara",
+   "cat": "resto",
+   "ll": [
+    34.683638,
+    135.8284644
+   ],
+   "desc": "Tonkatsu réputé, grande capacité (deuxième salle à côté), ticket d'attente à la borne.",
+   "infos": "19 Higashimuki-Nakamachi · 11h–21h15",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJoZmXjYc5AWAR4aIXSg97sy8"
+  },
+  {
+   "id": "resto-kamaiki",
+   "name": "Kamaiki (udon, Nara)",
+   "city": "nara",
+   "cat": "resto",
+   "ll": [
+    34.6829636,
+    135.8288214
+   ],
+   "desc": "Udon et tempura très appréciés, service rapide.",
+   "infos": "13-2 Higashimuki-Minamimachi · 11h–15h, 17h–21h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJXQShDog5AWARkaFAmoTwsG4"
+  },
+  {
+   "id": "resto-yayoiken-nara",
+   "name": "Yayoi-ken (gare JR Nara)",
+   "city": "nara",
+   "cat": "resto",
+   "ll": [
+    34.681014,
+    135.8190967
+   ],
+   "desc": "Plateaux-repas (teishoku), commande sur borne en anglais avec photos, riz à volonté. Juste devant la gare, en face de l'hôtel.",
+   "infos": "1-1 Sanjō-honmachi · 7h–23h",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJoXedai46AWARZz99_peQh1E"
+  },
+  {
+   "id": "resto-tanaka-nara",
+   "name": "Kushikatsu Tanaka (Shin-Ōmiya)",
+   "city": "nara",
+   "cat": "resto",
+   "ll": [
+    34.6848341,
+    135.8102902
+   ],
+   "desc": "Brochettes frites, takoyaki à faire soi-même à table, jeux avec le personnel : ludique pour Gaspard et Ulysse.",
+   "infos": "6-2-15 Ōmiya-chō · mercredi 17h–1h · ~15–20 min à pied à l'ouest de la gare JR",
+   "note": "Pas à la gare JR : à ~1,5 km. Friture en huile commune. Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJx3HXs9Q7AWARNugn1mCbAus"
+  },
+  {
+   "id": "resto-bikkuri",
+   "name": "Bikkuri Donkey Dotonbori (hamburg steak)",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6688446,
+    135.5017298
+   ],
+   "desc": "Hamburg steak servi sur planche de bois, décor original, banquettes, commande sur tablette.",
+   "infos": "1-6-15 Dōtonbori · jeudi 7h–4h30",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJP0H85RTnAGARkyC9tvzmW9I"
+  },
+  {
+   "id": "resto-ohsho",
+   "name": "Osaka Ohsho Dotonbori (gyoza)",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6687875,
+    135.502013
+   ],
+   "desc": "Gyoza et riz frit, salle assise au 2e étage avec tablette. Doublon : gyoza aussi le 25 (Chao Chao).",
+   "infos": "1-6-13 Dōtonbori · 11h–22h30",
+   "note": "Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJiTkQhxTnAGARBAfw4nqx0kU"
+  },
+  {
+   "id": "resto-kinryu",
+   "name": "Kinryu Ramen Dotonbori",
+   "city": "osaka",
+   "cat": "resto",
+   "ll": [
+    34.6686694,
+    135.5030523
+   ],
+   "desc": "L'enseigne au dragon géant : tickets au distributeur, plateformes en tatami ouvertes sur la rue, kimchi et ail en libre-service. Ouvert 24 h/24.",
+   "infos": "1-7-26 Dōtonbori",
+   "note": "Bouillon avec huile de sésame. Montrer la carte d'allergie en arrivant.",
+   "link": "https://www.google.com/maps/place/?q=place_id:ChIJs0wJ7BTnAGARb7rarouI46o"
   }
  ],
  "todo": [
@@ -3709,14 +4372,6 @@
   {
    "id": "compass",
    "txt": "Prévenir Kyoto Compass : arrivée ~16h45 le 25 oct"
-  },
-  {
-   "id": "wpu",
-   "txt": "WPÜ : livraison des valises depuis Yumoto + garde le 25 jusqu'à 12h30"
-  },
-  {
-   "id": "vintage",
-   "txt": "Hotel Vintage : réception et Ta-Q-Bin possibles ?"
   },
   {
    "id": "typhon",
@@ -3777,6 +4432,14 @@
   {
    "id": "unwind-diner",
    "txt": "UNWIND Oku-Nikko : réserver dîner et petit-déjeuner, signaler l'allergie aux fruits à coque"
+  },
+  {
+   "id": "compass-taqbin",
+   "txt": "Kyoto Compass : accepter la réception des valises en Ta-Q-Bin le 25 (après-midi) ?"
+  },
+  {
+   "id": "wearethefarm",
+   "txt": "Réserver le dîner du dim. 18 oct. vers 19h chez We Are The Farm (Shibuya)"
   }
  ],
  "allergy": {
@@ -4040,10 +4703,6 @@
     {
      "place": "gashapon-akiba",
      "role": "Premiers tirages (magasin officiel)"
-    },
-    {
-     "place": "gashapon-ikebukuro",
-     "role": "Le plus grand choix : tirer ici en priorité"
     },
     {
      "place": "nakano",
