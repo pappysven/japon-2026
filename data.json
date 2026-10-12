@@ -845,7 +845,7 @@
   {
    "id": "kintetsu-nara",
    "date": "2026-10-28",
-   "dep": "",
+   "dep": "13:30",
    "arr": "",
    "from": "Kyoto (JR)",
    "to": "JR Nara",
@@ -886,7 +886,7 @@
   {
    "id": "kintetsu-osaka",
    "date": "2026-10-29",
-   "dep": "",
+   "dep": "15:45",
    "arr": "",
    "from": "Kintetsu-Nara",
    "to": "Osaka-Namba",
@@ -1858,64 +1858,72 @@
   {
    "date": "2026-10-28",
    "stage": "nara",
-   "title": "Nara, du parc au coucher du soleil",
+   "title": "Kyoto le matin, Nara l'après-midi, cerfs au crépuscule",
    "hotel": "nono",
    "blocks": [
     {
-     "t": "9:15",
-     "txt": "Départ en taxi vers Kyoto Station (~10 min), avec les valises ou seulement les sacs à dos si l'option Ta-Q-Bin a été prise"
+     "t": "9:00",
+     "txt": "Check-out, valises gardées par Kyoto Compass (ou parties la veille en Ta-Q-Bin vers Osaka)"
     },
     {
-     "t": "9:30",
-     "txt": "JR Kyoto → Nara (Miyakoji Rapid), 45 min",
+     "t": "9:15",
+     "txt": "Tō-ji, la plus haute pagode du Japon",
+     "place": "toji"
+    },
+    {
+     "t": "10:30",
+     "txt": "Aquarium de Kyoto, parc d'Umekōji",
+     "place": "kyoto-aquarium"
+    },
+    {
+     "t": "12:15",
+     "txt": "Déjeuner près de la gare de Kyoto"
+    },
+    {
+     "t": "13:00",
+     "txt": "Récupération des valises, taxi vers la gare de Kyoto (~10 min)"
+    },
+    {
+     "t": "13:30",
+     "txt": "JR Miyakoji Rapid → Nara (~45 min)",
      "transport": "kintetsu-nara"
     },
     {
-     "t": "~10:20",
-     "txt": "Bagages à l'Onyado Nono, en face de la gare JR"
+     "t": "14:20",
+     "txt": "Valises à l'Onyado Nono, en face de la gare JR"
     },
     {
-     "t": "10:45",
+     "t": "14:40",
      "txt": "Sanjō-dōri à pied, mochi pilé chez Nakatanidō",
      "place": "nakatanido"
     },
     {
-     "t": "11:30",
-     "txt": "Parc aux cerfs et pagode du Kōfuku-ji",
+     "t": "15:10",
+     "txt": "Kōfuku-ji et sa pagode",
      "place": "kofukuji"
     },
     {
-     "t": "12:30",
-     "txt": "Déjeuner : Tonkatsu Ganko",
-     "place": "resto-ganko-nara"
-    },
-    {
-     "t": "12:30",
-     "txt": "ou Kamaiki (udon, près du Kōfuku-ji)",
-     "place": "resto-kamaiki"
-    },
-    {
-     "t": "14:00",
-     "txt": "Kasuga Taisha et la forêt aux lanternes",
-     "place": "kasuga"
-    },
-    {
-     "t": "15:30",
-     "txt": "Tōdai-ji, quand les groupes repartent (fermeture 17h30)",
+     "t": "15:40",
+     "txt": "Tōdai-ji, le grand Bouddha (fermeture 17h30) ; acheter les biscuits pour les cerfs",
      "place": "todaiji"
     },
     {
-     "t": "16:50",
-     "txt": "Coucher du soleil depuis la terrasse du Nigatsu-dō",
+     "t": "16:45",
+     "txt": "Coucher du soleil au Nigatsu-dō",
      "place": "nigatsudo"
     },
     {
+     "t": "17:10",
+     "txt": "Les cerfs à la tombée du jour, sur les pelouses du parc presque vides",
+     "place": "nara-park"
+    },
+    {
      "t": "17:45",
-     "txt": "Retour à pied (~25 min) ou en bus vers la gare JR"
+     "txt": "Retour vers la gare JR (~25 min à pied, ou bus)"
     },
     {
      "t": "18:30",
-     "txt": "Dîner léger : Yayoi-ken (gare JR, face à l'hôtel)",
+     "txt": "Dîner léger : Yayoi-ken (gare JR)",
      "place": "resto-yayoiken-nara"
     },
     {
@@ -1929,127 +1937,133 @@
     }
    ],
    "tips": [
+    "Musée du chemin de fer de Kyoto fermé le mercredi",
+    "Biscuits des cerfs (senbei, ~200 ¥) : à acheter vers 16h, les vendeurs remballent en fin d'après-midi",
     "Cerfs : quand il n'y a plus de biscuits, montrer les deux mains ouvertes et vides",
-    "Senbei à 200 ¥ : les donner vite, les cerfs sont insistants autour des vendeurs",
-    "Lanternes de Kasuga allumées seulement aux fêtes de février et d'août",
-    "Nara se couche tôt : beaucoup de restaurants ferment vers 19h–20h",
-    "Onyado Nono : yonaki soba (ramen offert) vers 21h30, ne pas trop dîner"
+    "Kasuga Taisha est fait demain matin, avant les groupes",
+    "Nara se couche tôt : dîner vers 18h30",
+    "Onyado Nono : yonaki soba (ramen offert) vers 21h30"
    ]
   },
   {
    "date": "2026-10-29",
    "stage": "osaka",
-   "title": "Nara → Osaka, Kuromon, Den Den Town",
+   "title": "Nara (Kasuga, Isuien, Naramachi), Osaka le soir",
    "hotel": "eslead",
    "blocks": [
     {
-     "t": "tôt",
-     "txt": "Cerfs au lever du soleil (option)",
-     "place": "nara-park"
+     "t": "8:30",
+     "txt": "Kasuga Taisha et la forêt aux lanternes, avant les groupes (~25 min à pied)",
+     "place": "kasuga"
     },
     {
-     "t": "10:30",
-     "txt": "Départ en taxi vers Kintetsu-Nara (~5 min, ou 15–20 min à pied)"
+     "t": "10:15",
+     "txt": "Jardin Isuien, avec le Tōdai-ji en arrière-plan",
+     "place": "isuien"
     },
     {
-     "t": "10:45",
-     "txt": "Kintetsu → Osaka-Namba",
-     "transport": "kintetsu-osaka"
+     "t": "11:30",
+     "txt": "Naramachi, ruelles de maisons marchandes",
+     "place": "naramachi"
     },
     {
-     "t": "~11:45",
-     "txt": "Arrivée à Namba les mains vides (valises envoyées de Kyoto à l'ESLEAD Namba East) ; sinon, valises dans la consigne en libre-service de l'ESLEAD Kuromon"
+     "t": "12:30",
+     "txt": "Déjeuner : Tonkatsu Ganko",
+     "place": "resto-ganko-nara"
     },
     {
-     "t": "12:00",
-     "txt": "Alexia : marché Kuromon, déjeuner street-food",
-     "place": "kuromon"
+     "t": "12:30",
+     "txt": "ou Kamaiki (udon)",
+     "place": "resto-kamaiki"
     },
     {
-     "t": "12:00",
-     "txt": "Antoine et les enfants : Joshin, Surugaya, Jungle (passeports pour la détaxe)",
-     "place": "joshin"
+     "t": "14:00",
+     "txt": "Temps libre, boutiques de Sanjō-dōri, retour à l'hôtel"
     },
     {
      "t": "15:30",
-     "txt": "Regroupement, sanctuaire Namba Yasaka (tête de lion)",
-     "place": "namba-yasaka"
+     "txt": "Bagages récupérés, taxi vers Kintetsu-Nara (~5 min)"
     },
     {
-     "t": "16:00",
-     "txt": "Récupération des valises à l'ESLEAD Namba East, taxi ~5 min jusqu'à l'ESLEAD Kuromon, check-in avec le code",
+     "t": "15:45",
+     "txt": "Kintetsu → Osaka-Namba (~40 min)",
+     "transport": "kintetsu-osaka"
+    },
+    {
+     "t": "16:45",
+     "txt": "Check-in à l'ESLEAD Kuromon (code) ; valises du Ta-Q-Bin à récupérer d'abord à l'ESLEAD Namba East si envoyées",
      "place": "eslead-east"
     },
     {
-     "t": "16:30",
-     "txt": "Installation à l'ESLEAD Kuromon, pause"
+     "t": "17:30",
+     "txt": "Den Den Town et Joshin (jusqu'à ~20h), avec les passeports",
+     "place": "joshin"
     },
     {
-     "t": "18:45",
-     "txt": "Rendez-vous dans le hall de l'hôtel, puis Dotonbori à pied",
-     "place": "dotonbori"
-    },
-    {
-     "t": "19:00",
-     "txt": "Dîner : Bikkuri Donkey (hamburg steak)",
+     "t": "19:30",
+     "txt": "Dîner à Dotonbori : Bikkuri Donkey (hamburg steak)",
      "place": "resto-bikkuri"
     },
     {
-     "t": "19:00",
+     "t": "19:30",
      "txt": "ou Osaka Ohsho (gyoza ; doublon avec le 25)",
      "place": "resto-ohsho"
     },
     {
-     "t": "19:00",
+     "t": "19:30",
      "txt": "ou Kinryu Ramen (dragon géant, tatami)",
      "place": "resto-kinryu"
-    },
-    {
-     "t": "option",
-     "txt": "Don Quijote Dotonbori (grande roue sur la façade)",
-     "place": "donki-dotonbori"
     }
    ],
    "tips": [
-    "Kuromon : marché du matin et du midi, beaucoup d'échoppes ferment vers 16h–17h",
-    "Street-food de Kuromon : montrer la carte d'allergie",
+    "Onyado Nono : demander à garder les bagages après le check-out",
+    "ESLEAD Kuromon : check-in à 16h sans réception (tablette, code) ; s'enregistrer en ligne avant",
     "Passeport physique obligatoire pour la détaxe chez Joshin",
-    "Rendez-vous du soir dans le hall de l'hôtel, pas dans la foule de Dotonbori",
-    "ESLEAD Kuromon : check-in à 16h, sans réception (tablette, code d'entrée) ; s'enregistrer en ligne à l'avance"
+    "Kuromon passe au 30 au matin (le marché ferme vers 16h–17h)"
    ]
   },
   {
    "date": "2026-10-30",
    "stage": "osaka",
-   "title": "Château, Shinsekai, Dotonbori",
+   "title": "Kuromon, château, Shinsekai, Dotonbori",
    "hotel": "eslead",
    "blocks": [
     {
-     "t": "9:15",
-     "txt": "Départ : Nippombashi (~5 min à pied), métro → Tanimachi 4-chome"
+     "t": "9:00",
+     "txt": "Marché Kuromon, à côté de l'hôtel : brunch street-food (carte d'allergie)",
+     "place": "kuromon"
     },
     {
-     "t": "9:45",
+     "t": "10:00",
+     "txt": "Métro Nippombashi → Tanimachi 4-chōme (~15 min)"
+    },
+    {
+     "t": "10:30",
      "txt": "Château d'Osaka : parc et murailles (sans le donjon)",
      "place": "osaka-castle"
     },
     {
-     "t": "12:00",
-     "txt": "Shinsekai : déjeuner Kushikatsu Daruma",
+     "t": "12:30",
+     "txt": "Shinsekai : déjeuner Kushikatsu Daruma (métro ~15 min)",
      "place": "resto-daruma"
     },
     {
-     "t": "12:00",
+     "t": "12:30",
      "txt": "ou Yaekatsu (file d'attente habituelle)",
      "place": "resto-yaekatsu"
     },
     {
-     "t": "13:15",
-     "txt": "Shinsekai, tour Tsutenkaku (option, ~1 000 ¥ à vérifier)",
+     "t": "14:00",
+     "txt": "Tour Tsutenkaku (option, ~1 000 ¥ à vérifier)",
      "place": "shinsekai"
     },
     {
-     "t": "14:30",
+     "t": "15:00",
+     "txt": "Sanctuaire Namba Yasaka, la tête de lion (métro ou ~20 min à pied)",
+     "place": "namba-yasaka"
+    },
+    {
+     "t": "15:45",
      "txt": "Shinsaibashi et Amerika-mura",
      "place": "amemura"
     },
@@ -2072,11 +2086,16 @@
      "t": "18:30",
      "txt": "ou street-food : takoyaki, gyoza",
      "place": "dotonbori"
+    },
+    {
+     "t": "option",
+     "txt": "Don Quijote Dotonbori (grande roue sur la façade)",
+     "place": "donki-dotonbori"
     }
    ],
    "tips": [
-    "Transports à la Suica (~3 trajets) ; pass journée Enjoy Eco Card (820 ¥) seulement si vous ajoutez des trajets",
-    "Shinsekai → Shinsaibashi : métro Midosuji depuis Dobutsuen-mae, ou Nankai Shin-Imamiya → Namba",
+    "Kuromon : le meilleur moment est le matin ; carte d'allergie à chaque stand",
+    "Transports à la Suica (~4 trajets de métro) ; pass journée Enjoy Eco Card (820 ¥) seulement si vous ajoutez des trajets",
     "Kushikatsu : une seule trempette dans la sauce commune ; carte d'allergie",
     "Vendredi soir avant Halloween : Dotonbori très fréquenté"
    ]
@@ -2132,7 +2151,7 @@
     },
     {
      "t": "16:30",
-     "txt": "Dépôt du Mac mini et des achats à l'hôtel, sacs du lendemain"
+     "txt": "Dépôt du Mac mini et des achats à l'hôtel, sacs du lendemain, taxi de 4h55 réservé"
     },
     {
      "t": "17:30",
@@ -4502,6 +4521,62 @@
    "desc": "Hôtel de la même chaîne, avec réception 24 h/24 : c'est ici que les valises envoyées de Kyoto sont réceptionnées (l'ESLEAD Kuromon n'a pas de réception).",
    "infos": "4-1-11 Nipponbashi, Naniwa · tél. 06-6626-9380 · ~5 min en taxi de l'ESLEAD Kuromon",
    "link": "https://www.google.com/maps/place/?q=place_id:ChIJx8P3AE7nAGARi7HlffGWQFk"
+  },
+  {
+   "id": "toji",
+   "name": "Tō-ji",
+   "jp": "東寺",
+   "city": "kyoto",
+   "cat": "temple",
+   "ll": [
+    34.9806,
+    135.7478
+   ],
+   "desc": "Temple fondé en 796 à l'entrée de l'ancienne capitale. Sa pagode à cinq étages (55 m) est la plus haute pagode en bois du Japon.",
+   "infos": "~800 ¥ adulte · 8h–17h · ~15 min de Kyoto Compass",
+   "wikiEn": "Tō-ji"
+  },
+  {
+   "id": "kyoto-aquarium",
+   "name": "Aquarium de Kyoto",
+   "jp": "京都水族館",
+   "city": "kyoto",
+   "cat": "musee",
+   "ll": [
+    34.9875,
+    135.7462
+   ],
+   "desc": "Aquarium moderne dans le parc d'Umekōji : salamandres géantes du Japon, phoques, pingouins, grand bassin et spectacle de dauphins.",
+   "infos": "~2 400 ¥ adulte, tarif réduit enfant · 10h–18h · ~15 min à pied de Kyoto Compass",
+   "wikiEn": "Kyoto Aquarium"
+  },
+  {
+   "id": "isuien",
+   "name": "Jardin Isuien",
+   "jp": "依水園",
+   "city": "nara",
+   "cat": "nature",
+   "ll": [
+    34.6858,
+    135.8372
+   ],
+   "desc": "Jardin paysager de l'ère Meiji, avec étangs, maisons de thé et le grand portail du Tōdai-ji en paysage emprunté.",
+   "infos": "~1 200 ¥ adulte · 9h30–16h30, fermé le mardi (ouvert le jeudi) · compter 45 min",
+   "wikiEn": "Isuien"
+  },
+  {
+   "id": "naramachi",
+   "name": "Naramachi",
+   "jp": "ならまち",
+   "city": "nara",
+   "cat": "balade",
+   "ll": [
+    34.6775,
+    135.83
+   ],
+   "desc": "Ancien quartier marchand aux maisons de bois étroites (machiya), petites boutiques d'artisanat, cafés et singes porte-bonheur rouges suspendus aux façades.",
+   "infos": "Accès libre · ~10 min à pied au sud du Kōfuku-ji",
+   "walk": true
   }
  ],
  "todo": [
