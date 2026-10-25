@@ -1122,6 +1122,7 @@ function vPrat(){
     ${T("yen","yen","Yens ↔ euros","convertisseur")}
     ${T("urgences","sos","Urgences","110 · 119 · ambassade")}
     ${T("infos","info","Bon à savoir","Suica, détaxe, Ta-Q-Bin…")}
+    ${T("meteo","info","Météo","Kyoto · prévisions 4 jours")}
     ${T("todo","list","Avant le départ", n? n+" à faire":"tout est fait")}
   </div>
   <p class="small muted" style="text-align:center;margin-top:28px">Version ${esc(window.VERSION||"")} · fonctionne hors ligne une fois installée</p>`;
@@ -1132,6 +1133,7 @@ function sheetContent(k){
   const rate = store.get("rate", D.trip.rate);
   const rows = (arr) => `<div class="box">${arr.map(p=>`<div class="row" style="grid-template-columns:1fr auto auto" data-show="${esc(p.jp)}" data-sub="${esc(p.fr)}" role="button"><div><div class="jp" lang="ja">${esc(p.jp)}</div><div class="ro">${esc(p.ro)}</div></div><div class="small muted" style="text-align:right">${esc(p.fr)}</div>${sayBtn(p.jp)}</div>`).join("")}</div>`;
   switch(k){
+    case "meteo": return ["Météo Kyoto", `<div class="box pad" id="meteo-box"><p class="small muted">Chargement…</p></div><button id="meteo-refresh" style="margin-top:12px;width:100%;padding:12px;border-radius:12px;border:1px solid var(--line,#ccc);background:var(--card,#fff);color:var(--ink,#222);font-weight:600">Mettre à jour la météo</button><p class="small muted" style="margin-top:8px" id="meteo-time"></p>`];
     case "taxi": return ["Montrer l'adresse au chauffeur", `<div class="stack">${D.hotels.map(h=>`<button class="tile" style="width:100%;min-height:0;flex-direction:row;align-items:center;${lineOf(h.stage)}" data-showhotel="${h.id}"><span class="ti" style="background:var(--line);color:#fff">${I("bed")}</span><span style="margin:0;flex:1"><b style="display:block">${esc(h.name)}</b><span class="small muted">${fmtD(h.from)} → ${fmtD(h.to)}</span></span>${I("right")}</button>`).join("")}</div>`];
     case "phrases": return ["Phrases utiles", rows(D.phrases)];
     case "boissons": return ["Boissons", rows(D.drinks)];
@@ -1272,6 +1274,31 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change", applyTheme)
   render();
   if("serviceWorker" in navigator && !window.IS_DEMO) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
+
+const MET_ICON = c => c===0?"☀️":c<=3?"⛅":c<=48?"🌫️":c<=67?"🌧️":c<=77?"❄️":c<=82?"🌦️":"⛈️";
+async function loadMeteo(){
+  const box = document.getElementById("meteo-box");
+  if(!box) return;
+  box.innerHTML = '<p class="small muted">Chargement…</p>';
+  try{
+    const url = "https://api.open-meteo.com/v1/forecast?latitude=35.0116&longitude=135.7681&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FTokyo&forecast_days=4";
+    const r = await fetch(url, {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    const d = (await r.json()).daily;
+    box.innerHTML = d.time.map((t,i)=>{
+      const lab = new Date(t+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"short",day:"numeric",month:"short"});
+      return `<div class="row" style="grid-template-columns:1fr auto auto"><div><b>${lab}</b></div><div>${MET_ICON(d.weather_code[i])} ${Math.round(d.temperature_2m_min[i])}° / ${Math.round(d.temperature_2m_max[i])}°</div><div class="small muted">pluie ${d.precipitation_probability_max[i]}%</div></div>`;
+    }).join("");
+    const tm = document.getElementById("meteo-time");
+    if(tm) tm.textContent = "Mis à jour à " + new Date().toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"});
+  }catch(e){
+    box.innerHTML = '<p class="small muted">Météo indisponible (réseau). Réessayez, ou consultez jma.go.jp.</p>';
+  }
+}
+document.addEventListener("click", e=>{
+  if(e.target.closest("#meteo-refresh")){ loadMeteo(); return; }
+  if(e.target.closest('[data-sheet="meteo"]')) setTimeout(loadMeteo, 150);
+});
 </script>
 </body>
 </html>
