@@ -1676,273 +1676,203 @@
   {
    "date": "2026-10-26",
    "stage": "kyoto",
-   "title": "Fushimi Inari, Kiyomizu-dera, Nishiki, Gion",
+   "title": "Kyoto Railway Museum, Sanjūsangen-dō, Nishiki et Shinkyōgoku, Gion",
    "hotel": "compass",
    "blocks": [
     {
-     "t": "6:15",
-     "txt": "Départ : Umekōji-Kyōtonishi (~10 min à pied) → Kyoto (1 arrêt), puis JR Nara Line → Inari"
-    },
-    {
-     "t": "avant 7:00",
-     "txt": "Fushimi Inari sans la foule (JR Nara Line jusqu'à Inari, 5 min)",
-     "place": "fushimi"
-    },
-    {
-     "t": "9:15",
-     "txt": "Keihan Fushimi-Inari → Kiyomizu-Gojō (~10 min), puis ~20 min de montée à pied"
+     "t": "9:30",
+     "txt": "Petit-déjeuner, puis à pied vers Umekōji-Kyōtonishi (~10 min)"
     },
     {
      "t": "10:00",
-     "txt": "Kiyomizu-dera",
-     "place": "kiyomizu"
+     "txt": "Kyoto Railway Museum (fermé le mercredi) : maquette 1/80 animée, Sky Terrace, prévoir 2h30"
     },
     {
-     "t": "11:15",
-     "txt": "Descente par Sannenzaka et Ninenzaka",
-     "place": "sannenzaka"
+     "t": "12:30",
+     "txt": "Déjeuner : Kyoto Ramen Kōji (10F de la gare), tickets au distributeur"
     },
     {
-     "txt": "Sanctuaire Yasaka",
-     "place": "yasaka"
+     "t": "13:30",
+     "txt": "Sky Garden de la gare (11F, gratuit, horaires à vérifier)"
     },
     {
-     "txt": "Marché Nishiki",
+     "t": "14:00",
+     "txt": "Sanjūsangen-dō (taxi ~10 min), pas de photos à l'intérieur"
+    },
+    {
+     "t": "15:30",
+     "txt": "Nishiki Market, puis Shinkyōgoku par Teramachi (carte d'allergie)",
      "place": "nishiki"
     },
     {
-     "t": "12:30",
-     "txt": "Déjeuner assis près de Nishiki : Ippudo (ramen)",
-     "place": "resto-ippudo-kyoto"
+     "t": "17:00",
+     "txt": "« Den on the table », 537-1 Nakanochō, Nakagyō-ku (à confirmer)"
     },
     {
-     "t": "12:30",
-     "txt": "ou CoCo Ichibanya (curry)",
-     "place": "resto-coco-kyoto"
+     "t": "17:30",
+     "txt": "Retour à la guesthouse pour souffler"
     },
     {
-     "txt": "Galeries manga de Teramachi",
-     "place": "teramachi"
+     "t": "18:30",
+     "txt": "Gion côté Shirakawa-minami, lanternes sous la pluie"
     },
     {
-     "t": "soir",
-     "txt": "Gion, Hanamikoji",
-     "place": "gion"
-    },
-    {
-     "t": "19:00",
-     "txt": "Dîner : Issen Yoshoku (crêpe salée, mannequins)",
-     "place": "resto-issen"
-    },
-    {
-     "t": "19:00",
-     "txt": "ou Sushi no Musashi Sanjō (kaitenzushi, ~10 min de Gion)",
-     "place": "resto-musashi-sanjo"
-    },
-    {
-     "t": "option",
-     "txt": "Lessive à Kyoto Compass ou dans une laverie proche (si pas faite le 22)"
+     "t": "18:30",
+     "txt": "Dîner : Issen Yōshoku, ou Sushino Musashi Sanjō Honten si l'attente est longue"
     }
    ],
    "tips": [
-    "Départ vers 6h ; Fushimi Inari → Gion : train Keihan jusqu'à Gion-Shijo (~15 min)",
-    "Pas de pass bus à 700 ¥ : Suica (bus 230 ¥, on paie en descendant) ou Subway & Bus 1-Day Pass 1 100 ¥ / 550 ¥",
-    "En saison des feuillages, le train est plus fiable que le bus",
-    "Glace matcha à la feuille d'or",
-    "Nishiki : se méfier de la street-food avec l'allergie, préférer un repas assis",
-    "Gion : cher et difficile sans réservation en famille, dîner en bordure"
+    "Nishiki et Shinkyōgoku sont reliés par Teramachi",
+    "Yodobashi retiré de ce jour : option mardi soir, ou Yodobashi Umeda le 31",
+    "Vérifier l'heure de fermeture de Sanjūsangen-dō et les horaires de « Den on the table »",
+    "Carte d'allergie à chaque restaurant"
    ]
   },
   {
    "date": "2026-10-27",
    "stage": "kyoto",
-   "title": "Arashiyama, cérémonie du thé",
+   "title": "Saga Toriimoto, Adashino, Kinkaku-ji, Yodobashi le soir",
    "hotel": "compass",
    "blocks": [
     {
-     "t": "6:50",
-     "txt": "Départ : Umekōji-Kyōtonishi (~10 min à pied), ligne Sagano directe → Saga-Arashiyama (~20 min)"
+     "t": "8:30",
+     "txt": "Départ de Kyoto Compass, à pied vers Umekōji-Kyōtonishi ou en taxi"
     },
     {
-     "t": "7:30",
-     "txt": "Bambouseraie et sanctuaire Nonomiya",
+     "t": "8:45",
+     "txt": "JR Sagano → Saga-Arashiyama (~15 min), vérifier l'horaire la veille"
+    },
+    {
+     "t": "9:00",
+     "txt": "Marche jusqu'à la bambouseraie d'Arashiyama, puis sentier (~20 min)",
      "place": "bambous"
     },
     {
-     "t": "8:30",
-     "txt": "Jardin du Tenryū-ji",
-     "place": "tenryuji"
-    },
-    {
      "t": "9:45",
-     "txt": "Rivière Ōi et pont Togetsukyō",
-     "place": "togetsukyo"
+     "txt": "Saga Toriimoto Street, rue commerçante vers le temple"
     },
     {
-     "t": "10:30",
-     "txt": "Alexia : cérémonie du thé privée chez Komurasaki An",
-     "place": "komurasaki"
+     "t": "10:15",
+     "txt": "Adashino Nenbutsu-ji : rakan en pierre et mousse (horaires et tarif à vérifier)"
     },
     {
-     "t": "10:30",
-     "txt": "Antoine et les enfants : Monkey Park Iwatayama",
-     "place": "monkey"
+     "t": "11:15",
+     "txt": "Déjeuner dans le secteur de Saga (restaurant à choisir, carte d'allergie)"
     },
     {
-     "t": "12:15",
-     "txt": "Rendez-vous au pied du pont Togetsukyō, côté sud, puis déjeuner",
-     "place": "togetsukyo"
-    },
-    {
-     "t": "12:30",
-     "txt": "Déjeuner : Ozuru (udon, rue principale)",
-     "place": "resto-ozuru"
-    },
-    {
-     "t": "12:30",
-     "txt": "ou Upit's Burger (plan B occidental)",
-     "place": "resto-upits"
-    },
-    {
-     "t": "13:45",
-     "txt": "Kimono Forest à la gare Randen Arashiyama (~10 min)",
+     "t": "13:00",
+     "txt": "Kimono Forest, près de la gare Randen d'Arashiyama",
      "place": "kimono-forest"
     },
     {
-     "t": "14:00",
-     "txt": "Tram Randen (une voiture, rétro) jusqu'au terminus Kitano-Hakubaichō (~20 min), puis taxi ~5 min (< 1 000 ¥)"
+     "t": "13:30",
+     "txt": "Tram Randen → Kitano-Hakubaichō (~20 min, Suica)"
     },
     {
-     "t": "14:45",
-     "txt": "Kinkaku-ji, lumière de l'après-midi sur le pavillon (circuit ~45 min)",
+     "t": "14:00",
+     "txt": "Taxi ~5 min → Kinkaku-ji",
      "place": "kinkakuji"
     },
     {
-     "t": "16:00",
-     "txt": "Retour : taxi ou bus → JR Emmachi (~10 min), puis ligne Sagano → Kyoto (~10 min)"
+     "t": "15:30",
+     "txt": "Retour vers la gare de Kyoto (taxi ou bus)"
     },
     {
-     "t": "soir",
-     "txt": "Yodobashi Kyoto : repérage des prix Gunpla",
+     "t": "16:15",
+     "txt": "Taxi → Yodobashi Kyoto (6e étage) : repérage des prix Gunpla",
      "place": "yodobashi-kyoto"
     },
     {
-     "t": "19:00",
-     "txt": "Dîner : étage restaurants de Yodobashi Kyoto",
+     "t": "17:30",
+     "txt": "Dîner à Yodobashi, ou Kura Sushi Kyoto Station juste à côté",
      "place": "resto-yodobashi-kyoto"
-    },
-    {
-     "t": "19:00",
-     "txt": "ou Sushi no Musashi Hachijō (gare ; doublon avec le 26)",
-     "place": "resto-musashi-hachijo"
-    },
-    {
-     "t": "19:00",
-     "txt": "ou Kyoto Ramen Kōji (gare, 10F)",
-     "place": "ramen-koji"
-    },
-    {
-     "t": "option",
-     "txt": "Ta-Q-Bin des valises vers l'ESLEAD Osaka (livraison le 29) pour faire Nara en sacs à dos",
-     "transport": "taqbin-osaka"
     }
    ],
    "tips": [
-    "JR Sagano Line → Saga-Arashiyama, 25 min, départ vers 7h",
-    "Monkey Park : sachets de pommes (pas de cacahuètes), se laver les mains",
-    "Arashiyama bondé le midi : pas de gastronomique sans réservation",
-    "Pas de Kura Sushi côté gare : Sushi no Musashi Hachijō à la place",
-    "Tram Randen : payé à la Suica ; Kinkaku-ji ~500 ¥, 9h–17h"
+    "Tenryū-ji et Ōkōchi Sansō ne sont pas placés : options à décider sur place (Ōkōchi Sansō offre le matcha pour Alexia)",
+    "Pas de balade le long de la Hozu : double emploi avec Saga",
+    "Horaires et tarif d'Adashino à vérifier",
+    "Trajet Saga → tram Randen à vérifier sur carte"
    ]
   },
   {
    "date": "2026-10-28",
    "stage": "nara",
-   "title": "Kyoto le matin, Nara l'après-midi, cerfs au crépuscule",
+   "title": "Fushimi Inari, Kiyomizu-dera le matin, Nara l'après-midi, cerfs au crépuscule",
    "hotel": "nono",
    "blocks": [
     {
-     "t": "9:00",
-     "txt": "Check-out, valises gardées par Kyoto Compass (ou parties la veille en Ta-Q-Bin vers Osaka)"
+     "t": "8:00",
+     "txt": "Départ de Kyoto Compass avec les sacs à dos (valises laissées à la guesthouse)"
     },
     {
-     "t": "9:15",
-     "txt": "Tō-ji, la plus haute pagode du Japon",
-     "place": "toji"
+     "t": "8:30",
+     "txt": "Fushimi Inari Taisha : monter jusqu'à un niveau confortable (entrée gratuite)",
+     "place": "fushimi"
     },
     {
-     "t": "10:30",
-     "txt": "Aquarium de Kyoto, parc d'Umekōji",
-     "place": "kyoto-aquarium"
+     "t": "10:15",
+     "txt": "Keihan → Kiyomizu-Gojō, puis montée d'environ 20 min"
     },
     {
-     "t": "12:15",
-     "txt": "Déjeuner près de la gare de Kyoto"
+     "t": "10:45",
+     "txt": "Kiyomizu-dera",
+     "place": "kiyomizu"
     },
     {
-     "t": "13:00",
-     "txt": "Récupération des valises, taxi vers la gare de Kyoto (~10 min)"
+     "t": "12:00",
+     "txt": "Sannenzaka, Ninenzaka et Yasaka",
+     "place": "sannenzaka"
+    },
+    {
+     "t": "12:45",
+     "txt": "Pause libre, ou déjeuner assis à Yasaka ou Gion"
     },
     {
      "t": "13:30",
-     "txt": "JR Miyakoji Rapid → Nara (~45 min)",
-     "transport": "kintetsu-nara"
+     "txt": "Taxi → Kyoto Compass (valises), puis taxi → gare de Kyoto"
     },
     {
-     "t": "14:20",
-     "txt": "Valises à l'Onyado Nono, en face de la gare JR"
+     "t": "14:15",
+     "txt": "Ramen Kōji (repas rapide assis, 10F)"
     },
     {
-     "t": "14:40",
-     "txt": "Sanjō-dōri à pied, mochi pilé chez Nakatanidō",
-     "place": "nakatanido"
+     "t": "15:20",
+     "txt": "Train JR Nara Line → Nara (~45 min, arrivée vers 16h05)"
     },
     {
-     "t": "15:10",
-     "txt": "Kōfuku-ji et sa pagode",
-     "place": "kofukuji"
-    },
-    {
-     "t": "15:40",
-     "txt": "Tōdai-ji, le grand Bouddha (fermeture 17h30) ; acheter les biscuits pour les cerfs",
-     "place": "todaiji"
+     "t": "16:15",
+     "txt": "Onyado Nono : dépôt des valises et check-in (heure à vérifier)"
     },
     {
      "t": "16:45",
-     "txt": "Coucher du soleil au Nigatsu-dō",
+     "txt": "Nigatsu-dō, coucher du soleil (~17h, à vérifier)",
      "place": "nigatsudo"
     },
     {
-     "t": "17:10",
-     "txt": "Les cerfs à la tombée du jour, sur les pelouses du parc presque vides",
-     "place": "nara-park"
+     "t": "17:15",
+     "txt": "Tōdai-ji, puis cerfs à la tombée du jour (crackers sika-senbei uniquement)",
+     "place": "todaiji"
     },
     {
-     "t": "17:45",
-     "txt": "Retour vers la gare JR (~25 min à pied, ou bus)"
-    },
-    {
-     "t": "18:30",
-     "txt": "Dîner léger : Yayoi-ken (gare JR)",
-     "place": "resto-yayoiken-nara"
-    },
-    {
-     "t": "18:30",
-     "txt": "ou Kushikatsu Tanaka (takoyaki à faire soi-même, ~15–20 min à pied)",
+     "t": "18:00",
+     "txt": "Dîner tôt : Kushikatsu Tanaka ou Yayoi-ken",
      "place": "resto-tanaka-nara"
     },
     {
+     "t": "19:00",
+     "txt": "Onsen et temps libre à l'hôtel"
+    },
+    {
      "t": "21:30",
-     "txt": "Onsen, puis yonaki soba offert à l'hôtel"
+     "txt": "Yonaki soba offert à l'hôtel"
     }
    ],
    "tips": [
-    "Musée du chemin de fer de Kyoto fermé le mercredi",
-    "Biscuits des cerfs (senbei, ~200 ¥) : à acheter vers 16h, les vendeurs remballent en fin d'après-midi",
-    "Cerfs : quand il n'y a plus de biscuits, montrer les deux mains ouvertes et vides",
-    "Kasuga Taisha est fait demain matin, avant les groupes",
-    "Nara se couche tôt : dîner vers 18h30",
-    "Onyado Nono : yonaki soba (ramen offert) vers 21h30"
+    "Garde des valises à Kyoto Compass à confirmer par écrit (jusqu'à 13h30)",
+    "Heure de check-in de l'Onyado Nono, horaires de Tōdai-ji et coucher du soleil à vérifier",
+    "Si fatigue : supprimer Kiyomizu-dera, pas Fushimi Inari",
+    "Carte d'allergie à chaque restaurant"
    ]
   },
   {
@@ -1953,12 +1883,12 @@
    "blocks": [
     {
      "t": "8:30",
-     "txt": "Kasuga Taisha et la forêt aux lanternes, avant les groupes (~25 min à pied)",
+     "txt": "Kasuga Taisha et la forêt aux lanternes, avant les groupes",
      "place": "kasuga"
     },
     {
-     "t": "10:15",
-     "txt": "Jardin Isuien, avec le Tōdai-ji en arrière-plan",
+     "t": "10:30",
+     "txt": "Jardin Isuien",
      "place": "isuien"
     },
     {
@@ -1968,51 +1898,35 @@
     },
     {
      "t": "12:30",
-     "txt": "Déjeuner : Tonkatsu Ganko",
+     "txt": "Déjeuner : Tonkatsu Ganko, ou Kamaiki (udon)",
      "place": "resto-ganko-nara"
-    },
-    {
-     "t": "12:30",
-     "txt": "ou Kamaiki (udon)",
-     "place": "resto-kamaiki"
     },
     {
      "t": "14:00",
      "txt": "Temps libre, boutiques de Sanjō-dōri, retour à l'hôtel"
     },
     {
-     "t": "15:30",
+     "t": "15:00",
      "txt": "Bagages récupérés, taxi vers Kintetsu-Nara (~5 min)"
     },
     {
      "t": "15:45",
-     "txt": "Kintetsu → Osaka-Namba (~40 min)",
-     "transport": "kintetsu-osaka"
+     "txt": "Kintetsu → Osaka-Namba (~40 min)"
     },
     {
-     "t": "16:45",
-     "txt": "Check-in à l'ESLEAD Kuromon (code) ; valises du Ta-Q-Bin à récupérer d'abord à l'ESLEAD Namba East si envoyées",
+     "t": "16:30",
+     "txt": "ESLEAD Namba East : dépôt des valises (adresse à confirmer)",
      "place": "eslead-east"
     },
     {
      "t": "17:30",
-     "txt": "Den Den Town et Joshin (jusqu'à ~20h), avec les passeports",
+     "txt": "Den Den Town et Joshin Super Kids Land, avec les passeports",
      "place": "joshin"
     },
     {
      "t": "19:30",
-     "txt": "Dîner à Dotonbori : Bikkuri Donkey (hamburg steak)",
+     "txt": "Dîner à Dotonbori : Bikkuri Donkey, Osaka Ohsho ou Kinryu Ramen",
      "place": "resto-bikkuri"
-    },
-    {
-     "t": "19:30",
-     "txt": "ou Osaka Ohsho (gyoza ; doublon avec le 25)",
-     "place": "resto-ohsho"
-    },
-    {
-     "t": "19:30",
-     "txt": "ou Kinryu Ramen (dragon géant, tatami)",
-     "place": "resto-kinryu"
     }
    ],
    "tips": [
